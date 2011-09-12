@@ -1,0 +1,21 @@
+/* TEAM */
+	Adam Obeng
+	contact: contact at adamobeng.com
+	(Yep, it's just me).
+
+
+/* SITE */
+	Last updated: 2011/05/14
+	Doctype: HTML5
+	Software: 
+		Developed on Arch Linux,
+		Hosted on a Linode
+		Processed using Jekyll/SASS
+		Written in Vim
+
+SEE ALSO:
+	people.txt
+	orang-utans.txt
+	dolphins.txt
+	mice.txt
+	hyperintelligent_shades_of_the_colour_blue.txt

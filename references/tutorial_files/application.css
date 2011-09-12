@@ -1,0 +1,618 @@
+/* Haml
+ * Design & CSS - Lukas Dryja
+ * http://www.lukasdryja.com
+ * -------------------- */
+/* line 1, ./src/stylesheets/./_header.sass */
+#header {
+  height: 250px;
+  width: 795px;
+  margin: 0 auto;
+  position: relative;
+}
+/* line 9, ./src/stylesheets/./_header.sass */
+#header h1 {
+  float: left;
+  margin: 40px 0 0 -50px;
+  text-indent: -9999px;
+}
+/* line 14, ./src/stylesheets/./_header.sass */
+#header h1 a {
+  display: block;
+  width: 217px;
+  height: 238px;
+  background: url(/images/sass.gif) no-repeat;
+}
+/* line 20, ./src/stylesheets/./_header.sass */
+#header #start {
+  left: 345px;
+  position: absolute;
+  background-color: #f8f8ff;
+  padding: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -o-border-bottom-left-radius: 5px;
+  -ms-border-bottom-left-radius: 5px;
+  -khtml-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -o-border-bottom-right-radius: 5px;
+  -ms-border-bottom-right-radius: 5px;
+  -khtml-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #b1ad9b;
+  border-top-style: none;
+  border-bottom-width: 5px;
+  border-bottom-color: #ce4dd6;
+}
+/* line 36, ./src/stylesheets/./_header.sass */
+#header #start code:before {
+  content: "$ ";
+  font-weight: bold;
+}
+/* line 39, ./src/stylesheets/./_header.sass */
+#header #start .executable {
+  font-weight: bold;
+}
+/* line 42, ./src/stylesheets/./_header.sass */
+#header #nav {
+  position: relative;
+  top: 160px;
+  margin-left: 200px;
+  padding: 11px 0;
+  border-bottom: 1px dashed #b1ad9b;
+}
+/* line 49, ./src/stylesheets/./_header.sass */
+#header #nav ul {
+  padding: 5px 0;
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+}
+/* line 55, ./src/stylesheets/./_header.sass */
+#header #nav ul li {
+  padding: 6px 15px;
+  margin: 0 7.5px;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *display: inline;
+  *vertical-align: auto;
+  font: 14px Georgia, Garamond, Times, "Times New Roman", serif;
+  border: 1px solid #cacaca;
+  border-bottom: 3px solid #ce4dd6;
+}
+/* line 63, ./src/stylesheets/./_header.sass */
+#header #nav ul li a {
+  text-decoration: none;
+  color: #331335;
+}
+/* line 67, ./src/stylesheets/./_header.sass */
+#header #nav ul li a:hover {
+  color: #ce4dd6;
+}
+/* line 70, ./src/stylesheets/./_header.sass */
+#header #latest {
+  position: relative;
+  text-align: center;
+  top: 170px;
+  margin-left: 200px;
+  color: #888888;
+}
+/* line 77, ./src/stylesheets/./_header.sass */
+#header #latest h2 {
+  color: #555555;
+  font-size: 1.4em;
+  font-weight: bold;
+  display: inline;
+}
+/* line 84, ./src/stylesheets/./_header.sass */
+#header #latest .version {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* line 1, ./src/stylesheets/./_sidebar.sass */
+#sidebar {
+  float: right;
+  margin-left: 10px;
+  width: 203px;
+}
+/* line 5, ./src/stylesheets/./_sidebar.sass */
+#sidebar .download {
+  height: 143px;
+  width: 201px;
+  background-image: url(/images/download.png);
+  background-repeat: no-repeat;
+  background-position: 18px -10px;
+  border: 1px dashed #b1ad9b;
+}
+/* line 18, ./src/stylesheets/./_sidebar.sass */
+#sidebar .download p {
+  font-size: 12.5px;
+  text-align: center;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 95px;
+}
+/* line 26, ./src/stylesheets/./_sidebar.sass */
+#sidebar .download p a {
+  margin-top: 10px;
+}
+/* line 29, ./src/stylesheets/./_sidebar.sass */
+#sidebar .download a {
+  font-size: 24px;
+}
+/* line 32, ./src/stylesheets/./_sidebar.sass */
+#sidebar .link {
+  padding: 12px 6px 12px 52px;
+  background: url(/images/bullet.gif) no-repeat left;
+  border-bottom: 1px dashed #a7a7a7;
+}
+/* line 36, ./src/stylesheets/./_sidebar.sass */
+#sidebar .link a {
+  font-size: 19px;
+}
+
+/* line 20, ./src/stylesheets/./_compare.sass */
+.compare {
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+}
+/* line 8, /usr/local/lib/ruby/gems/1.8/gems/compass-0.10.0.rc6/frameworks/compass/stylesheets/compass/utilities/general/./_hacks.scss */
+.compare {
+  display: block;
+}
+/* line 7, ./src/stylesheets/./_compare.sass */
+.compare pre {
+  margin-left: 0;
+  width: 41%;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  padding: 0.7em;
+  font-size: 0.9em;
+  line-height: 1.3em;
+  overflow: auto;
+}
+/* line 15, ./src/stylesheets/./_compare.sass */
+.compare pre.sass, .compare pre.scss {
+  float: left;
+}
+/* line 17, ./src/stylesheets/./_compare.sass */
+.compare pre.css {
+  float: right;
+}
+
+/* line 3, ./src/stylesheets/./_index.sass */
+.feature {
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  width: 55%;
+  margin-bottom: 1em;
+}
+/* line 8, /usr/local/lib/ruby/gems/1.8/gems/compass-0.10.0.rc6/frameworks/compass/stylesheets/compass/utilities/general/./_hacks.scss */
+.feature {
+  display: block;
+}
+/* line 7, ./src/stylesheets/./_compare.sass */
+.feature pre {
+  margin-left: 0;
+  width: 41%;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  padding: 0.7em;
+  font-size: 0.9em;
+  line-height: 1.3em;
+  overflow: auto;
+}
+/* line 15, ./src/stylesheets/./_compare.sass */
+.feature pre.sass, .feature pre.scss {
+  float: left;
+}
+/* line 17, ./src/stylesheets/./_compare.sass */
+.feature pre.css {
+  float: right;
+}
+/* line 10, ./src/stylesheets/./_index.sass */
+.feature h2 {
+  text-align: center;
+  margin-bottom: 0.5em;
+  padding-bottom: 0;
+}
+/* line 15, ./src/stylesheets/./_index.sass */
+.feature:target h2 {
+  -moz-border-radius-bottomleft: 0.2em;
+  -webkit-border-bottom-left-radius: 0.2em;
+  -o-border-bottom-left-radius: 0.2em;
+  -ms-border-bottom-left-radius: 0.2em;
+  -khtml-border-bottom-left-radius: 0.2em;
+  border-bottom-left-radius: 0.2em;
+  -moz-border-radius-bottomright: 0.2em;
+  -webkit-border-bottom-right-radius: 0.2em;
+  -o-border-bottom-right-radius: 0.2em;
+  -ms-border-bottom-right-radius: 0.2em;
+  -khtml-border-bottom-right-radius: 0.2em;
+  border-bottom-right-radius: 0.2em;
+  margin-bottom: 0.2em;
+  padding-bottom: 0.1em;
+  border-bottom-color: #ce4dd6;
+  border-bottom-width: 0.2em;
+  border-bottom-style: solid;
+}
+/* line 30, ./src/stylesheets/./_index.sass */
+.feature.scss .tabs .sass {
+  opacity: 0.5;
+  border-bottom-style: solid;
+  left: -5px;
+  border-left-style: none;
+  padding-left: 13px;
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+  -o-border-top-left-radius: 0;
+  -ms-border-top-left-radius: 0;
+  -khtml-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+}
+/* line 37, ./src/stylesheets/./_index.sass */
+.feature.scss .tabs .sass:hover {
+  opacity: 0.7;
+}
+/* line 39, ./src/stylesheets/./_index.sass */
+.feature.scss .tabs .scss {
+  border-bottom-color: #ffeeff;
+  z-index: 1;
+}
+/* line 43, ./src/stylesheets/./_index.sass */
+.feature.scss pre.sass {
+  display: none;
+}
+/* line 47, ./src/stylesheets/./_index.sass */
+.feature.sass .tabs .scss {
+  opacity: 0.5;
+  border-bottom-style: solid;
+  border-right-style: none;
+  padding-right: 15px;
+  -moz-border-radius-topright: 0;
+  -webkit-border-top-right-radius: 0;
+  -o-border-top-right-radius: 0;
+  -ms-border-top-right-radius: 0;
+  -khtml-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+}
+/* line 50, ./src/stylesheets/./_index.sass */
+.feature.sass .tabs .scss:hover {
+  opacity: 0.7;
+}
+/* line 55, ./src/stylesheets/./_index.sass */
+.feature.sass .tabs .sass {
+  left: -5px;
+  border-bottom-color: #ffeeff;
+  z-index: 1;
+}
+/* line 60, ./src/stylesheets/./_index.sass */
+.feature.sass pre.sass {
+  display: block;
+}
+/* line 62, ./src/stylesheets/./_index.sass */
+.feature.sass pre.scss {
+  display: none;
+}
+/* line 66, ./src/stylesheets/./_index.sass */
+.feature.scss pre.sass, .feature.scss pre.scss, .feature.sass pre.sass, .feature.sass pre.scss {
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+  -o-border-top-left-radius: 0;
+  -ms-border-top-left-radius: 0;
+  -khtml-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+}
+/* line 68, ./src/stylesheets/./_index.sass */
+.feature.scss .scss-comment, .feature.sass .scss-comment {
+  display: none;
+}
+/* line 71, ./src/stylesheets/./_index.sass */
+.feature .tabs div {
+  cursor: pointer;
+  position: relative;
+  top: 1px;
+  float: left;
+  border: 1px #ce4dd6 solid;
+  background-color: #ffeeff;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: monospace;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -o-border-top-left-radius: 5px;
+  -ms-border-top-left-radius: 5px;
+  -khtml-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -o-border-top-right-radius: 5px;
+  -ms-border-top-right-radius: 5px;
+  -khtml-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+/* line 84, ./src/stylesheets/./_index.sass */
+.feature pre.sass, .feature pre.scss {
+  clear: left;
+}
+/* line 86, ./src/stylesheets/./_index.sass */
+.feature pre.sass {
+  display: none;
+}
+/* line 90, ./src/stylesheets/./_index.sass */
+.feature#variables, .feature#mixins {
+  float: left;
+  margin-left: -8%;
+  clear: both;
+}
+/* line 94, ./src/stylesheets/./_index.sass */
+.feature#nesting, .feature#extend {
+  float: right;
+  margin-right: -8%;
+}
+/* line 99, ./src/stylesheets/./_index.sass */
+.feature#variables p, .feature#nesting p {
+  height: 4em;
+}
+
+/* line 5, ./src/stylesheets/./_try.sass */
+#try textarea {
+  margin-left: 3%;
+  height: 30em;
+  width: 460px;
+}
+/* line 10, ./src/stylesheets/./_try.sass */
+#try .result {
+  width: 90%;
+  margin-top: 0;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2%;
+  background-color: #eeeeee;
+  overflow: auto;
+}
+/* line 21, ./src/stylesheets/./_try.sass */
+#try textarea, #try .result {
+  border: 2px inset;
+  font-size: 12px;
+  line-height: 15px;
+}
+/* line 26, ./src/stylesheets/./_try.sass */
+#try input {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *display: inline;
+  *vertical-align: auto;
+  margin: 0.7em 0.5em 0.7em 0;
+  border-width: 1px;
+  border-style: solid;
+  font-family: "Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+  font-size: 100%;
+  line-height: 130%;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  width: auto;
+  overflow: visible;
+  padding: 4px 10px 3px 7px;
+  display: block;
+  margin: 2em auto;
+}
+/* line 78, /usr/local/lib/ruby/gems/1.8/gems/compass-0.10.0.rc6/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
+#try input img {
+  margin: 0 3px -3px 0 !important;
+  padding: 0;
+  border: none;
+  width: 16px;
+  height: 16px;
+  float: none;
+}
+/* line 98, /usr/local/lib/ruby/gems/1.8/gems/compass-0.10.0.rc6/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
+#try input[type] {
+  padding: 4px 10px 4px 7px;
+  line-height: 17px;
+}
+/* line 101, /usr/local/lib/ruby/gems/1.8/gems/compass-0.10.0.rc6/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
+*:first-child + html #try input[type] {
+  padding: 4px 10px 3px 7px;
+}
+
+/* line 17 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 21 */
+html, body {
+  padding: 0;
+  background: white;
+  color: #090909;
+  height: 100%;
+  font: 13px/21px Georgia, Garamond, Times, "Times New Roman", serif;
+  border-top: 2px solid #ce4dd6;
+}
+
+/* line 30 */
+a {
+  text-decoration: underline;
+  outline: none;
+  color: #ce4dd6;
+}
+/* line 35 */
+a:hover {
+  color: #ffb3ff;
+}
+
+/* line 39 */
+p {
+  margin-bottom: 18px;
+}
+
+/* line 43 */
+#page {
+  margin: 0 auto;
+  padding: 0 30px;
+  width: 795px;
+}
+
+/* line 49 */
+a img {
+  border: none;
+}
+
+/* line 53 */
+.clear {
+  clear: both;
+}
+
+/* line 57 */
+h2 {
+  padding-top: 15px;
+  font-size: 24px;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+/* line 64 */
+h3 {
+  padding-top: 15px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* line 70 */
+ul {
+  padding-left: 20px;
+}
+
+/* Intro paragraph
+ * -------------------- */
+/* line 76 */
+p.mainintro {
+  float: left;
+  text-indent: -9999px;
+  margin-left: -29px;
+  margin-right: 200px;
+  height: 270px;
+  width: 532px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  background: url(/images/maindescription.gif) no-repeat top left;
+}
+/* line 86 */
+p.intro {
+  margin-top: 20px;
+  margin-right: 50px;
+  line-height: 25px;
+  font-size: 14px;
+}
+
+/* line 92 */
+blockquote {
+  margin-bottom: 19px;
+  font-style: italic;
+  color: #757575;
+}
+
+/* Main
+ * -------------------- */
+/* line 99 */
+#main {
+  margin: 0 auto;
+  position: relative;
+  clear: both;
+  padding-top: 40px;
+}
+/* line 104 */
+#main:after {
+  clear: both;
+  display: block;
+  content: "";
+}
+/* line 109 */
+#main #blurb {
+  margin-bottom: 40px;
+}
+
+/* Footer
+ * -------------------- */
+/* line 114 */
+#footer {
+  padding-top: 10px;
+  font-style: italic;
+  font-size: 9px;
+  clear: both;
+  text-align: center;
+}
+
+/* Misc
+ * -------------------- */
+/* line 124 */
+dt {
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* line 131 */
+dd {
+  padding-left: 20px;
+}
+
+/* line 135 */
+pre, ul {
+  margin-bottom: 1em;
+}
+
+/* line 138 */
+pre {
+  margin-left: 2em;
+  background-color: #f8f8ff;
+  padding: 3px 5px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *display: inline;
+  *vertical-align: auto;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #b1ad9b;
+}
+/* line 149 */
+pre.sass, pre.scss {
+  background-color: #ffeeff;
+  border-color: #ce4dd6;
+}
+/* line 152 */
+pre.css {
+  background-color: #e0e0e0;
+  border-color: #777777;
+}

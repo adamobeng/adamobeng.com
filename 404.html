@@ -1,0 +1,20 @@
+---
+layout: default
+title: Adam Obeng - Page not found.
+---
+
+<div id="home">
+	Page not found.
+
+	<br />
+	<br />
+
+  <h1>Recent Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+  
+</div>
+  

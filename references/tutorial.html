@@ -1,0 +1,439 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
+    <link href="http://sass-lang.com/images/sass_icon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <meta content="LyBvSzD3T4u1uK95pBqTMBKVyLoOe4JREb+9U6UJ99o=" name="verify-v1">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta content="Syntactically Awesome Stylesheets" name="description">
+    <meta content="Sass, SASS, sass, CSS, stylesheet, stylesheets, variables, mixins, abstraction, Syntactically Awesome Stylesheets, Ruby, Rails" name="keywords">
+    <title>Sass - Syntactically Awesome Stylesheets</title>
+    <link href="tutorial_files/application.css" media="all" rel="stylesheet" type="text/css">
+    <script src="tutorial_files/jquery.js" type="text/javascript"></script>
+    <script language="javascript" src="tutorial_files/application.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="page">
+      <div id="header">
+        <h1><a href="http://sass-lang.com/">Sass</a></h1>
+        <div id="start">
+          <code>gem install haml</code>
+          <br>
+          <code><span>mv</span>
+          style.css style.scss</code>
+          <br>
+          <code><span class="executable">sass</span>
+          --watch style.scss:style.css</code>
+        </div>
+        <div id="nav">
+          <ul>
+            <li><a href="http://sass-lang.com/about.html">About</a></li>
+            <li><a href="http://sass-lang.com/tutorial.html">Tutorial</a></li>
+            <li><a href="http://sass-lang.com/docs.html">Documentation</a></li>
+            <li><a href="http://nex-3.com/?tag=sass">Blog</a></li>
+            <li><a href="http://sass-lang.com/try.html">Try Online</a></li>
+          </ul>
+        </div>
+        <div id="latest">
+          <h2>Latest Release:</h2>
+          Classy Cassidy (<span class="version">3.0.25</span>)
+          <p><a href="http://sass-lang.com/docs/yardoc/file.SASS_CHANGELOG.html">What's New?</a></p>
+        </div>
+      </div>
+      <div id="main">
+        <div id="sidebar">
+          <div class="download">
+            <p><a href="http://sass-lang.com/download.html">Download</a></p>
+          </div>
+          <div class="link"><a href="http://sass-lang.com/editors.html">Editor Support</a></div>
+          <div class="link"><a href="http://sass-lang.com/development.html">Development</a></div>
+        </div>
+        <h3 id="install_ruby_and_sass">Install Ruby and Sass</h3>
+        
+        <p>First of all, let’s get Sass up and running. If you’re using 
+OS X, you’ll already have Ruby installed. Windows users can install Ruby
+ via <a href="http://rubyinstaller.org/download.html">the Windows installer</a>, and Linux users can install it via their package manager.</p>
+        
+        <p>Once you have Ruby installed, you can install Sass by running</p>
+        
+        <pre><code>gem install haml</code></pre>
+        
+        <h3 id="your_first_sass_stylesheet">Your First Sass Stylesheet</h3>
+        
+        <p>We’ll start out by creating a very simple SCSS file. Since 
+SCSS is an extension of CSS3, our first file will start out as plain 
+CSS. Open up a new file called <strong><code>style.scss</code></strong> in your <a href="http://sass-lang.com/editors.html">text editor</a>, and add the following:</p>
+        <pre class="block sass">/* style.scss */
+#navbar {
+  width: 80%;
+  height: 23px;
+}</pre>
+        <p>To translate this Sass file into a CSS file, run</p>
+        
+        <pre><code>sass --watch style.scss:style.css</code></pre>
+        
+        <p>Now whenever you change <code>style.scss</code>, Sass will automatically update <code>style.css</code> with the changes. Later on when you have several Sass files, you can also watch an entire directory:</p>
+        
+        <pre><code>sass --watch stylesheets/sass:stylesheets/compiled</code></pre>
+        
+        <h1 id="features">Features</h1>
+        
+        <p>Although it’s nice that every CSS file is a valid SCSS file, 
+that’s not why you’re learning about SCSS. You’re learning because it 
+offers <em>more</em> than CSS. SCSS provides all sorts of useful 
+features on top of CSS. This tutorial will walk you through some of the 
+most fundamental ones, along with examples that you can add to your <code>style.scss</code> and play with.</p>
+        
+        <h2 id="nesting">Nesting</h2>
+        
+        <p>Often when writing CSS, you’ll have several selectors that 
+all begin with the same thing. For example, you might have “#navbar ul”,
+ “#navbar li”, and “#navbar li a”. It’s a pain to repeat the beginning 
+over and over again, especially when it gets long.</p>
+        
+        <p>Sass allows you to avoid this by nesting the child selectors within the parent selector.</p>
+        <div class="compare">
+          <pre class="sass">/* style.scss */
+
+#navbar {
+  width: 80%;
+  height: 23px;
+
+  ul { list-style-type: none; }
+  li {
+    float: left;
+    a { font-weight: bold; }
+  }
+}
+</pre>
+          <pre class="css">/* style.css */
+
+#navbar {
+  width: 80%;
+  height: 23px; }
+  #navbar ul {
+    list-style-type: none; }
+  #navbar li {
+    float: left; }
+    #navbar li a {
+      font-weight: bold; }
+</pre>
+        </div>
+        <p>Notice how the output is formatted
+        to reflect the original nesting of the selectors.
+        This is the default CSS style,
+        but there are <a href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#output_style">other styles</a>
+        for all sorts of CSS formatting preferences.
+        There's even one for compressing the CSS as much as possible!</p>
+        
+        <p>You can also nest properties,
+        so you don't have to repeat stuff like “<code>border-left-</code>" all the time.</p>
+        <div class="compare">
+          <pre class="sass">/* style.scss */
+
+.fakeshadow {
+  border: {
+    style: solid;
+    left: {
+      width: 4px;
+      color: #888;
+    }
+    right: {
+      width: 2px;
+      color: #ccc;
+    }
+  }
+</pre>
+          <pre class="css">/* style.css */
+
+.fakeshadow {
+  border-style: solid;
+  border-left-width: 4px;
+  border-left-color: #888;
+  border-right-width: 2px;
+  border-right-color: #ccc; }
+</pre>
+        </div>
+        <h3 id="parent_references">Parent References</h3>
+        
+        <p>What about pseudoclasses, like <code>:hover</code>? There 
+isn’t a space between them and their parent selector, but it’s still 
+possible to nest them. You just need to use the Sass special character <code>&amp;</code>. In a selector, <code>&amp;</code> will be replaced verbatim with the parent selector.</p>
+        <div class="compare">
+          <pre class="sass">/* style.scss */
+
+a {
+  color: #ce4dd6;
+  &amp;:hover { color: #ffb3ff; }
+  &amp;:visited { color: #c458cb; }
+}
+</pre>
+          <pre class="css">/* style.css */
+
+a {
+  color: #ce4dd6; }
+  a:hover {
+    color: #ffb3ff; }
+  a:visited {
+    color: #c458cb; }
+</pre>
+        </div>
+        <h2 id="variables">Variables</h2>
+        
+        <p>Sass allows you to declare variables that can be used throughout your stylesheet. Variables begin with <code>$</code>
+ and are declared just like properties. They can have any value that’s 
+allowed for a CSS property, such as colors, numbers (with units), or 
+text.</p>
+        <div class="compare">
+          <pre class="sass">/* style.scss */
+
+$main-color: #ce4dd6;
+$style: solid;
+
+#navbar {
+  border-bottom: {
+    color: $main-color;
+    style: $style;
+  }
+}
+
+a {
+  color: $main-color;
+  &amp;:hover { border-bottom: $style 1px; }
+}
+</pre>
+          <pre class="css">/* style.css */
+
+#navbar {
+  border-bottom-color: #ce4dd6;
+  border-bottom-style: solid; }
+
+a {
+  color: #ce4dd6; }
+  a:hover {
+    border-bottom: solid 1px; }
+</pre>
+        </div>
+        <p>Variables allow you to re-use colors, sizes, and other values
+ without repeating yourself. This means that changes that should be 
+small, such as tweaking the coloring or the sizing, can be done in one 
+place, not all over the stylesheet.</p>
+        
+        <h3 id="operations_and_functions">Operations and Functions</h3>
+        
+        <p>In addition to just using variable values as they’re defined,
+ you can also modify and combine them using math and useful predefined 
+functions. This allows you to compute element sizing and even coloration
+ dynamically.</p>
+        
+        <p>The standard math operations (<code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, and <code>%</code>) are supported for numbers, even those with units. For colors, there are all sorts of useful functions for changing the <a href="http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html#lighten-instance_method">lightness</a>, <a href="http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html#adjust_hue-instance_method">hue</a>, <a href="http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html#saturate-instance_method">saturation</a>, and <a href="http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html">more</a>.</p>
+        <div class="compare">
+          <pre class="sass">/* style.scss */
+
+#navbar {
+  $navbar-width: 800px;
+  $items: 5;
+  $navbar-color: #ce4dd6;
+
+  width: $navbar-width;
+  border-bottom: 2px solid $navbar-color;
+
+  li {
+    float: left;
+    width: $navbar-width/$items - 10px;
+
+    background-color:
+      lighten($navbar-color, 20%);
+    &amp;:hover {
+      background-color:
+        lighten($navbar-color, 10%);
+    }
+  }
+}
+</pre>
+          <pre class="css">/* style.css */
+
+#navbar {
+  width: 800px;
+  border-bottom: 2px solid #ce4dd6; }
+  #navbar li {
+    float: left;
+    width: 150px;
+    background-color: #e5a0e9; }
+    #navbar li:hover {
+      background-color: #d976e0; }
+</pre>
+        </div>
+        <h3 id="interpolation">Interpolation</h3>
+        
+        <p>Variables can be used for more than just property values. You can use <code>#{}</code> to insert them into property names or selectors.</p>
+        <div class="compare">
+          <pre class="sass">/* style.scss */
+
+$side: top;
+$radius: 10px;
+
+.rounded- {
+  border-#{$side}-radius: $radius;
+  -moz-border-radius-#{$side}: $radius;
+  -webkit-border-#{$side}-radius: $radius;
+}
+</pre>
+          <pre class="css">/* style.css */
+
+.rounded-top {
+  border-top-radius: 10px;
+  -moz-border-radius-top: 10px;
+  -webkit-border-top-radius: 10px; }
+</pre>
+        </div>
+        <h2 id="mixins">Mixins</h2>
+        
+        <p>Mixins are one of the most powerful Sass features. They allow
+ re-use of styles – properties or even selectors – without having to 
+copy and paste them or move them into a non-semantic class.</p>
+        
+        <p>Mixins are defined using the “<code>@mixin</code>” directive, which takes a block of styles that can then be included in another selector using the “<code>@include</code>” directive.</p>
+        <div class="compare">
+          <pre class="sass">/* style.scss */
+
+@mixin rounded-top {
+  $side: top;
+  $radius: 10px;
+
+  border-#{$side}-radius: $radius;
+  -moz-border-radius-#{$side}: $radius;
+  -webkit-border-#{$side}-radius: $radius;
+}
+
+#navbar li { @include rounded-top; }
+#footer { @include rounded-top; }
+</pre>
+          <pre class="css">/* style.css */
+
+#navbar li {
+  border-top-radius: 10px;
+  -moz-border-radius-top: 10px;
+  -webkit-border-top-radius: 10px; }
+
+#footer {
+  border-top-radius: 10px;
+  -moz-border-radius-top: 10px;
+  -webkit-border-top-radius: 10px; }
+</pre>
+        </div>
+        <h3 id="arguments">Arguments</h3>
+        
+        <p>The real power of mixins comes when you pass them arguments. 
+Arguments are declared as a parenthesized, comma-separated list of 
+variables. Each of those variables is assigned a value each time the 
+mixin is used.</p>
+        
+        <p>Mixin arguments can also be given default values just like 
+you’d declare them normally. Then the user of the mixin can choose not 
+to pass that argument and it will be assigned the default value.</p>
+        <div class="compare">
+          <pre class="sass">/* style.scss */
+
+@mixin rounded($side, $radius: 10px) {
+  border-#{$side}-radius: $radius;
+  -moz-border-radius-#{$side}: $radius;
+  -webkit-border-#{$side}-radius: $radius;
+}
+
+#navbar li { @include rounded(top); }
+#footer { @include rounded(top, 5px); }
+#sidebar { @include rounded(left, 8px); }
+</pre>
+          <pre class="css">/* style.css */
+
+#navbar li {
+  border-top-radius: 10px;
+  -moz-border-radius-top: 10px;
+  -webkit-border-top-radius: 10px; }
+
+#footer {
+  border-top-radius: 5px;
+  -moz-border-radius-top: 5px;
+  -webkit-border-top-radius: 5px; }
+
+#sidebar {
+  border-left-radius: 8px;
+  -moz-border-radius-left: 8px;
+  -webkit-border-left-radius: 8px; }
+</pre>
+        </div>
+        <h2 id="id1"><code>@import</code></h2>
+        
+        <p>Stylesheets can get pretty big. CSS has an <code>@import</code>
+ directive that allows you to break your styles up into multiple 
+stylesheets, but each stylesheet takes a separate (slow) HTTP request. 
+That’s why Sass’s <code>@import</code> directive pulls in the stylesheets directly. Not only that, but any variables or mixins defined in <code>@import</code>ed files are available to the files that import them.</p>
+        
+        <p>Sass has a naming convention for files that are meant to be 
+imported (called “partials”): they begin with an underscore. Let’s 
+create a partial called <strong><code>_rounded.scss</code></strong> to hold our <code>rounded</code> mixin.</p>
+        
+        <p>In order to support both <code>.scss</code> and <code>.sass</code> files, Sass allows files to be imported without specifying a file extension. That means we can just import <code>"rounded"</code>, rather than <code>"rounded.scss"</code>.</p>
+        <div class="compare">
+          <pre class="sass">/* _rounded.scss */
+
+@mixin rounded($side, $radius: 10px) {
+  border-#{$side}-radius: $radius;
+  -moz-border-radius-#{$side}: $radius;
+  -webkit-border-#{$side}-radius: $radius;
+}
+</pre>
+          <pre class="css">/* style.css */
+
+#navbar li {
+  border-top-radius: 10px;
+  -moz-border-radius-top: 10px;
+  -webkit-border-top-radius: 10px; }
+
+#footer {
+  border-top-radius: 5px;
+  -moz-border-radius-top: 5px;
+  -webkit-border-top-radius: 5px; }
+
+#sidebar {
+  border-left-radius: 8px;
+  -moz-border-radius-left: 8px;
+  -webkit-border-left-radius: 8px; }
+</pre>
+          <pre class="sass">/* style.scss */
+
+@import "rounded";
+
+#navbar li { @include rounded(top); }
+#footer { @include rounded(top, 5px); }
+#sidebar { @include rounded(left, 8px); }
+</pre>
+        </div>
+        <h2 id="further_reading">Further Reading</h2>
+        
+        <p>This should be enough to get you up and running with Sass, but there’s a lot more to explore: check out the <a href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html">Sass reference</a> for a full account of what Sass can do, including all the <a href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#options">options you can set</a> and <a href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#plugin">how to use it as a Rails/Rack plugin</a>.</p>
+        
+        <p>If you need any help or if you just want to chat about Sass, hop on the #sass IRC channel on <a href="http://webchat.freenode.net/">irc.freenode.net</a> (if there’s no one there, the #haml channel is also a good place to try). Questions can also be asked on <a href="http://groups.google.com/group/haml">the Haml/Sass mailing list</a>.</p>
+      </div>
+      <hr>
+      <div id="footer">
+        <p>Haml © 2006-2010
+        <a href="http://hamptoncatlin.com/">Hampton Catlin</a>,
+        <a href="http://nex-3.com/">Nathan Weizenbaum</a>,
+        <a href="http://chriseppstein.github.com/">Chris Eppstein</a>,
+        and numerous contributors.
+        It is available for use and modification
+        under the <a href="http://sass-lang.com/docs/yardoc/file.MIT-LICENSE.html">MIT license</a>.</p>
+      </div>
+    </div>
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-535380-8");
+    pageTracker._trackPageview();
+    } catch(err) {}</script>
+  
+
+</body></html>

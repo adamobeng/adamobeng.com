@@ -1,0 +1,436 @@
+/* screen.scss */
+
+/* SCSS Variables */
+$accent-colour: #0080dd; // Used for links
+$accent2: adjust-hue($accent-colour, 180);
+$background: lighten(desaturate($accent-colour, 80%), 54%);//  Base background colour, used for outside of site.
+$light-background: lighten($background, 4%) ; //  Lighter than standard bacground colour, used for inside of site and nav
+$dark-background: darken($background, 10%) ; //  Darker than standard bacground colour, used for shadows
+$link-visited: #a000a0; // Used for links
+$link-hover: darken($accent-colour, 80%);// Used for links
+$title-colour: darken($background, 80%);
+$border-colour: darken($background, 80%);
+$border-light: darken($background, 10%);
+//  Note that colours for the twitter box are set seperately.
+
+/* SASS mixins */
+@mixin typekit-sans {
+	font-family: "raleway-1", "raleway-2", sans-serif;	
+}
+
+@mixin typekit-serif {
+	font-family: "adobe-garamond-pro-1", "adobe-garamond-pro-2", serif;
+}
+
+@mixin rounded-borders($radius: 10px) {
+	border-radius: $radius;
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+}
+
+@mixin home-page-panel($side) {
+		border: 1px dashed $border-light;
+		width: 320px;
+		font-size: 90%;
+		float: $side;
+		padding: 0.5em;
+		@include rounded-borders(4px);
+		height: 160px;
+		h1 {
+			@include typekit-sans;
+		}
+
+}
+
+@mixin box-shadow {
+	box-shadow: -2px 2px 2px 0 $dark-background;
+	-moz-box-shadow: -2px 2px 2px 0 $dark-background;
+	-webkit-box-shadow: -2px 2px 2px 0 $dark-background;
+
+}
+
+/*****************************************************************************/
+/*
+/* Common
+/*
+/*****************************************************************************/
+
+/* Global Reset */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background-color: $background;
+	@include typekit-serif;
+	*font-size: small;
+	text-align: center;
+	text-color: #f0f0f0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+}
+
+h1 {
+	margin-bottom: 1em;
+}
+
+p {
+	margin: 1em 0;
+}
+
+a {
+	color: $accent-colour;
+}
+
+a:hover {
+	color: $link-hover;
+}
+
+a:visited {
+//	color: $link-visited;
+}
+
+table {
+	font-size: inherit;
+	font: 100%;
+}
+
+blockquote {
+	margin-left: 2em;
+	padding-left: 0.5em;
+	border-left: 1px gray solid;
+}
+
+.footnotes {
+	font-size: 0.8em;
+	margin-top: 4em;
+
+	p {
+		padding: 0;
+		margin: 0;
+		/* http://www.tizag.com/cssT/display.php */
+		display:inline;
+	}
+
+	a[rev="footnote"]{
+		margin-left: 1em;
+	}
+}
+/*****************************************************************************/
+/*
+/* Home
+/*
+/*****************************************************************************/
+
+ul.posts {
+	list-style-type: none;
+}
+
+	ul.posts li {
+	  line-height: 1.75em;
+	}
+
+	ul.posts span {
+	  color: #aaa;
+	  font-family: Monaco, "Courier New", monospace;
+	  font-size: 80%;
+	}
+ a.more {
+	color: lighten($accent-colour, 10%);
+}
+ul.posts h2 {
+}
+/*****************************************************************************/
+/*
+/*	Outer container
+/*
+/*****************************************************************************/
+
+	.outer {
+		width: 60em;
+		margin: 3em auto 2em auto;
+	}
+
+
+/*****************************************************************************/
+/*
+/*	Navigation bar
+/*
+/*****************************************************************************/
+
+	nav {
+		text-align: right;
+		padding-right: 2em;
+		float: left;
+		border-right: 1px dashed $border-colour;
+		width: 4em;
+		margin: 3.5em 0 0 0;
+		background-color: $light-background;
+		margin-bottom: 2em;
+		@include typekit-sans;
+		border-radius: 4px 0 0 4px;
+		@include box-shadow;
+		font-size: 105%;
+
+		/*
+		 * http://www.mediacollege.com/internet/css/ul-list.html
+		 */
+
+		li {
+		list-style-type: none;
+			a {
+			&:link { color: $accent-colour; }
+			&:hover { color: $link-hover; }
+			&:visited { color: $link-visited; }
+			}
+		}
+		.rss {
+			margin-top: 0.2em;
+			/* http://www.w3schools.com/css/pr_background-image.asp */
+
+			img {
+				padding-left: 0.2em;
+			}
+		}
+	}
+
+
+/*****************************************************************************/
+/*
+/* Site
+/*
+/*****************************************************************************/
+
+	header {
+		color: $title-colour;
+		font-weight: bold;
+		margin: 0;
+		border-bottom: 1px dashed $border-colour;
+		font-size: 180%;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+		font: sans-serif;
+		@include typekit-sans;
+
+		h1 {
+			//  http://www.viget.com/inspire/practical-uses-of-css3/#continue
+			//  text-shadow: -1px 1px 2px lighten($title-colour, 70%);
+			margin: 0;
+			padding: 0;
+		}
+
+		a {
+			color: $accent-colour;
+			text-decoration: none;
+			&:hover { color: black; }
+		
+			.extra {
+				text-decoration: none;
+				margin-left: 2em;
+				&:hover { color: black; }
+			}
+		}
+	}
+
+.site {
+	font-size: 110%;
+	text-align: justify;
+	width: 40em;
+	margin: 3em auto 2em auto;
+	line-height: 1.5em;
+	background: $light-background;
+	padding: 0 1em 1em 1em;
+	color: #000020;
+	@include rounded-borders(10px);
+	@include box-shadow;
+
+
+
+	.home {
+		height: 40em;
+		margin: 4em;
+	}
+
+
+	.projects {
+		@include home-page-panel(left);
+	}
+
+	.blog {
+		@include home-page-panel(right);
+	}
+
+	.meta { color: #aaa; }
+
+	footer {
+			font-size: 80%;
+			color: #664;
+			border-top: 1px dashed $border-colour;
+			margin-top: 27em;
+			overflow: hidden;
+
+			.contact {
+				float: right;
+				margin-right: 3em;
+			}
+			.contact a { color: $title-colour; }
+		}
+	}
+
+	.twitter {
+		float: left;
+		padding-top: 1em;
+	}
+
+/*****************************************************************************/
+/*
+/* Posts
+/*
+/*****************************************************************************/
+
+article {
+
+}
+
+	/* standard */
+	article {
+		padding-top: 1em;
+	}
+	article pre {
+	  border: 1px solid #ddd;
+	  background-color: #eef;
+	  padding: 0 .4em;
+	}
+
+	article ul,
+	article ol {
+	  margin-left: 1.25em;
+	}
+
+	article code {
+	  border: 1px solid #ddd;
+	  background-color: #eef;
+	  font-size: 95%;
+	  padding: 0 .2em;
+	}
+
+	  article pre code {
+	    border: none;
+	  }
+
+	/* terminal */
+
+	article pre.terminal {
+	  border: 1px solid black;
+	  background-color: #333;
+	  color: white;
+	}
+
+	article pre.terminal code {
+	  background-color: #333;
+	}
+
+	article h1 {
+		@include typekit-sans;
+		padding: 0 0 0em 0;
+	}
+
+	article h2 {
+		@include typekit-sans;
+		font-size: 0.95em;
+		padding: 0.5em 0 0 0;
+	}
+
+	article header {
+		color: $accent-colour;
+		font-size: 95%;
+		text-align: right;
+		border-bottom: 1px dashed $border-light;
+		font-family: "Monaco", "Courier New", monospace;
+		margin-bottom: 2em;
+	}
+
+	article header h1 {
+		padding: 0;
+		margin: 0;
+		text-align: left;
+		color: black;
+		font-size: 30px;
+	}
+
+#related {
+	border-top: 1px dashed $border-light;
+	padding-top: 2em;
+}
+
+	#related h2 {
+	  margin-bottom: 1em;
+	}
+
+	#disqus {
+		border-top: 1px dashed $border-light;
+		background: $background;
+		margin-top: 2em;
+		padding: 0.5em;
+	}
+
+/*****************************************************************************/
+/*
+/* CV
+/*
+/*****************************************************************************/
+
+	.cv {
+		text-align: left;
+		margin: 3em auto 2em auto;
+		line-height: 1.5em;
+		background: #fefefe;
+		padding: 0 1em 1em 1em;
+		width: 60em;
+
+		.cvheader {
+			font-size: 20px;
+			color: $title-colour;
+			font-variant: small-caps;
+			padding-top: 2em;
+		}
+
+		.cvsmall {
+			font-size: 90%;
+		}
+
+		ul {
+			list-style-type: none;
+			li {
+				padding-left: 2em;
+				span {
+				  color: #aaa;
+				  font-family: Monaco, "Courier New", monospace;
+				  font-size: 80%;
+				  padding-right: 2em;
+				}
+			}
+		}
+
+		h1 {
+			font-size: 2em;
+			margin-top: 1em;
+			padding-top: 1em;
+@include typekit-sans;
+		}
+
+//  http://www.webmasterworld.com/forum83/239.htm
+		h3 {
+			display: inline;
+		}
+
+
+	}

@@ -1,0 +1,17 @@
+---
+layout: post
+title: EPUB3 Multimedia Features, A Lighting Overview
+categories: humanities, code
+---
+
+At the [Digital Humanities@Oxford Summer School 2011](http://digital.humanities.ox.ac.uk/DHSS2011/) last week, I was invited to talk briefly about the multimedia features available in EPUB3. Not one to pass up an opportunity for public speaking, I quickly assented. The fact that the Summer School is organized in part by [Oxford University Computing Services](http://www.oucs.ox.ac.uk/) might have had something to do with it. 
+
+The fact that [Sebastian 'The Master' Rahtz](http://twitter.com/#!/rahtz) and [James 'Hwæt!' Cummings](https://twitter.com/#!/jamescummings) were presenters of this session certainly did.
+
+As part of the [session](http://digital.humanities.ox.ac.uk/DHSS2011/sessions.html#TEIfacs) on using [TEI](http://www.tei-c.org/Guidelines/P5/index.xml) to link text and facsimilies, I talked about a possible end product of the process: a multimedia, interactive EPUB3 eBook. Of course, such an eBook can be used for much more than linking text and facscimiles. In fact, the demo book contained side-by-side manuscript and transcript, embedded video, audio narration synchronised to the text and Javascript-controlled switching between multiple versions of the text. 
+
+The book, which uses the first page of Beowulf as an  used in the demonstration is available [here](http://adamobeng.com/dhox/beowulf.epub). This is a slightly different version than that used for the demonstration, using jQuery rather than just Javascript for some interactive functions.
+
+The slides from my presentation are available [here](http://adamobeng.com/dhox/slides).
+
+I haven't been involved in the digital humanities before, but judging from the reaction to the demonstration, a little technology can go a long way.

@@ -1,0 +1,13 @@
+#  http://paulstamatiou.com/how-to-wordpress-to-jekyll
+#
+source: .
+destination: ./_site
+
+pygments: true
+
+base_url: http://adamobeng.com
+description: "A blog"
+root_desc: "AdamObeng.com"
+
+exclude: ['config.rb', 'references', 'convert', 'sass', '_drafts']
+permalink: ":title"
