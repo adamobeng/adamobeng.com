@@ -4,7 +4,7 @@
  <title>Adam Obeng</title>
  <link href="http://adamobeng.com/atom.xml" rel="self"/>
  <link href="http://adamobeng.com/"/>
- <updated>2011-09-10T17:12:54+02:00</updated>
+ <updated>2011-10-07T14:31:59+01:00</updated>
  <id>http://adamobeng.com/</id>
  <author>
    <name>Adam Obeng</name>
@@ -13,9 +13,36 @@
 
  
  <entry>
+   <title>Truth and persuasion</title>
+   <link href="http://adamobengtruth-and-persuasion"/>
+   <updated>2011-09-29T00:00:00+01:00</updated>
+   <id>http://adamobeng.com./truth-and-persuasion</id>
+   <content type="html">&lt;p&gt;Han-teng Liao&amp;#8217;s &lt;a href='http://people.oii.ox.ac.uk/hanteng/2011/09/27/ways-of-seeing-data/'&gt;post&lt;/a&gt; got me thinking about&lt;sup id='fnref:1'&gt;&lt;a href='#fn:1' rel='footnote'&gt;1&lt;/a&gt;&lt;/sup&gt; data visualization as a tool for communication.&lt;/p&gt;
+
+&lt;p&gt;In particular, I thought I should take issue with the quote he gives from &lt;a href='http://blog.revolutionanalytics.com/2011/09/data-visualization-vs-propaganda.html?cid=6a010534b1db25970b015435abb804970c'&gt;David Smith&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;good charts merely present data, and leave the analysis (obvious though it may be) to the viewer&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;To me, it seems that a charts which &amp;#8220;merely present data&amp;#8221; are just not possible. The designer of the chart needs to make all sorts of descisions: the order of the data, importance of axes, labels, colours and so on. Few of these are without consequence to the interpretation of the graph, and the futher the chart is from a simple &lt;a href='http://junkcharts.typepad.com/junk_charts/table/'&gt;table&lt;/a&gt;, the greater the potential for bias (or, more charitably &amp;#8216;interpretation&amp;#8217;) there is.&lt;/p&gt;
+
+&lt;p&gt;I say &amp;#8216;potential&amp;#8217;, because not every opportunity for bias need be taken. Having said that, not all bias is intentional either. Some of it might be just accidental, or plain &lt;a href='http://junkcharts.typepad.com/junk_charts/2011/06/another-reminder-most-pie-charts-are-unreadable.html'&gt;confusing&lt;/a&gt;. But &lt;a href='http://www.infovis-wiki.net/index.php/Data-Ink_Ratio'&gt;each additional line&lt;/a&gt; on the graph has the potential to introduce spurious anaysis.&lt;/p&gt;
+
+&lt;p&gt;In fact, I would venture so far as to say that this is a problem even for the simpler charts that Nathan Yau &lt;a href='http://flowingdata.com/2011/09/23/5-misconceptions-about-visualization/'&gt;advocates&lt;/a&gt; via (&lt;a href='http://smartdatacollective.com/davidmsmith/40688/data-visualization-doesnt-need-be-biased'&gt;here&lt;/a&gt; and &lt;a href='http://blog.revolutionanalytics.com/2011/09/data-visualization-vs-propaganda.html'&gt;here&lt;/a&gt;) which are used to convey rational argument without appeals to emotion. There is still ample opportuinity to mislead others (and onesself) by unintentionally misusing a graphic. Indeed, the impression that a graphic is unbiased because it is simple might make us let our guard down.&lt;/p&gt;
+
+&lt;p&gt;It&amp;#8217;s perhaps unfair to assimilate the use of perceptual tricks to appeals to &lt;em&gt;pathos&lt;/em&gt;: such techniques could be used in rational arguments too. But they are subtle and easy to get wrong.&lt;/p&gt;
+
+&lt;p&gt;I suspect that the fundamental reason for this potential to mislead is also what makes data visualizations useful in the first place: we are phenomenal pattern-matching machines, and we&amp;#8217;re particularly good at visual patterns. We would struggle to interpret 5 million rows of a database, but can easily identify trends when the same data are presented in a different format.&lt;/p&gt;
+&lt;div class='footnotes'&gt;&lt;hr /&gt;&lt;ol&gt;&lt;li id='fn:1'&gt;
+&lt;p&gt;Is this how I start all my blog posts?&lt;/p&gt;
+&lt;a href='#fnref:1' rev='footnote'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</content>
+ </entry>
+ 
+ <entry>
    <title>Offline, but not off the hook</title>
    <link href="http://adamobengoffline-but-not-off-the-hook"/>
-   <updated>2011-08-26T00:00:00+02:00</updated>
+   <updated>2011-08-26T00:00:00+01:00</updated>
    <id>http://adamobeng.com./offline-but-not-off-the-hook</id>
    <content type="html">&lt;p&gt;&lt;em&gt;Previously, I &lt;a href='http://adamobeng.com/real-names/'&gt;discussed&lt;/a&gt; whether Google really cares about real names on Google Plus. In summary, they have little reason to.&lt;/em&gt;&lt;/p&gt;
 
@@ -90,7 +117,7 @@
  <entry>
    <title>It's not about real names</title>
    <link href="http://adamobengreal-names"/>
-   <updated>2011-08-09T00:00:00+02:00</updated>
+   <updated>2011-08-09T00:00:00+01:00</updated>
    <id>http://adamobeng.com./real-names</id>
    <content type="html">&lt;p&gt;Google doesn&amp;#8217;t care about real names.&lt;/p&gt;
 
@@ -185,7 +212,7 @@
  <entry>
    <title>EPUB3 Multimedia Features, A Lighting Overview</title>
    <link href="http://adamobengdhox"/>
-   <updated>2011-08-01T00:00:00+02:00</updated>
+   <updated>2011-08-01T00:00:00+01:00</updated>
    <id>http://adamobeng.com./dhox</id>
    <content type="html">&lt;p&gt;At the &lt;a href='http://digital.humanities.ox.ac.uk/DHSS2011/'&gt;Digital Humanities@Oxford Summer School 2011&lt;/a&gt; last week, I was invited to talk briefly about the multimedia features available in EPUB3. Not one to pass up an opportunity for public speaking, I quickly assented. The fact that the Summer School is organized in part by &lt;a href='http://www.oucs.ox.ac.uk/'&gt;Oxford University Computing Services&lt;/a&gt; might have had something to do with it.&lt;/p&gt;
 
@@ -203,7 +230,7 @@
  <entry>
    <title>The DBO model in HTML5 Canvas and Javascript</title>
    <link href="http://adamobengdbo-model-in-canvas"/>
-   <updated>2011-05-22T00:00:00+02:00</updated>
+   <updated>2011-05-22T00:00:00+01:00</updated>
    <id>http://adamobeng.com./dbo-model-in-canvas</id>
    <content type="html">&lt;p&gt;I&amp;#8217;ve had a little bit of &lt;a href='../analytical-sociology-thesis/'&gt;experience&lt;/a&gt; with &lt;a href='http://en.wikipedia.org/wiki/Agent-based_model'&gt;agent-based modelling&lt;/a&gt;, and so far, I&amp;#8217;ve stumbled across some interesting results. But statistical summaries of models are one thing, while actually having a feel for how a model works is another. These models are inherently dynamic, so there will necessarily be something lost from static pictures of the model, even from graphs of statistics over time. Moreover, ABMs are part of a very quantitative branch of sociology, so it might even be refreshing to reintroduce a little bit of qualitative information (and who doesn&amp;#8217;t like &lt;a href='http://en.wikipedia.org/wiki/Blinkenlights'&gt;blinkenlights&lt;/a&gt;?).&lt;/p&gt;
 
@@ -225,7 +252,7 @@
  <entry>
    <title>Talk at 27C3 -- The Political Philosophy of the Internet</title>
    <link href="http://adamobengtalk-at-CCC"/>
-   <updated>2010-12-30T00:00:00+01:00</updated>
+   <updated>2010-12-30T00:00:00+00:00</updated>
    <id>http://adamobeng.com./talk-at-CCC</id>
    <content type="html">&lt;h1 id='tor_is_peace_software_freedom_is_slavery_wikipedia_is_truth_the_political_philosophy_of_the_internet'&gt;Tor is Peace, Software Freedom is Slavery, Wikipedia is Truth: The Political Philosophy of the Internet&lt;/h1&gt;
 
@@ -261,7 +288,7 @@
  <entry>
    <title>Arduino syntax file for vim</title>
    <link href="http://adamobengarduino-vim-syntax-file"/>
-   <updated>2010-11-26T00:00:00+01:00</updated>
+   <updated>2010-11-26T00:00:00+00:00</updated>
    <id>http://adamobeng.com./arduino-vim-syntax-file</id>
    <content type="html">&lt;p&gt;Recently, I&amp;#8217;ve been tinkering with electronics hardware. Let me tell you, for someone who&amp;#8217;s more comfortable with software, the experience can be quite scary: if you mess up your code, the worst that happens is that it fails to compile, or maybe the interpreter spits out an error. But this electronics stuff is &lt;em&gt;real&lt;/em&gt;! If you do something wrong it could literally blow up in your face.&lt;/p&gt;
 
@@ -273,7 +300,7 @@
  <entry>
    <title>Undergraduate Thesis in Analytical Sociology</title>
    <link href="http://adamobenganalytical-sociology-thesis"/>
-   <updated>2010-04-01T00:00:00+02:00</updated>
+   <updated>2010-04-01T00:00:00+01:00</updated>
    <id>http://adamobeng.com./analytical-sociology-thesis</id>
    <content type="html">&lt;p&gt;&lt;em&gt;Update:&lt;/em&gt; An interactive version of the central model of my thesis is now &lt;a href='/dbo-model-in-canvas/'&gt;here&lt;/a&gt;&lt;/p&gt;
 

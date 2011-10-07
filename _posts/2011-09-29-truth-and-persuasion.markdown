@@ -6,7 +6,7 @@ categories: sociology, visualization
 
 Han-teng Liao's [post](http://people.oii.ox.ac.uk/hanteng/2011/09/27/ways-of-seeing-data/) got me thinking about[^1] data visualization as a tool for communication.
 
-In particular, I thought I should take issue with his quote:
+In particular, I thought I should take issue with the quote he gives from [David Smith](http://blog.revolutionanalytics.com/2011/09/data-visualization-vs-propaganda.html?cid=6a010534b1db25970b015435abb804970c):
 
 >	 good charts merely present data, and leave the analysis (obvious though it may be) to the viewer
 
