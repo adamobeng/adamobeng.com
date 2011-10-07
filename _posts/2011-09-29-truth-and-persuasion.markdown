@@ -4,6 +4,7 @@ title: Truth and persuasion
 categories: sociology, visualization
 ---
 
+
 Han-teng Liao's [post](http://people.oii.ox.ac.uk/hanteng/2011/09/27/ways-of-seeing-data/) got me thinking about[^1] data visualization as a tool for communication.
 
 In particular, I thought I should take issue with the quote he gives from [David Smith](http://blog.revolutionanalytics.com/2011/09/data-visualization-vs-propaganda.html?cid=6a010534b1db25970b015435abb804970c):
@@ -20,5 +21,7 @@ It's perhaps unfair to assimilate the use of perceptual tricks to appeals to *pa
 
 I suspect that the fundamental reason for this potential to mislead is also what makes data visualizations useful in the first place: we are phenomenal pattern-matching machines, and we're particularly good at visual patterns. We would struggle to interpret 5 million rows of a database, but can easily identify trends when the same data are presented in a different format.
 
+
+*(This post was edited on 07/10/2011 to properly attribute a quote to David Smith.)*
 
 [^1]: Is this how I start all my blog posts?

@@ -4,7 +4,7 @@
  <title>Adam Obeng</title>
  <link href="http://adamobeng.com/atom.xml" rel="self"/>
  <link href="http://adamobeng.com/"/>
- <updated>2011-10-07T14:31:59+01:00</updated>
+ <updated>2011-10-07T14:35:50+01:00</updated>
  <id>http://adamobeng.com/</id>
  <author>
    <name>Adam Obeng</name>
@@ -34,6 +34,8 @@
 &lt;p&gt;It&amp;#8217;s perhaps unfair to assimilate the use of perceptual tricks to appeals to &lt;em&gt;pathos&lt;/em&gt;: such techniques could be used in rational arguments too. But they are subtle and easy to get wrong.&lt;/p&gt;
 
 &lt;p&gt;I suspect that the fundamental reason for this potential to mislead is also what makes data visualizations useful in the first place: we are phenomenal pattern-matching machines, and we&amp;#8217;re particularly good at visual patterns. We would struggle to interpret 5 million rows of a database, but can easily identify trends when the same data are presented in a different format.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;(This post was edited on 07/10/2011 to properly attribute a quote to David Smith.)&lt;/em&gt;&lt;/p&gt;
 &lt;div class='footnotes'&gt;&lt;hr /&gt;&lt;ol&gt;&lt;li id='fn:1'&gt;
 &lt;p&gt;Is this how I start all my blog posts?&lt;/p&gt;
 &lt;a href='#fnref:1' rev='footnote'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</content>
