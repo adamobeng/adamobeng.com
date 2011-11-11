@@ -61,7 +61,7 @@ Please note: this is the web-friendly version of my CV. You may also want <a hre
 	<h2 class="cvheader">Positions Held</h2>
 	<ul>
 		<li><span>July &mdash; September</span><h3>Multimedia EPUB Intern</h3> <a href="http://www.oucs.ox.ac.uk/ltg">Learning Technologies Group</a>/<a href="http://www.oucs.ox.ac.uk/infodev/">Information Support Group Development Team</a>, Oxford University Computing Services</li>
-		<li><span>June &mdash; September 2010</span><h3> Production Team</h3>: Death and the Powers: Director: Professor Tod Machover: Media Lab: Massachusetts Institute of Technology</li>
+		<li><span>June &mdash; September 2010</span><h3> Production Team</h3>: Death and the Powers: Director: Professor Tod Machover: Media Lab: Massachussetts Institute of Technology</li>
 		<li><span>2009 &mdash; 2010</span><h3> Secretary</h3>: The University of Oxford Computer Society
 		<li><span>2009 &mdash; 2010</span><h3> French Localisation</h3>: Mer Linux
 		<li><span>2009</span><h3> Assistant Director</h3>: He who owns the space: Director: Ben Williams
@@ -72,7 +72,7 @@ Please note: this is the web-friendly version of my CV. You may also want <a hre
 		<li><span>2007</span><h3> Specialist Spokesman and Vice-Head of Delegation</h3>: International Labour Organisation: General Assembly and ECOSOC of The Hague Model United Nations
 		<li><span>2007</span><h3> Teaching Assistant</h3>: Haut Sartoux Primary School: France
 		<li><span>2006 &mdash; 2007</span><h3> Head Prefect and Physics Prefect</h3>: International School of Sophia Antipolis: France
-		<li><span>2006</span><h3> Camera Operator</h3>: International Association of Athletics Federations: Casablanca Women's Race
+		<li><span>2006</span><h3> Camera Operator</h3>: International Asssociation of Athletics Federations: Casablanca Women's Race
 	</ul>
 
 	<h2 class="cvheader">Computer software and hardware experience</h2>
@@ -83,5 +83,5 @@ Please note: this is the web-friendly version of my CV. You may also want <a hre
 		<li><span>Web design</span> HTML, CSS, Javascript/jQuery, SASS, Jekyll</li>
 		<li><span>Multimedia</span> Adobe Premiere, Adobe Photoshop, Adobe Encore, The GIMP, Inkscape</li>
 		<li><span>Office, text editors and typesetting</span> LaTeX, Markdown, Vim, Microsoft Office&trade; and Open/LibreOffice suites</li>
-		<li><span>Operating systems</span> Windows XP&trade;/Vista&trade;, Arch GNU/Linux (primary OS), OS X</li>
+		<li><span>Operating systems</span> Windows XP&trade;/Vista&trade;, Arch GNU/Linux (primary OS), OSX</li>
 	</ul>
