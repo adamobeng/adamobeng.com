@@ -4,7 +4,7 @@
  <title>Adam Obeng</title>
  <link href="http://adamobeng.com/atom.xml" rel="self"/>
  <link href="http://adamobeng.com/"/>
- <updated>2011-11-11T11:26:51+00:00</updated>
+ <updated>2011-12-10T19:43:18+00:00</updated>
  <id>http://adamobeng.com/</id>
  <author>
    <name>Adam Obeng</name>
@@ -222,9 +222,9 @@
 
 &lt;p&gt;As part of the &lt;a href='http://digital.humanities.ox.ac.uk/DHSS2011/sessions.html#TEIfacs'&gt;session&lt;/a&gt; on using &lt;a href='http://www.tei-c.org/Guidelines/P5/index.xml'&gt;TEI&lt;/a&gt; to link text and facsimilies, I talked about a possible end product of the process: a multimedia, interactive EPUB3 eBook. Of course, such an eBook can be used for much more than linking text and facscimiles. In fact, the demo book contained side-by-side manuscript and transcript, embedded video, audio narration synchronised to the text and Javascript-controlled switching between multiple versions of the text.&lt;/p&gt;
 
-&lt;p&gt;The book, which uses the first page of Beowulf as an used in the demonstration is available &lt;a href='http://adamobeng.com/dhox/beowulf.epub'&gt;here&lt;/a&gt;. This is a slightly different version than that used for the demonstration, using jQuery rather than just Javascript for some interactive functions.&lt;/p&gt;
+&lt;p&gt;The book, which uses the first page of Beowulf as an used in the demonstration is available &lt;a href='http://adamobeng.com/download/dhox/beowulf.epub'&gt;here&lt;/a&gt;. This is a slightly different version than that used for the demonstration, using jQuery rather than just Javascript for some interactive functions.&lt;/p&gt;
 
-&lt;p&gt;The slides from my presentation are available &lt;a href='http://adamobeng.com/dhox/slides'&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The slides from my presentation are available &lt;a href='http://adamobeng.com/download/dhox/slides'&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;I haven&amp;#8217;t been involved in the digital humanities before, but judging from the reaction to the demonstration, a little technology can go a long way.&lt;/p&gt;</content>
  </entry>
