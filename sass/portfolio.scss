@@ -154,11 +154,9 @@ ul.posts h2 {
 /*****************************************************************************/
 
 	header {
-		background: $dark-background;
 		color: $text-colour;
 		font-weight: bold;
 		margin: 0;
-		border-bottom: 1px dashed $border-colour;
 		padding-top: 0.5em;
 		padding-bottom: 0.5em;
 		margin-bottom: 10px;
@@ -176,9 +174,9 @@ ul.posts h2 {
 		}
 
 		a {
-			color: $accent-colour;
+			color: $text-colour;
 			text-decoration: none;
-			&:hover { color: black; }
+			&:hover { color: $text-colour; }
 		
 			.extra {
 				text-decoration: none;
@@ -190,6 +188,9 @@ ul.posts h2 {
 
 	.main {
 		background: white;
+		text-align: justify;
+		color: black;
+		padding: 10%;
 	}
 	.project {
 		background: white;
@@ -204,6 +205,7 @@ ul.posts h2 {
 		h1 {
 			@include typekit-sans;
 			font-size: 120%;
+			text-shadow: white 2px 2px 2px;
 
 		}
 
@@ -211,27 +213,37 @@ ul.posts h2 {
 		#dbo {
 
 			background-image: url("../portfolio/dbo-gray.png");
+			background-size: 100% 100%;
 		color: $accent-colour;
 				text-decoration: none;
 
-		}
-		#dbo:hover {
+		&:hover {
 			background-image: url("../portfolio/dbo.png");
 				color: $accent-colour;
 		}
+		}
+
+		#27c3 {
+			background-image: url("../portfolio/27c3.png");
+		}
 
 	.about {		@include typekit-sans;
+
 			font-size: 120%;
 float:left;
 margin:10px; 
 text-align: justify;
 		background: white;
+		width: 460px;
+		padding: 10px;
 
 	}
 
 	footer {
+		border-top: 1px dashed $text-colour;
 		@extend grid_16;
-		@extend omega;
+		@include typekit-sans;
+		padding: 10px;
 	}
 
 .site {

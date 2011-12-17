@@ -91,11 +91,9 @@ a.more {
 /*
 /*****************************************************************************/
 header {
-  background: #050505;
   color: silver;
   font-weight: bold;
   margin: 0;
-  border-bottom: 1px dashed black;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   margin-bottom: 10px;
@@ -106,10 +104,10 @@ header {
     margin: 0;
     padding: 0; }
   header a {
-    color: #0080dd;
+    color: silver;
     text-decoration: none; }
     header a:hover {
-      color: black; }
+      color: silver; }
     header a .extra {
       text-decoration: none;
       margin-left: 2em; }
@@ -117,7 +115,10 @@ header {
         color: black; }
 
 .main {
-  background: white; }
+  background: white;
+  text-align: justify;
+  color: black;
+  padding: 10%; }
 
 .project {
   background: white;
@@ -130,16 +131,20 @@ header {
   padding: 2px; }
   .project h1 {
     font-family: "raleway-1", "raleway-2", sans-serif;
-    font-size: 120%; }
+    font-size: 120%;
+    text-shadow: white 2px 2px 2px; }
 
 #dbo {
   background-image: url("../portfolio/dbo-gray.png");
+  background-size: 100% 100%;
   color: #0080dd;
   text-decoration: none; }
+  #dbo:hover {
+    background-image: url("../portfolio/dbo.png");
+    color: #0080dd; }
 
-#dbo:hover {
-  background-image: url("../portfolio/dbo.png");
-  color: #0080dd; }
+#27c3 {
+  background-image: url("../portfolio/27c3.png"); }
 
 .about {
   font-family: "raleway-1", "raleway-2", sans-serif;
@@ -147,7 +152,14 @@ header {
   float: left;
   margin: 10px;
   text-align: justify;
-  background: white; }
+  background: white;
+  width: 460px;
+  padding: 10px; }
+
+footer {
+  border-top: 1px dashed silver;
+  font-family: "raleway-1", "raleway-2", sans-serif;
+  padding: 10px; }
 
 .site {
   font-size: 110%;
