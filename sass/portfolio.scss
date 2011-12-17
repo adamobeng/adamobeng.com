@@ -201,11 +201,14 @@ ul.posts h2 {
 		float: left;
 		margin: 10px;
 		padding: 2px;
+				text-decoration: none;
 
+			color: black;
 		h1 {
 			@include typekit-sans;
 			font-size: 120%;
-			text-shadow: white 2px 2px 2px;
+			
+		
 
 		}
 
@@ -214,17 +217,22 @@ ul.posts h2 {
 
 			background-image: url("../portfolio/dbo-gray.png");
 			background-size: 100% 100%;
-		color: $accent-colour;
-				text-decoration: none;
-
+			color: black;
 		&:hover {
 			background-image: url("../portfolio/dbo.png");
 				color: $accent-colour;
 		}
 		}
 
-		#27c3 {
-			background-image: url("../portfolio/27c3.png");
+		#c3 {
+			background-image: url("../portfolio/27c3-gray.png");
+			background-size: 100% 100%;
+			color: white;
+
+			&:hover {
+				background-image: url("../portfolio/27c3.png");
+				color: $accent-colour;
+			}
 		}
 
 	.about {		@include typekit-sans;
@@ -244,6 +252,10 @@ text-align: justify;
 		@extend grid_16;
 		@include typekit-sans;
 		padding: 10px;
+
+		a {
+			color: white;
+		}
 	}
 
 .site {

@@ -128,23 +128,28 @@ header {
   display: inline;
   float: left;
   margin: 10px;
-  padding: 2px; }
+  padding: 2px;
+  text-decoration: none;
+  color: black; }
   .project h1 {
     font-family: "raleway-1", "raleway-2", sans-serif;
-    font-size: 120%;
-    text-shadow: white 2px 2px 2px; }
+    font-size: 120%; }
 
 #dbo {
   background-image: url("../portfolio/dbo-gray.png");
   background-size: 100% 100%;
-  color: #0080dd;
-  text-decoration: none; }
+  color: black; }
   #dbo:hover {
     background-image: url("../portfolio/dbo.png");
     color: #0080dd; }
 
-#27c3 {
-  background-image: url("../portfolio/27c3.png"); }
+#c3 {
+  background-image: url("../portfolio/27c3-gray.png");
+  background-size: 100% 100%;
+  color: white; }
+  #c3:hover {
+    background-image: url("../portfolio/27c3.png");
+    color: #0080dd; }
 
 .about {
   font-family: "raleway-1", "raleway-2", sans-serif;
@@ -160,6 +165,8 @@ footer {
   border-top: 1px dashed silver;
   font-family: "raleway-1", "raleway-2", sans-serif;
   padding: 10px; }
+  footer a {
+    color: white; }
 
 .site {
   font-size: 110%;
