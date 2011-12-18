@@ -159,7 +159,8 @@ header {
 	margin: 0;
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
+	margin-top: 10px;
 	font: sans-serif;
 	@include typekit-sans;
 	@extend grid_16;
@@ -176,7 +177,7 @@ header {
 	a {
 		color: $text-colour;
 		text-decoration: none;
-		&:hover { color: $text-colour; }
+		&:hover { color: $accent-colour; }
 
 		.extra {
 			text-decoration: none;
@@ -213,6 +214,20 @@ header {
 	}
 
 }
+
+#me {
+
+	background-image: url("../portfolio/me.png");
+	background-size: 200% 100%;
+	background-position: 100% 0%;
+	color: white;
+	&:hover {
+		color: $accent-colour;
+	background-position: 0% 0%;
+	}
+	}
+
+
 #dbo {
 
 	background-image: url("../portfolio/dbo.png");
@@ -229,7 +244,7 @@ header {
 	background-image: url("../portfolio/27c3.png");
 	background-size: 200% 100%;
 	background-position: 100% 0%;
-	color: white;
+	color: black;
 
 	&:hover {
 		color: $accent-colour;
@@ -238,7 +253,7 @@ header {
 }
 
 #books {
-	background-image: url("../portfolio/books.jpg");
+	background-image: url("../portfolio/books.png");
 	background-size: 200% 100%;
 	background-position: 100% 0%;
 	color: white;
@@ -255,17 +270,17 @@ header {
 		margin:10px; 
 		text-align: justify;
 		background: white;
-		width: 460px;
+		width: 960px;
 		padding: 10px;
+		color: black ;
 
 }
 
 footer {
-	border-top: 1px dashed $text-colour;
 	@extend grid_16;
 	@include typekit-sans;
 	padding: 10px;
-	margin-top: 10px;
+	margin-top: 20px;
 
 	a {
 		color:white;
