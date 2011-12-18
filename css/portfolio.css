@@ -142,7 +142,7 @@ header {
   background-position: 100% 0%;
   color: white; }
   #me:hover {
-    color: #0080dd;
+    color: #ff7d00;
     background-position: 0% 0%; }
 
 #dbo {
@@ -169,7 +169,7 @@ header {
   background-position: 100% 0%;
   color: white; }
   #books:hover {
-    color: #0080dd;
+    color: #ff7d00;
     background-position: 0% 0%; }
 
 .about {
