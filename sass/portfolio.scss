@@ -188,10 +188,15 @@ header {
 }
 
 .main {
-	background: white;
+	background: #eee;
 	text-align: justify;
-	color: black;
+	color: #1F1F1F;
 	padding: 10%;
+
+	h1 {
+		@include typekit-sans;
+		color: $accent-colour;
+	}
 }
 .project {
 	background: white;
@@ -204,7 +209,7 @@ header {
 	padding: 2px;
 	text-decoration: none;
 
-	color: black;
+	color: $background;
 	h1 {
 		@include typekit-sans;
 		font-size: 120%;

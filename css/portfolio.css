@@ -116,10 +116,13 @@ header {
         color: black; }
 
 .main {
-  background: white;
+  background: #eee;
   text-align: justify;
-  color: black;
+  color: #1F1F1F;
   padding: 10%; }
+  .main h1 {
+    font-family: "raleway-1", "raleway-2", sans-serif;
+    color: #0080dd; }
 
 .project {
   background: white;
@@ -131,7 +134,7 @@ header {
   margin: 10px;
   padding: 2px;
   text-decoration: none;
-  color: black; }
+  color: #1f1f1f; }
   .project h1 {
     font-family: "raleway-1", "raleway-2", sans-serif;
     font-size: 120%; }
