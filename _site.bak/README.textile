@@ -1,0 +1,6 @@
+This is the data behind my website, which is generated with Jekyll.
+
+It was originally cloned from Tom Preston-Werner's blog, but the mists of time and version control seem to have lost that link.
+
+
+All content Copyright Adam Obeng 2011. I may change this later.

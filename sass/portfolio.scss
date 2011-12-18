@@ -83,7 +83,7 @@ a:hover {
 }
 
 a:visited {
-//	color: $link-visited;
+	//	color: $link-visited;
 }
 
 table {
@@ -106,11 +106,11 @@ blockquote {
 		margin: 0;
 		/* http://www.tizag.com/cssT/display.php */
 		display:inline;
-	}
+}
 
-	a[rev="footnote"]{
-		margin-left: 1em;
-	}
+a[rev="footnote"]{
+	margin-left: 1em;
+}
 }
 /*****************************************************************************/
 /*
@@ -122,16 +122,16 @@ ul.posts {
 	list-style-type: none;
 }
 
-	ul.posts li {
-	  line-height: 1.75em;
-	}
+ul.posts li {
+	line-height: 1.75em;
+}
 
-	ul.posts span {
-	  color: #aaa;
-	  font-family: Monaco, "Courier New", monospace;
-	  font-size: 80%;
-	}
- a.more {
+ul.posts span {
+	color: #aaa;
+	font-family: Monaco, "Courier New", monospace;
+	font-size: 80%;
+}
+a.more {
 	color: lighten($accent-colour, 10%);
 }
 ul.posts h2 {
@@ -142,10 +142,10 @@ ul.posts h2 {
 /*
 /*****************************************************************************/
 
-	.outer {
-		width: 60em;
-		margin: 3em auto 2em auto;
-	}
+.outer {
+	width: 60em;
+	margin: 3em auto 2em auto;
+}
 
 /*****************************************************************************/
 /*
@@ -153,110 +153,125 @@ ul.posts h2 {
 /*
 /*****************************************************************************/
 
-	header {
-		color: $text-colour;
-		font-weight: bold;
+header {
+	color: white;
+	font-weight: bold;
+	margin: 0;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	margin-bottom: 10px;
+	font: sans-serif;
+	@include typekit-sans;
+	@extend grid_16;
+
+
+	h1 {
+		//  http://www.viget.com/inspire/practical-uses-of-css3/#continue
+		//  text-shadow: -1px 1px 2px lighten($title-colour, 70%);
+		font-size: 180%;
 		margin: 0;
-		padding-top: 0.5em;
-		padding-bottom: 0.5em;
-		margin-bottom: 10px;
-		font: sans-serif;
-		@include typekit-sans;
-		@extend grid_16;
+		padding: 0;
+	}
 
+	a {
+		color: $text-colour;
+		text-decoration: none;
+		&:hover { color: $text-colour; }
 
-		h1 {
-			//  http://www.viget.com/inspire/practical-uses-of-css3/#continue
-			//  text-shadow: -1px 1px 2px lighten($title-colour, 70%);
-			font-size: 180%;
-			margin: 0;
-			padding: 0;
-		}
-
-		a {
-			color: $text-colour;
+		.extra {
 			text-decoration: none;
-			&:hover { color: $text-colour; }
-		
-			.extra {
-				text-decoration: none;
-				margin-left: 2em;
-				&:hover { color: black; }
-			}
+			margin-left: 2em;
+			&:hover { color: black; }
 		}
 	}
+}
 
-	.main {
-		background: white;
-		text-align: justify;
-		color: black;
-		padding: 10%;
+.main {
+	background: white;
+	text-align: justify;
+	color: black;
+	padding: 10%;
+}
+.project {
+	background: white;
+	width: 214px;
+	height: 216px;
+	position: relative;
+	display: inline;
+	float: left;
+	margin: 10px;
+	padding: 2px;
+	text-decoration: none;
+
+	color: black;
+	h1 {
+		@include typekit-sans;
+		font-size: 120%;
+
+
+
 	}
-	.project {
-		background: white;
-		width: 214px;
-		height: 216px;
-		position: relative;
-		display: inline;
-		float: left;
-		margin: 10px;
-		padding: 2px;
-				text-decoration: none;
 
-			color: black;
-		h1 {
-			@include typekit-sans;
-			font-size: 120%;
-			
-		
+}
+#dbo {
 
-		}
-
+	background-image: url("../portfolio/dbo.png");
+	background-size: 200% 100%;
+	background-position: 100% 0%;
+	color: black;
+	&:hover {
+		color: $accent-colour;
+	background-position: 0% 0%;
 	}
-		#dbo {
+	}
 
-			background-image: url("../portfolio/dbo-gray.png");
-			background-size: 100% 100%;
-			color: black;
-		&:hover {
-			background-image: url("../portfolio/dbo.png");
-				color: $accent-colour;
-		}
-		}
+#c3 {
+	background-image: url("../portfolio/27c3.png");
+	background-size: 200% 100%;
+	background-position: 100% 0%;
+	color: white;
 
-		#c3 {
-			background-image: url("../portfolio/27c3-gray.png");
-			background-size: 100% 100%;
-			color: white;
+	&:hover {
+		color: $accent-colour;
+	background-position: 0% 0%;
+	}
+}
 
-			&:hover {
-				background-image: url("../portfolio/27c3.png");
-				color: $accent-colour;
-			}
-		}
+#books {
+	background-image: url("../portfolio/books.jpg");
+	background-size: 200% 100%;
+	background-position: 100% 0%;
+	color: white;
+	&:hover {
+		color: $accent-colour;
+		background-position: 0% 0%;
+	}
+}
 
 	.about {		@include typekit-sans;
 
-			font-size: 120%;
-float:left;
-margin:10px; 
-text-align: justify;
+		font-size: 120%;
+		float:left;
+		margin:10px; 
+		text-align: justify;
 		background: white;
 		width: 460px;
 		padding: 10px;
 
-	}
+}
 
-	footer {
-		border-top: 1px dashed $text-colour;
-		@extend grid_16;
-		@include typekit-sans;
-		padding: 10px;
+footer {
+	border-top: 1px dashed $text-colour;
+	@extend grid_16;
+	@include typekit-sans;
+	padding: 10px;
+	margin-top: 10px;
 
-		a {
-			color: white;
-		}
+	a {
+		color:white;
+		text-decoration: none;
 	}
+}
 
 .site {
 	font-size: 110%;
@@ -275,18 +290,18 @@ text-align: justify;
 	.home {
 		height: 40em;
 		margin: 4em;
-	}
+}
 
 
-		.meta { color: #aaa; }
+.meta { color: #aaa; }
 
-	footer {
-			font-size: 80%;
-			color: #664;
-			border-top: 1px dashed $border-colour;
-			margin-top: 27em;
-			overflow: hidden;
-	}}
+footer {
+	font-size: 80%;
+	color: #664;
+	border-top: 1px dashed $border-colour;
+	margin-top: 27em;
+	overflow: hidden;
+}}
 
 /*****************************************************************************/
 /*
@@ -298,87 +313,87 @@ article {
 
 }
 
-	/* standard */
-	article {
-		padding-top: 1em;
-	}
-	article pre {
-	  border: 1px solid #ddd;
-	  background-color: #eef;
-	  padding: 0 .4em;
-	}
+/* standard */
+article {
+	padding-top: 1em;
+}
+article pre {
+	border: 1px solid #ddd;
+	background-color: #eef;
+	padding: 0 .4em;
+}
 
-	article ul,
-	article ol {
-	  margin-left: 1.25em;
-	}
+article ul,
+article ol {
+	margin-left: 1.25em;
+}
 
-	article code {
-	  border: 1px solid #ddd;
-	  background-color: #eef;
-	  font-size: 95%;
-	  padding: 0 .2em;
-	}
+article code {
+	border: 1px solid #ddd;
+	background-color: #eef;
+	font-size: 95%;
+	padding: 0 .2em;
+}
 
-	  article pre code {
-	    border: none;
-	  }
+article pre code {
+	border: none;
+  }
 
-	/* terminal */
+  /* terminal */
 
-	article pre.terminal {
+  article pre.terminal {
 	  border: 1px solid black;
 	  background-color: #333;
 	  color: white;
-	}
+}
 
-	article pre.terminal code {
-	  background-color: #333;
-	}
+article pre.terminal code {
+	background-color: #333;
+}
 
-	article h1 {
-		@include typekit-sans;
-		padding: 0 0 0em 0;
-	}
+article h1 {
+	@include typekit-sans;
+	padding: 0 0 0em 0;
+}
 
-	article h2 {
-		@include typekit-sans;
-		font-size: 0.95em;
-		padding: 0.5em 0 0 0;
-	}
+article h2 {
+	@include typekit-sans;
+	font-size: 0.95em;
+	padding: 0.5em 0 0 0;
+}
 
-	article header {
-		color: $accent-colour;
-		font-size: 95%;
-		text-align: right;
-		border-bottom: 1px dashed $border-light;
-		font-family: "Monaco", "Courier New", monospace;
-		margin-bottom: 2em;
-	}
+article header {
+	color: $accent-colour;
+	font-size: 95%;
+	text-align: right;
+	border-bottom: 1px dashed $border-light;
+	font-family: "Monaco", "Courier New", monospace;
+	margin-bottom: 2em;
+}
 
-	article header h1 {
-		padding: 0;
-		margin: 0;
-		text-align: left;
-		color: black;
-		font-size: 30px;
-	}
+article header h1 {
+	padding: 0;
+	margin: 0;
+	text-align: left;
+	color: black;
+	font-size: 30px;
+}
 
 #related {
 	border-top: 1px dashed $border-light;
 	padding-top: 2em;
 }
 
-	#related h2 {
-	  margin-bottom: 1em;
-	}
+#related h2 {
+	margin-bottom: 1em;
+}
 
-	#disqus {
-		border-top: 1px dashed $border-light;
-		background: $background;
-		margin-top: 2em;
-		padding: 0.5em;
-	}
+#disqus {
+	border-top: 1px dashed $border-light;
+	background: $background;
+	margin-top: 2em;
+	padding: 0.5em;
+}
 
 /*****************************************************************************/
 /*
@@ -386,49 +401,49 @@ article {
 /*
 /*****************************************************************************/
 
-	.cv {
-		text-align: left;
-		margin: 3em auto 2em auto;
-		line-height: 1.5em;
-		background: #fefefe;
-		padding: 0 1em 1em 1em;
-		width: 60em;
+.cv {
+	text-align: left;
+	margin: 3em auto 2em auto;
+	line-height: 1.5em;
+	background: #fefefe;
+	padding: 0 1em 1em 1em;
+	width: 60em;
 
-		.cvheader {
-			font-size: 20px;
-			color: $title-colour;
-			font-variant: small-caps;
-			padding-top: 2em;
-		}
+	.cvheader {
+		font-size: 20px;
+		color: $title-colour;
+		font-variant: small-caps;
+		padding-top: 2em;
+	}
 
-		.cvsmall {
-			font-size: 90%;
-		}
+	.cvsmall {
+		font-size: 90%;
+	}
 
-		ul {
-			list-style-type: none;
-			li {
-				padding-left: 2em;
-				span {
-				  color: #aaa;
-				  font-family: Monaco, "Courier New", monospace;
-				  font-size: 80%;
-				  padding-right: 2em;
-				}
+	ul {
+		list-style-type: none;
+		li {
+			padding-left: 2em;
+			span {
+				color: #aaa;
+				font-family: Monaco, "Courier New", monospace;
+				font-size: 80%;
+				padding-right: 2em;
 			}
 		}
-
-		h1 {
-			font-size: 2em;
-			margin-top: 1em;
-			padding-top: 1em;
-@include typekit-sans;
-		}
-
-//  http://www.webmasterworld.com/forum83/239.htm
-		h3 {
-			display: inline;
-		}
-
-
 	}
+
+	h1 {
+		font-size: 2em;
+		margin-top: 1em;
+		padding-top: 1em;
+		@include typekit-sans;
+	}
+
+	//  http://www.webmasterworld.com/forum83/239.htm
+	h3 {
+		display: inline;
+	}
+
+
+}

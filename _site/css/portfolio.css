@@ -91,7 +91,7 @@ a.more {
 /*
 /*****************************************************************************/
 header {
-  color: silver;
+  color: white;
   font-weight: bold;
   margin: 0;
   padding-top: 0.5em;
@@ -136,20 +136,31 @@ header {
     font-size: 120%; }
 
 #dbo {
-  background-image: url("../portfolio/dbo-gray.png");
-  background-size: 100% 100%;
+  background-image: url("../portfolio/dbo.png");
+  background-size: 200% 100%;
+  background-position: 100% 0%;
   color: black; }
   #dbo:hover {
-    background-image: url("../portfolio/dbo.png");
-    color: #0080dd; }
+    color: #0080dd;
+    background-position: 0% 0%; }
 
 #c3 {
-  background-image: url("../portfolio/27c3-gray.png");
-  background-size: 100% 100%;
+  background-image: url("../portfolio/27c3.png");
+  background-size: 200% 100%;
+  background-position: 100% 0%;
   color: white; }
   #c3:hover {
-    background-image: url("../portfolio/27c3.png");
-    color: #0080dd; }
+    color: #0080dd;
+    background-position: 0% 0%; }
+
+#books {
+  background-image: url("../portfolio/books.jpg");
+  background-size: 200% 100%;
+  background-position: 100% 0%;
+  color: white; }
+  #books:hover {
+    color: #0080dd;
+    background-position: 0% 0%; }
 
 .about {
   font-family: "raleway-1", "raleway-2", sans-serif;
@@ -164,9 +175,11 @@ header {
 footer {
   border-top: 1px dashed silver;
   font-family: "raleway-1", "raleway-2", sans-serif;
-  padding: 10px; }
+  padding: 10px;
+  margin-top: 10px; }
   footer a {
-    color: white; }
+    color: white;
+    text-decoration: none; }
 
 .site {
   font-size: 110%;
