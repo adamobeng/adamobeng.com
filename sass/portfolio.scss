@@ -60,6 +60,7 @@ body {
 	*font-size: small;
 	text-align: center;
 	color: $text-colour;
+	-webkit-transition: background-color 4s;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -187,6 +188,9 @@ header {
 	}
 }
 
+.mit {
+	background: #8f1f1f;
+}
 .main {
 	background: #eee;
 	text-align: justify;
@@ -206,18 +210,13 @@ header {
 	display: inline;
 	float: left;
 	margin: 10px;
-	padding: 2px;
 	text-decoration: none;
 
 	color: $background;
 	h1 {
 		@include typekit-sans;
 		font-size: 120%;
-
-
-
 	}
-
 }
 
 #me {
@@ -268,7 +267,44 @@ header {
 	}
 }
 
-	.about {		@include typekit-sans;
+#beebify {
+	background-image: url("../portfolio/beebify.png");
+	background-size: 200% 100%;
+	background-position: 100% 0%;
+	color: white;
+	&:hover {
+		color: #ff7d00;
+		background-position: 0% 0%;
+	}
+}
+
+#egopticon {
+
+	background-image: url("../portfolio/egopticon.png");
+	background-size: 200% 100%;
+	background-position: 100% 0%;
+	color: white;
+	&:hover {
+		color: #ff7d00;
+	background-position: 0% 0%;
+	}
+	}
+
+#diaries {
+
+	background-image: url("../portfolio/diaries.png");
+	background-size: 200% 100%;
+	background-position: 100% 0%;
+	color: white;
+	&:hover {
+		color: #ff7d00;
+	background-position: 0% 0%;
+	}
+	}
+
+
+	#about {	
+		@include typekit-sans;
 
 		font-size: 120%;
 		float:left;
@@ -276,9 +312,22 @@ header {
 		text-align: justify;
 		background: white;
 		width: 960px;
-		padding: 10px;
 		color: black ;
 
+		#photo {
+			width: 475px;
+			height: 475px;
+			float:right;
+			padding-left:1em;
+
+			img {
+				border: 1px dashed black;
+		}
+		}
+		#about_text {
+			padding-left: 1em;
+			padding-right: 1em;
+		}
 }
 
 footer {

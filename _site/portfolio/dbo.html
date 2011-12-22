@@ -40,11 +40,13 @@
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script> -->
 	 </head>
 
-	<body onload='draw(); '>
+	<body>
+		<!--<body onload='draw(); '>-->
 				<div class="container_16">
 				<header class="grid_16">
 					<hggroup> <!-- In case I want a tagline -->
 					<h1><a href="http://adamobeng.com/portfolio">Portfolio &mdash; Adam Obeng</a></h1>
+					<div id='custom_greeting'></div>
 					</hggroup>
 				</header>
 			
@@ -55,13 +57,17 @@
 <div class="main">
 		 <h1>Small Worlds, Sour Grapes and Social Deprivation: the Computational Application of Peter Hedström’s DBO Theory</h1>
 
-		 <canvas id='canvas' height='400' width='400' style='margin: 2em;'>This model uses Javascript and HTML5 Canvas</canvas>
+		 <p>It started as my undergraduate thesis </p>
+		 <div style="text-align:center"><canvas id='canvas' height='400' width='400' style='margin: 2em;'>This model uses Javascript and HTML5 Canvas</canvas></div>
 	<p>Statistical summaries of models are one thing, while actually having a feel for how a model works is another. Agent-based models are inherently dynamic, so there will necessarily be something lost from static pictures of the model, even from graphs of statistics over time. Moreover, ABMs are part of a very quantitative branch of sociology, so it might even be refreshing to reintroduce a little bit of qualitative information, not to mention <a href='http://en.wikipedia.org/wiki/Blinkenlights'>blinkenlights</a>.</p>
-	<p></p>
+	<p>It turns out that the topology of the network does matter, but the reasons why are slightly difficult to determine. In Barabasi-Albert networks, but not in Watts and Strogatz or Erdos-Renyi networks, when the starting proportion acting is around 50\%, the outcomes are very sensitive to the exact distribution of initial actor states.</p>
+	<p>That is, in all other models, the proportion acting after 20 rounds of interaction is similar from simulation to ssimulation, but on Barabasi-Albert networks, there seem to be two equilibria of final proportion acting, and which results is dependent on initial conidtions in a way that is not well understood.</p>
+	<p>Apart from introducin me to the methods of anayltical sociology, this result in particular reaffirmed my commitment to seek out un-obvious results in sociology.</p>
+	<p>The full text of my thesis is now online.</p>
 </div>
 
 				<footer>
-						Adam Obeng | <a href="mailto:contact@adamobeng.com" rel="author">contact@adamobeng.com</a> | Copyright &copy; Adam Obeng 2011
+				Adam Obeng | <a href="mailto:contact@adamobeng.com" rel="author">contact@adamobeng.com</a> | <a href="rights.html">Copyright</a> &copy; Adam Obeng 2011
 				</footer>
 				
 			</div>

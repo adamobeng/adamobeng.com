@@ -40,15 +40,22 @@
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script> -->
 	 </head>
 
-	<body onload='draw(); '>
+	<body>
+		<!--<body onload='draw(); '>-->
 				<div class="container_16">
 				<header class="grid_16">
 					<hggroup> <!-- In case I want a tagline -->
 					<h1><a href="http://adamobeng.com/portfolio">Portfolio &mdash; Adam Obeng</a></h1>
+					<div id='custom_greeting'></div>
 					</hggroup>
 				</header>
 			
-				<div class="clear"></div>
+				<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="geoip.js"></script>
+<script type="text/javascript" src="http://jsonip.com/cb"></script>
+
+
+<div class="clear"></div>
 
 
 <div class="clear"></div>
@@ -61,7 +68,7 @@
 	<h1>networks</h1>
 </a>
 
-<a class="project">
+<a class="project" id="egopticon">
 	<h1>egopticon</h1>
 </a>
 
@@ -70,27 +77,27 @@
 </a>
 
 <div class="clear"></div>
-<a class="project">
+<a class="project" id="diaries">
 	<h1>diaries</h1>
 </a>
 
-
-<a href="books.html" class="project" id="books">
-	<h1>books</h1>
-</a>
-
-<a class="project" href="beebify.html">
-	<h1>beebify</h1>
-</a>
 
 <a class="project">
 	<h1>identity</h1>
 </a>
 
+<a href="books.html" class="project" id="books">
+	<h1>books</h1>
+</a>
+
+<a class="project" href="beebify.html" id="beebify">
+	<h1>beebify</h1>
+</a>
+
 <div class="clear"></div>
 
 				<footer>
-						Adam Obeng | <a href="mailto:contact@adamobeng.com" rel="author">contact@adamobeng.com</a> | Copyright &copy; Adam Obeng 2011
+				Adam Obeng | <a href="mailto:contact@adamobeng.com" rel="author">contact@adamobeng.com</a> | <a href="rights.html">Copyright</a> &copy; Adam Obeng 2011
 				</footer>
 				
 			</div>

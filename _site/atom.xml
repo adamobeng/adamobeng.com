@@ -4,7 +4,7 @@
  <title>Adam Obeng</title>
  <link href="http://adamobeng.com/atom.xml" rel="self"/>
  <link href="http://adamobeng.com/"/>
- <updated>2011-12-18T19:52:03+00:00</updated>
+ <updated>2011-12-22T19:20:21+01:00</updated>
  <id>http://adamobeng.com/</id>
  <author>
    <name>Adam Obeng</name>
@@ -15,7 +15,7 @@
  <entry>
    <title>Truth and persuasion</title>
    <link href="http://adamobengtruth-and-persuasion"/>
-   <updated>2011-09-29T00:00:00+01:00</updated>
+   <updated>2011-09-29T00:00:00+02:00</updated>
    <id>http://adamobeng.com./truth-and-persuasion</id>
    <content type="html">&lt;p&gt;Han-teng Liao&amp;#8217;s &lt;a href='http://people.oii.ox.ac.uk/hanteng/2011/09/27/ways-of-seeing-data/'&gt;post&lt;/a&gt; got me thinking about&lt;sup id='fnref:1'&gt;&lt;a href='#fn:1' rel='footnote'&gt;1&lt;/a&gt;&lt;/sup&gt; data visualization as a tool for communication.&lt;/p&gt;
 
@@ -44,7 +44,7 @@
  <entry>
    <title>Offline, but not off the hook</title>
    <link href="http://adamobengoffline-but-not-off-the-hook"/>
-   <updated>2011-08-26T00:00:00+01:00</updated>
+   <updated>2011-08-26T00:00:00+02:00</updated>
    <id>http://adamobeng.com./offline-but-not-off-the-hook</id>
    <content type="html">&lt;p&gt;&lt;em&gt;Previously, I &lt;a href='http://adamobeng.com/real-names/'&gt;discussed&lt;/a&gt; whether Google really cares about real names on Google Plus. In summary, they have little reason to.&lt;/em&gt;&lt;/p&gt;
 
@@ -119,7 +119,7 @@
  <entry>
    <title>It's not about real names</title>
    <link href="http://adamobengreal-names"/>
-   <updated>2011-08-09T00:00:00+01:00</updated>
+   <updated>2011-08-09T00:00:00+02:00</updated>
    <id>http://adamobeng.com./real-names</id>
    <content type="html">&lt;p&gt;Google doesn&amp;#8217;t care about real names.&lt;/p&gt;
 
@@ -214,7 +214,7 @@
  <entry>
    <title>EPUB3 Multimedia Features, A Lighting Overview</title>
    <link href="http://adamobengdhox"/>
-   <updated>2011-08-01T00:00:00+01:00</updated>
+   <updated>2011-08-01T00:00:00+02:00</updated>
    <id>http://adamobeng.com./dhox</id>
    <content type="html">&lt;p&gt;At the &lt;a href='http://digital.humanities.ox.ac.uk/DHSS2011/'&gt;Digital Humanities@Oxford Summer School 2011&lt;/a&gt; last week, I was invited to talk briefly about the multimedia features available in EPUB3. Not one to pass up an opportunity for public speaking, I quickly assented. The fact that the Summer School is organized in part by &lt;a href='http://www.oucs.ox.ac.uk/'&gt;Oxford University Computing Services&lt;/a&gt; might have had something to do with it.&lt;/p&gt;
 
@@ -232,7 +232,7 @@
  <entry>
    <title>The DBO model in HTML5 Canvas and Javascript</title>
    <link href="http://adamobengdbo-model-in-canvas"/>
-   <updated>2011-05-22T00:00:00+01:00</updated>
+   <updated>2011-05-22T00:00:00+02:00</updated>
    <id>http://adamobeng.com./dbo-model-in-canvas</id>
    <content type="html">&lt;p&gt;I&amp;#8217;ve had a little bit of &lt;a href='../analytical-sociology-thesis/'&gt;experience&lt;/a&gt; with &lt;a href='http://en.wikipedia.org/wiki/Agent-based_model'&gt;agent-based modelling&lt;/a&gt;, and so far, I&amp;#8217;ve stumbled across some interesting results. But statistical summaries of models are one thing, while actually having a feel for how a model works is another. These models are inherently dynamic, so there will necessarily be something lost from static pictures of the model, even from graphs of statistics over time. Moreover, ABMs are part of a very quantitative branch of sociology, so it might even be refreshing to reintroduce a little bit of qualitative information (and who doesn&amp;#8217;t like &lt;a href='http://en.wikipedia.org/wiki/Blinkenlights'&gt;blinkenlights&lt;/a&gt;?).&lt;/p&gt;
 
@@ -254,7 +254,7 @@
  <entry>
    <title>Talk at 27C3 -- The Political Philosophy of the Internet</title>
    <link href="http://adamobengtalk-at-CCC"/>
-   <updated>2010-12-30T00:00:00+00:00</updated>
+   <updated>2010-12-30T00:00:00+01:00</updated>
    <id>http://adamobeng.com./talk-at-CCC</id>
    <content type="html">&lt;h1 id='tor_is_peace_software_freedom_is_slavery_wikipedia_is_truth_the_political_philosophy_of_the_internet'&gt;Tor is Peace, Software Freedom is Slavery, Wikipedia is Truth: The Political Philosophy of the Internet&lt;/h1&gt;
 
@@ -290,7 +290,7 @@
  <entry>
    <title>Arduino syntax file for vim</title>
    <link href="http://adamobengarduino-vim-syntax-file"/>
-   <updated>2010-11-26T00:00:00+00:00</updated>
+   <updated>2010-11-26T00:00:00+01:00</updated>
    <id>http://adamobeng.com./arduino-vim-syntax-file</id>
    <content type="html">&lt;p&gt;Recently, I&amp;#8217;ve been tinkering with electronics hardware. Let me tell you, for someone who&amp;#8217;s more comfortable with software, the experience can be quite scary: if you mess up your code, the worst that happens is that it fails to compile, or maybe the interpreter spits out an error. But this electronics stuff is &lt;em&gt;real&lt;/em&gt;! If you do something wrong it could literally blow up in your face.&lt;/p&gt;
 
@@ -302,7 +302,7 @@
  <entry>
    <title>Undergraduate Thesis in Analytical Sociology</title>
    <link href="http://adamobenganalytical-sociology-thesis"/>
-   <updated>2010-04-01T00:00:00+01:00</updated>
+   <updated>2010-04-01T00:00:00+02:00</updated>
    <id>http://adamobeng.com./analytical-sociology-thesis</id>
    <content type="html">&lt;p&gt;&lt;em&gt;Update:&lt;/em&gt; An interactive version of the central model of my thesis is now &lt;a href='/dbo-model-in-canvas/'&gt;here&lt;/a&gt;&lt;/p&gt;
 
