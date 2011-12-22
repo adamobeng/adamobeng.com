@@ -295,9 +295,9 @@ header {
 	background-image: url("../portfolio/diaries.png");
 	background-size: 200% 100%;
 	background-position: 100% 0%;
-	color: white;
+	color: black;
 	&:hover {
-		color: #ff7d00;
+		color: $accent-colour;
 	background-position: 0% 0%;
 	}
 	}
