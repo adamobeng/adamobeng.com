@@ -226,6 +226,8 @@ header {
     padding-right: 1em;
     padding-top: 4em;
     padding-bottom: 4em; }
+    #about #about_text ul {
+      padding-left: 1em; }
 
 footer {
   font-family: "raleway-1", "raleway-2", sans-serif;
