@@ -319,10 +319,11 @@ ul.posts h2 {
 
 	.tags {
 		width: 960px;
+		margin: 1em 0 1em 0;
 		span {
 			@include typekit-sans;
-			border-left: 1px solid white;
-			border-right: 1px solid white;
+			border-left: 1px solid #ff7d00;
+			border-right: 1px solid #ff7d00;
 			padding: 0 1em 0 1em;
 			color: #ff7d00;
 		}

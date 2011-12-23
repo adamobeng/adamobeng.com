@@ -217,11 +217,12 @@ a.more {
     background-position: 0% 0%; }
 
 .tags {
-  width: 960px; }
+  width: 960px;
+  margin: 1em 0 1em 0; }
   .tags span {
     font-family: "raleway-1", "raleway-2", sans-serif;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
+    border-left: 1px solid #ff7d00;
+    border-right: 1px solid #ff7d00;
     padding: 0 1em 0 1em;
     color: #ff7d00; }
 
