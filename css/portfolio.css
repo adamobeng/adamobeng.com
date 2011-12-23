@@ -91,29 +91,29 @@ a.more {
 /* Site
 /*
 /*****************************************************************************/
-header {
+#header {
   color: white;
   font-weight: bold;
   margin: 0;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-  margin-bottom: 20px;
-  margin-top: 10px;
+  margin-bottom: 3em;
+  margin-top: 1em;
   font: sans-serif;
   font-family: "raleway-1", "raleway-2", sans-serif; }
-  header h1 {
+  #header h1 {
     font-size: 180%;
     margin: 0;
     padding: 0; }
-  header a {
+  #header a {
     color: silver;
     text-decoration: none; }
-    header a:hover {
+    #header a:hover {
       color: #0080dd; }
-    header a .extra {
+    #header a .extra {
       text-decoration: none;
       margin-left: 2em; }
-      header a .extra:hover {
+      #header a .extra:hover {
         color: black; }
 
 .mit {
@@ -123,7 +123,7 @@ header {
   background: #eee;
   text-align: justify;
   color: #1F1F1F;
-  padding: 10%;
+  padding: 5%;
   font-family: "raleway-1", "raleway-2", sans-serif; }
   .main h1 {
     font-family: "raleway-1", "raleway-2", sans-serif;
@@ -218,6 +218,12 @@ header {
 
 .tags {
   width: 960px; }
+  .tags span {
+    font-family: "raleway-1", "raleway-2", sans-serif;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding: 0 1em 0 1em;
+    color: #ff7d00; }
 
 #about {
   font-family: "raleway-1", "raleway-2", sans-serif;
