@@ -58,17 +58,23 @@
 <div class="main">
 	 <h1>Small Worlds, Sour Grapes and Social Deprivation: the Computational Application of Peter Hedström’s DBO Theory</h1>
 
-	 <p>Statistical summaries of models are one thing, while actually having a feel for how a model works is another.</p>
-	 <p>Agent-based models are inherently dynamic, so there will necessarily be something lost from static pictures of the model, even from graphs of statistics over time. </p>
-	 <p>Moreover, ABMs are part of a very quantitative branch of sociology, so it might even be refreshing to reintroduce a little bit of qualitative information, not to mention some <a href='http://en.wikipedia.org/wiki/Blinkenlights'>blinkenlights</a>.</p>
+	 <p>The full text of my thesis is <a href="Small_Worlds_Sour_Grapes_and_Social_Deprivation_by_Adam_Obeng.pdf">here</a>. You might want to read sections 3.3  (pp. 41-43) and 4.4 (pp. 74-76) and the conlculsion (pp. 77-79) in particular.</p>
+	 <p>However, there are limitations to presenting results in that paper-based format. Statistical summaries of models, however sophisticated, don't necessarily provide the requisite insight, especially during the exploratory phase of research.</p>
+	 <p>Agent-based models are inherently dynamic, so there will necessarily be something lost from static pictures of the model, even from graphs of statistics over time. Moreover, ABMs are part of a very quantitative branch of sociology, so it might even be refreshing to reintroduce a little bit of qualitative information, not to mention some <a href='http://en.wikipedia.org/wiki/Blinkenlights'>blinkenlichten</a>.</p>
+
+	 <p>So I produced the visualisation below.</p>
 
 	 <div style="text-align:center"><canvas id='canvas' height='400' width='400' style='margin: 2em;'>This visualisation uses Javascript and HTML5 Canvas</canvas></div>
 
-	 <p>The full text of my thesis is <a href="Small_Worlds_Sour_Grapes_and_Social_Deprivation_by_Adam_Obeng.pdf">here</a>.</p>
+	 <p>In this version of the DBO model, nodes possess an internal state made up of their desire to act (D, shown in <font color="#0000FF">blue</font>) and their belief that action will be effective in acheiving their goal (B, shown in <font color="#FF0000">red</font>). If they have both desire and beleif, rational actors act (shown in <font color="#FF00FF">purple</font>).</p>
 
-	<p>It turns out that the topology of the network does matter, but the reasons why are slightly difficult to determine. In Barabási-Albert networks, but not in Watts and Strogatz or Erdos-Renyi networks, when the starting proportion acting is around 50%, the outcomes are very sensitive to the exact distribution of initial actor states.</p>
-	<p>That is, in all other models, the proportion acting after 20 rounds of interaction is similar from simulation to simulation, but on Barabási-Albert networks, there seem to be two equilibria of final proportion acting, and which results is dependent on initial conditions in a way that is not well understood.</p>
-	<p>Apart from introducing me to the methods of analytical sociology, this result in particular reaffirmed my commitment to seek out un-obvious results in sociology.</p>
+	 <p>The state of actors is randomly assigned in to begin with, but thereafter, the actors base their desire and belief on that of the majority of the actors in their von Neumann neighbourhood of degree 1 (the actors immediately above, below and to the sides of the focal actor).</p>
+
+	 <p>Click the nodes to change their DBO state. The 'step' button advances the simulation by one step, and the 'reset' button randomly assigns DBO states to all of the nodes.</p>
+	 <p>This visualisation is based on a particular implementation of the DBO model (with the assumptions of a modest proprtion of actors acting initially, rational action based on desire and belief, interaction with the majority of von Neumann neighobourhood). Although the principled way of developing such models is to derive the mechanisms from empirical observations of theoretical predictions, it might be useful to further develop tools such as this one in order to carry out purely mechanical explorations of the predictions these type of models can generate.</p>
+
+	 <p>For example, in this particular configuration, none of the agents remain acting after a few steps of interaction. The model underlying this visualization could be used for social processes that fizzle, but not ones that spread.</p>
+
 </div>
 
 				<footer>
