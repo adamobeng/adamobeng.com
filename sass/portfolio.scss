@@ -197,9 +197,11 @@ header {
 	color: #1F1F1F;
 	padding: 10%;
 
+		@include typekit-sans;
 	h1 {
 		@include typekit-sans;
 		color: $accent-colour;
+		font-size: 110%;
 	}
 }
 .project {
@@ -302,6 +304,22 @@ header {
 	}
 	}
 
+#identity {
+
+	background-image: url("../portfolio/identity.png");
+	background-size: 200% 100%;
+	background-position: 100% 0%;
+	color: black;
+	&:hover {
+		color: $accent-colour;
+	background-position: 0% 0%;
+	}
+	}
+
+
+	.tags {
+		width: 960px;
+	}
 
 	#about {	
 		@include typekit-sans;

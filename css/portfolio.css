@@ -123,10 +123,12 @@ header {
   background: #eee;
   text-align: justify;
   color: #1F1F1F;
-  padding: 10%; }
+  padding: 10%;
+  font-family: "raleway-1", "raleway-2", sans-serif; }
   .main h1 {
     font-family: "raleway-1", "raleway-2", sans-serif;
-    color: #0080dd; }
+    color: #0080dd;
+    font-size: 110%; }
 
 .project {
   background: white;
@@ -204,6 +206,18 @@ header {
   #diaries:hover {
     color: #0080dd;
     background-position: 0% 0%; }
+
+#identity {
+  background-image: url("../portfolio/identity.png");
+  background-size: 200% 100%;
+  background-position: 100% 0%;
+  color: black; }
+  #identity:hover {
+    color: #0080dd;
+    background-position: 0% 0%; }
+
+.tags {
+  width: 960px; }
 
 #about {
   font-family: "raleway-1", "raleway-2", sans-serif;
