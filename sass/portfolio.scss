@@ -24,6 +24,10 @@ $text-colour: #c0c0c0;
 	font-family: "adobe-garamond-pro-1", "adobe-garamond-pro-2", serif;
 }
 
+.serif {
+	@include typekit-serif;
+}
+
 @mixin rounded-borders($radius: 10px) {
 	border-radius: $radius;
 	-moz-border-radius: $radius;

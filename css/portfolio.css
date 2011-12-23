@@ -2,6 +2,9 @@
 /* SCSS Variables */
 @import url(960/960_16_col.css);
 /* SASS mixins */
+.serif {
+  font-family: "adobe-garamond-pro-1", "adobe-garamond-pro-2", serif; }
+
 /*****************************************************************************/
 /*
 /* Common
