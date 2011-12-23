@@ -2,9 +2,6 @@
 /* SCSS Variables */
 @import url(960/960_16_col.css);
 /* SASS mixins */
-.serif {
-  font-family: "adobe-garamond-pro-1", "adobe-garamond-pro-2", serif; }
-
 /*****************************************************************************/
 /*
 /* Common
@@ -228,6 +225,14 @@ a.more {
     border-right: 1px solid #ff7d00;
     padding: 0 1em 0 1em;
     color: #ff7d00; }
+
+.definition {
+  font-family: "adobe-garamond-pro-1", "adobe-garamond-pro-2", serif;
+  border: 1px solid black;
+  width: 480px;
+  padding: 1em;
+  background-color: white;
+  font-size: 110%; }
 
 #about {
   font-family: "raleway-1", "raleway-2", sans-serif;
