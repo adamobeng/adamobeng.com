@@ -333,8 +333,8 @@ ul.posts h2 {
 	.definition {
 		@include typekit-serif;
 		border: 1px solid black;
-		width: 480px;
-		padding: 1em;
+		margin: 1em 0 1em 0;
+		padding: 0.5em;
 		background-color: white;
 		font-size: 110%;
 	}

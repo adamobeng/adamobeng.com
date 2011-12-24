@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+
+<html xml:lang="en" lang="en">
+	<head>
+		 <meta charset="utf-8" />
+		 <title>Small Worlds... --- Portfolio --- Adam Obeng</title>
+		 <meta name="author" content="Adam Obeng" />
+		<link rel="author" href="http://adamobeng.com/humans.txt" />
+
+		 <!-- syntax highlighting CSS -->
+		 <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+
+		 <!-- Portfolio CSS -->
+		 <link rel="stylesheet" href="/css/portfolio.css" type="text/css" media="screen, projection" />
+
+		 <link rel="shortcur icon" href="/favicon.ico">
+
+		 <!-- RSS autodiscovery http://www.rssboard.org/rss-autodiscovery -->
+		 <!-- https://secure.wikimedia.org/wikipedia/en/wiki/Atom_%28standard%29 -->
+		 <link rel="alternate" type="application/atom+xml" title="Adam Obeng"
+		 href="http://adamobeng.com/atom.xml">
+		 <!-- Google Analytics
+		<script type="text/javascript">
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-22741216-1']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		</script>
+
+		 Typekit
+		<script type="text/javascript" src="http://use.typekit.com/qjd5hyy.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script> -->
+	 </head>
+
+	<body>
+				<div class="container_16">
+					<div id="header">
+				<header>
+					<hggroup> <!-- In case I want a tagline -->
+					<h1><a href="http://adamobeng.com/portfolio">Portfolio &mdash; Adam Obeng</a></h1>
+					<div id='custom_greeting'></div>
+					</hggroup>
+				</header>
+			</div>
+			
+				<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src='dbo-minified.js' type='text/javascript'></script>
+<div class="tags">
+	Academic
+</div>
+<div class="main">
+	 <h1>Small Worlds, Sour Grapes and Social Deprivation: the Computational Application of Peter Hedström’s DBO Theory</h1>
+
+	 <p>Statistical summaries of models are one thing, while actually having a feel for how a model works is another.</p>
+	 <p>Agent-based models are inherently dynamic, so there will necessarily be something lost from static pictures of the model, even from graphs of statistics over time. </p>
+	 <p>Moreover, ABMs are part of a very quantitative branch of sociology, so it might even be refreshing to reintroduce a little bit of qualitative information, not to mention some <a href='http://en.wikipedia.org/wiki/Blinkenlights'>blinkenlights</a>.</p>
+
+	 <div style="text-align:center"><canvas id='canvas' height='400' width='400' style='margin: 2em;'>This visualization uses Javascript and HTML5 Canvas</canvas></div>
+
+	 <p>The full text of my thesis is <a href="Small_Worlds_Sour_Grapes_and_Social_Deprivation_by_Adam_Obeng.pdf">here</a>.</p>
+
+	<p>It turns out that the topology of the network does matter, but the reasons why are slightly difficult to determine. In Barabasi-Albert networks, but not in Watts and Strogatz or Erdos-Renyi networks, when the starting proportion acting is around 50%, the outcomes are very sensitive to the exact distribution of initial actor states.</p>
+	<p>That is, in all other models, the proportion acting after 20 rounds of interaction is similar from simulation to ssimulation, but on Barabasi-Albert networks, there seem to be two equilibria of final proportion acting, and which results is dependent on initial conidtions in a way that is not well understood.</p>
+	<p>Apart from introducin me to the methods of anayltical sociology, this result in particular reaffirmed my commitment to seek out un-obvious results in sociology.</p>
+</div>
+
+				<footer>
+				Adam Obeng | <a href="mailto:contact@adamobeng.com" rel="author">contact@adamobeng.com</a> | <a href="rights.html">Copyright</a> &copy; Adam Obeng 2011
+
+				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png" /></a>
+				</footer>
+				
+			</div>
+		</div>
+	</body>
+
+</html>
