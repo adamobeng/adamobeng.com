@@ -18,6 +18,7 @@ function cb(obj) {
 		console.log('If you are reading this you are both visiting from MIT and an even bigger nerd than me.');
 		$('#custom_greeting').hide();
 		$('#custom_greeting').text('Hello, MIT visitor!');
+		$('body').toggleClass('fade');
 		$('body').toggleClass('mit');
 		$('#custom_greeting').fadeIn(4000);
 	}

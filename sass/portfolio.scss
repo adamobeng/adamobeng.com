@@ -60,7 +60,6 @@ body {
 	*font-size: small;
 	text-align: center;
 	color: $text-colour;
-	-webkit-transition: background-color 4s;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -191,6 +190,14 @@ ul.posts h2 {
 .mit {
 	background: #8f1f1f;
 }
+
+.fade {
+	-moz-transition: background-color 4s;
+	-webkit-transition: background-color 4s;
+	-o-transition: background-color 4s;
+	transition: background-color 4s;
+}
+
 .main {
 	background: #eee;
 	text-align: justify;
@@ -346,25 +353,19 @@ ul.posts h2 {
 		float:left;
 		margin:10px; 
 		text-align: justify;
-		background: white;
+		background: #ececec;
 		width: 960px;
 		color: black ;
 
 		#photo {
-			width: 475px;
-			height: 475px;
-			float:right;
-			padding-left:1em;
-
 			img {
-				border: 1px dashed black;
+				width: 960px;
 		}
 		}
 		#about_text {
-			padding-left: 1em;
-			padding-right: 1em;
-			padding-top: 4em;
-			padding-bottom: 4em;
+			padding-left: 25%;
+			padding-right: 25%;
+			padding-bottom: 2em;
 
 			ul {
 				padding-left: 1em;

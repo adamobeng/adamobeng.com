@@ -20,8 +20,7 @@ body {
   font-family: "adobe-garamond-pro-1", "adobe-garamond-pro-2", serif;
   *font-size: small;
   text-align: center;
-  color: silver;
-  -webkit-transition: background-color 4s; }
+  color: silver; }
 
 h1, h2, h3, h4, h5, h6 {
   font-size: 100%; }
@@ -118,6 +117,12 @@ a.more {
 
 .mit {
   background: #8f1f1f; }
+
+.fade {
+  -moz-transition: background-color 4s;
+  -webkit-transition: background-color 4s;
+  -o-transition: background-color 4s;
+  transition: background-color 4s; }
 
 .main {
   background: #eee;
@@ -240,21 +245,15 @@ a.more {
   float: left;
   margin: 10px;
   text-align: justify;
-  background: white;
+  background: #ececec;
   width: 960px;
   color: black; }
-  #about #photo {
-    width: 475px;
-    height: 475px;
-    float: right;
-    padding-left: 1em; }
-    #about #photo img {
-      border: 1px dashed black; }
+  #about #photo img {
+    width: 960px; }
   #about #about_text {
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-top: 4em;
-    padding-bottom: 4em; }
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 2em; }
     #about #about_text ul {
       padding-left: 1em; }
 
