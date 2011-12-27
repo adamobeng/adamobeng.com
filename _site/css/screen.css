@@ -22,7 +22,8 @@ body {
   text-color: #f0f0f0; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; }
+  font-size: 100%;
+  font-family: "raleway-1", "raleway-2", sans-serif; }
 
 h1 {
   margin-bottom: 1em; }
@@ -39,22 +40,6 @@ a:hover {
 table {
   font-size: inherit;
   font: 100%; }
-
-blockquote {
-  margin-left: 2em;
-  padding-left: 0.5em;
-  border-left: 1px gray solid; }
-
-.footnotes {
-  font-size: 0.8em;
-  margin-top: 4em; }
-  .footnotes p {
-    padding: 0;
-    margin: 0;
-    /* http://www.tizag.com/cssT/display.php */
-    display: inline; }
-  .footnotes a[rev="footnote"] {
-    margin-left: 1em; }
 
 /*****************************************************************************/
 /*
@@ -77,36 +62,37 @@ a.more {
 
 /*****************************************************************************/
 /*
-/*	Outer container
-/*
-/*****************************************************************************/
-.outer {
-  width: 60em;
-  margin: 3em auto 2em auto; }
-
-/*****************************************************************************/
-/*
 /*	Navigation bar
 /*
 /*****************************************************************************/
 nav {
   text-align: right;
-  padding-right: 2em;
+  font-size: 1.4em;
   float: left;
-  border-right: 1px dashed #232e35;
-  width: 4em;
-  margin: 3.5em 0 0 0;
-  background-color: white;
-  margin-bottom: 2em;
   font-family: "raleway-1", "raleway-2", sans-serif;
-  border-radius: 4px 0 0 4px;
-  box-shadow: -2px 2px 2px 0 #d8e0e5;
-  -moz-box-shadow: -2px 2px 2px 0 #d8e0e5;
-  -webkit-box-shadow: -2px 2px 2px 0 #d8e0e5;
-  font-size: 105%;
+  /*width: $$nav-width;*/
+  width: 8em;
+  margin-bottom: 2em;
+  background-color: #232e35;
+  border-right: 1px dashed #232e35;
+  box-shadow: -4px 4px 4px 0 #232e35;
+  -moz-box-shadow: -4px 4px 4px 0 #232e35;
+  -webkit-box-shadow: -4px 4px 4px 0 #232e35;
+  /*  http://www.w3schools.com/cssref/pr_class_position.asp */
+  position: fixed;
   /*
    * http://www.mediacollege.com/internet/css/ul-list.html
+   */
+  /*
+   http://css-tricks.com/snippets/css/css3-zebra-striping-a-table/
+   http://www.w3.org/TR/css3-selectors/#nth-child-pseudo 
    */ }
+  nav ul:nth-child(odd) {
+    background: #384854; }
+  nav ul {
+    padding-right: 1em;
+    height: 1.8em;
+    padding-top: 0.9em; }
   nav li {
     list-style-type: none; }
     nav li a:link {
@@ -116,10 +102,15 @@ nav {
     nav li a:visited {
       color: #a000a0; }
   nav .rss {
-    margin-top: 0.2em;
     /* http://www.w3schools.com/css/pr_background-image.asp */ }
     nav .rss img {
-      padding-left: 0.2em; }
+      margin: 0;
+      padding-left: 0.4em; }
+  nav .contact {
+    font-size: 0.7em;
+    text-align: right; }
+  nav .contact a {
+    color: #0080dd; }
 
 /*****************************************************************************/
 /*
@@ -129,11 +120,9 @@ nav {
 header {
   color: #232e35;
   font-weight: bold;
+  padding: 0;
   margin: 0;
-  border-bottom: 1px dashed #232e35;
-  font-size: 180%;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  font-size: 7em;
   font: sans-serif;
   font-family: "raleway-1", "raleway-2", sans-serif; }
   header h1 {
@@ -150,65 +139,61 @@ header {
       header a .extra:hover {
         color: black; }
 
+.main-header {
+  background: #232e35;
+  text-align: right;
+  height: 1.2em; }
+
 .site {
-  font-size: 110%;
+  font-size: 120%;
   text-align: justify;
-  width: 40em;
-  margin: 3em auto 2em auto;
+  margin-left: 20em;
+  margin-right: 12em;
+  margin-top: 60px;
+  margin-bottom: 60px;
   line-height: 1.5em;
   background: white;
   padding: 0 1em 1em 1em;
   color: #000020;
-  border-radius: 10px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  box-shadow: -2px 2px 2px 0 #d8e0e5;
-  -moz-box-shadow: -2px 2px 2px 0 #d8e0e5;
-  -webkit-box-shadow: -2px 2px 2px 0 #d8e0e5; }
+  border: 1px dashed #232e35;
+  /*  http://www.impressivewebs.com/css3-click-chart/ */ }
   .site .home {
     height: 40em;
     margin: 4em; }
   .site .projects {
-    border: 1px dashed #d8e0e5;
-    width: 320px;
-    font-size: 90%;
-    float: left;
-    padding: 0.5em;
-    border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    height: 160px; }
-    .site .projects h1 {
-      font-family: "raleway-1", "raleway-2", sans-serif; }
-  .site .blog {
-    border: 1px dashed #d8e0e5;
-    width: 320px;
-    font-size: 90%;
-    float: right;
-    padding: 0.5em;
-    border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    height: 160px; }
-    .site .blog h1 {
-      font-family: "raleway-1", "raleway-2", sans-serif; }
+    -webkit-column-count: 2;
+    -webkit-column-width: 10em;
+    -webkit-column-gap: 35px;
+    -webkit-column-rule: 1px dashed #d8e0e5;
+    -moz-column-count: 2;
+    -moz-column-width: 10em;
+    -moz-column-gap: 35px;
+    -o-column-rule: 1px dashed #d8e0e5;
+    -o-column-count: 2;
+    -o-column-width: 10em;
+    -o-column-gap: 35px;
+    -o-column-rule: 1px dashed #d8e0e5;
+    column-count: 2;
+    column-width: 10em;
+    column-gap: 35px;
+    column-rule: 1px dashed #d8e0e5;
+    margin-top: 2em; }
   .site .meta {
     color: #aaa; }
-  .site footer {
-    font-size: 80%;
-    color: #664;
-    border-top: 1px dashed #232e35;
-    margin-top: 27em;
-    overflow: hidden; }
-    .site footer .contact {
-      float: right;
-      margin-right: 3em; }
-    .site footer .contact a {
-      color: #232e35; }
 
 .twitter {
-  float: left;
   padding-top: 1em; }
+
+footer {
+  color: #664;
+  border-top: 1px dashed #232e35;
+  overflow: hidden;
+  background: #384854;
+  /*  http://stackoverflow.com/questions/526035/html-css-positioning-float-bottom  */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 7em; }
 
 /*****************************************************************************/
 /*
@@ -252,7 +237,6 @@ article h1 {
 
 article h2 {
   font-family: "raleway-1", "raleway-2", sans-serif;
-  font-size: 0.95em;
   padding: 0.5em 0 0 0; }
 
 article header {
@@ -267,8 +251,7 @@ article header h1 {
   padding: 0;
   margin: 0;
   text-align: left;
-  color: black;
-  font-size: 30px; }
+  color: black; }
 
 #related {
   border-top: 1px dashed #d8e0e5;

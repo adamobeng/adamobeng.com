@@ -207,12 +207,12 @@ a.more {
     color: #0080dd;
     background-position: 0% 0%; }
 
-#datavis {
-  background-image: url("../portfolio/datavis.png");
+#home_link {
+  background-image: url("../portfolio/home.png");
   background-size: 200% 100%;
   background-position: 100% 0%;
   color: black; }
-  #datavis:hover {
+  #home_link:hover {
     color: #0080dd;
     background-position: 0% 0%; }
 
