@@ -207,12 +207,12 @@ a.more {
     color: #0080dd;
     background-position: 0% 0%; }
 
-#identity {
-  background-image: url("../portfolio/identity.png");
+#datavis {
+  background-image: url("../portfolio/datavis.png");
   background-size: 200% 100%;
   background-position: 100% 0%;
   color: black; }
-  #identity:hover {
+  #datavis:hover {
     color: #0080dd;
     background-position: 0% 0%; }
 

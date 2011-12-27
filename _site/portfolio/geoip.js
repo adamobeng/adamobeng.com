@@ -1,23 +1,21 @@
-is_mit_ip = function(ip) {
-	if (ip.slice(0, 2) == '18') {return true;}
-	if (ip.slice(0, 6) == '128.30') {return true;}
-	if (ip.slice(0, 6) == '128.31') {return true;}
-	if (ip.slice(0, 6) == '128.52') {return true;}
-	if (ip.slice(0, 6) == '128.55') {return true;}
-	if (ip.slice(0, 10) == '192.52.61.') {return true;}
-	if (ip.slice(0, 10) == '192.52.62.') {return true;}
-	if (ip.slice(0, 10) == '192.52.63.') {return true;}
-	if (ip.slice(0, 10) == '192.52.64.') {return true;}
-	if (ip.slice(0, 10) == '192.52.65.') {return true;}
-	if (ip.slice(0, 10) == '192.52.66.') {return true;}
-	console.log(ip.slice(0, 5));
+function is_mit_ip (ip) {
+	ipg = ip.split('.');
+	ipg = $.map(ipg, function(n, i) {return parseInt(n);});
+	if (ipg[0] == 18) {return true;}
+	if ((ipg[0] == 128) & ((ipg[1] == 30) | (ipg[1] == 31))) {return true;}
+	if ((ipg[0] == 128) & (ipg[1] == 52)) {return true;}
+	if ((ipg[0] == 129) & (ipg[1] == 55)) {return true;}
+	if ((ipg[0] == 192) & (ipg[1] == 52) & ((ipg[2] >= 61) & (ipg[2] <= 66))) {return true;}
+	if ((ipg[0] == 198) & (ipg[1] == 125) & ((ipg[2] >= 160) & (ipg[2] <= 163))) {return true;}
+	if ((ipg[0] == 198) & (ipg[1] == 125) & ((ipg[2] >= 176) & (ipg[2] <= 191))) {return true;}
 	return false;
 }
 
-cb = function(obj) {
+function cb(obj) {
 	ip = obj.ip;
 	
 	if (is_mit_ip(ip)){
+		console.log('If you are reading this you are both visiting from MIT and an even bigger nerd than me.');
 		$('#custom_greeting').hide();
 		$('#custom_greeting').text('Hello, MIT visitor!');
 		$('body').toggleClass('mit');
