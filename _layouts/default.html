@@ -41,40 +41,38 @@
 	 </head>
 
 	<body>
-		<div class="outer">
+		<header class="main-header">
+			<hggroup> <!-- In case I want a tagline -->
+				<h1><a href="http://adamobeng.com">Adam Obeng</a></h1>
+			</hggroup>
+		</header>
 
-			<nav>
-				<li>
-					<ul><a href="/">home</a></ul>
-					<ul><a href="../blog.html" rel="archives">blog</a></ul>
-					<ul><a href="../projects.html">projects</a></ul>
-					<ul><a href="../cv.html">CV</a></ul>
-					<ul class="rss"><a href="../atom.xml">feed</a><img src="../feed-icon-14x14.png"/></ul>
+		<nav>
+			<li>
+				<ul><a href="/">home</a></ul>
+				<ul><a href="../blog.html" rel="archives">blog</a></ul>
+				<ul><a href="../projects.html">projects</a></ul>
+				<ul><a href="../CV.html">CV</a></ul>
+				<ul class="rss"><a href="../atom.xml">feed</a><img src="../feed-icon-14x14.png"/></ul>
 				</li>
-			</nav>
+		<div class="contact">
+						<p>
+						<a href="mailto:contact@adamobeng.com" rel="author">Contact</a> <br />
+						Copyright &copy; <br/> Adam Obeng 2011
+						</p>
+					</div>
 
+		</nav>
 			<div class="site">
-				<header>
-					<hggroup> <!-- In case I want a tagline -->
-						<h1><a href="http://adamobeng.com">Adam Obeng</a></h1>
-					</hggroup>
-				</header>
+
 			
 				{{ content }}
 				{{ post.categories }}
 				
-				<footer>
-					<div class="contact">
-						<p>
-						Adam Obeng<br />
-						<a href="mailto:contact@adamobeng.com" rel="author">contact@adamobeng.com</a> <br />
-						Copyright &copy; Adam Obeng 2011
-						</p>
-					</div>
-				</footer>
 				
 			</div>
-		</div>
+
+
 	</body>
 
 </html>

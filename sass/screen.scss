@@ -5,13 +5,15 @@ $accent-colour: #0080dd; // Used for links
 $accent2: adjust-hue($accent-colour, 180);
 $background: lighten(desaturate($accent-colour, 80%), 54%);//  Base background colour, used for outside of site.
 $light-background: lighten($background, 4%) ; //  Lighter than standard bacground colour, used for inside of site and nav
-$dark-background: darken($background, 10%) ; //  Darker than standard bacground colour, used for shadows
+$dark-background: darken($background, 80%) ; //  Darker than standard bacground colour, used for shadows
 $link-visited: #a000a0; // Used for links
 $link-hover: darken($accent-colour, 80%);// Used for links
 $title-colour: darken($background, 80%);
 $border-colour: darken($background, 80%);
 $border-light: darken($background, 10%);
 //  Note that colours for the twitter box are set seperately.
+$site-padding: 20em;
+$nav-width: 8em;
 
 /* SASS mixins */
 @mixin typekit-sans {
@@ -43,9 +45,9 @@ $border-light: darken($background, 10%);
 }
 
 @mixin box-shadow {
-	box-shadow: -2px 2px 2px 0 $dark-background;
-	-moz-box-shadow: -2px 2px 2px 0 $dark-background;
-	-webkit-box-shadow: -2px 2px 2px 0 $dark-background;
+	box-shadow: -4px 4px 4px 0 $dark-background;
+	-moz-box-shadow: -4px 4px 4px 0 $dark-background;
+	-webkit-box-shadow: -4px 4px 4px 0 $dark-background;
 
 }
 
@@ -76,6 +78,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	font-size: 100%;
+	@include typekit-sans;
 }
 
 h1 {
@@ -103,27 +106,6 @@ table {
 	font: 100%;
 }
 
-blockquote {
-	margin-left: 2em;
-	padding-left: 0.5em;
-	border-left: 1px gray solid;
-}
-
-.footnotes {
-	font-size: 0.8em;
-	margin-top: 4em;
-
-	p {
-		padding: 0;
-		margin: 0;
-		/* http://www.tizag.com/cssT/display.php */
-		display:inline;
-	}
-
-	a[rev="footnote"]{
-		margin-left: 1em;
-	}
-}
 /*****************************************************************************/
 /*
 /* Home
@@ -148,17 +130,6 @@ ul.posts {
 }
 ul.posts h2 {
 }
-/*****************************************************************************/
-/*
-/*	Outer container
-/*
-/*****************************************************************************/
-
-	.outer {
-		width: 60em;
-		margin: 3em auto 2em auto;
-	}
-
 
 /*****************************************************************************/
 /*
@@ -168,22 +139,35 @@ ul.posts h2 {
 
 	nav {
 		text-align: right;
-		padding-right: 2em;
+		font-size: 1.4em;
 		float: left;
-		border-right: 1px dashed $border-colour;
-		width: 4em;
-		margin: 3.5em 0 0 0;
-		background-color: $light-background;
-		margin-bottom: 2em;
 		@include typekit-sans;
-		border-radius: 4px 0 0 4px;
+
+		/*width: $$nav-width;*/
+		width: $nav-width;
+		margin-bottom: 2em;
+		background-color: $dark-background;
+
+		border-right: 1px dashed $border-colour;
 		@include box-shadow;
-		font-size: 105%;
+		/*  http://www.w3schools.com/cssref/pr_class_position.asp */
+		position: fixed;
 
 		/*
 		 * http://www.mediacollege.com/internet/css/ul-list.html
 		 */
 
+		/*
+		 http://css-tricks.com/snippets/css/css3-zebra-striping-a-table/
+		 http://www.w3.org/TR/css3-selectors/#nth-child-pseudo 
+		 */
+
+		ul:nth-child(odd) {background: lighten($dark-background, 10%);}
+		ul {
+		padding-right: 1em;
+			height: 1.8em;
+			padding-top: 0.9em;
+	}
 		li {
 		list-style-type: none;
 			a {
@@ -193,13 +177,18 @@ ul.posts h2 {
 			}
 		}
 		.rss {
-			margin-top: 0.2em;
 			/* http://www.w3schools.com/css/pr_background-image.asp */
-
 			img {
-				padding-left: 0.2em;
+				margin: 0;
+				padding-left: 0.4em;
 			}
 		}
+			.contact {
+				font-size: 0.7em;
+				text-align: right;
+			}
+			.contact a { color: $accent-colour; }
+
 	}
 
 
@@ -212,20 +201,19 @@ ul.posts h2 {
 	header {
 		color: $title-colour;
 		font-weight: bold;
+		padding: 0;
 		margin: 0;
-		border-bottom: 1px dashed $border-colour;
-		font-size: 180%;
-		padding-top: 0.5em;
-		padding-bottom: 0.5em;
+		font-size: 7em;
 		font: sans-serif;
 		@include typekit-sans;
+
 
 		h1 {
 			//  http://www.viget.com/inspire/practical-uses-of-css3/#continue
 			//  text-shadow: -1px 1px 2px lighten($title-colour, 70%);
 			margin: 0;
 			padding: 0;
-		}
+			}
 
 		a {
 			color: $accent-colour;
@@ -238,57 +226,78 @@ ul.posts h2 {
 				&:hover { color: black; }
 			}
 		}
+
+
 	}
 
+	.main-header {
+		background: $dark-background;
+		text-align: right;
+		height: 1.2em;
+
+		h1 {
+		}
+	}
 .site {
-	font-size: 110%;
+	font-size: 120%;
 	text-align: justify;
-	width: 40em;
-	margin: 3em auto 2em auto;
+	margin-left: $site-padding;
+	margin-right: $site-padding - $nav-width;
+	margin-top: 60px;
+	margin-bottom: 60px;
 	line-height: 1.5em;
 	background: $light-background;
 	padding: 0 1em 1em 1em;
 	color: #000020;
-	@include rounded-borders(10px);
-	@include box-shadow;
-
-
+	border: 1px dashed $border-colour;
 
 	.home {
 		height: 40em;
 		margin: 4em;
 	}
 
-
+	/*  http://www.impressivewebs.com/css3-click-chart/ */
 	.projects {
-		@include home-page-panel(left);
+
+		-webkit-column-count: 2;
+		-webkit-column-width: 10em;
+		-webkit-column-gap: 35px;
+		-webkit-column-rule: 1px dashed $border-light;
+		-moz-column-count: 2;
+		-moz-column-width: 10em;
+		-moz-column-gap: 35px;
+		-o-column-rule: 1px dashed $border-light;
+		-o-column-count: 2;
+		-o-column-width: 10em;
+		-o-column-gap: 35px;
+		-o-column-rule: 1px dashed $border-light;
+		column-count: 2;
+		column-width: 10em;
+		column-gap: 35px;
+		column-rule: 1px dashed $border-light;
+		margin-top: 2em;
 	}
 
-	.blog {
-		@include home-page-panel(right);
-	}
 
 	.meta { color: #aaa; }
-
-	footer {
-			font-size: 80%;
-			color: #664;
-			border-top: 1px dashed $border-colour;
-			margin-top: 27em;
-			overflow: hidden;
-
-			.contact {
-				float: right;
-				margin-right: 3em;
-			}
-			.contact a { color: $title-colour; }
-		}
 	}
 
 	.twitter {
-		float: left;
 		padding-top: 1em;
 	}
+
+	footer {
+			color: #664;
+			border-top: 1px dashed $border-colour;
+			overflow: hidden;
+			background: lighten($dark-background, 10%);
+
+			/*  http://stackoverflow.com/questions/526035/html-css-positioning-float-bottom  */
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+			height: 7em;
+		}
 
 /*****************************************************************************/
 /*
@@ -345,7 +354,6 @@ article {
 
 	article h2 {
 		@include typekit-sans;
-		font-size: 0.95em;
 		padding: 0.5em 0 0 0;
 	}
 
@@ -363,7 +371,6 @@ article {
 		margin: 0;
 		text-align: left;
 		color: black;
-		font-size: 30px;
 	}
 
 #related {
