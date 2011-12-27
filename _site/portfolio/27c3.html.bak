@@ -4,7 +4,7 @@
 <html xml:lang="en" lang="en">
 	<head>
 		 <meta charset="utf-8" />
-		 <title>About Adam Obeng</title>
+		 <title>Tor is Peace... --- Portfolio --- Adam Obeng</title>
 		 <meta name="author" content="Adam Obeng" />
 		<link rel="author" href="http://adamobeng.com/humans.txt" />
 
@@ -51,25 +51,22 @@
 				</header>
 			</div>
 			
-				<div id="about">
-	<div id="photo">
-		<img src="me.png" width="475px" height="475px"/>
-	</div>
-
-	<div id="about_text">
-	<p>Hi!</p>
-	<p>I'm Adam Obeng.</p>
-	<p>I like understanding things.</p>
-	<p>Often the best way to understand things is to take them apart and put them back together again.</p>
-	<p>Unfortunately, human societies are much more complicated than your parents' alarm clock.</p>
-	<p>So I make models of societies instead.</p>
-	<p>It's easier in the long run, and you don't have to scrabble round on the floor for hours trying to find the bit that went <em>sproing</em>.</p>
-	<p>This website is supposed to give some examples of the things I get up to &mdash; sociological and otherwise. The projects here presented are of varying substantive importance and at different stages of completion, but they should give you a good cross-sectional overview of the types of thing that interest me.</p>
-	<p>Some of these projects are silly, some are serious, some are academic and some are practical. Throughout, you should get an impression of the kind of person I am (interested in anything interesting), as well as the kind of work I do (anything interesting). At the moment, I'm waxing sociological, mostly because I'm fascinated by the abstract models used in <a href="diaries.html">social network analysis</a> and <a href="dbo.html">agent based modelling</a>. But I'm also interested in <a href="27c3.html">the philosophy of FLOSS</a>, the <a href="books.html">digital humanities</a>, making everyday things slightly <a href="beebify.html">easier</a> and, of course, <a href="identity.html">my</a> <a href="egopticon.html">self</a>.</p>
-	<p>Some of this information is presented in a more formal manner on my <a href="../download/Adam_Obeng_CV.pdf">CV</a>. If you'd like even more information than that, feel free to <a href="mailto:contact@adamobeng.com">contact me</a>.</p>
-
-	<p>Now you know about me, take a look at <a href="index.html">some of the things I've been up to</a>...</p>
+				<div class="tags">
+	<span>experimental</span>
+	<span>philosophy</span>
+	<span>software</span>
 </div>
+<div class="main">
+	<h1> Tor is Peace, Software Freedom is Slavery, Wikipedia is Truth: The Political Philosophy of the Internet</h1>
+	<p>Apart from further demonstrating my ability to write ridiculously long titles, the talk I gave at the <a href="http://events.ccc.de/congress/2010/wiki/Welcome">27th Chaos Communication Congress</a> was my attempt to combine what I knew about political philosophy and FLOSS (Free/Libre/Open-Source Software).</p>
+	<div style="text-align:center"><iframe class="youtube-player" type="text/html" width="640" height="385" src="http://www.youtube.com/embed/tXCV_z_M0RA" frameborder="0"></iframe></div>
+ <p>Because I was presenting to an audience of non-philosophers, I omitted some detail of the academic debate, and included quite a few hacker references that were not stricly necessary (but everyone loves <a href="http://xkcd.com">xkcd</a> comics!).</p>
+
+ <p>As the <a href="../download/slides.pdf">slides</a> and <a href "../download/lecture.pdf">lecture text</a> show, there is much to say about political philosophy and the Internet.</p>
+ <p>The two have superficial similarites, like their focus on the names of things ("Don't call us political <em>philosophers</em>, we're political <em>theorists</em>"). My aim was to use the methods and theories of political philosophy to a problem of real practical importance to FLOSS groups: do so-called "restrictive" FLOSS licenses really impose more restrictions on freedom?</p>
+
+ <p>Speaking in public at such an event was immense fun, as was using the methods from an abstract academic discipline on a practical subject matter (and an important one at that).</p>
+
 </div>
 
 				<footer>

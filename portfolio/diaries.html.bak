@@ -9,7 +9,7 @@ title: The Diaries of William Godwin --- Portfolio --- Adam Obeng
 </div>
 <div class="main">
 	<p>William Godwin was a political philosopher, writer and journalist. Over a period of 49 years, he recorded 64381 instances of co-presence with other people. Obviously, this record is of historical, political, and sociological significance.</p>
-	<p>But these data are difficult to analyse both technically and theoretically. This graph below shows those connections which happen more than 40 times between Godwin and his acquaintances (here is an <a href="graph.dot.svg">SVG</a> version, where the nodes are hyperlinked to their biographies.)</p>
+	<p>But these data are difficult to analyse both technically and theoretically. This graph below shows those connectinos which happen more than 40 times between Godwin and his acquantainces (here is an <a href="graph.dot.svg">SVG</a> version, where the nodes are hyperlinked to their biographies.)</p>
 	<a href="graph.dot.png"><img src="graph.dot.png" width="90%"/></a>
 	<p> </p>
 
