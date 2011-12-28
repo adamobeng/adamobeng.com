@@ -29,6 +29,6 @@ title: Small Worlds... --- Portfolio --- Adam Obeng
 
 	 <p>For example, in this particular configuration, none of the agents remain acting after a few steps of interaction. The model underlying this visualisation could be used for social processes that fizzle, but not ones that spread.</p>
 
-	 <p>However, this sort of visualisation also has limitations: it would be difficult to apply to very large simulations, or to models where the relations between interacting agents cannot be depicted by their spatial proximity on the plane.</p>
+	 <p>However, this sort of visualization also has limitations: it would be difficult to apply to very large simulations, or to models where the relations betwen interacting agents cannot be depicted by their spatial proximity on the plane.</p>
 
 </div>
