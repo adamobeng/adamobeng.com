@@ -355,11 +355,12 @@ ul.posts h2 {
 		text-align: justify;
 		background: #ececec;
 		width: 960px;
-		color: black ;
+		color: #0f0f0f;
 
 		#photo {
 			img {
 				width: 960px;
+			-webkit-box-shadow: 0 0 20px #0f0f0f;
 		}
 		}
 		#about_text {
