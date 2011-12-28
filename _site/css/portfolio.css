@@ -96,7 +96,7 @@ a.more {
   margin: 0;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-  margin-bottom: 3em;
+  margin-bottom: 1em;
   margin-top: 1em;
   font: sans-serif;
   font-family: "raleway-1", "raleway-2", sans-serif; }
@@ -158,12 +158,12 @@ a.more {
     color: #ff7d00;
     background-position: 0% 0%; }
 
-#dbo {
-  background-image: url("../portfolio/dbo.png");
+#agents {
+  background-image: url("../portfolio/agents.png");
   background-size: 200% 100%;
   background-position: 100% 0%;
   color: black; }
-  #dbo:hover {
+  #agents:hover {
     color: #0080dd;
     background-position: 0% 0%; }
 

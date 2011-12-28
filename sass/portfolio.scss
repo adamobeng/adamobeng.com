@@ -159,7 +159,7 @@ ul.posts h2 {
 	margin: 0;
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
-	margin-bottom: 3em;
+	margin-bottom: 1em;
 	margin-top: 1em;
 	font: sans-serif;
 	@include typekit-sans;
@@ -241,9 +241,9 @@ ul.posts h2 {
 	}
 
 
-#dbo {
+#agents {
 
-	background-image: url("../portfolio/dbo.png");
+	background-image: url("../portfolio/agents.png");
 	background-size: 200% 100%;
 	background-position: 100% 0%;
 	color: black;
