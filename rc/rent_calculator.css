@@ -1,0 +1,73 @@
+.ui-slider-handle {
+	width: 300px;
+}
+
+#player1 {
+	float:left;
+	width: 319px;
+	border-right: 1px dashed gray;
+	text-align: center;
+	height: 600px;
+}
+
+#player1 h2 {
+	color: #ff895a;
+}
+
+
+#player2 {
+	float:left;
+	width: 319px;
+	border-right: 1px dashed gray;
+	text-align: center;
+	height: 600px;
+	background: #f0f0f0;
+	color: #808080;
+}
+#player3 {
+	float:left;
+	width: 319px;
+	text-align: center;
+	height: 600px;
+	background: #f0f0f0;
+	color: #c0c0c0;
+}
+#slider1 {
+	margin-left: 25%;
+}
+
+#container {
+	width: 960px;
+	margin:auto;
+	border-radius: 40px;
+	-moz-border-radius: 40px;
+	-webkit-border-radius: 40px;
+	background: #f0f0f0;
+	box-shadow: -1px 1px 0 0 #c0c0c0;
+	-moz-box-shadow: -1px 1px 0 0 #c0c0c0;
+	-webkit-box-shadow: -1px 1px 0 0 #c0c0c0;
+text-align: center;
+padding-top: 40px;
+padding-bottom: 40px;
+}
+
+.handle-label {
+margin-left: 40px;
+width: 200px;
+	color: #ff895a;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+
+	font-family: "raleway-1", "raleway-2", sans-serif;	
+}
+
+#step {
+	right: 75%;
+}
+#rent {
+}
