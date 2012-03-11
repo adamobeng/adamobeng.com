@@ -1,1 +1,1 @@
-Did a whole bunch of stuff
+Added comments to rent calculator Javascript file
