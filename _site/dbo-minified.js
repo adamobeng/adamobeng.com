@@ -1,5 +1,5 @@
 
-function draw(){var active_node_square_size=7;var total_node_square_size=active_node_square_size+2;var active_nodes=Math.pow(active_node_square_size,2);var num_nodes=Math.pow((active_node_square_size+2),2);var nodes=[];for(i=0;i<num_nodes;i++){is_in_active_column=((i%(active_node_square_size+2))<(active_node_square_size+1))&&((i%(active_node_square_size+2))>=1);is_in_active_row=((i/(active_node_square_size+2))>1)&&((i/(active_node_square_size+2))<(active_node_square_size+1));is_active=is_in_active_column&&is_in_active_row;if(is_active){nodes.push(new node(i,0,0,true));}
+$(document).ready(function(){var active_node_square_size=7;var total_node_square_size=active_node_square_size+2;var active_nodes=Math.pow(active_node_square_size,2);var num_nodes=Math.pow((active_node_square_size+2),2);var nodes=[];for(i=0;i<num_nodes;i++){is_in_active_column=((i%(active_node_square_size+2))<(active_node_square_size+1))&&((i%(active_node_square_size+2))>=1);is_in_active_row=((i/(active_node_square_size+2))>1)&&((i/(active_node_square_size+2))<(active_node_square_size+1));is_active=is_in_active_column&&is_in_active_row;if(is_active){nodes.push(new node(i,0,0,true));}
 	else{nodes.push(new node(i,0,0,false));}}
 	squareLayout();steps=0;setInterval(updateScreen,100);var canvas=document.getElementById("canvas");if(canvas.getContext){var ctx=canvas.getContext("2d");}
 	else{return;}
@@ -26,7 +26,7 @@ function draw(){var active_node_square_size=7;var total_node_square_size=active_
 								if(nodes[i].active){ctx.fillStyle=nodes[i].colour;}else{ctx.fillStyle="#ffffff";}
 								ctx.beginPath();ctx.arc(nodes[i].x,nodes[i].y,19,0,Math.PI*2);ctx.fill();ctx.lineWidth=2;if(nodes[i].active==true){ctx.strokeStyle="#000000";}else{ctx.strokeStyle="#d0d0d0";}
 								ctx.stroke();}
-								drawButton(2,380,"step");drawButton(80,380,"reset");}}
+								drawButton(2,380,"step");drawButton(80,380,"reset");}});
 
 								//  Minified using http://fmarcia.info/jsmin/test.html By Franck Marcia
 								//  From the original idea of Douglas Crockford

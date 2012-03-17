@@ -38,6 +38,8 @@
 		<!-- Typekit -->
 		<script type="text/javascript" src="http://use.typekit.com/qjd5hyy.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	 </head>
 
 	<body>
@@ -53,7 +55,7 @@
 				<ul><a href="../blog.html" rel="archives">blog</a></ul>
 				<ul><a href="../projects.html">projects</a></ul>
 				<ul><a href="../cv.html">CV</a></ul>
-				<ul class="rss"><a href="../atom.xml">feed</a><img src="feed-icon-14x14.png"/></ul>
+				<ul class="rss"><a href="../atom.xml">feed</a><img src="/feed-icon-14x14.png"/></ul>
 				</li>
 		<div class="contact">
 						<p>

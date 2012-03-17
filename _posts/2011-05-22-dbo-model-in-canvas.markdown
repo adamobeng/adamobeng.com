@@ -16,8 +16,6 @@ In addition, you couldn't really have a dynamic, interactive presentation of the
 
 <script type="text/javascript" src="../dbo-minified.js"></script>
 
-<body onload="draw();"></body>
-
 <canvas id="canvas" width="400" height="400" style="margin: 2em;"></canvas>
 
 Click the nodes to change their DBO state; <font color="#0000FF">blue</font> nodes have desire, <font color="#FF0000">red</font> nodes have belief and <font color="#FF00FF">purple</font> nodes have both. The 'step' button advances the simulation by one step, and the 'reset' button randomly assigns DBO states to all of the nodes.
