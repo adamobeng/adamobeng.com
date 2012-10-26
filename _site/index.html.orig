@@ -9,10 +9,10 @@
 		<link rel="author" href="/humans.txt" />
 
 		 <!-- syntax highlighting CSS -->
-		 <link rel="stylesheet" href="css/syntax.css" type="text/css" />
+		 <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
 
 		 <!-- Homepage CSS -->
-		 <link rel="stylesheet" href="css/screen.css" type="text/css" media="screen, projection" />
+		 <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
 
 		 <link rel="shortcut icon" href="/favicon.ico">
 
@@ -51,11 +51,11 @@
 
 		<nav>
 			<li>
-				<ul><a href="/">home</a></ul>
-				<ul><a href="../blog.html" rel="archives">blog</a></ul>
-				<ul><a href="../projects.html">projects</a></ul>
+				<ul><a href="/">Home</a></ul>
+				<ul><a href="../blog.html" rel="archives">Blog</a></ul>
+				<ul><a href="../projects.html">Projects</a></ul>
 				<ul><a href="../cv.html">CV</a></ul>
-				<ul class="rss"><a href="../atom.xml">feed</a><img src="/feed-icon-14x14.png"/></ul>
+				<ul class="rss"><a href="../atom.xml">Feed</a><img src="/feed-icon-14x14.png"/></ul>
 				</li>
 		<div class="contact">
 						<p>
@@ -93,7 +93,7 @@
 		<h1>Projects</h1>
 	      	<ul class="posts">
 		    
-		      <li> &raquo; <a href="talk-at-CCC">Talk at 27C3 -- The Political Philosophy of the Internet</a></li>
+		      <li> &raquo; <a href="talk-at-CCC">Talk at 27C3 &mdash; The Political Philosophy of the Internet</a></li>
 		    
 		      <li> &raquo; <a href="analytical-sociology-thesis">Undergraduate Thesis in Analytical Sociology</a></li>
 		    

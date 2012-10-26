@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Talk at 27C3 -- The Political Philosophy of the Internet
+title: Talk at 27C3 &mdash; The Political Philosophy of the Internet
 categories: projects
 ---
 
