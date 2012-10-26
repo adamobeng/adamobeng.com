@@ -11,3 +11,6 @@ root_desc: "AdamObeng.com"
 
 exclude: ['config.rb', 'references', 'convert', 'sass', '_drafts']
 permalink: ":title"
+
+auto: true
+server: true
