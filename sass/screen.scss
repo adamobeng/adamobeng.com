@@ -1,443 +1,146 @@
 /* screen.scss */
+@import "reset.css";
 
 /* SCSS Variables */
-$accent-colour: #0080dd; // Used for links
-$accent2: adjust-hue($accent-colour, 180);
-$background: lighten(desaturate($accent-colour, 80%), 54%);//  Base background colour, used for outside of site.
-$light-background: lighten($background, 4%) ; //  Lighter than standard bacground colour, used for inside of site and nav
-$dark-background: darken($background, 80%) ; //  Darker than standard bacground colour, used for shadows
-$link-visited: #a000a0; // Used for links
-$link-hover: darken($accent-colour, 80%);// Used for links
-$title-colour: darken($background, 80%);
-$border-colour: darken($background, 80%);
-$border-light: darken($background, 10%);
-//  Note that colours for the twitter box are set seperately.
-$site-padding: 20em;
-$nav-width: 8em;
+$accent-colour: #dd2323; // Tufte-style
+//$accent-colour: #1b67e0; // Used for links
+$text-colour: #303030;
+$background: lighten(#ffe88a, 22%);// Tufte-style
+//$background: #fdfdfd;
+$link-visited: black; // Used for links
+$link-hover: lighten($accent-colour, 80%);// Used for links
 
-/* SASS mixins */
-@mixin typekit-sans {
-	font-family: "raleway-1", "raleway-2", sans-serif;	
+
+@mixin t-border {
+	border: 1px red solid;
 }
 
-@mixin typekit-serif {
-	font-family: "adobe-garamond-pro-1", "adobe-garamond-pro-2", serif;
+@mixin serif {
+	font-family:"palatino", serif;
 }
-
-@mixin rounded-borders($radius: 10px) {
-	border-radius: $radius;
-	-moz-border-radius: $radius;
-	-webkit-border-radius: $radius;
-}
-
-@mixin home-page-panel($side) {
-		border: 1px dashed $border-light;
-		width: 320px;
-		font-size: 90%;
-		float: $side;
-		padding: 0.5em;
-		@include rounded-borders(4px);
-		height: 160px;
-		h1 {
-			@include typekit-sans;
-		}
-
-}
-
-@mixin box-shadow {
-	box-shadow: -4px 4px 4px 0 $dark-background;
-	-moz-box-shadow: -4px 4px 4px 0 $dark-background;
-	-webkit-box-shadow: -4px 4px 4px 0 $dark-background;
-
-}
-
-/*****************************************************************************/
-/*
-/* Common
-/*
-/*****************************************************************************/
-
-/* Global Reset */
 
 * {
-	margin: 0;
-	padding: 0;
+	//@include t-border;
 }
 
-html, body {
-	height: 100%;
+a{
+	color: $accent-colour;
+	:visited {color: $link-visited;}
+	:hover {color: $link-hover;}
 }
 
 body {
-	background-color: $background;
-	@include typekit-serif;
-	*font-size: small;
-	text-align: center;
-	text-color: #f0f0f0;
+	margin-left: 8em;
+	margin-top: 6em;
+	margin-bottom: 8em;
+	width: 850px;
+	background: $background;
+
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-size: 100%;
-	@include typekit-sans;
+.newthought {
+	margin-top: 3em;
+	font-variant: small-caps;
+	font-size: 110%;
+
+}
+.sidenote{
+	float:right;
 }
 
-h1 {
-	margin-bottom: 1em;
-}
 
-p {
-	margin: 1em 0;
-}
-
-a {
-	color: $accent-colour;
-}
-
-a:hover {
-	color: $link-hover;
-}
-
-a:visited {
-//	color: $link-visited;
-}
-
-table {
-	font-size: inherit;
-	font: 100%;
-}
-
-/*****************************************************************************/
-/*
-/* Home
-/*
-/*****************************************************************************/
-
-ul.posts {
-	list-style-type: none;
-}
-
-	ul.posts li {
-	  line-height: 1.75em;
+header {
+	h1 {
+		font-size: 3em;
+		a {
+			font-variant: small-caps;
+			text-decoration: none;
 	}
-
-	ul.posts span {
-	  color: #aaa;
-	  font-family: Monaco, "Courier New", monospace;
-	  font-size: 80%;
-	}
- a.more {
-	color: lighten($accent-colour, 10%);
 }
-ul.posts h2 {
 }
 
-/*****************************************************************************/
-/*
-/*	Navigation bar
-/*
-/*****************************************************************************/
-
-	nav {
-		text-align: right;
-		font-size: 1.4em;
-		float: left;
-		@include typekit-sans;
-
-		/*width: $$nav-width;*/
-		width: $nav-width;
-		margin-bottom: 2em;
-		background-color: $dark-background;
-
-		border-right: 1px dashed $border-colour;
-		@include box-shadow;
-		/*  http://www.w3schools.com/cssref/pr_class_position.asp */
-		position: fixed;
-
-		/*
-		 * http://www.mediacollege.com/internet/css/ul-list.html
-		 */
-
-		/*
-		 http://css-tricks.com/snippets/css/css3-zebra-striping-a-table/
-		 http://www.w3.org/TR/css3-selectors/#nth-child-pseudo 
-		 */
-
-		ul:nth-child(odd) {background: lighten($dark-background, 10%);}
-		ul {
-		padding-right: 1em;
-			height: 1.8em;
-			padding-top: 0.9em;
-	}
-		li {
-		list-style-type: none;
-			a {
-			&:link { color: $accent-colour; }
-			&:hover { color: $link-hover; }
-			&:visited { color: $link-visited; }
-			}
-		}
-		.rss {
-			/* http://www.w3schools.com/css/pr_background-image.asp */
-			img {
-				margin: 0;
-				padding-left: 0.4em;
-			}
-		}
-			.contact {
-				font-size: 0.7em;
-				text-align: right;
-			}
-			.contact a { color: $accent-colour; }
-
-	}
-
-
-/*****************************************************************************/
-/*
-/* Site
-/*
-/*****************************************************************************/
-
-	header {
-		color: $title-colour;
-		font-weight: bold;
-		padding: 0;
-		margin: 0;
-		font-size: 7em;
-		font: sans-serif;
-		@include typekit-sans;
-
-
-		h1 {
-			//  http://www.viget.com/inspire/practical-uses-of-css3/#continue
-			//  text-shadow: -1px 1px 2px lighten($title-colour, 70%);
-			margin: 0;
-			padding: 0;
-			}
+nav {
+	font-size: 1.2em;
+	line-height: 1.4em;
+	width: 175px;
+	float: right;
+	margin-top: 1.8em;
+	color: $text-colour;
 
 		a {
-			color: $accent-colour;
 			text-decoration: none;
-			&:hover { color: black; }
-		
-			.extra {
-				text-decoration: none;
-				margin-left: 2em;
-				&:hover { color: black; }
-			}
 		}
-
+	li {
+		list-style-type: none;
+		font-variant: small-caps;
 
 	}
 
-	.main-header {
-		background: $dark-background;
-		text-align: right;
-		height: 1.2em;
-
-		h1 {
-		}
+	.contact, .copyright, .cc {
+		margin-top: 1em;
+		font-variant: small-caps;
 	}
+
+	.rss img {
+		margin-left: 0.4em;
+	}
+}
+
 .site {
-	font-size: 120%;
-	text-align: justify;
-	margin-left: $site-padding;
-	margin-right: $site-padding - $nav-width;
-	margin-top: 60px;
-	margin-bottom: 60px;
-	line-height: 1.5em;
-	background: $light-background;
-	padding: 0 1em 1em 1em;
-	color: #000020;
-	border: 1px dashed $border-colour;
+	@include serif;
+	line-height: 1.8em;
+	width: 600px;
+	float: left;
+	margin-top: 2em;
+	color: $text-colour;
 
-	.home {
-		height: 40em;
-		margin: 4em;
-	}
 
-	/*  http://www.impressivewebs.com/css3-click-chart/ */
-	.projects {
 
-		-webkit-column-count: 2;
-		-webkit-column-width: 10em;
-		-webkit-column-gap: 35px;
-		-webkit-column-rule: 1px dashed $border-light;
-		-moz-column-count: 2;
-		-moz-column-width: 10em;
-		-moz-column-gap: 35px;
-		-o-column-rule: 1px dashed $border-light;
-		-o-column-count: 2;
-		-o-column-width: 10em;
-		-o-column-gap: 35px;
-		-o-column-rule: 1px dashed $border-light;
-		column-count: 2;
-		column-width: 10em;
-		column-gap: 35px;
-		column-rule: 1px dashed $border-light;
+	h1, h2, h3, h4, h5, h6 {
+		font-style: italic;
+
 		margin-top: 2em;
+		margin-bottom: 0.6em;
 	}
 
+	h1 { font-size: 130%; }
+	h2 { font-size: 120%; }
+	h3 { font-size: 110%; }
 
-	.meta { color: #aaa; }
+	p {
+		margin-bottom: 1em;
+	}
+	
+	
+	blockquote {
+		margin-left: 2em;
+		padding-left: 0.4em;
+		border-left: 1px solid #303030;
 	}
 
-	.twitter {
-		padding-top: 1em;
-	}
-
-	footer {
-			color: #664;
-			border-top: 1px dashed $border-colour;
-			overflow: hidden;
-			background: lighten($dark-background, 10%);
-
-			/*  http://stackoverflow.com/questions/526035/html-css-positioning-float-bottom  */
-			position: fixed;
-			bottom: 0;
-			width: 100%;
-			height: 7em;
-		}
-
-/*****************************************************************************/
-/*
-/* Posts
-/*
-/*****************************************************************************/
-
-article {
-
-}
-
-	/* standard */
-	article {
-		padding-top: 1em;
-	}
-	article pre {
-	  border: 1px solid #ddd;
-	  background-color: #eef;
-	  padding: 0 .4em;
-	}
-
-	article ul,
-	article ol {
-	  margin-left: 1.25em;
-	}
-
-	article code {
-	  border: 1px solid #ddd;
-	  background-color: #eef;
-	  font-size: 95%;
-	  padding: 0 .2em;
-	}
-
-	  article pre code {
-	    border: none;
-	  }
-
-	/* terminal */
-
-	article pre.terminal {
-	  border: 1px solid black;
-	  background-color: #333;
-	  color: white;
-	}
-
-	article pre.terminal code {
-	  background-color: #333;
-	}
-
-	article h1 {
-		@include typekit-sans;
-		padding: 0 0 0em 0;
-	}
-
-	article h2 {
-		@include typekit-sans;
-		padding: 0.5em 0 0 0;
-	}
-
-	article header {
-		color: $accent-colour;
-		font-size: 95%;
-		text-align: right;
-		border-bottom: 1px dashed $border-light;
-		font-family: "Monaco", "Courier New", monospace;
+	article > header {
 		margin-bottom: 2em;
-	}
-
-	article header h1 {
-		padding: 0;
-		margin: 0;
-		text-align: left;
-		color: black;
-	}
-
-#related {
-	border-top: 1px dashed $border-light;
-	padding-top: 2em;
-}
-
-	#related h2 {
-	  margin-bottom: 1em;
-	}
-
-	#disqus {
-		border-top: 1px dashed $border-light;
-		background: $background;
-		margin-top: 2em;
-		padding: 0.5em;
-	}
-
-/*****************************************************************************/
-/*
-/* CV
-/*
-/*****************************************************************************/
-
-	.cv {
-		text-align: left;
-		margin: 3em auto 2em auto;
-		line-height: 1.5em;
-		background: #fefefe;
-		padding: 0 1em 1em 1em;
-		width: 60em;
-
-		.cvheader {
-			font-size: 20px;
-			color: $title-colour;
+		h1 { 
+			margin-top: 0;
+			font-size: 150%; 
 			font-variant: small-caps;
-			padding-top: 2em;
+			font-style: normal;
 		}
-
-		.cvsmall {
-			font-size: 90%;
-		}
-
-		ul {
-			list-style-type: none;
-			li {
-				padding-left: 2em;
-				span {
-				  color: #aaa;
-				  font-family: Monaco, "Courier New", monospace;
-				  font-size: 80%;
-				  padding-right: 2em;
-				}
-			}
-		}
-
-		h1 {
-			font-size: 2em;
-			margin-top: 1em;
-			padding-top: 1em;
-@include typekit-sans;
-		}
-
-//  http://www.webmasterworld.com/forum83/239.htm
-		h3 {
-			display: inline;
-		}
-
-
 	}
+
+	em {
+		font-style: italic;
+	}
+
+	.projects, .blog
+	{
+	}
+
+	// http://www.adobe.com/cfusion/communityengine/index.cfm?event=showdetails&productId=1&postId=5341
+	sup {
+		font-size: 80%;
+		position: relative;
+		bottom: 1ex;
+	}
+	
+}

@@ -1,0 +1,16 @@
+<smil xmlns="http://www.w3.org/ns/SMIL" version="3.0" profile="http://www.ipdf.org/epub/30/profile/content/">
+ <body> 
+<par id="audio-0"> <text src="page1.html#l_1_1"/> <audio src="beowulf.wav" clipBegin="36000ms" clipEnd="10066ms"/> </par>
+<par id="audio-1"> <text src="page1.html#l_1_2"/> <audio src="beowulf.wav" clipBegin="10067ms" clipEnd="12509ms"/> </par>
+<par id="audio-2"> <text src="page1.html#l_1_3"/> <audio src="beowulf.wav" clipBegin="12510ms" clipEnd="16572ms"/> </par>
+<par id="audio-3"> <text src="page1.html#l_1_4"/> <audio src="beowulf.wav" clipBegin="16573ms" clipEnd="22391ms"/> </par>
+<par id="audio-4"> <text src="page1.html#l_1_5"/> <audio src="beowulf.wav" clipBegin="22392ms" clipEnd="27715ms"/> </par>
+<par id="audio-5"> <text src="page1.html#l_1_6"/> <audio src="beowulf.wav" clipBegin="27716ms" clipEnd="31884ms"/> </par>
+<par id="audio-6"> <text src="page1.html#l_1_7"/> <audio src="beowulf.wav" clipBegin="31885ms" clipEnd="36880ms"/> </par>
+<par id="audio-7"> <text src="page1.html#l_1_8"/> <audio src="beowulf.wav" clipBegin="36881ms" clipEnd="42438ms"/> </par>
+<par id="audio-8"> <text src="page1.html#l_1_9"/> <audio src="beowulf.wav" clipBegin="42439ms" clipEnd="47338ms"/> </par>
+<par id="audio-9"> <text src="page1.html#l_1_10"/> <audio src="beowulf.wav" clipBegin="47339ms" clipEnd="49952ms"/> </par>
+<par id="audio-10"> <text src="page1.html#l_1_11"/> <audio src="beowulf.wav" clipBegin="49953ms" clipEnd="56219ms"/> </par>
+
+ </body> 
+ </smil>

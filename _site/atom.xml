@@ -4,7 +4,7 @@
  <title>Adam Obeng</title>
  <link href="http://adamobeng.com/atom.xml" rel="self"/>
  <link href="http://adamobeng.com/"/>
- <updated>2012-10-26T23:16:43-04:00</updated>
+ <updated>2012-10-26T23:25:25-04:00</updated>
  <id>http://adamobeng.com/</id>
  <author>
    <name>Adam Obeng</name>
@@ -66,37 +66,11 @@ Is this poster a one-off, has anyone seen others on a similar theme?
  </entry>
  
  <entry>
-   <title>Vennervating</title>
-   <link href="http://adamobengvennervating"/>
-   <updated>2012-09-16T00:00:00-04:00</updated>
-   <id>http://adamobeng.com./vennervating</id>
-   <content type="html">&lt;p&gt;Isn&amp;#8217;t it the most cliched thing to not update a blog for a while, and then apologised for doing so? Well I&amp;#8217;m an iconoclast, so that&amp;#8217;s not likely.&lt;/p&gt;
-
-&lt;p&gt;However, quite a few things have happened in the interval: I&amp;#8217;ve finished up at Nuffield (including a thesis about &lt;a href='https://en.wikipedia.org/wiki/William_Godwin'&gt;William Godwin&lt;/a&gt;&amp;#8217;s &lt;a href='http://godwindiary.bodleian.ox.ac.uk'&gt;Diaries&lt;/a&gt; about which certainly more anon). I&amp;#8217;m now a few weeks into the Ph.D. programme in Sociology at Columbia University (in the City of New York).&lt;/p&gt;
-
-&lt;p&gt;As a result of moving to the Capital of The Universe, I&amp;#8217;m experiencing some cultural disconnects.&lt;/p&gt;
-
-&lt;p&gt;I guess set theory (or at least some of the graphics associated therewith) is now part of popular culture to a sufficient extent that Madison Avenue&lt;a href='I'&gt;1&lt;/a&gt; has got hold of it. Hence, this:&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt='An advertising poster for Speck cases, showing a pseudo-Venn diagram' src='/images/speck_venn_diagram_small.jpg' /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Full disclosure&lt;/em&gt;: I&amp;#8217;ve had a Speck case on my Mac Book Air since the day I bought it, and it&amp;#8217;s brilliant.&lt;/p&gt;
-
-&lt;p&gt;Let&amp;#8217;s call these sets C, D and G.&lt;/p&gt;
-
-&lt;p&gt;Obviously, the intersection of C and D is the empty set, given that $C=\notD$, so C union D = emptyset. Moreover, all people who used check the slot don&amp;#8217;t check the slot, so G belongs D. Therefore, the intersection of all three sets &amp;#8212; $C \union D \union G$ where speck is to be found &amp;#8212; is empty. Given that a speck is a small &amp;#8212; perhaps infinitesimally small &amp;#8212; particle, perhaps that&amp;#8217;s &lt;a href='https://en.wikipedia.org/wiki/Almost_certain#Throwing_a_dart'&gt;appropriate&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt='An improved diagram' src='/images/speck_venn_diagram.jpg,' /&gt;&lt;/p&gt;
-
-&lt;p&gt;Is this poster a one-off, has anyone seen others on a similar theme?&lt;/p&gt;</content>
- </entry>
- 
- <entry>
    <title>Truth and persuasion</title>
    <link href="http://adamobengtruth-and-persuasion"/>
    <updated>2011-09-29T00:00:00-04:00</updated>
    <id>http://adamobeng.com./truth-and-persuasion</id>
-   <content type="html">&lt;p&gt;Han-teng Liao&amp;#8217;s &lt;a href='http://people.oii.ox.ac.uk/hanteng/2011/09/27/ways-of-seeing-data/'&gt;post&lt;/a&gt; got me thinking about&lt;sup id='fnref:1'&gt;&lt;a href='#fn:1' rel='footnote'&gt;1&lt;/a&gt;&lt;/sup&gt; data visualization as a tool for communication.&lt;/p&gt;
+   <content type="html">&lt;p&gt;Han-teng Liao&amp;#8217;s &lt;a href='http://people.oii.ox.ac.uk/hanteng/2011/09/27/ways-of-seeing-data/'&gt;post&lt;/a&gt; got me thinking about&lt;sup id='fnref:1'&gt;&lt;a rel='footnote' href='#fn:1'&gt;1&lt;/a&gt;&lt;/sup&gt; data visualization as a tool for communication.&lt;/p&gt;
 
 &lt;p&gt;In particular, I thought I should take issue with the quote he gives from &lt;a href='http://blog.revolutionanalytics.com/2011/09/data-visualization-vs-propaganda.html?cid=6a010534b1db25970b015435abb804970c'&gt;David Smith&lt;/a&gt;:&lt;/p&gt;
 
@@ -117,7 +91,7 @@ Is this poster a one-off, has anyone seen others on a similar theme?
 &lt;p&gt;&lt;em&gt;(This post was edited on 07/10/2011 to properly attribute a quote to David Smith.)&lt;/em&gt;&lt;/p&gt;
 &lt;div class='footnotes'&gt;&lt;hr /&gt;&lt;ol&gt;&lt;li id='fn:1'&gt;
 &lt;p&gt;Is this how I start all my blog posts?&lt;/p&gt;
-&lt;a href='#fnref:1' rev='footnote'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</content>
+&lt;a rev='footnote' href='#fnref:1'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</content>
  </entry>
  
  <entry>
@@ -137,7 +111,7 @@ Is this poster a one-off, has anyone seen others on a similar theme?
 &lt;p&gt;In fact, I’ll say that even more strongly – &lt;em&gt;if your speech is not confined to the context you are in – but available to a potentially unknowable audience – you are online.&lt;/em&gt; &lt;span&gt;emphasis in original&lt;/span&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;You&amp;#8217;re online if what you do and say is &amp;#8220;available to a potentially unknowable audience&amp;#8221;, specifically an audience which you don&amp;#8217;t select, and to which you can&amp;#8217;t adapt your actions&lt;sup id='fnref:1'&gt;&lt;a href='#fn:1' rel='footnote'&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;You&amp;#8217;re online if what you do and say is &amp;#8220;available to a potentially unknowable audience&amp;#8221;, specifically an audience which you don&amp;#8217;t select, and to which you can&amp;#8217;t adapt your actions&lt;sup id='fnref:1'&gt;&lt;a rel='footnote' href='#fn:1'&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 
 &lt;p&gt;Most of the time when you&amp;#8217;re online it&amp;#8217;s because your actions are being recorded electronically:&lt;/p&gt;
 
@@ -151,7 +125,7 @@ Is this poster a one-off, has anyone seen others on a similar theme?
 
 &lt;p&gt;I think that this definition of being &amp;#8216;offline&amp;#8217; is a bit strong. If Bernie&amp;#8217;s right then you&amp;#8217;re always online, unless you&amp;#8217;re not talking to anyone at all.&lt;/p&gt;
 
-&lt;p&gt;The fact is, your actions &lt;em&gt;are&lt;/em&gt; being recorded when you&amp;#8217;re interacting in the real world: they&amp;#8217;re being recorded by the person you&amp;#8217;re talking to. And while they&amp;#8217;re not being &amp;#8220;digitized&amp;#8221;, they are being &amp;#8220;networked&amp;#8221;, passed on through word of mouth, or even encoded at a later time by your interlocutor. And this &lt;em&gt;is&lt;/em&gt; &amp;#8220;by default&amp;#8221;: unless you make it clear that a conversation is not to be shared&lt;sup id='fnref:2'&gt;&lt;a href='#fn:2' rel='footnote'&gt;2&lt;/a&gt;&lt;/sup&gt;, then you can expect it to be shared.&lt;/p&gt;
+&lt;p&gt;The fact is, your actions &lt;em&gt;are&lt;/em&gt; being recorded when you&amp;#8217;re interacting in the real world: they&amp;#8217;re being recorded by the person you&amp;#8217;re talking to. And while they&amp;#8217;re not being &amp;#8220;digitized&amp;#8221;, they are being &amp;#8220;networked&amp;#8221;, passed on through word of mouth, or even encoded at a later time by your interlocutor. And this &lt;em&gt;is&lt;/em&gt; &amp;#8220;by default&amp;#8221;: unless you make it clear that a conversation is not to be shared&lt;sup id='fnref:2'&gt;&lt;a rel='footnote' href='#fn:2'&gt;2&lt;/a&gt;&lt;/sup&gt;, then you can expect it to be shared.&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;I am engaging in a trust relationship with the curator, but I am not free to say what I want.&lt;/p&gt;
@@ -169,7 +143,7 @@ Is this poster a one-off, has anyone seen others on a similar theme?
 
 &lt;p&gt;Under this definition, it&amp;#8217;s clear that a real-world conversation can be either online or offline, because it can be either on- or off- the record.&lt;/p&gt;
 
-&lt;p&gt;But this binary&lt;sup id='fnref:3'&gt;&lt;a href='#fn:3' rel='footnote'&gt;3&lt;/a&gt;&lt;/sup&gt; definition still isn&amp;#8217;t sufficient. There is still a difference between the online-ness of the real world and that of social networks. I would say that the real world is inherently more offline, because accessing information about your past actions is difficult. It&amp;#8217;s not surprising that a technology designed for information retrieval should make it easy to find things out.&lt;/p&gt;
+&lt;p&gt;But this binary&lt;sup id='fnref:3'&gt;&lt;a rel='footnote' href='#fn:3'&gt;3&lt;/a&gt;&lt;/sup&gt; definition still isn&amp;#8217;t sufficient. There is still a difference between the online-ness of the real world and that of social networks. I would say that the real world is inherently more offline, because accessing information about your past actions is difficult. It&amp;#8217;s not surprising that a technology designed for information retrieval should make it easy to find things out.&lt;/p&gt;
 
 &lt;p&gt;In other words, being online is a question of degree. You are totally offline if there&amp;#8217;s no &amp;#8216;record&amp;#8217;, or if the &amp;#8216;record&amp;#8217; is impossible to access. &lt;em&gt;The more concrete and available the &amp;#8216;record&amp;#8217; of your actions, the more online you are.&lt;/em&gt;&lt;/p&gt;
 
@@ -188,11 +162,11 @@ Is this poster a one-off, has anyone seen others on a similar theme?
 &lt;p&gt;Just like in the real world, however, they can&amp;#8217;t prove it.&lt;/p&gt;
 &lt;div class='footnotes'&gt;&lt;hr /&gt;&lt;ol&gt;&lt;li id='fn:1'&gt;
 &lt;p&gt;Being able to adapt your actions is important so that your actions are context-sensitive.&lt;/p&gt;
-&lt;a href='#fnref:1' rev='footnote'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn:2'&gt;
+&lt;a rev='footnote' href='#fnref:1'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn:2'&gt;
 &lt;p&gt;Yes, it could be implicit in the conversational context.&lt;/p&gt;
-&lt;a href='#fnref:2' rev='footnote'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn:3'&gt;
+&lt;a rev='footnote' href='#fnref:2'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn:3'&gt;
 &lt;p&gt;No pun intended, etc, etc.&lt;/p&gt;
-&lt;a href='#fnref:3' rev='footnote'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</content>
+&lt;a rev='footnote' href='#fnref:3'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</content>
  </entry>
  
  <entry>
@@ -204,9 +178,9 @@ Is this poster a one-off, has anyone seen others on a similar theme?
 
 &lt;p&gt;If you&amp;#8217;ve been even vaguely following the controversy about &lt;a href='http://www.google.com/+/demo/'&gt;Google+&lt;/a&gt;, I&amp;#8217;ll give you a moment to wipe the coffee off your monitor.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href='http://socialmediacollective.org/2011/08/08/real-name-sites-are-necessarily-inadequate-for-free-speech/'&gt;Bernie Hogan&amp;#8217;s post&lt;/a&gt; is the latest &lt;span style='text-decoration: line-through;'&gt;free publicity for Google+&lt;/span&gt; salvo in the &amp;#8220;nymwars&amp;#8221;: the blogosphere&amp;#8217;s consternation over Google+&amp;#8217;s policy of requiring users to use their real names. Now, although I don&amp;#8217;t have a horse in this race&lt;sup id='fnref:1'&gt;&lt;a href='#fn:1' rel='footnote'&gt;1&lt;/a&gt;&lt;/sup&gt;, I&amp;#8217;d like to contribute what I think is really going on.&lt;/p&gt;
+&lt;p&gt;&lt;a href='http://socialmediacollective.org/2011/08/08/real-name-sites-are-necessarily-inadequate-for-free-speech/'&gt;Bernie Hogan&amp;#8217;s post&lt;/a&gt; is the latest &lt;span style='text-decoration: line-through;'&gt;free publicity for Google+&lt;/span&gt; salvo in the &amp;#8220;nymwars&amp;#8221;: the blogosphere&amp;#8217;s consternation over Google+&amp;#8217;s policy of requiring users to use their real names. Now, although I don&amp;#8217;t have a horse in this race&lt;sup id='fnref:1'&gt;&lt;a rel='footnote' href='#fn:1'&gt;1&lt;/a&gt;&lt;/sup&gt;, I&amp;#8217;d like to contribute what I think is really going on.&lt;/p&gt;
 
-&lt;p&gt;According to Bernie, real names in online interaction are sometimes better than pseudonymity. I think this is actually vanishingly rare. Google must realise this, and from the statements they&amp;#8217;ve made, it looks like they do.&lt;sup id='fnref:2'&gt;&lt;a href='#fn:2' rel='footnote'&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;According to Bernie, real names in online interaction are sometimes better than pseudonymity. I think this is actually vanishingly rare. Google must realise this, and from the statements they&amp;#8217;ve made, it looks like they do.&lt;sup id='fnref:2'&gt;&lt;a rel='footnote' href='#fn:2'&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;p&gt;We can only guess at what Google really wants, but if we take them at their word, their goal doesn&amp;#8217;t require real names. The real-names policy on Google+ is just a beta feature, an experiment.&lt;/p&gt;
 
@@ -250,14 +224,14 @@ Is this poster a one-off, has anyone seen others on a similar theme?
 
 &lt;p&gt;So, to answer the question posed above: it looks like real names only &amp;#8220;offer many advantages&amp;#8221; in the online world when the activity itself benefits from being linked to some offline existence. &lt;em&gt;Real names are a hack: they splice offline mechanisms of trust into the online world&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;When exactly does offline reputation matter? It&amp;#8217;s not just that only &amp;#8220;some lucky people give talks to large audiences, they get on the radio or tv&amp;#8221;&lt;sup id='fnref:3'&gt;&lt;a href='#fn:3' rel='footnote'&gt;3&lt;/a&gt;&lt;/sup&gt;. Only some lucky people are &lt;a href='http://en.wikipedia.org/wiki/Wikipedia:Notability'&gt;notable&lt;/a&gt; enough for their real names to matter.&lt;/p&gt;
+&lt;p&gt;When exactly does offline reputation matter? It&amp;#8217;s not just that only &amp;#8220;some lucky people give talks to large audiences, they get on the radio or tv&amp;#8221;&lt;sup id='fnref:3'&gt;&lt;a rel='footnote' href='#fn:3'&gt;3&lt;/a&gt;&lt;/sup&gt;. Only some lucky people are &lt;a href='http://en.wikipedia.org/wiki/Wikipedia:Notability'&gt;notable&lt;/a&gt; enough for their real names to matter.&lt;/p&gt;
 
 &lt;h2 id='real_names_dont_matter'&gt;Real names don&amp;#8217;t matter&lt;/h2&gt;
 
 &lt;p&gt;And it looks like Google has realised this. Robert Scoble reports that &lt;a href='https://plus.google.com/107117483540235115863/about'&gt;Vic Gundotra&lt;/a&gt; said that the real-names policy was supposed to:&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;make sure a positive tone gets set here &lt;span&gt;&amp;#8230;&lt;/span&gt; mostly to have a nicer, more personal, community,&lt;sup id='fnref:4'&gt;&lt;a href='#fn:4' rel='footnote'&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;make sure a positive tone gets set here &lt;span&gt;&amp;#8230;&lt;/span&gt; mostly to have a nicer, more personal, community,&lt;sup id='fnref:4'&gt;&lt;a rel='footnote' href='#fn:4'&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;It makes sense to require real names if you&amp;#8217;re trying to deter trolls. But it&amp;#8217;s not necessary to use real names to build a community. In fact,&lt;/p&gt;
@@ -266,9 +240,9 @@ Is this poster a one-off, has anyone seen others on a similar theme?
 &lt;p&gt;it isn&amp;#8217;t about real names &lt;span&gt;&amp;#8230;&lt;/span&gt; it is about having common names and removing people who spell their names in weird ways, like using upside-down characters, or who are using obviously fake names&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;But if people have &amp;#8220;common names&amp;#8221;&lt;sup id='fnref:5'&gt;&lt;a href='#fn:5' rel='footnote'&gt;5&lt;/a&gt;&lt;/sup&gt;, that they can&amp;#8217;t just shed like a skin, then they carry their reputation with them. People will be &amp;#8220;nice&amp;#8221;, because they don&amp;#8217;t want to get a reputation for being nasty. You can argue that point, but if it&amp;#8217;s true, it&amp;#8217;s a good reason for requiring &amp;#8220;common&amp;#8221;, or consistent names.&lt;/p&gt;
+&lt;p&gt;But if people have &amp;#8220;common names&amp;#8221;&lt;sup id='fnref:5'&gt;&lt;a rel='footnote' href='#fn:5'&gt;5&lt;/a&gt;&lt;/sup&gt;, that they can&amp;#8217;t just shed like a skin, then they carry their reputation with them. People will be &amp;#8220;nice&amp;#8221;, because they don&amp;#8217;t want to get a reputation for being nasty. You can argue that point, but if it&amp;#8217;s true, it&amp;#8217;s a good reason for requiring &amp;#8220;common&amp;#8221;, or consistent names.&lt;/p&gt;
 
-&lt;p&gt;Of course, this is still speculative, but Google&amp;#8217;s aim doesn&amp;#8217;t seem to be banning pseudonyms, but rather to enforce their consistency. And that&amp;#8217;s not in order to link what people say online to who they really are, but to make sure they&amp;#8217;re civil. The statement about weird characters&lt;sup id='fnref:6'&gt;&lt;a href='#fn:6' rel='footnote'&gt;6&lt;/a&gt;&lt;/sup&gt; seems to reinforce this: it&amp;#8217;s about image, the way the network appears to the outside world.&lt;/p&gt;
+&lt;p&gt;Of course, this is still speculative, but Google&amp;#8217;s aim doesn&amp;#8217;t seem to be banning pseudonyms, but rather to enforce their consistency. And that&amp;#8217;s not in order to link what people say online to who they really are, but to make sure they&amp;#8217;re civil. The statement about weird characters&lt;sup id='fnref:6'&gt;&lt;a rel='footnote' href='#fn:6'&gt;6&lt;/a&gt;&lt;/sup&gt; seems to reinforce this: it&amp;#8217;s about image, the way the network appears to the outside world.&lt;/p&gt;
 
 &lt;p&gt;If that&amp;#8217;s true, real names, like non-&amp;#8220;weird&amp;#8221; names, are being used as a proxy.&lt;/p&gt;
 
@@ -277,17 +251,17 @@ Is this poster a one-off, has anyone seen others on a similar theme?
 &lt;p&gt;&lt;a href='http://adamobeng.com/what-it-means-to-be-offline'&gt;Next time&lt;/a&gt; I&amp;#8217;ll talk about what it really means to be &amp;#8220;offline&amp;#8221;, and whether we can design a online social network that lets you be offline.&lt;/p&gt;
 &lt;div class='footnotes'&gt;&lt;hr /&gt;&lt;ol&gt;&lt;li id='fn:1'&gt;
 &lt;p&gt;I&amp;#8217;m not on Google+ &lt;a href='http://wellsb.com/post/7022247022/google-plus-for-google-apps-in-the-coming-months'&gt;because I&amp;#8217;ve got a Google Apps account&amp;#8230;&lt;/a&gt;.&lt;/p&gt;
-&lt;a href='#fnref:1' rev='footnote'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn:2'&gt;
+&lt;a rev='footnote' href='#fnref:1'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn:2'&gt;
 &lt;p&gt;For the purposes of this article I will be assuming that Google is, in fact, not evil.&lt;/p&gt;
-&lt;a href='#fnref:2' rev='footnote'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn:3'&gt;
+&lt;a rev='footnote' href='#fnref:2'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn:3'&gt;
 &lt;p&gt;&lt;a href='http://socialmediacollective.org/2011/08/08/real-name-sites-are-necessarily-inadequate-for-free-speech/'&gt;Real name sites are necessarily inadequate for free speech, by Bernie Hogan&lt;/a&gt;&lt;/p&gt;
-&lt;a href='#fnref:3' rev='footnote'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn:4'&gt;
+&lt;a rev='footnote' href='#fnref:3'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn:4'&gt;
 &lt;p&gt;&lt;a href='https://plus.google.com/111091089527727420853/posts/Fddn6rV8mBX'&gt;source: Robert Scoble&lt;/a&gt;&lt;/p&gt;
-&lt;a href='#fnref:4' rev='footnote'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn:5'&gt;
+&lt;a rev='footnote' href='#fnref:4'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn:5'&gt;
 &lt;p&gt;I assume that &amp;#8220;common&amp;#8221; is meant in the sense of &amp;#8216;consistent&amp;#8217;, rather than &amp;#8216;usual&amp;#8217;. Please correct me if I&amp;#8217;m wrong.&lt;/p&gt;
-&lt;a href='#fnref:5' rev='footnote'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn:6'&gt;
+&lt;a rev='footnote' href='#fnref:5'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn:6'&gt;
 &lt;p&gt;In some places, people can legally spell their names &amp;#8220;in weird ways&amp;#8221;, or have names that are &amp;#8220;obviously fake&amp;#8221;.&lt;/p&gt;
-&lt;a href='#fnref:6' rev='footnote'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</content>
+&lt;a rev='footnote' href='#fnref:6'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</content>
  </entry>
  
  <entry>
@@ -317,12 +291,12 @@ Is this poster a one-off, has anyone seen others on a similar theme?
 
 &lt;p&gt;For example, here&amp;#8217;s one of the graphs I used in my thesis:&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt='A graph showing the relation between the initial proportion of desires and beliefs and the eventual proportion of desires and beliefs in a basic version of the DBO model' src='/DBO_example_graph.png' /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src='/DBO_example_graph.png' alt='A graph showing the relation between the initial proportion of desires and beliefs and the eventual proportion of desires and beliefs in a basic version of the DBO model' /&gt;&lt;/p&gt;
 
 &lt;p&gt;Now that&amp;#8217;s a good summary of what&amp;#8217;s going on in the model, don&amp;#8217;t get me wrong. You can see a nice relationship between the parameters. Obviously, graphs like these are essential for summarising information, and you couldn&amp;#8217;t infer this from interacting with the simulation directly. Indeed, in some cases, interacting with the simulation will not even be possible (like when there are too many agents to display comfortably).&lt;/p&gt;
 
 &lt;p&gt;In addition, you couldn&amp;#8217;t really have a dynamic, interactive presentation of the model on paper (or even in a PDF). But on the web at least, with a little bit of HTML5 (in particular the &lt;a href='https://developer.mozilla.org/en/Canvas_tutorial'&gt;Canvas&lt;/a&gt; element) you can produce this:&lt;/p&gt;
-&lt;script type='text/javascript' src='../dbo-minified.js' /&gt;&lt;canvas height='400' id='canvas' style='margin: 2em;' width='400' /&gt;
+&lt;script type='text/javascript' src='../dbo-minified.js' /&gt;&lt;canvas style='margin: 2em;' id='canvas' height='400' width='400' /&gt;
 &lt;p&gt;Click the nodes to change their DBO state; &lt;font color='#0000FF'&gt;blue&lt;/font&gt; nodes have desire, &lt;font color='#FF0000'&gt;red&lt;/font&gt; nodes have belief and &lt;font color='#FF00FF'&gt;purple&lt;/font&gt; nodes have both. The &amp;#8216;step&amp;#8217; button advances the simulation by one step, and the &amp;#8216;reset&amp;#8217; button randomly assigns DBO states to all of the nodes.&lt;/p&gt;
 
 &lt;p&gt;As you may notice this is a simulation of the DBO model with a fixed set of parameters (in particular, opportunity is being ignored). As such, the behaviour exhibited is pretty limited. This is also for the time being &lt;em&gt;very&lt;/em&gt; alpha-quality code. Still, it shouldn&amp;#8217;t take too long to get a worthwhile implementation of the DBO model and its variants up and running.&lt;/p&gt;
