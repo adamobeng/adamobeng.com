@@ -4,7 +4,7 @@
  <title>Adam Obeng</title>
  <link href="http://adamobeng.com/atom.xml" rel="self"/>
  <link href="http://adamobeng.com/"/>
- <updated>2012-10-26T16:11:59-04:00</updated>
+ <updated>2012-10-26T23:16:43-04:00</updated>
  <id>http://adamobeng.com/</id>
  <author>
    <name>Adam Obeng</name>
@@ -63,6 +63,32 @@ Is this poster a one-off, has anyone seen others on a similar theme?
 
 [1]: I truthfully have no idea if they still produce advertsing there, but permit me my mytholoised vision of the City.
 </content>
+ </entry>
+ 
+ <entry>
+   <title>Vennervating</title>
+   <link href="http://adamobengvennervating"/>
+   <updated>2012-09-16T00:00:00-04:00</updated>
+   <id>http://adamobeng.com./vennervating</id>
+   <content type="html">&lt;p&gt;Isn&amp;#8217;t it the most cliched thing to not update a blog for a while, and then apologised for doing so? Well I&amp;#8217;m an iconoclast, so that&amp;#8217;s not likely.&lt;/p&gt;
+
+&lt;p&gt;However, quite a few things have happened in the interval: I&amp;#8217;ve finished up at Nuffield (including a thesis about &lt;a href='https://en.wikipedia.org/wiki/William_Godwin'&gt;William Godwin&lt;/a&gt;&amp;#8217;s &lt;a href='http://godwindiary.bodleian.ox.ac.uk'&gt;Diaries&lt;/a&gt; about which certainly more anon). I&amp;#8217;m now a few weeks into the Ph.D. programme in Sociology at Columbia University (in the City of New York).&lt;/p&gt;
+
+&lt;p&gt;As a result of moving to the Capital of The Universe, I&amp;#8217;m experiencing some cultural disconnects.&lt;/p&gt;
+
+&lt;p&gt;I guess set theory (or at least some of the graphics associated therewith) is now part of popular culture to a sufficient extent that Madison Avenue&lt;a href='I'&gt;1&lt;/a&gt; has got hold of it. Hence, this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='An advertising poster for Speck cases, showing a pseudo-Venn diagram' src='/images/speck_venn_diagram_small.jpg' /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Full disclosure&lt;/em&gt;: I&amp;#8217;ve had a Speck case on my Mac Book Air since the day I bought it, and it&amp;#8217;s brilliant.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;#8217;s call these sets C, D and G.&lt;/p&gt;
+
+&lt;p&gt;Obviously, the intersection of C and D is the empty set, given that $C=\notD$, so C union D = emptyset. Moreover, all people who used check the slot don&amp;#8217;t check the slot, so G belongs D. Therefore, the intersection of all three sets &amp;#8212; $C \union D \union G$ where speck is to be found &amp;#8212; is empty. Given that a speck is a small &amp;#8212; perhaps infinitesimally small &amp;#8212; particle, perhaps that&amp;#8217;s &lt;a href='https://en.wikipedia.org/wiki/Almost_certain#Throwing_a_dart'&gt;appropriate&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='An improved diagram' src='/images/speck_venn_diagram.jpg,' /&gt;&lt;/p&gt;
+
+&lt;p&gt;Is this poster a one-off, has anyone seen others on a similar theme?&lt;/p&gt;</content>
  </entry>
  
  <entry>
@@ -291,12 +317,12 @@ Is this poster a one-off, has anyone seen others on a similar theme?
 
 &lt;p&gt;For example, here&amp;#8217;s one of the graphs I used in my thesis:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src='/DBO_example_graph.png' alt='A graph showing the relation between the initial proportion of desires and beliefs and the eventual proportion of desires and beliefs in a basic version of the DBO model' /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt='A graph showing the relation between the initial proportion of desires and beliefs and the eventual proportion of desires and beliefs in a basic version of the DBO model' src='/DBO_example_graph.png' /&gt;&lt;/p&gt;
 
 &lt;p&gt;Now that&amp;#8217;s a good summary of what&amp;#8217;s going on in the model, don&amp;#8217;t get me wrong. You can see a nice relationship between the parameters. Obviously, graphs like these are essential for summarising information, and you couldn&amp;#8217;t infer this from interacting with the simulation directly. Indeed, in some cases, interacting with the simulation will not even be possible (like when there are too many agents to display comfortably).&lt;/p&gt;
 
 &lt;p&gt;In addition, you couldn&amp;#8217;t really have a dynamic, interactive presentation of the model on paper (or even in a PDF). But on the web at least, with a little bit of HTML5 (in particular the &lt;a href='https://developer.mozilla.org/en/Canvas_tutorial'&gt;Canvas&lt;/a&gt; element) you can produce this:&lt;/p&gt;
-&lt;script src='../dbo-minified.js' type='text/javascript' /&gt;&lt;canvas width='400' height='400' id='canvas' style='margin: 2em;' /&gt;
+&lt;script type='text/javascript' src='../dbo-minified.js' /&gt;&lt;canvas height='400' id='canvas' style='margin: 2em;' width='400' /&gt;
 &lt;p&gt;Click the nodes to change their DBO state; &lt;font color='#0000FF'&gt;blue&lt;/font&gt; nodes have desire, &lt;font color='#FF0000'&gt;red&lt;/font&gt; nodes have belief and &lt;font color='#FF00FF'&gt;purple&lt;/font&gt; nodes have both. The &amp;#8216;step&amp;#8217; button advances the simulation by one step, and the &amp;#8216;reset&amp;#8217; button randomly assigns DBO states to all of the nodes.&lt;/p&gt;
 
 &lt;p&gt;As you may notice this is a simulation of the DBO model with a fixed set of parameters (in particular, opportunity is being ignored). As such, the behaviour exhibited is pretty limited. This is also for the time being &lt;em&gt;very&lt;/em&gt; alpha-quality code. Still, it shouldn&amp;#8217;t take too long to get a worthwhile implementation of the DBO model and its variants up and running.&lt;/p&gt;

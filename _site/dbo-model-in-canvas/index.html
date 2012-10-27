@@ -91,12 +91,12 @@
 
 <p>For example, here&#8217;s one of the graphs I used in my thesis:</p>
 
-<p><img src='/DBO_example_graph.png' alt='A graph showing the relation between the initial proportion of desires and beliefs and the eventual proportion of desires and beliefs in a basic version of the DBO model' /></p>
+<p><img alt='A graph showing the relation between the initial proportion of desires and beliefs and the eventual proportion of desires and beliefs in a basic version of the DBO model' src='/DBO_example_graph.png' /></p>
 
 <p>Now that&#8217;s a good summary of what&#8217;s going on in the model, don&#8217;t get me wrong. You can see a nice relationship between the parameters. Obviously, graphs like these are essential for summarising information, and you couldn&#8217;t infer this from interacting with the simulation directly. Indeed, in some cases, interacting with the simulation will not even be possible (like when there are too many agents to display comfortably).</p>
 
 <p>In addition, you couldn&#8217;t really have a dynamic, interactive presentation of the model on paper (or even in a PDF). But on the web at least, with a little bit of HTML5 (in particular the <a href='https://developer.mozilla.org/en/Canvas_tutorial'>Canvas</a> element) you can produce this:</p>
-<script src='../dbo-minified.js' type='text/javascript' /><canvas width='400' height='400' id='canvas' style='margin: 2em;' />
+<script type='text/javascript' src='../dbo-minified.js' /><canvas height='400' id='canvas' style='margin: 2em;' width='400' />
 <p>Click the nodes to change their DBO state; <font color='#0000FF'>blue</font> nodes have desire, <font color='#FF0000'>red</font> nodes have belief and <font color='#FF00FF'>purple</font> nodes have both. The &#8216;step&#8217; button advances the simulation by one step, and the &#8216;reset&#8217; button randomly assigns DBO states to all of the nodes.</p>
 
 <p>As you may notice this is a simulation of the DBO model with a fixed set of parameters (in particular, opportunity is being ignored). As such, the behaviour exhibited is pretty limited. This is also for the time being <em>very</em> alpha-quality code. Still, it shouldn&#8217;t take too long to get a worthwhile implementation of the DBO model and its variants up and running.</p>
@@ -112,7 +112,7 @@
     
       <li><span>16 Sep 2012</span> &raquo; <a href="../vennervating.markdown">Vennervating</a></li>
     
-      <li><span>29 Sep 2011</span> &raquo; <a href="../truth-and-persuasion">Truth and persuasion</a></li>
+      <li><span>16 Sep 2012</span> &raquo; <a href="../vennervating">Vennervating</a></li>
     
   </ul>
 </div>

@@ -1,75 +1,303 @@
 /* screen.scss */
-@import url(reset.css);
 /* SCSS Variables */
-a {
-  color: #dd2323; }
-  a :visited {
-    color: black; }
+/* SASS mixins */
+/*****************************************************************************/
+/*
+/* Common
+/*
+/*****************************************************************************/
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  height: 100%; }
 
 body {
-  margin-left: 8em;
-  margin-top: 6em;
-  margin-bottom: 8em;
-  width: 850px; }
+  background-color: #f7f8fa;
+  font-family: "adobe-garamond-pro-1", "adobe-garamond-pro-2", serif;
+  *font-size: small;
+  text-align: center;
+  text-color: #f0f0f0; }
 
-.newthought {
-  margin-top: 3em;
-  font-variant: small-caps; }
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-family: "raleway-1", "raleway-2", sans-serif; }
 
-.sidenote {
-  float: right; }
+h1 {
+  margin-bottom: 1em; }
 
-header h1 {
-  font-size: 3em; }
-  header h1 a {
-    font-variant: small-caps;
-    text-decoration: none; }
+p {
+  margin: 1em 0; }
 
+a {
+  color: #0080dd; }
+
+a:hover {
+  color: black; }
+
+table {
+  font-size: inherit;
+  font: 100%; }
+
+/*****************************************************************************/
+/*
+/* Home
+/*
+/*****************************************************************************/
+ul.posts {
+  list-style-type: none; }
+
+ul.posts li {
+  line-height: 1.75em; }
+
+ul.posts span {
+  color: #aaa;
+  font-family: Monaco, "Courier New", monospace;
+  font-size: 80%; }
+
+a.more {
+  color: #119bff; }
+
+/*****************************************************************************/
+/*
+/*	Navigation bar
+/*
+/*****************************************************************************/
 nav {
-  font-size: 1.2em;
-  line-height: 1.4em;
-  width: 175px;
-  float: right;
-  margin-top: 1.8em;
-  color: #303030; }
-  nav a {
-    text-decoration: none; }
+  text-align: right;
+  font-size: 1.4em;
+  float: left;
+  font-family: "raleway-1", "raleway-2", sans-serif;
+  /*width: $$nav-width;*/
+  width: 8em;
+  margin-bottom: 2em;
+  background-color: #232e35;
+  border-right: 1px dashed #232e35;
+  box-shadow: -4px 4px 4px 0 #232e35;
+  -moz-box-shadow: -4px 4px 4px 0 #232e35;
+  -webkit-box-shadow: -4px 4px 4px 0 #232e35;
+  /*  http://www.w3schools.com/cssref/pr_class_position.asp */
+  position: fixed;
+  /*
+   * http://www.mediacollege.com/internet/css/ul-list.html
+   */
+  /*
+   http://css-tricks.com/snippets/css/css3-zebra-striping-a-table/
+   http://www.w3.org/TR/css3-selectors/#nth-child-pseudo 
+   */ }
+  nav ul:nth-child(odd) {
+    background: #384854; }
+  nav ul {
+    padding-right: 1em;
+    height: 1.8em;
+    padding-top: 0.9em; }
   nav li {
-    list-style-type: none;
-    font-variant: small-caps; }
+    list-style-type: none; }
+    nav li a:link {
+      color: #0080dd; }
+    nav li a:hover {
+      color: black; }
+    nav li a:visited {
+      color: #a000a0; }
+  nav .rss {
+    /* http://www.w3schools.com/css/pr_background-image.asp */ }
+    nav .rss img {
+      margin: 0;
+      padding-left: 0.4em; }
   nav .contact {
-    font-variant: small-caps; }
-  nav .rss img {
-    margin-left: 0.4em; }
+    font-size: 0.7em;
+    text-align: right; }
+  nav .contact a {
+    color: #0080dd; }
+
+/*****************************************************************************/
+/*
+/* Site
+/*
+/*****************************************************************************/
+header {
+  color: #232e35;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  font-size: 7em;
+  font: sans-serif;
+  font-family: "raleway-1", "raleway-2", sans-serif; }
+  header h1 {
+    margin: 0;
+    padding: 0; }
+  header a {
+    color: #0080dd;
+    text-decoration: none; }
+    header a:hover {
+      color: black; }
+    header a .extra {
+      text-decoration: none;
+      margin-left: 2em; }
+      header a .extra:hover {
+        color: black; }
+
+.main-header {
+  background: #232e35;
+  text-align: right;
+  height: 1.2em; }
 
 .site {
-  font-family: "palatino", serif;
+  font-size: 120%;
+  text-align: justify;
+  margin-left: 20em;
+  margin-right: 12em;
+  margin-top: 60px;
+  margin-bottom: 60px;
   line-height: 1.5em;
-  width: 600px;
-  float: left;
+  background: white;
+  padding: 0 1em 1em 1em;
+  color: #000020;
+  border: 1px dashed #232e35;
+  /*  http://www.impressivewebs.com/css3-click-chart/ */ }
+  .site .home {
+    height: 40em;
+    margin: 4em; }
+  .site .projects {
+    -webkit-column-count: 2;
+    -webkit-column-width: 10em;
+    -webkit-column-gap: 35px;
+    -webkit-column-rule: 1px dashed #d8e0e5;
+    -moz-column-count: 2;
+    -moz-column-width: 10em;
+    -moz-column-gap: 35px;
+    -o-column-rule: 1px dashed #d8e0e5;
+    -o-column-count: 2;
+    -o-column-width: 10em;
+    -o-column-gap: 35px;
+    -o-column-rule: 1px dashed #d8e0e5;
+    column-count: 2;
+    column-width: 10em;
+    column-gap: 35px;
+    column-rule: 1px dashed #d8e0e5;
+    margin-top: 2em; }
+  .site .meta {
+    color: #aaa; }
+
+.twitter {
+  padding-top: 1em; }
+
+footer {
+  color: #664;
+  border-top: 1px dashed #232e35;
+  overflow: hidden;
+  background: #384854;
+  /*  http://stackoverflow.com/questions/526035/html-css-positioning-float-bottom  */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 7em; }
+
+/*****************************************************************************/
+/*
+/* Posts
+/*
+/*****************************************************************************/
+/* standard */
+article {
+  padding-top: 1em; }
+
+article pre {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .4em; }
+
+article ul,
+article ol {
+  margin-left: 1.25em; }
+
+article code {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  font-size: 95%;
+  padding: 0 .2em; }
+
+article pre code {
+  border: none; }
+
+/* terminal */
+article pre.terminal {
+  border: 1px solid black;
+  background-color: #333;
+  color: white; }
+
+article pre.terminal code {
+  background-color: #333; }
+
+article h1 {
+  font-family: "raleway-1", "raleway-2", sans-serif;
+  padding: 0 0 0em 0; }
+
+article h2 {
+  font-family: "raleway-1", "raleway-2", sans-serif;
+  padding: 0.5em 0 0 0; }
+
+article header {
+  color: #0080dd;
+  font-size: 95%;
+  text-align: right;
+  border-bottom: 1px dashed #d8e0e5;
+  font-family: "Monaco", "Courier New", monospace;
+  margin-bottom: 2em; }
+
+article header h1 {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  color: black; }
+
+#related {
+  border-top: 1px dashed #d8e0e5;
+  padding-top: 2em; }
+
+#related h2 {
+  margin-bottom: 1em; }
+
+#disqus {
+  border-top: 1px dashed #d8e0e5;
+  background: #f7f8fa;
   margin-top: 2em;
-  color: #303030; }
-  .site h1, .site h2, .site h3, .site h4, .site h5, .site h6 {
-    font-style: italic;
-    margin-top: 2em;
-    margin-bottom: 0.6em; }
-  .site h1 {
-    font-size: 130%; }
-  .site h2 {
-    font-size: 120%; }
-  .site h3 {
-    font-size: 110%; }
-  .site p {
-    margin-bottom: 1em; }
-  .site blockquote {
-    margin-left: 2em;
-    padding-left: 0.4em;
-    border-left: 1px solid #303030; }
-  .site article > header {
-    margin-bottom: 2em; }
-    .site article > header h1 {
-      font-size: 150%;
-      font-variant: small-caps;
-      font-style: normal; }
-  .site em {
-    font-style: italic; }
+  padding: 0.5em; }
+
+/*****************************************************************************/
+/*
+/* CV
+/*
+/*****************************************************************************/
+.cv {
+  text-align: left;
+  margin: 3em auto 2em auto;
+  line-height: 1.5em;
+  background: #fefefe;
+  padding: 0 1em 1em 1em;
+  width: 60em; }
+  .cv .cvheader {
+    font-size: 20px;
+    color: #232e35;
+    font-variant: small-caps;
+    padding-top: 2em; }
+  .cv .cvsmall {
+    font-size: 90%; }
+  .cv ul {
+    list-style-type: none; }
+    .cv ul li {
+      padding-left: 2em; }
+      .cv ul li span {
+        color: #aaa;
+        font-family: Monaco, "Courier New", monospace;
+        font-size: 80%;
+        padding-right: 2em; }
+  .cv h1 {
+    font-size: 2em;
+    margin-top: 1em;
+    padding-top: 1em;
+    font-family: "raleway-1", "raleway-2", sans-serif; }
+  .cv h3 {
+    display: inline; }
