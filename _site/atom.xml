@@ -4,66 +4,13 @@
  <title>Adam Obeng</title>
  <link href="http://adamobeng.com/atom.xml" rel="self"/>
  <link href="http://adamobeng.com/"/>
- <updated>2012-10-26T23:25:25-04:00</updated>
+ <updated>2012-10-30T22:29:13-04:00</updated>
  <id>http://adamobeng.com/</id>
  <author>
    <name>Adam Obeng</name>
    <email>contact@adamobeng.com</email>
  </author>
 
- 
- <entry>
-   <title>Old Books and New Visualisations</title>
-   <link href="http://adamobengold-books-and-new-visualisations"/>
-   <updated>2012-10-26T00:00:00-04:00</updated>
-   <id>http://adamobeng.com./old-books-and-new-visualisations</id>
-   <content type="html">&lt;p&gt;Thanks to Columbia&amp;#8217;s &lt;a href='http://columbiadatascience.wordpress.com/'&gt;Introduction to Data Science&lt;/a&gt;, a few classmates and I got to attend &lt;a href='http://strataconf.com/stratany2012'&gt;Strata NY&lt;/a&gt; this week. It&amp;#8217;s a testament to the class that, barely a couple of months in, I was already familiar with the work quite a few of the presenters.&lt;/p&gt;
-
-&lt;p&gt;I went to quite a few of the talks on the dataviz track, and one question that kept coming up was the language&lt;a href='If'&gt;1&lt;/a&gt; of graphics. I asked &lt;a href='http://www.nbr-graphs.com/'&gt;Naomi Robbins&lt;/a&gt; about the use of graphs, like box-and-whisker plot, which are not obvious to the naive reader, but are a pretty efficent for, say, an academic audience. The next day, &lt;a href='http://www.ghostweather.com/'&gt;LynnCherny&lt;/a&gt; pointed out that chord diagrams take some non-negligeable knowledge to interpret. In a research design class a few months ago, I was midly berated for suggesting that a resarcher&amp;#8217;s understanding of their work should not be measured by their ability to vulgarise it, much less by their ability to explain to other people why they should care. My objection was that, of course, we should be able to teach the things we understand, but that interesting research, almost by definition, has to be so esoteric and dependent on previous work that explaining it to a non-specialist loses its essence. Almost by definition, the things that interest specialists require a lot of run up to explain. If it didn&amp;#8217;t take a few conceptual leaps, then it would probably be obvious, and thus uninteresting.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href='http://imaginarymuseum.org/MHV/PZImhv/NeurathPictureLanguage.html'&gt;International Picture Language: The First Rules of Isotype&lt;/a&gt; by Otto Neurath&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-&lt;p&gt;&lt;a href='http://www.amazon.com/The-Creative-Habit-ebook/dp/B000SEOWBG?tag=duckduckgo-d-20'&gt;The Creative Habit&lt;/a&gt; by Twyla Tharp, which is not about visual design, but &lt;a href='http://www.amazon.com/The-Creative-Habit-ebook/dp/B000SEOWBG?tag=duckduckgo-d-20'&gt;creativity&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-&lt;p&gt;Semiology of Graphics: Diagrams, Networks, Mapsf Graphics: Diagrams, Networks, Maps)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</content>
- </entry>
- 
- <entry>
-   <title>Vennervating</title>
-   <link href="http://adamobengvennervating.markdown"/>
-   <updated>2012-09-16T00:00:00-04:00</updated>
-   <id>http://adamobeng.com./vennervating.markdown</id>
-   <content type="html">Isn't it the most cliched thing to not update a blog for a while, and then aplogised for doing so? Well I'm an iconoclast, so that's not likely.
-
-However, quite a few things have happened in the interval: I've finished up at Nuffield (including a thesis about [William Godwin](https://en.wikipedia.org/wiki/William_Godwin)'s [Diaries](http://godwindiary.bodleian.ox.ac.uk) about which certainly more anon). I'm now a few weeks into the Ph.D. programme in Sociolgy at Columbia University (in the City of New York).
-
-As a result of moving to the Capital of The Universe, I'm expericing some cultural disconnects.
-
-I guess set theory (or at least some of the graphics associated therewith) is now part of popular culture to a sufficent extent that Madison Avenue[1] has got hold of it. Hence, this:
-
-![An advertising poster for Speck cases, showing a pseudo-Venn diagram](/images/speck_venn_diagram_small.jpg)
-
-*Full disclosure*: I've had a Speck case on my MacBook Air since the day I bought it, and it's brilliant.
-
-Let's call these sets C, D and G.
-
-Obviously, the intersection of C and D is the empty set, given that $C=\notD$, so C union D = emptyset. Moreover, all people who used check the slot don't check the slot, so G belongs D. Therefore, the intersection of all three sets --- $C \union D \union G$ where speck is to be found --- is empty. Given that a speck is a small --- perhaps infinitissimially small --- particle, perhaps that's [appropriate](https://en.wikipedia.org/wiki/Almost_certain#Throwing_a_dart).
-
-![An improved diagram](/images/speck_venn_diagram.jpg, &quot;An improved diagram&quot;)
-
-Is this poster a one-off, has anyone seen others on a similar theme?
-
-[1]: I truthfully have no idea if they still produce advertsing there, but permit me my mytholoised vision of the City.
-</content>
- </entry>
  
  <entry>
    <title>Truth and persuasion</title>
@@ -291,12 +238,12 @@ Is this poster a one-off, has anyone seen others on a similar theme?
 
 &lt;p&gt;For example, here&amp;#8217;s one of the graphs I used in my thesis:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src='/DBO_example_graph.png' alt='A graph showing the relation between the initial proportion of desires and beliefs and the eventual proportion of desires and beliefs in a basic version of the DBO model' /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt='A graph showing the relation between the initial proportion of desires and beliefs and the eventual proportion of desires and beliefs in a basic version of the DBO model' src='/DBO_example_graph.png' /&gt;&lt;/p&gt;
 
 &lt;p&gt;Now that&amp;#8217;s a good summary of what&amp;#8217;s going on in the model, don&amp;#8217;t get me wrong. You can see a nice relationship between the parameters. Obviously, graphs like these are essential for summarising information, and you couldn&amp;#8217;t infer this from interacting with the simulation directly. Indeed, in some cases, interacting with the simulation will not even be possible (like when there are too many agents to display comfortably).&lt;/p&gt;
 
 &lt;p&gt;In addition, you couldn&amp;#8217;t really have a dynamic, interactive presentation of the model on paper (or even in a PDF). But on the web at least, with a little bit of HTML5 (in particular the &lt;a href='https://developer.mozilla.org/en/Canvas_tutorial'&gt;Canvas&lt;/a&gt; element) you can produce this:&lt;/p&gt;
-&lt;script type='text/javascript' src='../dbo-minified.js' /&gt;&lt;canvas style='margin: 2em;' id='canvas' height='400' width='400' /&gt;
+&lt;script type='text/javascript' src='../dbo-minified.js' /&gt;&lt;canvas id='canvas' width='400' height='400' style='margin: 2em;' /&gt;
 &lt;p&gt;Click the nodes to change their DBO state; &lt;font color='#0000FF'&gt;blue&lt;/font&gt; nodes have desire, &lt;font color='#FF0000'&gt;red&lt;/font&gt; nodes have belief and &lt;font color='#FF00FF'&gt;purple&lt;/font&gt; nodes have both. The &amp;#8216;step&amp;#8217; button advances the simulation by one step, and the &amp;#8216;reset&amp;#8217; button randomly assigns DBO states to all of the nodes.&lt;/p&gt;
 
 &lt;p&gt;As you may notice this is a simulation of the DBO model with a fixed set of parameters (in particular, opportunity is being ignored). As such, the behaviour exhibited is pretty limited. This is also for the time being &lt;em&gt;very&lt;/em&gt; alpha-quality code. Still, it shouldn&amp;#8217;t take too long to get a worthwhile implementation of the DBO model and its variants up and running.&lt;/p&gt;
