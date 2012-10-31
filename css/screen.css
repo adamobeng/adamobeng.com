@@ -44,6 +44,8 @@ nav {
   nav .contact, nav .copyright, nav .cc {
     margin-top: 1em;
     font-variant: small-caps; }
+  nav .copyright {
+    font-size: 80%; }
   nav .rss img {
     margin-left: 0.4em; }
 
