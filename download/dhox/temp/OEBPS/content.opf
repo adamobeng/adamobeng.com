@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="dcidid" version="2.0">
+<metadata xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">
+Digital.Humanities@Oxford Demo EPUB</dc:title>
+<dc:language xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:type="dcterms:RFC3066">
+en</dc:language>
+<dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">
+Demonstration</dc:subject>
+<dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf" id="dcidid" opf:scheme="URI">
+http://ota.ox.ac.uk/id/3009</dc:identifier>
+<dc:description xmlns:dc="http://purl.org/dc/elements/1.1/">
+Demonstration/ </dc:description>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/"/>
+<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">
+Deposited by Macrae-Gibson, O.Duncan D of English U of Aberdeen King"s College AB9 2UB Old Aberdeen UK DMG@CS.ABDN.AC.UK 1993-10-13 Oxford Text Archive Oxford University Computing Services 13 Banbury Road Oxford OX2 6NN ota@oucs.ox.ac.uk http://ota.ox.ac.uk/id/3009 Distributed by the University of Oxford under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</dc:publisher>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf" opf:event="creation">1100</dc:date>
+<dc:date xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf" opf:event="epub-publication" xsi:type="dcterms:W3CDTF">2011-08-10</dc:date>
+<dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">
+	Creative Commons Attribution</dc:rights>
+<meta name="cover" content="cover-image"/>
+</metadata>
+<manifest>
+<item id="audio" href="overlay.smil" media-type="application/smil+xml"/>
+<item id="audio1" href="beowulf.wav" media-type="audio/mp4"/>
+<item href="stylesheet.css" id="css" media-type="text/css"/>
+<item href="titlepageback.html" id="titlepageback" media-type="application/xhtml+xml"/>
+<item href="titlepageback2.html" id="titlepageback2" media-type="application/xhtml+xml"/>
+<item href="titlepageback3.html" id="titlepageback3" media-type="application/xhtml+xml"/>
+<item href="titlepageback4.html" id="titlepageback4" media-type="application/xhtml+xml"/>
+<item id="print.css" href="print.css" media-type="text/css"/>
+<item id="apt" href="page-template.xpgt" media-type="application/adobe-page-template+xml"/>
+<item id="start" href="index.html" media-type="application/xhtml+xml"/>
+<item href="media/image1.png" id="image-1" media-type="image/png"/>
+<item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+<item id="page0" href="page0.html" media-type="application/xhtml+xml"/>
+<item id="page1" href="page1.html" media-type="application/xhtml+xml" media-overlay="audio"/>
+<item id="page2" href="page2.html" media-type="application/xhtml+xml"/>
+<item id="page3" href="page3.html" media-type="application/xhtml+xml"/>
+<item id="page4" href="page4.html" media-type="application/xhtml+xml"/>
+<item id="first-page" href="Beowulf.firstpage.jpeg" media-type="image/jpeg"/><!-- http://blog.threepress.org/2009/11/20/best-practices-in-epub-cover-images/ -->
+<item id="cover-image" href="cover.jpg" media-type="image/jpeg"/><!-- http://blog.threepress.org/2009/11/20/best-practices-in-epub-cover-images/ -->
+<item id="jquery" href="jquery.js" media-type="text/javascript"/>
+<item id="video" href="161.195.original.mp4" media-type="video/mpeg4"/>
+</manifest>
+<spine toc="ncx">
+<itemref idref="start" linear="yes"/>
+<itemref idref="page0" linear="yes"/>
+<itemref idref="page1" linear="yes"/>
+<itemref idref="page2" linear="yes"/>
+<itemref idref="page3" linear="yes"/>
+<itemref idref="page4" linear="yes"/>
+<itemref idref="titlepageback" linear="yes"/>
+<itemref idref="titlepageback2" linear="yes"/>
+<itemref idref="titlepageback3" linear="yes"/>
+<itemref idref="titlepageback4" linear="yes"/>
+</spine>
+<guide>
+</guide>
+</package>
+
