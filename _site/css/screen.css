@@ -1,87 +1,66 @@
-/* screen.scss */
-@import url(reset.css);
-/* SCSS Variables */
-a {
-  color: #dd2323; }
-  a :visited {
-    color: black; }
-  a :hover {
-    color: white; }
+/*
+Syntax error: Invalid CSS after ".": expected class name, was "font-size: 1.2em;"
+        on line 71 of sass/screen.scss
 
-body {
-  margin-left: 8em;
-  margin-top: 6em;
-  margin-bottom: 8em;
-  width: 850px;
-  background: #fffefa; }
+66: 			text-decoration: none;
+67: 	}
+68: }
+69: }
+70: 
+71: . 
+72: 
+73: 	font-size: 1.2em;
+74: 	line-height: 1.4em;
+75: 	width: 275px;
+76: 	float: right;
 
-.newthought {
-  margin-top: 3em;
-  font-variant: small-caps;
-  font-size: 110%; }
-
-.sidenote {
-  float: right; }
-
-header h1 {
-  font-size: 3em; }
-  header h1 a {
-    font-variant: small-caps;
-    text-decoration: none; }
-
-nav {
-  font-size: 1.2em;
-  line-height: 1.4em;
-  width: 175px;
-  float: right;
-  margin-top: 1.8em;
-  color: #303030; }
-  nav a {
-    text-decoration: none; }
-  nav li {
-    list-style-type: none;
-    font-variant: small-caps; }
-  nav .contact, nav .copyright, nav .cc {
-    margin-top: 1em;
-    font-variant: small-caps; }
-  nav .copyright {
-    font-size: 80%; }
-  nav .rss img {
-    margin-left: 0.4em; }
-
-.site {
-  font-family: "palatino", serif;
-  line-height: 1.8em;
-  width: 600px;
-  float: left;
-  margin-top: 2em;
-  color: #303030; }
-  .site h1, .site h2, .site h3, .site h4, .site h5, .site h6 {
-    font-style: italic;
-    margin-top: 2em;
-    margin-bottom: 0.6em; }
-  .site h1 {
-    font-size: 130%; }
-  .site h2 {
-    font-size: 120%; }
-  .site h3 {
-    font-size: 110%; }
-  .site p {
-    margin-bottom: 1em; }
-  .site blockquote {
-    margin-left: 2em;
-    padding-left: 0.4em;
-    border-left: 1px solid #303030; }
-  .site article > header {
-    margin-bottom: 2em; }
-    .site article > header h1 {
-      margin-top: 0;
-      font-size: 150%;
-      font-variant: small-caps;
-      font-style: normal; }
-  .site em {
-    font-style: italic; }
-  .site sup {
-    font-size: 80%;
-    position: relative;
-    bottom: 1ex; }
+Backtrace:
+sass/screen.scss:71
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/bin/../lib/sass/../sass/scss/parser.rb:898:in `expected'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/bin/../lib/sass/../sass/scss/parser.rb:841:in `expected'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/bin/../lib/sass/../sass/scss/parser.rb:823:in `expr!'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/bin/../lib/sass/../sass/scss/parser.rb:519:in `class_selector'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/bin/../lib/sass/../sass/scss/parser.rb:485:in `simple_selector_sequence'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/bin/../lib/sass/../sass/scss/parser.rb:466:in `_selector'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/bin/../lib/sass/../sass/scss/parser.rb:445:in `selector'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/bin/../lib/sass/../sass/scss/parser.rb:429:in `selector_sequence'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/bin/../lib/sass/../sass/scss/parser.rb:354:in `ruleset'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/bin/../lib/sass/../sass/scss/parser.rb:379:in `block_child'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/bin/../lib/sass/../sass/scss/parser.rb:372:in `block_contents'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/bin/../lib/sass/../sass/scss/parser.rb:57:in `stylesheet'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/bin/../lib/sass/../sass/scss/parser.rb:26:in `parse'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/bin/../lib/sass/../sass/engine.rb:320:in `_to_tree'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/bin/../lib/sass/../sass/engine.rb:293:in `_render'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/bin/../lib/sass/../sass/engine.rb:240:in `render'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/bin/../lib/sass/../sass/plugin/compiler.rb:319:in `update_stylesheet'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/bin/../lib/sass/../sass/plugin/compiler.rb:169:in `update_stylesheets'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/bin/../lib/sass/../sass/plugin/compiler.rb:167:in `each'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/bin/../lib/sass/../sass/plugin/compiler.rb:167:in `update_stylesheets'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/bin/../lib/sass/../sass/plugin/compiler.rb:273:in `watch'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/vendor/fssm/lib/fssm/path.rb:73:in `call'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/vendor/fssm/lib/fssm/path.rb:73:in `run_callback'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/vendor/fssm/lib/fssm/path.rb:55:in `callback_action'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/vendor/fssm/lib/fssm/path.rb:35:in `update'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/vendor/fssm/lib/fssm/state/file.rb:19:in `refresh'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/vendor/fssm/lib/fssm/backends/polling.rb:17:in `run'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/vendor/fssm/lib/fssm/backends/polling.rb:17:in `each'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/vendor/fssm/lib/fssm/backends/polling.rb:17:in `run'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/vendor/fssm/lib/fssm/backends/polling.rb:15:in `loop'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/vendor/fssm/lib/fssm/backends/polling.rb:15:in `run'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/vendor/fssm/lib/fssm/monitor.rb:26:in `run'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/vendor/fssm/lib/fssm.rb:20:in `monitor'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/bin/../lib/sass/../sass/plugin/compiler.rb:245:in `watch'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/bin/../lib/sass/../sass/plugin.rb:111:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/bin/../lib/sass/../sass/plugin.rb:111:in `method_missing'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/bin/../lib/sass/../sass/exec.rb:408:in `watch_or_update'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/bin/../lib/sass/../sass/exec.rb:294:in `process_result'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/bin/../lib/sass/../sass/exec.rb:41:in `parse'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/bin/../lib/sass/../sass/exec.rb:21:in `parse!'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.7/bin/sass:8
+/usr/bin/sass:19:in `load'
+/usr/bin/sass:19
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \".\": expected class name, was \"font-size: 1.2em;\"\A         on line 71 of sass/screen.scss\A \A 66: 			text-decoration: none;\A 67: 	}\A 68: }\A 69: }\A 70: \A 71: . \A 72: \A 73: 	font-size: 1.2em;\A 74: 	line-height: 1.4em;\A 75: 	width: 275px;\A 76: 	float: right;"; }

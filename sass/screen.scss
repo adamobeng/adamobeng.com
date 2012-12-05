@@ -9,6 +9,7 @@ $background: lighten(#ffe88a, 22%);// Tufte-style
 //$background: #fdfdfd;
 $link-visited: black; // Used for links
 $link-hover: lighten($accent-colour, 80%);// Used for links
+$highlight: #fffebb;
 
 
 @mixin t-border {
@@ -16,7 +17,15 @@ $link-hover: lighten($accent-colour, 80%);// Used for links
 }
 
 @mixin serif {
-	font-family:"palatino", serif;
+	font-family: "Palatino", serif;
+}
+
+@mixin sans {
+	font-family: "Gill Sans", "Helvetica", sans-serif;
+}
+
+@mixin mono {
+	font-family: "Bera Mono", monospace;
 }
 
 * {
@@ -33,7 +42,7 @@ body {
 	margin-left: 8em;
 	margin-top: 6em;
 	margin-bottom: 8em;
-	width: 850px;
+	width: 950px;
 	background: $background;
 
 }
@@ -59,10 +68,11 @@ header {
 }
 }
 
-nav {
+. 
+
 	font-size: 1.2em;
 	line-height: 1.4em;
-	width: 175px;
+	width: 275px;
 	float: right;
 	margin-top: 1.8em;
 	color: $text-colour;
@@ -118,7 +128,7 @@ nav {
 	
 	blockquote {
 		margin-left: 2em;
-		padding-left: 0.4em;
+		padding-left: 0.8em;
 		border-left: 1px solid #303030;
 	}
 
@@ -147,4 +157,20 @@ nav {
 		bottom: 1ex;
 	}
 	
+}
+
+.categories {
+}
+
+.footnotes { 
+  border-top: 1px solid #303030;
+  padding-top: 2em;
+  padding-left: 2em;
+  padding-bottom: 2em;
+
+  ol {list-style-type: decimal;}
+  hr {display: none;}
+  p {display: inline;}
+
+  li:target {background: $highlight;}
 }

@@ -4,13 +4,42 @@
  <title>Adam Obeng</title>
  <link href="http://adamobeng.com/atom.xml" rel="self"/>
  <link href="http://adamobeng.com/"/>
- <updated>2012-11-09T10:47:54-05:00</updated>
+ <updated>2012-12-05T13:09:18-05:00</updated>
  <id>http://adamobeng.com/</id>
  <author>
    <name>Adam Obeng</name>
    <email>contact@adamobeng.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Science and Data Science</title>
+   <link href="http://adamobengscience-and-data-science"/>
+   <updated>2012-11-02T00:00:00-04:00</updated>
+   <id>http://adamobeng.com./science-and-data-science</id>
+   <content type="html">&lt;p&gt;Thanks to &lt;a href='http://columbiadatascience.wordpress.com/'&gt;Introduction to Data Science&lt;/a&gt;, and Peter Bearman&amp;#8217;s Research Design class, I&amp;#8217;ve been thinking about doing science.&lt;sup id='fnref:1'&gt;&lt;a href='#fn:1' rel='footnote'&gt;1&lt;/a&gt;&lt;/sup&gt; The Research Design class this week was about the debate between Eric Klinenberg and Mitchell Duneier about the social causes of mortality in the 1995 Chicago Heatwave. One of the problems is that there are many variables and few cases, which makes the sort of statistical analyses usually carried out in sociology quite difficult. However, data scientists deal with this kind of thing all the time, especially those in industry who are trying to predict a user&amp;#8217;s purchasing behaviour based on a huge sparse vector of previously visited websites. There are &lt;a href='http://scikit-learn.org/stable/modules/ensemble.html#gradient-tree-boosting'&gt;methods&lt;/a&gt; which can effectively ignore useless (read &amp;#8216;unpredictive&amp;#8217;) variables. Advertisers (and other flavours of data scientist) don&amp;#8217;t particularly care to understand the models they use as long as they continue to work.&lt;/p&gt;
+
+&lt;p&gt;But this predictive accuracy comes at a cost of producing models which can&amp;#8217;t necessarily being interpreted. I found myself (re-)reading Peter Norvig&amp;#8217;s &lt;a href='http://norvig.com/chomsky.html'&gt;On Chomsky and the Two Cultures of Statistical Learning&lt;/a&gt; in this light. Norvig distinguishes three types of statistical models:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;A &lt;em&gt;mathematical model&lt;/em&gt; specifies a relation among variables, either in functional form that maps inputs to outputs (e.g. y = m x + b) or in relation form (e.g. the following (x, y) pairs are part of the relation).&lt;/p&gt;
+
+&lt;p&gt;A &lt;em&gt;probabilistic model&lt;/em&gt; specifies a probability distribution over possible values of random variables, e.g., P(x, y), rather than a strict deterministic relationship, e.g., y = f(x).&lt;/p&gt;
+
+&lt;p&gt;A &lt;em&gt;trained model&lt;/em&gt; uses some training/learning algorithm to take as input a collection of possible models and a collection of data points (e.g. (x, y) pairs) and select the best model. Often this is in the form of choosing the values of parameters (such as m and b above) through a process of statistical inference.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Previously, I&amp;#8217;ve adhered to Peter Hedström&amp;#8217;s &lt;a href='http://www.amazon.com/Dissecting-Social-Principles-Analytical-Sociology/dp/0521796679'&gt;mantra&lt;/a&gt; of opening the black boxes to reveal the individual-level social mechanisms. But now I&amp;#8217;m not so sure.&lt;/p&gt;
+
+&lt;p&gt;Consider the Desires, Beliefs and Opportunities (DBO) model in Hedström&amp;#8217;s &lt;a href='http://www.amazon.com/Dissecting-Social-Principles-Analytical-Sociology/dp/0521796679'&gt;&lt;em&gt;Dissecting the Social&lt;/em&gt;&lt;/a&gt;. Used for agent-based modelling, this &amp;#8216;folk psychology&amp;#8217; model of individual behaviour, assumes that an individuals&amp;#8217; action with respect to a particular goal is uniquely determined by their desire for the goal, their beleif that the action will allow them to acheive the goal, and on them having the opportunity to act. &lt;div class='sidenote'&gt;lorem ipsum dolor sit amet&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;algorithmic modeling culture &amp;#8220;produce a form that, while accurately modeling reality, is not easily interpretable by humans, and makes no claim to correspond to the generative process used by nature.&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;&amp;#8220;for complex problems there are usually many alternative good models, each with very similar measures of goodness of fit.&amp;#8221;&lt;/p&gt;
+&lt;div class='footnotes'&gt;&lt;hr /&gt;&lt;ol&gt;&lt;li id='fn:1'&gt;
+&lt;p&gt;Which is always a contentious debate for us in the&amp;#8230; &lt;em&gt;less hard&lt;/em&gt; sciences&lt;/p&gt;
+&lt;a href='#fnref:1' rev='footnote'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</content>
+ </entry>
  
  <entry>
    <title>Truth and persuasion</title>
@@ -243,7 +272,7 @@
 &lt;p&gt;Now that&amp;#8217;s a good summary of what&amp;#8217;s going on in the model, don&amp;#8217;t get me wrong. You can see a nice relationship between the parameters. Obviously, graphs like these are essential for summarising information, and you couldn&amp;#8217;t infer this from interacting with the simulation directly. Indeed, in some cases, interacting with the simulation will not even be possible (like when there are too many agents to display comfortably).&lt;/p&gt;
 
 &lt;p&gt;In addition, you couldn&amp;#8217;t really have a dynamic, interactive presentation of the model on paper (or even in a PDF). But on the web at least, with a little bit of HTML5 (in particular the &lt;a href='https://developer.mozilla.org/en/Canvas_tutorial'&gt;Canvas&lt;/a&gt; element) you can produce this:&lt;/p&gt;
-&lt;script type='text/javascript' src='../dbo-minified.js' /&gt;&lt;canvas height='400' id='canvas' style='margin: 2em;' width='400' /&gt;
+&lt;script src='../dbo-minified.js' type='text/javascript' /&gt;&lt;canvas width='400' height='400' style='margin: 2em;' id='canvas' /&gt;
 &lt;p&gt;Click the nodes to change their DBO state; &lt;font color='#0000FF'&gt;blue&lt;/font&gt; nodes have desire, &lt;font color='#FF0000'&gt;red&lt;/font&gt; nodes have belief and &lt;font color='#FF00FF'&gt;purple&lt;/font&gt; nodes have both. The &amp;#8216;step&amp;#8217; button advances the simulation by one step, and the &amp;#8216;reset&amp;#8217; button randomly assigns DBO states to all of the nodes.&lt;/p&gt;
 
 &lt;p&gt;As you may notice this is a simulation of the DBO model with a fixed set of parameters (in particular, opportunity is being ignored). As such, the behaviour exhibited is pretty limited. This is also for the time being &lt;em&gt;very&lt;/em&gt; alpha-quality code. Still, it shouldn&amp;#8217;t take too long to get a worthwhile implementation of the DBO model and its variants up and running.&lt;/p&gt;
