@@ -68,7 +68,7 @@ header {
 }
 }
 
-. 
+nav {
 
 	font-size: 1.2em;
 	line-height: 1.4em;
@@ -91,12 +91,25 @@ header {
 		font-variant: small-caps;
 	}
 
+	#github{
+		height: 0.9em;
+		margin-left: 0.2em;
+		vertical-align:middle;
+	}
+
+	#twitter{
+		height: 1.3em;
+		margin-left: -1px;
+		vertical-align:middle;
+	}
+
 	.copyright {
 		font-size: 80%;
 	}
 
 	.rss img {
-		margin-left: 0.4em;
+		height: 0.7em;
+		margin-left: 0.2em;
 	}
 }
 
@@ -140,6 +153,42 @@ header {
 			font-variant: small-caps;
 			font-style: normal;
 		}
+
+		time, .categories {
+			color: #909090;
+		}
+	}
+
+	article img {
+		width: 540px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	article table {
+		margin: 2em auto 2em auto;
+		
+
+		tr {
+			border-bottom: 1px solid #303030;
+
+			td {
+			padding-left: 0.8em;
+			padding-right: 0.8em;
+			}
+
+			td:first-child {
+			font-variant: small-caps;
+			}
+		}
+
+		tr:first-child {
+			font-variant: small-caps;
+		}
+
+		tr:last-child {
+			border-bottom: none;
+		}
 	}
 
 	em {
@@ -163,7 +212,7 @@ header {
 }
 
 .footnotes { 
-  border-top: 1px solid #303030;
+  border-top: 1px solid $text-colour;
   padding-top: 2em;
   padding-left: 2em;
   padding-bottom: 2em;
@@ -173,4 +222,12 @@ header {
   p {display: inline;}
 
   li:target {background: $highlight;}
+}
+
+#profile {
+	//border: 4px $text-colour solid;
+	width: 300px;
+	float: left;
+	margin-right: 2em;
+	margin-top: 0.5em;
 }
