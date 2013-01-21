@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+
+<html xml:lang="en" lang="en">
+	<head>
+		 <meta charset="utf-8" />
+		 <title>Child's Play</title>
+		 <meta name="author" content="Adam Obeng" />
+		<link rel="author" href="/humans.txt" />
+
+		 <!-- syntax highlighting CSS -->
+		 <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+
+		 <!-- Homepage CSS -->
+		 <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+
+		 <link rel="shortcut icon" href="/favicon.ico">
+
+		 <!-- RSS autodiscovery http://www.rssboard.org/rss-autodiscovery -->
+		 <!-- https://secure.wikimedia.org/wikipedia/en/wiki/Atom_%28standard%29 -->
+		 <link rel="alternate" type="application/atom+xml" title="Adam Obeng"
+		 href="/atom.xml">
+		 <!-- Google Analytics -->
+		<script type="text/javascript">
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-22741216-1']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		</script>
+
+		<!-- Typekit -->
+		<script type="text/javascript" src="http://use.typekit.com/qjd5hyy.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	 </head>
+
+	<body>
+		<header class="main-header">
+			<hggroup> <!-- In case I want a tagline -->
+				<h1><a href="http://adamobeng.com">Adam Obeng</a></h1>
+			</hggroup>
+		</header>
+
+	<div class="sidebar">
+		<nav>
+			<li>
+				<ul><a href="/">Home</a></ul>
+				<ul><a href="../blog.html" rel="archives">Blog</a></ul>
+				<ul><a href="../projects.html">Projects</a></ul>
+				<ul><a href="../me.html">About me</a></ul>
+				<ul class="rss"><a href="../atom.xml">Feed</a><img src="/feed-icon-14x14.png"/></ul>
+								</li>
+				<div class="contact">
+				<li>
+					<ul><a href="mailto:contact@adamobeng.com" rel="author">Email</a></ul>
+					<ul><a href="https://twitter.com/intent/follow?screen_name=Adam_Obeng&tw_p=followbutton&variant=2.0">Twitter</a><img id="twitter" src="/images//twitter-bird-light-bgs.png"></img></ul>
+					<ul><a href="https://github.com/adamobeng?tab=repositories">Github</a><img id="github" src="/images/blacktocat-32.png"></img></ul>
+					<!--
+					<ul><a href="http://columbia.academia.edu/AdamObeng">Academia.edu</a></ul>
+					-->
+				</li>
+
+				</div>
+				<div class="copyright">Copyright &copy; Adam Obeng </br> 2010&ndash;2012
+					<div class="cc"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0; vertical-align: text-top" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png" /></a></div>
+				</div>
+
+		</nav>
+	      </div>
+			<div class="site">
+
+			
+				<article>
+	<header>
+	<h1>Child's Play</h1>
+	<time datetime="Sat Jan 19 00:00:00 -0500 2013" pubdate> 19 Jan 2013 </time>
+
+		| 
+
+		<span class="categories">
+		Categories:
+		
+		dataviz,
+		
+		infographics,
+		
+		academic
+		
+	      </span>
+	</header>
+
+
+	<p>Isn&#8217;t it the most cliched thing to not update a blog for a while, and then apologise for doing so? Well I&#8217;m an iconoclast, so that&#8217;s not happening.</p>
+
+<p>A little while ago, Rachel Schutt and Andrew Gelman both noticed an advertising poster for Speck,<sup id='fnref:1'><a rel='footnote' href='#fn:1'>1</a></sup> which used a pseudo-Venn diagram to convey a very confusing message. It looks like National Highway Traffic Safety Administration had a similar idea:</p>
+
+<p><img alt='An NHSTA Child Car Safety advertising poster, showing a Towers of Hanoi-like childs toy, annotated with statistical description' src='/images/car_seat_poster.jpg' /></p>
+
+<p>The message of the campaign is important, it goes without saying. And given that I&#8217;m talking about it,<sup id='fnref:2'><a rel='footnote' href='#fn:2'>2</a></sup> the campaign is probably being effective in communicating what it intends to: way too few kids are in the correct car seat.</p>
+
+<p>However, there are some obvious problems with it <em>as a piece of data visualisation</em>. The poster I saw is part of a <a href='http://www.safercar.gov/parents/TRS/toolkit.htm'>set of five</a>, each with the same message, but with a different child-related item used to display the statistic:</p>
+<a href='http://www.safercar.gov/parents/TRS/pencil.pdf'><img style='width:100px; padding:10px' alt='NHTSA car seat pencil poster' src='/images/nhtsa_pencil.png' /></a><a href='http://www.safercar.gov/parents/TRS/Bottle.pdf'><img style='width:100px; padding:10px' alt='NHTSA car seat bottle poster' src='/images/nhtsa_bottle.png' /></a><a style='display:inline-block' href='http://www.safercar.gov/parents/TRS/sneaker.pdf'><img style='width:100px; padding:10px' alt='NHTSA car seat sneaker poster' src='/images/nhtsa_sneaker.png' /></a><a style='display:inline-block' href='http://www.safercar.gov/parents/TRS/stackingtoy.pdf'><img style='width:100px; padding:10px' alt='NHTSA car seat stacking toy poster' src='/images/nhtsa_stackingtoy.png' /></a><a style='display:inline-block' href='http://icsw.nhtsa.gov/safercar/parents/TRS/popsicle.pdf'><img style='width:100px; padding:10px' alt='NHTSA car seat popsicle poster' src='/images/nhtsa_popsicle.png' /></a>
+<p>So what is the number of incorrectly-attached kids? According to the <a href='http://www.safercar.gov/parents/TRS/8651b_CPSFactSheet_04-04-12_v1-tag.pdf'>Fact sheet</a>, &#8220;3 out of 4 kids are not as secure in the car as they should be because their car seats are not being used correctly.&#8221; Unfortunately, no source is listed for that claim, so let&#8217;s say that the number is 75%.<sup id='fnref:3'><a rel='footnote' href='#fn:3'>3</a></sup> How well do these posters convey that number? This table shows the proportion secure as displayed in each poster:</p>
+<table>
+	<tr>
+	<td /><td>Length</td><td>Area</td>
+	</tr>
+	<tr>
+	<td>Pencil</td><td>0.136</td><td>0.183</td>
+	</tr>
+	<tr>
+	<td>Stack</td><td>0.25</td><td>0.172</td>
+	</tr>
+	<tr>
+	<td>Sneaker</td><td>0.3</td><td>0.0797</td>
+	</tr>
+	<tr>
+	<td>Popsicle</td><td>0.131</td><td>0.169</td>
+	</tr>
+	<tr>
+	<td>Bottle</td><td>0.260</td><td>0.260</td>
+	</tr>
+</table>
+<p>The scales drawn on the posters suggest that the length of the various elements is supposed to represent the statistic. This is moderately dubious, especially in the case of the of the &#8216;Sneaker&#8217; diagram, so you might think that the proportion is measured by the area indicated instead. Depending on which poster you read, the proportion of kids who are properly attached (25%) looks to be somewhere between the problematic 30% and the scandalous 8%.</p>
+
+<p>There are other problems too with these posters as data visualisations. For example, the bottom four rings on the &#8216;stacking toy&#8217; poster collectively represent the 75% of incorrect seats. But they are of different colours and sizes, suggesting that there are four pieces of information being displayed, not just one. But here, it&#8217;s a distinction without difference.</p>
+
+<p>The data visualition versus infographic distinction is a contested issue, but somewhere in there is the following question: is it that the numbers are used to convey the message, or instead that they <em>are</em> the message? Would a more accurate or consistent visualisation be better at conveying the message? Maybe not.</p>
+<div class='footnotes'><hr /><ol><li id='fn:1'>
+<p><em>Full disclosure</em>: I&#8217;ve had a Speck case on my MacBook Air since the day I bought it, and it&#8217;s brilliant.</p>
+<a rev='footnote' href='#fnref:1'>&#8617;</a></li><li id='fn:2'>
+<p>I am probably not the target audience, given that I have neither kids nor, indeed, a car.</p>
+<a rev='footnote' href='#fnref:2'>&#8617;</a></li><li id='fn:3'>
+<p>There is a prior problem which I&#8217;m glossing over here. The 75% number is the proportion of all kids who are not properly secured, whereas the claim in the adverts is the proportion of properly secured kids of those people who <em>think</em> their child is properly secured. There are almost certainly parents who do not think their kids are properly secured when they in fact are, but this is understandably a less pressing problem. However, it could be that all the children who are not properly attached have parents who <em>know</em> this already, in which case this sort of media intervention is not likely to be effective. I concede that this problem is probably just philosophical and not relevant to this particular case.</p>
+<a rev='footnote' href='#fnref:3'>&#8617;</a></li></ol></div>
+</article>
+
+<!--
+<div id="related">
+  <h2>Related Posts</h2>
+  <ul class="posts">
+    
+      <li><span>29 Sep 2011</span> &raquo; <a href="../truth-and-persuasion">Truth and persuasion</a></li>
+    
+      <li><span>26 Aug 2011</span> &raquo; <a href="../offline-but-not-off-the-hook">Offline, but not off the hook</a></li>
+    
+      <li><span>09 Aug 2011</span> &raquo; <a href="../real-names">It's not about real names</a></li>
+    
+  </ul>
+</div>
+-->
+
+				
+				
+				
+			</div>
+
+
+	</body>
+
+</html>

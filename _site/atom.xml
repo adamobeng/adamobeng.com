@@ -4,7 +4,7 @@
  <title>Adam Obeng</title>
  <link href="http://adamobeng.com/atom.xml" rel="self"/>
  <link href="http://adamobeng.com/"/>
- <updated>2012-12-05T13:09:18-05:00</updated>
+ <updated>2013-01-20T21:06:01-05:00</updated>
  <id>http://adamobeng.com/</id>
  <author>
    <name>Adam Obeng</name>
@@ -13,32 +13,53 @@
 
  
  <entry>
-   <title>Science and Data Science</title>
-   <link href="http://adamobengscience-and-data-science"/>
-   <updated>2012-11-02T00:00:00-04:00</updated>
-   <id>http://adamobeng.com./science-and-data-science</id>
-   <content type="html">&lt;p&gt;Thanks to &lt;a href='http://columbiadatascience.wordpress.com/'&gt;Introduction to Data Science&lt;/a&gt;, and Peter Bearman&amp;#8217;s Research Design class, I&amp;#8217;ve been thinking about doing science.&lt;sup id='fnref:1'&gt;&lt;a href='#fn:1' rel='footnote'&gt;1&lt;/a&gt;&lt;/sup&gt; The Research Design class this week was about the debate between Eric Klinenberg and Mitchell Duneier about the social causes of mortality in the 1995 Chicago Heatwave. One of the problems is that there are many variables and few cases, which makes the sort of statistical analyses usually carried out in sociology quite difficult. However, data scientists deal with this kind of thing all the time, especially those in industry who are trying to predict a user&amp;#8217;s purchasing behaviour based on a huge sparse vector of previously visited websites. There are &lt;a href='http://scikit-learn.org/stable/modules/ensemble.html#gradient-tree-boosting'&gt;methods&lt;/a&gt; which can effectively ignore useless (read &amp;#8216;unpredictive&amp;#8217;) variables. Advertisers (and other flavours of data scientist) don&amp;#8217;t particularly care to understand the models they use as long as they continue to work.&lt;/p&gt;
+   <title>Child's Play</title>
+   <link href="http://adamobengchilds-play"/>
+   <updated>2013-01-19T00:00:00-05:00</updated>
+   <id>http://adamobeng.com./childs-play</id>
+   <content type="html">&lt;p&gt;Isn&amp;#8217;t it the most cliched thing to not update a blog for a while, and then apologise for doing so? Well I&amp;#8217;m an iconoclast, so that&amp;#8217;s not happening.&lt;/p&gt;
 
-&lt;p&gt;But this predictive accuracy comes at a cost of producing models which can&amp;#8217;t necessarily being interpreted. I found myself (re-)reading Peter Norvig&amp;#8217;s &lt;a href='http://norvig.com/chomsky.html'&gt;On Chomsky and the Two Cultures of Statistical Learning&lt;/a&gt; in this light. Norvig distinguishes three types of statistical models:&lt;/p&gt;
+&lt;p&gt;A little while ago, Rachel Schutt and Andrew Gelman both noticed an advertising poster for Speck,&lt;sup id='fnref:1'&gt;&lt;a rel='footnote' href='#fn:1'&gt;1&lt;/a&gt;&lt;/sup&gt; which used a pseudo-Venn diagram to convey a very confusing message. It looks like National Highway Traffic Safety Administration had a similar idea:&lt;/p&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;A &lt;em&gt;mathematical model&lt;/em&gt; specifies a relation among variables, either in functional form that maps inputs to outputs (e.g. y = m x + b) or in relation form (e.g. the following (x, y) pairs are part of the relation).&lt;/p&gt;
+&lt;p&gt;&lt;img alt='An NHSTA Child Car Safety advertising poster, showing a Towers of Hanoi-like childs toy, annotated with statistical description' src='/images/car_seat_poster.jpg' /&gt;&lt;/p&gt;
 
-&lt;p&gt;A &lt;em&gt;probabilistic model&lt;/em&gt; specifies a probability distribution over possible values of random variables, e.g., P(x, y), rather than a strict deterministic relationship, e.g., y = f(x).&lt;/p&gt;
+&lt;p&gt;The message of the campaign is important, it goes without saying. And given that I&amp;#8217;m talking about it,&lt;sup id='fnref:2'&gt;&lt;a rel='footnote' href='#fn:2'&gt;2&lt;/a&gt;&lt;/sup&gt; the campaign is probably being effective in communicating what it intends to: way too few kids are in the correct car seat.&lt;/p&gt;
 
-&lt;p&gt;A &lt;em&gt;trained model&lt;/em&gt; uses some training/learning algorithm to take as input a collection of possible models and a collection of data points (e.g. (x, y) pairs) and select the best model. Often this is in the form of choosing the values of parameters (such as m and b above) through a process of statistical inference.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;However, there are some obvious problems with it &lt;em&gt;as a piece of data visualisation&lt;/em&gt;. The poster I saw is part of a &lt;a href='http://www.safercar.gov/parents/TRS/toolkit.htm'&gt;set of five&lt;/a&gt;, each with the same message, but with a different child-related item used to display the statistic:&lt;/p&gt;
+&lt;a href='http://www.safercar.gov/parents/TRS/pencil.pdf'&gt;&lt;img style='width:100px; padding:10px' alt='NHTSA car seat pencil poster' src='/images/nhtsa_pencil.png' /&gt;&lt;/a&gt;&lt;a href='http://www.safercar.gov/parents/TRS/Bottle.pdf'&gt;&lt;img style='width:100px; padding:10px' alt='NHTSA car seat bottle poster' src='/images/nhtsa_bottle.png' /&gt;&lt;/a&gt;&lt;a style='display:inline-block' href='http://www.safercar.gov/parents/TRS/sneaker.pdf'&gt;&lt;img style='width:100px; padding:10px' alt='NHTSA car seat sneaker poster' src='/images/nhtsa_sneaker.png' /&gt;&lt;/a&gt;&lt;a style='display:inline-block' href='http://www.safercar.gov/parents/TRS/stackingtoy.pdf'&gt;&lt;img style='width:100px; padding:10px' alt='NHTSA car seat stacking toy poster' src='/images/nhtsa_stackingtoy.png' /&gt;&lt;/a&gt;&lt;a style='display:inline-block' href='http://icsw.nhtsa.gov/safercar/parents/TRS/popsicle.pdf'&gt;&lt;img style='width:100px; padding:10px' alt='NHTSA car seat popsicle poster' src='/images/nhtsa_popsicle.png' /&gt;&lt;/a&gt;
+&lt;p&gt;So what is the number of incorrectly-attached kids? According to the &lt;a href='http://www.safercar.gov/parents/TRS/8651b_CPSFactSheet_04-04-12_v1-tag.pdf'&gt;Fact sheet&lt;/a&gt;, &amp;#8220;3 out of 4 kids are not as secure in the car as they should be because their car seats are not being used correctly.&amp;#8221; Unfortunately, no source is listed for that claim, so let&amp;#8217;s say that the number is 75%.&lt;sup id='fnref:3'&gt;&lt;a rel='footnote' href='#fn:3'&gt;3&lt;/a&gt;&lt;/sup&gt; How well do these posters convey that number? This table shows the proportion secure as displayed in each poster:&lt;/p&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+	&lt;td /&gt;&lt;td&gt;Length&lt;/td&gt;&lt;td&gt;Area&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+	&lt;td&gt;Pencil&lt;/td&gt;&lt;td&gt;0.136&lt;/td&gt;&lt;td&gt;0.183&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+	&lt;td&gt;Stack&lt;/td&gt;&lt;td&gt;0.25&lt;/td&gt;&lt;td&gt;0.172&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+	&lt;td&gt;Sneaker&lt;/td&gt;&lt;td&gt;0.3&lt;/td&gt;&lt;td&gt;0.0797&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+	&lt;td&gt;Popsicle&lt;/td&gt;&lt;td&gt;0.131&lt;/td&gt;&lt;td&gt;0.169&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+	&lt;td&gt;Bottle&lt;/td&gt;&lt;td&gt;0.260&lt;/td&gt;&lt;td&gt;0.260&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;p&gt;The scales drawn on the posters suggest that the length of the various elements is supposed to represent the statistic. This is moderately dubious, especially in the case of the of the &amp;#8216;Sneaker&amp;#8217; diagram, so you might think that the proportion is measured by the area indicated instead. Depending on which poster you read, the proportion of kids who are properly attached (25%) looks to be somewhere between the problematic 30% and the scandalous 8%.&lt;/p&gt;
 
-&lt;p&gt;Previously, I&amp;#8217;ve adhered to Peter Hedström&amp;#8217;s &lt;a href='http://www.amazon.com/Dissecting-Social-Principles-Analytical-Sociology/dp/0521796679'&gt;mantra&lt;/a&gt; of opening the black boxes to reveal the individual-level social mechanisms. But now I&amp;#8217;m not so sure.&lt;/p&gt;
+&lt;p&gt;There are other problems too with these posters as data visualisations. For example, the bottom four rings on the &amp;#8216;stacking toy&amp;#8217; poster collectively represent the 75% of incorrect seats. But they are of different colours and sizes, suggesting that there are four pieces of information being displayed, not just one. But here, it&amp;#8217;s a distinction without difference.&lt;/p&gt;
 
-&lt;p&gt;Consider the Desires, Beliefs and Opportunities (DBO) model in Hedström&amp;#8217;s &lt;a href='http://www.amazon.com/Dissecting-Social-Principles-Analytical-Sociology/dp/0521796679'&gt;&lt;em&gt;Dissecting the Social&lt;/em&gt;&lt;/a&gt;. Used for agent-based modelling, this &amp;#8216;folk psychology&amp;#8217; model of individual behaviour, assumes that an individuals&amp;#8217; action with respect to a particular goal is uniquely determined by their desire for the goal, their beleif that the action will allow them to acheive the goal, and on them having the opportunity to act. &lt;div class='sidenote'&gt;lorem ipsum dolor sit amet&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;algorithmic modeling culture &amp;#8220;produce a form that, while accurately modeling reality, is not easily interpretable by humans, and makes no claim to correspond to the generative process used by nature.&amp;#8221;&lt;/p&gt;
-
-&lt;p&gt;&amp;#8220;for complex problems there are usually many alternative good models, each with very similar measures of goodness of fit.&amp;#8221;&lt;/p&gt;
+&lt;p&gt;The data visualition versus infographic distinction is a contested issue, but somewhere in there is the following question: is it that the numbers are used to convey the message, or instead that they &lt;em&gt;are&lt;/em&gt; the message? Would a more accurate or consistent visualisation be better at conveying the message? Maybe not.&lt;/p&gt;
 &lt;div class='footnotes'&gt;&lt;hr /&gt;&lt;ol&gt;&lt;li id='fn:1'&gt;
-&lt;p&gt;Which is always a contentious debate for us in the&amp;#8230; &lt;em&gt;less hard&lt;/em&gt; sciences&lt;/p&gt;
-&lt;a href='#fnref:1' rev='footnote'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</content>
+&lt;p&gt;&lt;em&gt;Full disclosure&lt;/em&gt;: I&amp;#8217;ve had a Speck case on my MacBook Air since the day I bought it, and it&amp;#8217;s brilliant.&lt;/p&gt;
+&lt;a rev='footnote' href='#fnref:1'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn:2'&gt;
+&lt;p&gt;I am probably not the target audience, given that I have neither kids nor, indeed, a car.&lt;/p&gt;
+&lt;a rev='footnote' href='#fnref:2'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn:3'&gt;
+&lt;p&gt;There is a prior problem which I&amp;#8217;m glossing over here. The 75% number is the proportion of all kids who are not properly secured, whereas the claim in the adverts is the proportion of properly secured kids of those people who &lt;em&gt;think&lt;/em&gt; their child is properly secured. There are almost certainly parents who do not think their kids are properly secured when they in fact are, but this is understandably a less pressing problem. However, it could be that all the children who are not properly attached have parents who &lt;em&gt;know&lt;/em&gt; this already, in which case this sort of media intervention is not likely to be effective. I concede that this problem is probably just philosophical and not relevant to this particular case.&lt;/p&gt;
+&lt;a rev='footnote' href='#fnref:3'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</content>
  </entry>
  
  <entry>
@@ -46,7 +67,7 @@
    <link href="http://adamobengtruth-and-persuasion"/>
    <updated>2011-09-29T00:00:00-04:00</updated>
    <id>http://adamobeng.com./truth-and-persuasion</id>
-   <content type="html">&lt;p&gt;Han-teng Liao&amp;#8217;s &lt;a href='http://people.oii.ox.ac.uk/hanteng/2011/09/27/ways-of-seeing-data/'&gt;post&lt;/a&gt; got me thinking about&lt;sup id='fnref:1'&gt;&lt;a href='#fn:1' rel='footnote'&gt;1&lt;/a&gt;&lt;/sup&gt; data visualization as a tool for communication.&lt;/p&gt;
+   <content type="html">&lt;p&gt;Han-teng Liao&amp;#8217;s &lt;a href='http://people.oii.ox.ac.uk/hanteng/2011/09/27/ways-of-seeing-data/'&gt;post&lt;/a&gt; got me thinking about&lt;sup id='fnref:1'&gt;&lt;a rel='footnote' href='#fn:1'&gt;1&lt;/a&gt;&lt;/sup&gt; data visualization as a tool for communication.&lt;/p&gt;
 
 &lt;p&gt;In particular, I thought I should take issue with the quote he gives from &lt;a href='http://blog.revolutionanalytics.com/2011/09/data-visualization-vs-propaganda.html?cid=6a010534b1db25970b015435abb804970c'&gt;David Smith&lt;/a&gt;:&lt;/p&gt;
 
@@ -67,7 +88,7 @@
 &lt;p&gt;&lt;em&gt;(This post was edited on 07/10/2011 to properly attribute a quote to David Smith.)&lt;/em&gt;&lt;/p&gt;
 &lt;div class='footnotes'&gt;&lt;hr /&gt;&lt;ol&gt;&lt;li id='fn:1'&gt;
 &lt;p&gt;Is this how I start all my blog posts?&lt;/p&gt;
-&lt;a href='#fnref:1' rev='footnote'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</content>
+&lt;a rev='footnote' href='#fnref:1'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</content>
  </entry>
  
  <entry>
@@ -87,7 +108,7 @@
 &lt;p&gt;In fact, I’ll say that even more strongly – &lt;em&gt;if your speech is not confined to the context you are in – but available to a potentially unknowable audience – you are online.&lt;/em&gt; &lt;span&gt;emphasis in original&lt;/span&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;You&amp;#8217;re online if what you do and say is &amp;#8220;available to a potentially unknowable audience&amp;#8221;, specifically an audience which you don&amp;#8217;t select, and to which you can&amp;#8217;t adapt your actions&lt;sup id='fnref:1'&gt;&lt;a href='#fn:1' rel='footnote'&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;You&amp;#8217;re online if what you do and say is &amp;#8220;available to a potentially unknowable audience&amp;#8221;, specifically an audience which you don&amp;#8217;t select, and to which you can&amp;#8217;t adapt your actions&lt;sup id='fnref:1'&gt;&lt;a rel='footnote' href='#fn:1'&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 
 &lt;p&gt;Most of the time when you&amp;#8217;re online it&amp;#8217;s because your actions are being recorded electronically:&lt;/p&gt;
 
@@ -101,7 +122,7 @@
 
 &lt;p&gt;I think that this definition of being &amp;#8216;offline&amp;#8217; is a bit strong. If Bernie&amp;#8217;s right then you&amp;#8217;re always online, unless you&amp;#8217;re not talking to anyone at all.&lt;/p&gt;
 
-&lt;p&gt;The fact is, your actions &lt;em&gt;are&lt;/em&gt; being recorded when you&amp;#8217;re interacting in the real world: they&amp;#8217;re being recorded by the person you&amp;#8217;re talking to. And while they&amp;#8217;re not being &amp;#8220;digitized&amp;#8221;, they are being &amp;#8220;networked&amp;#8221;, passed on through word of mouth, or even encoded at a later time by your interlocutor. And this &lt;em&gt;is&lt;/em&gt; &amp;#8220;by default&amp;#8221;: unless you make it clear that a conversation is not to be shared&lt;sup id='fnref:2'&gt;&lt;a href='#fn:2' rel='footnote'&gt;2&lt;/a&gt;&lt;/sup&gt;, then you can expect it to be shared.&lt;/p&gt;
+&lt;p&gt;The fact is, your actions &lt;em&gt;are&lt;/em&gt; being recorded when you&amp;#8217;re interacting in the real world: they&amp;#8217;re being recorded by the person you&amp;#8217;re talking to. And while they&amp;#8217;re not being &amp;#8220;digitized&amp;#8221;, they are being &amp;#8220;networked&amp;#8221;, passed on through word of mouth, or even encoded at a later time by your interlocutor. And this &lt;em&gt;is&lt;/em&gt; &amp;#8220;by default&amp;#8221;: unless you make it clear that a conversation is not to be shared&lt;sup id='fnref:2'&gt;&lt;a rel='footnote' href='#fn:2'&gt;2&lt;/a&gt;&lt;/sup&gt;, then you can expect it to be shared.&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;I am engaging in a trust relationship with the curator, but I am not free to say what I want.&lt;/p&gt;
@@ -119,7 +140,7 @@
 
 &lt;p&gt;Under this definition, it&amp;#8217;s clear that a real-world conversation can be either online or offline, because it can be either on- or off- the record.&lt;/p&gt;
 
-&lt;p&gt;But this binary&lt;sup id='fnref:3'&gt;&lt;a href='#fn:3' rel='footnote'&gt;3&lt;/a&gt;&lt;/sup&gt; definition still isn&amp;#8217;t sufficient. There is still a difference between the online-ness of the real world and that of social networks. I would say that the real world is inherently more offline, because accessing information about your past actions is difficult. It&amp;#8217;s not surprising that a technology designed for information retrieval should make it easy to find things out.&lt;/p&gt;
+&lt;p&gt;But this binary&lt;sup id='fnref:3'&gt;&lt;a rel='footnote' href='#fn:3'&gt;3&lt;/a&gt;&lt;/sup&gt; definition still isn&amp;#8217;t sufficient. There is still a difference between the online-ness of the real world and that of social networks. I would say that the real world is inherently more offline, because accessing information about your past actions is difficult. It&amp;#8217;s not surprising that a technology designed for information retrieval should make it easy to find things out.&lt;/p&gt;
 
 &lt;p&gt;In other words, being online is a question of degree. You are totally offline if there&amp;#8217;s no &amp;#8216;record&amp;#8217;, or if the &amp;#8216;record&amp;#8217; is impossible to access. &lt;em&gt;The more concrete and available the &amp;#8216;record&amp;#8217; of your actions, the more online you are.&lt;/em&gt;&lt;/p&gt;
 
@@ -138,11 +159,11 @@
 &lt;p&gt;Just like in the real world, however, they can&amp;#8217;t prove it.&lt;/p&gt;
 &lt;div class='footnotes'&gt;&lt;hr /&gt;&lt;ol&gt;&lt;li id='fn:1'&gt;
 &lt;p&gt;Being able to adapt your actions is important so that your actions are context-sensitive.&lt;/p&gt;
-&lt;a href='#fnref:1' rev='footnote'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn:2'&gt;
+&lt;a rev='footnote' href='#fnref:1'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn:2'&gt;
 &lt;p&gt;Yes, it could be implicit in the conversational context.&lt;/p&gt;
-&lt;a href='#fnref:2' rev='footnote'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn:3'&gt;
+&lt;a rev='footnote' href='#fnref:2'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn:3'&gt;
 &lt;p&gt;No pun intended, etc, etc.&lt;/p&gt;
-&lt;a href='#fnref:3' rev='footnote'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</content>
+&lt;a rev='footnote' href='#fnref:3'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</content>
  </entry>
  
  <entry>
@@ -154,9 +175,9 @@
 
 &lt;p&gt;If you&amp;#8217;ve been even vaguely following the controversy about &lt;a href='http://www.google.com/+/demo/'&gt;Google+&lt;/a&gt;, I&amp;#8217;ll give you a moment to wipe the coffee off your monitor.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href='http://socialmediacollective.org/2011/08/08/real-name-sites-are-necessarily-inadequate-for-free-speech/'&gt;Bernie Hogan&amp;#8217;s post&lt;/a&gt; is the latest &lt;span style='text-decoration: line-through;'&gt;free publicity for Google+&lt;/span&gt; salvo in the &amp;#8220;nymwars&amp;#8221;: the blogosphere&amp;#8217;s consternation over Google+&amp;#8217;s policy of requiring users to use their real names. Now, although I don&amp;#8217;t have a horse in this race&lt;sup id='fnref:1'&gt;&lt;a href='#fn:1' rel='footnote'&gt;1&lt;/a&gt;&lt;/sup&gt;, I&amp;#8217;d like to contribute what I think is really going on.&lt;/p&gt;
+&lt;p&gt;&lt;a href='http://socialmediacollective.org/2011/08/08/real-name-sites-are-necessarily-inadequate-for-free-speech/'&gt;Bernie Hogan&amp;#8217;s post&lt;/a&gt; is the latest &lt;span style='text-decoration: line-through;'&gt;free publicity for Google+&lt;/span&gt; salvo in the &amp;#8220;nymwars&amp;#8221;: the blogosphere&amp;#8217;s consternation over Google+&amp;#8217;s policy of requiring users to use their real names. Now, although I don&amp;#8217;t have a horse in this race&lt;sup id='fnref:1'&gt;&lt;a rel='footnote' href='#fn:1'&gt;1&lt;/a&gt;&lt;/sup&gt;, I&amp;#8217;d like to contribute what I think is really going on.&lt;/p&gt;
 
-&lt;p&gt;According to Bernie, real names in online interaction are sometimes better than pseudonymity. I think this is actually vanishingly rare. Google must realise this, and from the statements they&amp;#8217;ve made, it looks like they do.&lt;sup id='fnref:2'&gt;&lt;a href='#fn:2' rel='footnote'&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;According to Bernie, real names in online interaction are sometimes better than pseudonymity. I think this is actually vanishingly rare. Google must realise this, and from the statements they&amp;#8217;ve made, it looks like they do.&lt;sup id='fnref:2'&gt;&lt;a rel='footnote' href='#fn:2'&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;p&gt;We can only guess at what Google really wants, but if we take them at their word, their goal doesn&amp;#8217;t require real names. The real-names policy on Google+ is just a beta feature, an experiment.&lt;/p&gt;
 
@@ -200,14 +221,14 @@
 
 &lt;p&gt;So, to answer the question posed above: it looks like real names only &amp;#8220;offer many advantages&amp;#8221; in the online world when the activity itself benefits from being linked to some offline existence. &lt;em&gt;Real names are a hack: they splice offline mechanisms of trust into the online world&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;When exactly does offline reputation matter? It&amp;#8217;s not just that only &amp;#8220;some lucky people give talks to large audiences, they get on the radio or tv&amp;#8221;&lt;sup id='fnref:3'&gt;&lt;a href='#fn:3' rel='footnote'&gt;3&lt;/a&gt;&lt;/sup&gt;. Only some lucky people are &lt;a href='http://en.wikipedia.org/wiki/Wikipedia:Notability'&gt;notable&lt;/a&gt; enough for their real names to matter.&lt;/p&gt;
+&lt;p&gt;When exactly does offline reputation matter? It&amp;#8217;s not just that only &amp;#8220;some lucky people give talks to large audiences, they get on the radio or tv&amp;#8221;&lt;sup id='fnref:3'&gt;&lt;a rel='footnote' href='#fn:3'&gt;3&lt;/a&gt;&lt;/sup&gt;. Only some lucky people are &lt;a href='http://en.wikipedia.org/wiki/Wikipedia:Notability'&gt;notable&lt;/a&gt; enough for their real names to matter.&lt;/p&gt;
 
 &lt;h2 id='real_names_dont_matter'&gt;Real names don&amp;#8217;t matter&lt;/h2&gt;
 
 &lt;p&gt;And it looks like Google has realised this. Robert Scoble reports that &lt;a href='https://plus.google.com/107117483540235115863/about'&gt;Vic Gundotra&lt;/a&gt; said that the real-names policy was supposed to:&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;make sure a positive tone gets set here &lt;span&gt;&amp;#8230;&lt;/span&gt; mostly to have a nicer, more personal, community,&lt;sup id='fnref:4'&gt;&lt;a href='#fn:4' rel='footnote'&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;make sure a positive tone gets set here &lt;span&gt;&amp;#8230;&lt;/span&gt; mostly to have a nicer, more personal, community,&lt;sup id='fnref:4'&gt;&lt;a rel='footnote' href='#fn:4'&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;It makes sense to require real names if you&amp;#8217;re trying to deter trolls. But it&amp;#8217;s not necessary to use real names to build a community. In fact,&lt;/p&gt;
@@ -216,9 +237,9 @@
 &lt;p&gt;it isn&amp;#8217;t about real names &lt;span&gt;&amp;#8230;&lt;/span&gt; it is about having common names and removing people who spell their names in weird ways, like using upside-down characters, or who are using obviously fake names&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;But if people have &amp;#8220;common names&amp;#8221;&lt;sup id='fnref:5'&gt;&lt;a href='#fn:5' rel='footnote'&gt;5&lt;/a&gt;&lt;/sup&gt;, that they can&amp;#8217;t just shed like a skin, then they carry their reputation with them. People will be &amp;#8220;nice&amp;#8221;, because they don&amp;#8217;t want to get a reputation for being nasty. You can argue that point, but if it&amp;#8217;s true, it&amp;#8217;s a good reason for requiring &amp;#8220;common&amp;#8221;, or consistent names.&lt;/p&gt;
+&lt;p&gt;But if people have &amp;#8220;common names&amp;#8221;&lt;sup id='fnref:5'&gt;&lt;a rel='footnote' href='#fn:5'&gt;5&lt;/a&gt;&lt;/sup&gt;, that they can&amp;#8217;t just shed like a skin, then they carry their reputation with them. People will be &amp;#8220;nice&amp;#8221;, because they don&amp;#8217;t want to get a reputation for being nasty. You can argue that point, but if it&amp;#8217;s true, it&amp;#8217;s a good reason for requiring &amp;#8220;common&amp;#8221;, or consistent names.&lt;/p&gt;
 
-&lt;p&gt;Of course, this is still speculative, but Google&amp;#8217;s aim doesn&amp;#8217;t seem to be banning pseudonyms, but rather to enforce their consistency. And that&amp;#8217;s not in order to link what people say online to who they really are, but to make sure they&amp;#8217;re civil. The statement about weird characters&lt;sup id='fnref:6'&gt;&lt;a href='#fn:6' rel='footnote'&gt;6&lt;/a&gt;&lt;/sup&gt; seems to reinforce this: it&amp;#8217;s about image, the way the network appears to the outside world.&lt;/p&gt;
+&lt;p&gt;Of course, this is still speculative, but Google&amp;#8217;s aim doesn&amp;#8217;t seem to be banning pseudonyms, but rather to enforce their consistency. And that&amp;#8217;s not in order to link what people say online to who they really are, but to make sure they&amp;#8217;re civil. The statement about weird characters&lt;sup id='fnref:6'&gt;&lt;a rel='footnote' href='#fn:6'&gt;6&lt;/a&gt;&lt;/sup&gt; seems to reinforce this: it&amp;#8217;s about image, the way the network appears to the outside world.&lt;/p&gt;
 
 &lt;p&gt;If that&amp;#8217;s true, real names, like non-&amp;#8220;weird&amp;#8221; names, are being used as a proxy.&lt;/p&gt;
 
@@ -227,17 +248,17 @@
 &lt;p&gt;&lt;a href='http://adamobeng.com/what-it-means-to-be-offline'&gt;Next time&lt;/a&gt; I&amp;#8217;ll talk about what it really means to be &amp;#8220;offline&amp;#8221;, and whether we can design a online social network that lets you be offline.&lt;/p&gt;
 &lt;div class='footnotes'&gt;&lt;hr /&gt;&lt;ol&gt;&lt;li id='fn:1'&gt;
 &lt;p&gt;I&amp;#8217;m not on Google+ &lt;a href='http://wellsb.com/post/7022247022/google-plus-for-google-apps-in-the-coming-months'&gt;because I&amp;#8217;ve got a Google Apps account&amp;#8230;&lt;/a&gt;.&lt;/p&gt;
-&lt;a href='#fnref:1' rev='footnote'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn:2'&gt;
+&lt;a rev='footnote' href='#fnref:1'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn:2'&gt;
 &lt;p&gt;For the purposes of this article I will be assuming that Google is, in fact, not evil.&lt;/p&gt;
-&lt;a href='#fnref:2' rev='footnote'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn:3'&gt;
+&lt;a rev='footnote' href='#fnref:2'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn:3'&gt;
 &lt;p&gt;&lt;a href='http://socialmediacollective.org/2011/08/08/real-name-sites-are-necessarily-inadequate-for-free-speech/'&gt;Real name sites are necessarily inadequate for free speech, by Bernie Hogan&lt;/a&gt;&lt;/p&gt;
-&lt;a href='#fnref:3' rev='footnote'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn:4'&gt;
+&lt;a rev='footnote' href='#fnref:3'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn:4'&gt;
 &lt;p&gt;&lt;a href='https://plus.google.com/111091089527727420853/posts/Fddn6rV8mBX'&gt;source: Robert Scoble&lt;/a&gt;&lt;/p&gt;
-&lt;a href='#fnref:4' rev='footnote'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn:5'&gt;
+&lt;a rev='footnote' href='#fnref:4'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn:5'&gt;
 &lt;p&gt;I assume that &amp;#8220;common&amp;#8221; is meant in the sense of &amp;#8216;consistent&amp;#8217;, rather than &amp;#8216;usual&amp;#8217;. Please correct me if I&amp;#8217;m wrong.&lt;/p&gt;
-&lt;a href='#fnref:5' rev='footnote'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn:6'&gt;
+&lt;a rev='footnote' href='#fnref:5'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn:6'&gt;
 &lt;p&gt;In some places, people can legally spell their names &amp;#8220;in weird ways&amp;#8221;, or have names that are &amp;#8220;obviously fake&amp;#8221;.&lt;/p&gt;
-&lt;a href='#fnref:6' rev='footnote'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</content>
+&lt;a rev='footnote' href='#fnref:6'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</content>
  </entry>
  
  <entry>
@@ -272,7 +293,7 @@
 &lt;p&gt;Now that&amp;#8217;s a good summary of what&amp;#8217;s going on in the model, don&amp;#8217;t get me wrong. You can see a nice relationship between the parameters. Obviously, graphs like these are essential for summarising information, and you couldn&amp;#8217;t infer this from interacting with the simulation directly. Indeed, in some cases, interacting with the simulation will not even be possible (like when there are too many agents to display comfortably).&lt;/p&gt;
 
 &lt;p&gt;In addition, you couldn&amp;#8217;t really have a dynamic, interactive presentation of the model on paper (or even in a PDF). But on the web at least, with a little bit of HTML5 (in particular the &lt;a href='https://developer.mozilla.org/en/Canvas_tutorial'&gt;Canvas&lt;/a&gt; element) you can produce this:&lt;/p&gt;
-&lt;script src='../dbo-minified.js' type='text/javascript' /&gt;&lt;canvas width='400' height='400' style='margin: 2em;' id='canvas' /&gt;
+&lt;script type='text/javascript' src='../dbo-minified.js' /&gt;&lt;canvas style='margin: 2em;' width='400' id='canvas' height='400' /&gt;
 &lt;p&gt;Click the nodes to change their DBO state; &lt;font color='#0000FF'&gt;blue&lt;/font&gt; nodes have desire, &lt;font color='#FF0000'&gt;red&lt;/font&gt; nodes have belief and &lt;font color='#FF00FF'&gt;purple&lt;/font&gt; nodes have both. The &amp;#8216;step&amp;#8217; button advances the simulation by one step, and the &amp;#8216;reset&amp;#8217; button randomly assigns DBO states to all of the nodes.&lt;/p&gt;
 
 &lt;p&gt;As you may notice this is a simulation of the DBO model with a fixed set of parameters (in particular, opportunity is being ignored). As such, the behaviour exhibited is pretty limited. This is also for the time being &lt;em&gt;very&lt;/em&gt; alpha-quality code. Still, it shouldn&amp;#8217;t take too long to get a worthwhile implementation of the DBO model and its variants up and running.&lt;/p&gt;
