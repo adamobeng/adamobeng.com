@@ -3,4 +3,4 @@ This is the data behind my website, which is generated with Jekyll.
 It was originally cloned from Tom Preston-Werner's blog, but the mists of time and version control seem to have lost that link.
 
 
-All content Copyright Adam Obeng 2011. I may change this later.
+All content Copyright Adam Obeng 2011-3, and all content of which the copyright belongs to me is released under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 license <http://creativecommons.org/licenses/by-nc-sa/3.0/>.
