@@ -6,7 +6,7 @@ categories: hackathon, projects
 
 #TL;DR
 
-I won second place at the [HackNY Spring 2015 Hackathon](http://hackny.org/a/spring2015hackathon/) with [&#x1f424;&#x1f3b6; (chirp)](/hackny-hackathon-runnerup/#x1f424x1f3b6-chirp). And also first place with [GLaPEP8](/hackny-hackathon-winner/#glapep8)(!) Apparently I'm the first person to win two podium places at a HackNY hackathon.
+I won second place at the [HackNY Spring 2015 Hackathon](http://hackny.org/a/spring2015hackathon/) with [&#x1f424;&#x1f3b6; (chirp)](/hackny-hackathon-runnerup/#x1f424x1f3b6-chirp). And I also won *first* place with [GLaPEP8](/hackny-hackathon-winner/#glapep8)(!) Apparently I'm the first person to win two podium places at a HackNY hackathon.
 
 
 <blockquote class="twitter-tweet" lang="en"><p>Congrats to GLaPEP8 for winning 1st place at <a href="https://twitter.com/hashtag/hackny?src=hash">#hackny</a> - Adam won first and second! <a href="http://t.co/WASGOlqmir">pic.twitter.com/WASGOlqmir</a></p>&mdash; Major League Hacking (@MLHacks) <a href="https://twitter.com/MLHacks/status/574648664532086784">March 8, 2015</a></blockquote>

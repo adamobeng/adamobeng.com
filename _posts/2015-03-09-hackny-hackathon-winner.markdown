@@ -6,9 +6,9 @@ categories: hackathon, projects
 
 #TL;DR
 
-I won second place at the [HackNY Spring 2015 Hackathon](http://hackny.org/a/spring2015hackathon/) with [&#x1f424;&#x1f3b6; (chirp)](/hackny-hackathon-runnerup/#x1f424x1f3b6-chirp). And also first place with [GLaPEP8](/hackny-hackathon-winner/#glapep8)(!) Apparently I'm the first person to win two podium places at a HackNY hackathon.
+I won second place at the [HackNY Spring 2015 Hackathon](http://hackny.org/a/spring2015hackathon/) with [&#x1f424;&#x1f3b6; (chirp)](/hackny-hackathon-runnerup/#x1f424x1f3b6-chirp). And I also won *first* place with [GLaPEP8](/hackny-hackathon-winner/#glapep8)(!) Apparently I'm the first person to win two podium places at a HackNY hackathon.
 
-I've got [a post about (chirp)](/hackny-spring-2015/#x1f424x1f3b6-chirp), but this is about the HackNY Spring 2015 Hackathon winner:
+I've got [a post about (chirp)](/hackny-hackathon-runnerup/#x1f424x1f3b6-chirp), but this is about the HackNY Spring 2015 Hackathon winner:
 
 #GLaPEP8
 
