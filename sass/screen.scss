@@ -64,8 +64,8 @@ header {
 		a {
 			font-variant: small-caps;
 			text-decoration: none;
+		}
 	}
-}
 }
 
 nav {
@@ -77,9 +77,10 @@ nav {
 	margin-top: 1.8em;
 	color: $text-colour;
 
-		a {
-			text-decoration: none;
-		}
+	a {
+		text-decoration: none;
+	}
+
 	li {
 		list-style-type: none;
 		font-variant: small-caps;
@@ -134,11 +135,11 @@ nav {
 	h2 { font-size: 120%; }
 	h3 { font-size: 110%; }
 
-	p {
+	p,ul {
 		margin-bottom: 1em;
 	}
-	
-	
+
+
 	blockquote {
 		margin-left: 2em;
 		padding-left: 0.8em;
@@ -167,18 +168,18 @@ nav {
 
 	article table {
 		margin: 2em auto 2em auto;
-		
+
 
 		tr {
 			border-bottom: 1px solid #303030;
 
 			td {
-			padding-left: 0.8em;
-			padding-right: 0.8em;
+				padding-left: 0.8em;
+				padding-right: 0.8em;
 			}
 
 			td:first-child {
-			font-variant: small-caps;
+				font-variant: small-caps;
 			}
 		}
 
@@ -189,6 +190,11 @@ nav {
 		tr:last-child {
 			border-bottom: none;
 		}
+	}
+
+	li {
+		list-style-type: circle;
+		margin-left: 2em;
 	}
 
 	em {
@@ -206,22 +212,28 @@ nav {
 		bottom: 1ex;
 	}
 	
+
+
 }
 
 .categories {
 }
 
 .footnotes { 
-  border-top: 1px solid $text-colour;
-  padding-top: 2em;
-  padding-left: 2em;
-  padding-bottom: 2em;
+	border-top: 1px solid $text-colour;
+	padding-top: 2em;
+	padding-left: 2em;
+	padding-bottom: 2em;
 
-  ol {list-style-type: decimal;}
-  hr {display: none;}
-  p {display: inline;}
+	ol,li {
+		list-style-type: decimal;
+		margin-left: 0;
+	}
+	hr {display: none;}
+	p {display: inline;}
 
-  li:target {background: $highlight;}
+	li:target {background: $highlight;}
+
 }
 
 #profile {
@@ -231,3 +243,11 @@ nav {
 	margin-right: 2em;
 	margin-top: 0.5em;
 }
+
+.highlight {
+	font-family: 'Consolas', monospace;
+	font-size: 75%;
+	margin-right: 2em;
+	margin-bottom: 2em; 
+}
+

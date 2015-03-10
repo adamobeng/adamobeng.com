@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+
+<html xml:lang="en" lang="en">
+	<head>
+		 <meta charset="utf-8" />
+		 <title>HackNY Spring 2015 Hackathon &mdash; And the winner is...</title>
+		 <meta name="author" content="Adam Obeng" />
+		<link rel="author" href="/humans.txt" />
+
+		 <!-- syntax highlighting CSS -->
+		 <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+
+		 <!-- Homepage CSS -->
+		 <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+
+		 <link rel="shortcut icon" href="/favicon.ico">
+
+		 <!-- RSS autodiscovery http://www.rssboard.org/rss-autodiscovery -->
+		 <!-- https://secure.wikimedia.org/wikipedia/en/wiki/Atom_%28standard%29 -->
+		 <link rel="alternate" type="application/atom+xml" title="Adam Obeng"
+		 href="/atom.xml">
+		 <!-- Google Analytics -->
+		<script type="text/javascript">
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-22741216-1']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		</script>
+
+		<!-- Typekit -->
+		<script type="text/javascript" src="http://use.typekit.com/qjd5hyy.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	 </head>
+
+	<body>
+		<header class="main-header">
+			<hggroup> <!-- In case I want a tagline -->
+				<h1><a href="http://adamobeng.com">Adam Obeng</a></h1>
+			</hggroup>
+		</header>
+
+	<div class="sidebar">
+		<nav>
+			<li>
+				<ul><a href="/">Home</a></ul>
+				<ul><a href="../blog.html" rel="archives">Blog</a></ul>
+				<ul><a href="../projects.html">Projects</a></ul>
+				<ul><a href="../me.html">About me</a></ul>
+				<ul class="rss"><a href="../atom.xml">Feed</a><img src="/feed-icon-14x14.png"/></ul>
+								</li>
+				<div class="contact">
+				<li>
+					<ul><a href="mailto:contact@adamobeng.com" rel="author">Email</a></ul>
+					<ul><a href="https://twitter.com/intent/follow?screen_name=Adam_Obeng&tw_p=followbutton&variant=2.0">Twitter</a><img id="twitter" src="/images//twitter-bird-light-bgs.png"></img></ul>
+					<ul><a href="https://github.com/adamobeng?tab=repositories">Github</a><img id="github" src="/images/blacktocat-32.png"></img></ul>
+					<!--
+					<ul><a href="http://columbia.academia.edu/AdamObeng">Academia.edu</a></ul>
+					-->
+				</li>
+
+				</div>
+				<div class="copyright">Copyright &copy; Adam Obeng </br> 2010&ndash;2015
+					<div class="cc"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons Attribution-NonCommercial-ShareAlike License" style="border-width:0; vertical-align: text-top" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png" /></a></div>
+				</div>
+
+		</nav>
+	      </div>
+			<div class="site">
+
+			
+				<article>
+	<header>
+	<h1>HackNY Spring 2015 Hackathon &mdash; And the winner is...</h1>
+	<time datetime="2015-03-09 00:00:00 -0400" pubdate> 09 Mar 2015 </time>
+
+		| 
+
+		<span class="categories">
+		Categories:
+		
+		hackathon
+		
+	      </span>
+	</header>
+
+
+	<h1 id="tldr">TL;DR</h1>
+
+<p>I won second place at the <a href="http://hackny.org/a/spring2015hackathon/">HackNY Spring 2015 Hackathon</a> with <a href="/hackny-hackathon-runnerup/#x1f424x1f3b6-chirp">🐤🎶 (chirp)</a>. And also first place with <a href="/hackny-hackathon-winner/#glapep8">GLaPEP8</a>(!) Apparently I’m the first person to win two podium places at a HackNY hackathon.</p>
+
+<p>I’ve got <a href="/hackny-spring-2015/#x1f424x1f3b6-chirp">a post about (chirp)</a>, but this is about the HackNY Spring 2015 Hackathon winner:</p>
+
+<h1 id="glapep8">GLaPEP8</h1>
+
+<p>GLaPEP8 is best explained with a demo video:</p>
+
+<iframe src="https://player.vimeo.com/video/121724646" width="500" height="313" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<p><a href="https://vimeo.com/121724646">Demo of GLaPEP8 v0.1</a> from <a href="https://vimeo.com/adamobeng">Adam Obeng</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+<p>These are the <a href="http://challengepost.com/software/glapep8">ChallengePost link</a> and <a href="https://github.com/adamobeng/glapep8">GitHub repo</a>.</p>
+
+<p>GLaPEP8 checks a file’s Python syntax and sings the error to you in the style of <a href="https://www.youtube.com/watch?v=Y6ljFaKRTrI">GLaDOS singing <em>Still Alive</em> in the closing credits of Portal</a>.<sup id="fnref:spoiler"><a href="#fn:spoiler" class="footnote">1</a></sup> I started building this because I wanted to play around with OS X<sup id="fnref:os"><a href="#fn:os" class="footnote">2</a></sup>’s speech synthesis. I’d guess a fair proportion of Mac users know that you can use the command ‘say’ thus:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">say <span class="s2">&quot;Arbitrary text&quot;</span></code></pre></div>
+
+<p>But the speech synthesis engine in OS X is actually <a href="https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/SpeechSynthesisProgrammingGuide/FineTuning/FineTuning.html#//apple_ref/doc/uid/TP40004365-CH5-SW3">really quite sophisticated and controllable</a>. The interesting thing for our purposes is that you can include commands in the text which let you control various aspects of the synthesised voice, including prosody and tone. I’ve messed around with this before for livecoding purposes, but I didn’t really grok the <a href="https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/SpeechSynthesisProgrammingGuide/FineTuning/FineTuning.html#//apple_ref/doc/uid/TP40004365-CH5-SW7">TUNE format</a>, which gives you the most control — and, as it turns out, I needed very fine-grained control for GLaPEP8.</p>
+
+<p>Basically, you can provide ‘say’ with a list of syllables, and for each of them specify how long to say it for, and at which frequency. The format is called ‘TUNE’, and looks like this:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="o">[[</span> inpt TUNE <span class="o">]]</span>
+~
+M <span class="o">{</span>D 60<span class="p">;</span> P 246.00:0<span class="o">}</span>
+EH <span class="o">{</span>D 360<span class="p">;</span> P 246.00:0<span class="o">}</span>
+r <span class="o">{</span>D 60<span class="p">;</span> P 220.0:0<span class="o">}</span>
+IY <span class="o">{</span>D 360<span class="p">;</span> P 220.0:0<span class="o">}</span>
+,
+h <span class="o">{</span>D 60<span class="p">;</span> P 196.0:0<span class="o">}</span>
+AE <span class="o">{</span>D 360<span class="p">;</span> P 196.0:0<span class="o">}</span>
+d <span class="o">{</span>D 60<span class="p">;</span> P 196.0:0<span class="o">}</span>
+,
+UX <span class="o">{</span>D 360<span class="p">;</span> P 220.0:0<span class="o">}</span>
+,
+l <span class="o">{</span>D 120<span class="p">;</span> P 246.0:0<span class="o">}</span>
+IH <span class="o">{</span>D 360<span class="p">;</span> P 246.0:0<span class="o">}</span>
+t <span class="o">{</span>D 120<span class="p">;</span> P 246.0:0<span class="o">}</span>
+UX <span class="o">{</span>D 120<span class="p">;</span> P 246.0:0<span class="o">}</span>
+l <span class="o">{</span>D 120<span class="p">;</span> P 246.0:0<span class="o">}</span>
+,
+l <span class="o">{</span>D 120<span class="p">;</span> P 246.0:0<span class="o">}</span>
+AE <span class="o">{</span>D 480<span class="p">;</span> P 246.0:0<span class="o">}</span>
+m <span class="o">{</span>D 60<span class="p">;</span> P 246.0:0<span class="o">}</span>
+.</code></pre></div>
+
+<p>I only need a subset of the features for GLaPEP8, so the only things I’ll change are the syllables, the number after ‘D’ (the duration in ms), and the number after ‘P’ (the pitch at time 0 of the syllable).</p>
+
+<p>Supplying individual syllables is not super convenient, so I started off trying to use the standard ‘TEXT’ input format. In that mode, you can also specify the pitch like so:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">say <span class="s1">&#39;[[ pbas 69 ]] [[ pmod 0 ]] The A above middle C&#39;</span></code></pre></div>
+
+<p>‘69’ is the <a href="http://newt.phys.unsw.edu.au/jw/notes.html">MIDI number</a> of the frequency you want, and ‘[[ pmod 0]]’ makes the pronunciation monotone. I couldn’t use this for GLaPEP8 because there’s no way of specifying how long it should take to say a word, so they sound rhythmically weird. You can specify the <em>rate</em> in words-per-minute, but to convert that a note duration in milliseconds to a rate you also need to know in advance how long it would take to say the word!</p>
+
+<p>The problem with providing a syllable-level pronunciation guide is that OS X Speech Synthesis uses a <a href="https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/SpeechSynthesisProgrammingGuide/Phonemes/Phonemes.html#//apple_ref/doc/uid/TP40004365-CH9-SW1">phoneme list</a> which is, as far as I can tell, a non-standard version of <a href="https://en.wikipedia.org/wiki/Arpabet">Arpabet</a>. I’m converting words to the component phonemes of their pronunciations using <a href="http://svn.code.sf.net/p/cmusphinx/code/trunk/cmudict/">CMUdict (the Carnegie Mellon Pronouncing Dictionary)</a>, which does use Arpabet, so GLaPEP8 ends up converting words to Arpabet phonemes, then to OS X-style phonemes, then to audio.</p>
+
+<p>The vast majority of the work went into getting OS X to sing like <a href="https://en.wikipedia.org/wiki/Ellen_McLain">Ellen McLain</a>, but I also used <a href="https://pypi.python.org/pypi/flake8">flake8</a> to find the PEP8 violations in the code, <a href="https://github.com/vishnubob/python-midi">python-midi</a> to read in the melody and the <a href="https://docs.python.org/2/library/curses.html">python ncurses</a> library to make an interface like Portal’s end credits. For a little bit more <a href="https://en.wikipedia.org/wiki/Portal_(video_game)#Plot">2010</a>-retro-futuristic chic, I demoed GLaPEP8 inside the <a href="http://www.secretgeometry.com/apps/cathode/">vintage terminal emulator Cathode</a>.</p>
+
+<p>I started work on GLaPEP8 quite late, and I realised it might actually be worth finishing even later. There are consequently some very rough edges I’d like to fix, such as:</p>
+
+<ul>
+  <li>It only really works for one-syllable words</li>
+  <li>Each syllable within a word is pronounced for the same duration, because ‘say’ doesn’t, as far as I can tell, return the information it uses to determine the length of each syllable</li>
+  <li>The lyrics it sings are pretty much fixed, so it only works properly on the demo file. I think I can make it more dynamic with some creativity, but the first two problems need to be fixed first</li>
+</ul>
+
+<p>I think I’m going to spin off the text-to-song part of GLaPEP8 into its own project, because I can see myself re-using that (notably for livecoding). I also remain interested in error messages – to the extent that my PhD dissertation is going to spend quite some time on them, albeit in a slightly more academic context.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:spoiler">
+      <p>Spoiler warning, I guess, for anyone who hasn’t played Portal in the 8 years since it was released. <a href="#fnref:spoiler" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:os">
+      <p>Sorry other-OS folks, this one only runs on OS X. <a href="#fnref:os" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+</article>
+
+<!--
+<div id="related">
+  <h2>Related Posts</h2>
+  <ul class="posts">
+    
+      <li><span>09 Mar 2015</span> &raquo; <a href="..//hackny-hackathon-runnerup">HackNY Spring 2015 Hackathon One-Two</a></li>
+    
+      <li><span>19 Jan 2013</span> &raquo; <a href="..//childs-play">Child's Play</a></li>
+    
+      <li><span>29 Sep 2011</span> &raquo; <a href="..//truth-and-persuasion">Truth and persuasion</a></li>
+    
+  </ul>
+</div>
+-->
+
+				
+				
+				
+			</div>
+
+
+	</body>
+
+</html>

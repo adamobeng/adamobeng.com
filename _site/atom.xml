@@ -4,7 +4,7 @@
  <title>Adam Obeng</title>
  <link href="http://adamobeng.com/atom.xml" rel="self"/>
  <link href="http://adamobeng.com/"/>
- <updated>2013-01-20T21:21:24-05:00</updated>
+ <updated>2015-03-09T21:30:51-04:00</updated>
  <id>http://adamobeng.com/</id>
  <author>
    <name>Adam Obeng</name>
@@ -13,24 +13,196 @@
 
  
  <entry>
+   <title>HackNY Spring 2015 Hackathon &mdash; And the winner is...</title>
+   <link href="http://adamobeng/hackny-hackathon-winner"/>
+   <updated>2015-03-09T00:00:00-04:00</updated>
+   <id>http://adamobeng.com/hackny-hackathon-winner</id>
+   <content type="html">&lt;h1 id=&quot;tldr&quot;&gt;TL;DR&lt;/h1&gt;
+
+&lt;p&gt;I won second place at the &lt;a href=&quot;http://hackny.org/a/spring2015hackathon/&quot;&gt;HackNY Spring 2015 Hackathon&lt;/a&gt; with &lt;a href=&quot;/hackny-hackathon-runnerup/#x1f424x1f3b6-chirp&quot;&gt;🐤🎶 (chirp)&lt;/a&gt;. And also first place with &lt;a href=&quot;/hackny-hackathon-winner/#glapep8&quot;&gt;GLaPEP8&lt;/a&gt;(!) Apparently I’m the first person to win two podium places at a HackNY hackathon.&lt;/p&gt;
+
+&lt;p&gt;I’ve got &lt;a href=&quot;/hackny-spring-2015/#x1f424x1f3b6-chirp&quot;&gt;a post about (chirp)&lt;/a&gt;, but this is about the HackNY Spring 2015 Hackathon winner:&lt;/p&gt;
+
+&lt;h1 id=&quot;glapep8&quot;&gt;GLaPEP8&lt;/h1&gt;
+
+&lt;p&gt;GLaPEP8 is best explained with a demo video:&lt;/p&gt;
+
+&lt;iframe src=&quot;https://player.vimeo.com/video/121724646&quot; width=&quot;500&quot; height=&quot;313&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&quot;https://vimeo.com/121724646&quot;&gt;Demo of GLaPEP8 v0.1&lt;/a&gt; from &lt;a href=&quot;https://vimeo.com/adamobeng&quot;&gt;Adam Obeng&lt;/a&gt; on &lt;a href=&quot;https://vimeo.com&quot;&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;These are the &lt;a href=&quot;http://challengepost.com/software/glapep8&quot;&gt;ChallengePost link&lt;/a&gt; and &lt;a href=&quot;https://github.com/adamobeng/glapep8&quot;&gt;GitHub repo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;GLaPEP8 checks a file’s Python syntax and sings the error to you in the style of &lt;a href=&quot;https://www.youtube.com/watch?v=Y6ljFaKRTrI&quot;&gt;GLaDOS singing &lt;em&gt;Still Alive&lt;/em&gt; in the closing credits of Portal&lt;/a&gt;.&lt;sup id=&quot;fnref:spoiler&quot;&gt;&lt;a href=&quot;#fn:spoiler&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; I started building this because I wanted to play around with OS X&lt;sup id=&quot;fnref:os&quot;&gt;&lt;a href=&quot;#fn:os&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;’s speech synthesis. I’d guess a fair proportion of Mac users know that you can use the command ‘say’ thus:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;say &lt;span class=&quot;s2&quot;&gt;&amp;quot;Arbitrary text&amp;quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;But the speech synthesis engine in OS X is actually &lt;a href=&quot;https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/SpeechSynthesisProgrammingGuide/FineTuning/FineTuning.html#//apple_ref/doc/uid/TP40004365-CH5-SW3&quot;&gt;really quite sophisticated and controllable&lt;/a&gt;. The interesting thing for our purposes is that you can include commands in the text which let you control various aspects of the synthesised voice, including prosody and tone. I’ve messed around with this before for livecoding purposes, but I didn’t really grok the &lt;a href=&quot;https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/SpeechSynthesisProgrammingGuide/FineTuning/FineTuning.html#//apple_ref/doc/uid/TP40004365-CH5-SW7&quot;&gt;TUNE format&lt;/a&gt;, which gives you the most control — and, as it turns out, I needed very fine-grained control for GLaPEP8.&lt;/p&gt;
+
+&lt;p&gt;Basically, you can provide ‘say’ with a list of syllables, and for each of them specify how long to say it for, and at which frequency. The format is called ‘TUNE’, and looks like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;o&quot;&gt;[[&lt;/span&gt; inpt TUNE &lt;span class=&quot;o&quot;&gt;]]&lt;/span&gt;
+~
+M &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;D 60&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; P 246.00:0&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+EH &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;D 360&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; P 246.00:0&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+r &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;D 60&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; P 220.0:0&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+IY &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;D 360&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; P 220.0:0&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+,
+h &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;D 60&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; P 196.0:0&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+AE &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;D 360&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; P 196.0:0&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+d &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;D 60&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; P 196.0:0&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+,
+UX &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;D 360&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; P 220.0:0&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+,
+l &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;D 120&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; P 246.0:0&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+IH &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;D 360&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; P 246.0:0&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+t &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;D 120&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; P 246.0:0&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+UX &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;D 120&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; P 246.0:0&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+l &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;D 120&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; P 246.0:0&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+,
+l &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;D 120&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; P 246.0:0&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+AE &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;D 480&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; P 246.0:0&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+m &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;D 60&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; P 246.0:0&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;I only need a subset of the features for GLaPEP8, so the only things I’ll change are the syllables, the number after ‘D’ (the duration in ms), and the number after ‘P’ (the pitch at time 0 of the syllable).&lt;/p&gt;
+
+&lt;p&gt;Supplying individual syllables is not super convenient, so I started off trying to use the standard ‘TEXT’ input format. In that mode, you can also specify the pitch like so:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;say &lt;span class=&quot;s1&quot;&gt;&amp;#39;[[ pbas 69 ]] [[ pmod 0 ]] The A above middle C&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;‘69’ is the &lt;a href=&quot;http://newt.phys.unsw.edu.au/jw/notes.html&quot;&gt;MIDI number&lt;/a&gt; of the frequency you want, and ‘[[ pmod 0]]’ makes the pronunciation monotone. I couldn’t use this for GLaPEP8 because there’s no way of specifying how long it should take to say a word, so they sound rhythmically weird. You can specify the &lt;em&gt;rate&lt;/em&gt; in words-per-minute, but to convert that a note duration in milliseconds to a rate you also need to know in advance how long it would take to say the word!&lt;/p&gt;
+
+&lt;p&gt;The problem with providing a syllable-level pronunciation guide is that OS X Speech Synthesis uses a &lt;a href=&quot;https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/SpeechSynthesisProgrammingGuide/Phonemes/Phonemes.html#//apple_ref/doc/uid/TP40004365-CH9-SW1&quot;&gt;phoneme list&lt;/a&gt; which is, as far as I can tell, a non-standard version of &lt;a href=&quot;https://en.wikipedia.org/wiki/Arpabet&quot;&gt;Arpabet&lt;/a&gt;. I’m converting words to the component phonemes of their pronunciations using &lt;a href=&quot;http://svn.code.sf.net/p/cmusphinx/code/trunk/cmudict/&quot;&gt;CMUdict (the Carnegie Mellon Pronouncing Dictionary)&lt;/a&gt;, which does use Arpabet, so GLaPEP8 ends up converting words to Arpabet phonemes, then to OS X-style phonemes, then to audio.&lt;/p&gt;
+
+&lt;p&gt;The vast majority of the work went into getting OS X to sing like &lt;a href=&quot;https://en.wikipedia.org/wiki/Ellen_McLain&quot;&gt;Ellen McLain&lt;/a&gt;, but I also used &lt;a href=&quot;https://pypi.python.org/pypi/flake8&quot;&gt;flake8&lt;/a&gt; to find the PEP8 violations in the code, &lt;a href=&quot;https://github.com/vishnubob/python-midi&quot;&gt;python-midi&lt;/a&gt; to read in the melody and the &lt;a href=&quot;https://docs.python.org/2/library/curses.html&quot;&gt;python ncurses&lt;/a&gt; library to make an interface like Portal’s end credits. For a little bit more &lt;a href=&quot;https://en.wikipedia.org/wiki/Portal_(video_game)#Plot&quot;&gt;2010&lt;/a&gt;-retro-futuristic chic, I demoed GLaPEP8 inside the &lt;a href=&quot;http://www.secretgeometry.com/apps/cathode/&quot;&gt;vintage terminal emulator Cathode&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I started work on GLaPEP8 quite late, and I realised it might actually be worth finishing even later. There are consequently some very rough edges I’d like to fix, such as:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;It only really works for one-syllable words&lt;/li&gt;
+  &lt;li&gt;Each syllable within a word is pronounced for the same duration, because ‘say’ doesn’t, as far as I can tell, return the information it uses to determine the length of each syllable&lt;/li&gt;
+  &lt;li&gt;The lyrics it sings are pretty much fixed, so it only works properly on the demo file. I think I can make it more dynamic with some creativity, but the first two problems need to be fixed first&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I think I’m going to spin off the text-to-song part of GLaPEP8 into its own project, because I can see myself re-using that (notably for livecoding). I also remain interested in error messages – to the extent that my PhD dissertation is going to spend quite some time on them, albeit in a slightly more academic context.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:spoiler&quot;&gt;
+      &lt;p&gt;Spoiler warning, I guess, for anyone who hasn’t played Portal in the 8 years since it was released. &lt;a href=&quot;#fnref:spoiler&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:os&quot;&gt;
+      &lt;p&gt;Sorry other-OS folks, this one only runs on OS X. &lt;a href=&quot;#fnref:os&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>HackNY Spring 2015 Hackathon One-Two</title>
+   <link href="http://adamobeng/hackny-hackathon-runnerup"/>
+   <updated>2015-03-09T00:00:00-04:00</updated>
+   <id>http://adamobeng.com/hackny-hackathon-runnerup</id>
+   <content type="html">&lt;h1 id=&quot;tldr&quot;&gt;TL;DR&lt;/h1&gt;
+
+&lt;p&gt;I won second place at the &lt;a href=&quot;http://hackny.org/a/spring2015hackathon/&quot;&gt;HackNY Spring 2015 Hackathon&lt;/a&gt; with &lt;a href=&quot;/hackny-hackathon-runnerup/#x1f424x1f3b6-chirp&quot;&gt;🐤🎶 (chirp)&lt;/a&gt;. And also first place with &lt;a href=&quot;/hackny-hackathon-winner/#glapep8&quot;&gt;GLaPEP8&lt;/a&gt;(!) Apparently I’m the first person to win two podium places at a HackNY hackathon.&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; lang=&quot;en&quot;&gt;&lt;p&gt;Congrats to GLaPEP8 for winning 1st place at &lt;a href=&quot;https://twitter.com/hashtag/hackny?src=hash&quot;&gt;#hackny&lt;/a&gt; - Adam won first and second! &lt;a href=&quot;http://t.co/WASGOlqmir&quot;&gt;pic.twitter.com/WASGOlqmir&lt;/a&gt;&lt;/p&gt;&amp;mdash; Major League Hacking (@MLHacks) &lt;a href=&quot;https://twitter.com/MLHacks/status/574648664532086784&quot;&gt;March 8, 2015&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;The hackathon was a blast, I really love working full-out in an environment filled with people doing the same. It didn’t hurt to be surrounded by HackNYers, sponsors, and snacks.&lt;/p&gt;
+
+&lt;h1 id=&quot;x1f424x1f3b6-chirp&quot;&gt;🐤🎶 (chirp)&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://challengepost.com/software/chirp&quot;&gt;ChallengePost link&lt;/a&gt;, &lt;a href=&quot;https://github.com/adamobeng/chirp&quot;&gt;GitHub repo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The first project I came up with is called ‘ 🐤🎶’. However, I couldn’t submit that name on ChallengePost, so I gave it the alternate title ‘(chirp)’. That wasn’t the end of the issues caused by the name, however: I thought using it as a subdomain broke ngrok in the middle of the demos (but actually, it was &lt;a href=&quot;https://twitter.com/inconshreveable/status/574580128308555776&quot;&gt;just maintenance&lt;/a&gt;. Still, a tense 20 minutes for many a demoer).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/download/chirp-screenshot.png&quot; alt=&quot;Screenshot of (chirp)&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;🐤🎶 is a tool to reduce the length of potential tweets. It uses &lt;a href=&quot;http://wordnet.princeton.edu/&quot;&gt;WordNet&lt;/a&gt; inside Python’s &lt;a href=&quot;http://www.nltk.org/&quot;&gt;NLTK&lt;/a&gt; to find synonyms for each word in the provided text. For extra concision, it also suggests emoji which might replace some words, and offers to replace stopwords with the NUL character. You might think of this as similar to the lossy pscyhoacoustic compression used in MP3s, in that it retains the human-interpreted meaning while reducing the amount of data the machine needs to store. In reality, &lt;a href=&quot;https://en.wikipedia.org/wiki/Semantic_compression&quot;&gt;semantic compression&lt;/a&gt; is a thing in NLP, but the approach used here is as-simple-as-possible, and aims not to reduce the total number of words needed to represent a corpus, but the total number of characters to represent a single text.&lt;sup id=&quot;fnref:codepoint&quot;&gt;&lt;a href=&quot;#fn:codepoint&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; I’ve got a few ideas up my sleeve about how to improve it, though.&lt;/p&gt;
+
+&lt;p&gt;The process of developing this was surprisingly smooth. I’ve used NLTK quite a bit in the past, the most difficult part was understanding WordNet’s jargon (e.g. what exactly lemmas are). I wanted to add a bunch of configuration options, for example to only replace with more-specific or less-specific terms (hyponyms or hypernyms). That didn’t make it into v0.1, but there are two options on the page: one to only suggest emojis, and &lt;em&gt;depth&lt;/em&gt; which controls how many levels of synonym-of-synonym to suggest. The backend uses flask, a library I’ve built so many projects with I can pretty much use it blindfolded.&lt;/p&gt;
+
+&lt;p&gt;The frontend was more complicated. It uses &lt;a href=&quot;jquery.com&quot;&gt;the usual suspect&lt;/a&gt;, but instead of Twitter Boostrap or foundation, I went for the minimalist &lt;a href=&quot;http://tuktuk.tapquo.com/&quot;&gt;tuktuk&lt;/a&gt;, which worked really well and looks delightful.&lt;/p&gt;
+
+&lt;p&gt;It took me quite a while to settle on how to display the suggested changes. I thought about just having a basic form which returns the edited text, maybe displayed side-by-side with the original. In the end, I decided that inline suggestions would be cooler, so I searched for a Javascript spelling correction library that would display the suggestions and UI while letting me handle the backend. This wasn’t so easy. Many plugins require you to have a static dictionary, which was no good for me, both for quick-iteration reasons and because there would need to be one dictionary for each combination of configuration options. All the other plugins I found used pre-existing spellcheck backends — this isn’t so surprising, because who wants to build their own spellchecking engine (except perhaps &lt;a href=&quot;http://norvig.com/spell-correct.html&quot;&gt;Peter Norvig&lt;/a&gt;). Worse than that, almost all of them supported the not-quite-public now-deprecated Google Spellchecker API.&lt;/p&gt;
+
+&lt;p&gt;That said, I did end up using &lt;a href=&quot;https://github.com/brandonaaron/jquery-spellcheck&quot;&gt;jquery-spellcheck by brandonaaron&lt;/a&gt;, which does call the Google API. It was straightforward to make it use my backend, because the library uses a proxy script, which I just replaced with my own. Working out what to &lt;em&gt;serve&lt;/em&gt; from the backend was less easy, however. As it turns out, defunct-and-never-quite-official APIs don’t have great documentation. I used the example return value in the documentation from &lt;a href=&quot;https://code.google.com/p/google-api-spelling-java/&quot;&gt;this Java library&lt;/a&gt; to reverse-engineer the XML return format. For future reference, it looks&lt;sup id=&quot;fnref:api&quot;&gt;&lt;a href=&quot;#fn:api&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;&lt;/span&gt;
+ &lt;span class=&quot;nt&quot;&gt;&amp;lt;spellresult&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;error=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;0&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;clipped=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;0&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;charschecked=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;0&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- one &amp;#39;c&amp;#39; tag for each word which needs to be changed --&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;c&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;o=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;0&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;l=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;6&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;s=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;1&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;hello  Helli   hell    hallo   hullo&lt;span class=&quot;nt&quot;&gt;&amp;lt;/c&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- attributes:&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;        o: offset from beginning of string at which the replacement should happen&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;        l: number of characters to replace (i.e. length of original word)&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;        s: not sure&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;    --&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!--&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;    The contents of the &amp;#39;c&amp;#39; tag is a space-delimited list of suggested&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;    replacement words.&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;    --&amp;gt;&lt;/span&gt;
+ &lt;span class=&quot;nt&quot;&gt;&amp;lt;/spellresult&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;‘charschecked’ doesn’t actually need to be set, and you can use any number of spaces between the suggested replacement words. If I end up working on 🐤🎶 more, I’m going to have to modify this format, because I’d like to be able to suggest replacments for phrases, not just single words.&lt;/p&gt;
+
+&lt;p&gt;I made minor modifications to jquery-spellcheck so that it sends additional URL-parameters on its AJAX call for the depth of synonyms and emoji-only mode.&lt;/p&gt;
+
+&lt;p&gt;On another note, I demoed this in Chrome Canary, because the stable version doesn’t have emoji support yet… As a side effect of this project, I found to my surprise both in how many places you can use emoji (like some TLDs, although finding a registrar is another question), but also in how many places they &lt;em&gt;don’t&lt;/em&gt; work.
+I’m going to continue working on the synonym engine part of this because the frontend is pretty much done (and because for my own use I’d prefer a CLI). One interesting option is that — given that WordNet doesn’t just give you synonyms but tells you &lt;em&gt;how&lt;/em&gt; words are related — I could replace words with more general (or perhaps more common) ones. This would be more similar to what semantic compression does. It would be cool to see whether replacing words with hypernyms results in something similar to the &lt;a href=&quot;https://en.wikipedia.org/wiki/Wikipedia:Getting_to_Philosophy&quot;&gt;Getting to Philosophy&lt;/a&gt; effect on Wikipedia, where successively clicking the first link on an article will eventually lead you up the hierarchy of more-and-more general topics towards philosophy.&lt;sup id=&quot;fnref:philosophy&quot;&gt;&lt;a href=&quot;#fn:philosophy&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; Stay tuned &lt;a href=&quot;https://github.com/adamobeng/chirp&quot;&gt;via GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Also, thanks to &lt;a href=&quot;https://github.com/jzf2101&quot;&gt;JZ Forde&lt;/a&gt; for providing initial feedback and encouragement.&lt;/p&gt;
+
+&lt;p&gt;Next up: the winner, &lt;a href=&quot;/hackny-hackathon-winner/#glapep8&quot;&gt;GLaPEP8&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:codepoint&quot;&gt;
+      &lt;p&gt;Actually, because we’re targeting Twitter, the aim is to minimise the &lt;a href=&quot;https://dev.twitter.com/overview/api/counting-characters&quot;&gt;number of codepoints in NFC-normalised format&lt;/a&gt; (hence why emoji are useful to this goal). &lt;a href=&quot;#fnref:codepoint&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:api&quot;&gt;
+      &lt;p&gt;Of course, this specification might only apply to the API as implemented in jquery-spellchecker… &lt;a href=&quot;#fnref:api&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:philosophy&quot;&gt;
+      &lt;p&gt;By the way, &lt;a href=&quot;https://www.youtube.com/watch?v=tXCV_z_M0RA&amp;amp;t=518&quot;&gt;I called it&lt;/a&gt; back in 2010. &lt;a href=&quot;#fnref:philosophy&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Child's Play</title>
-   <link href="http://adamobengchilds-play"/>
+   <link href="http://adamobeng/childs-play"/>
    <updated>2013-01-19T00:00:00-05:00</updated>
-   <id>http://adamobeng.com./childs-play</id>
-   <content type="html">&lt;p&gt;Isn&amp;#8217;t it the most cliched thing to not update a blog for a while, and then apologise for doing so? Well I&amp;#8217;m an iconoclast, so that&amp;#8217;s not happening.&lt;/p&gt;
+   <id>http://adamobeng.com/childs-play</id>
+   <content type="html">&lt;p&gt;Isn’t it the most cliched thing to not update a blog for a while, and then apologise for doing so? Well I’m an iconoclast, so that’s not happening.&lt;/p&gt;
 
-&lt;p&gt;A little while ago, Rachel Schutt and Andrew Gelman both noticed an advertising poster for Speck,&lt;sup id='fnref:1'&gt;&lt;a rel='footnote' href='#fn:1'&gt;1&lt;/a&gt;&lt;/sup&gt; which used a pseudo-Venn diagram to convey a very confusing message. It looks like National Highway Traffic Safety Administration had a similar idea:&lt;/p&gt;
+&lt;p&gt;A little while ago, Rachel Schutt and Andrew Gelman both noticed an advertising poster for Speck,&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; which used a pseudo-Venn diagram to convey a very confusing message. It looks like National Highway Traffic Safety Administration had a similar idea:&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt='An NHSTA Child Car Safety advertising poster, showing a Towers of Hanoi-like childs toy, annotated with statistical description' src='/images/car_seat_poster.jpg' /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/car_seat_poster.jpg&quot; alt=&quot;An NHSTA Child Car Safety advertising poster, showing a Towers of Hanoi-like child&#39;s toy, annotated with statistical description&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;The message of the campaign is important, it goes without saying. And given that I&amp;#8217;m talking about it,&lt;sup id='fnref:2'&gt;&lt;a rel='footnote' href='#fn:2'&gt;2&lt;/a&gt;&lt;/sup&gt; the campaign is probably being effective in communicating what it intends to: way too few kids are in the correct car seat.&lt;/p&gt;
+&lt;p&gt;The message of the campaign is important, it goes without saying. And given that I’m talking about it,&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; the campaign is probably being effective in communicating what it intends to: way too few kids are in the correct car seat.&lt;/p&gt;
 
-&lt;p&gt;However, there are some obvious problems with it &lt;em&gt;as a piece of data visualisation&lt;/em&gt;. The poster I saw is part of a &lt;a href='http://www.safercar.gov/parents/TRS/toolkit.htm'&gt;set of five&lt;/a&gt;, each with the same message, but with a different child-related item used to display the statistic:&lt;/p&gt;
-&lt;a href='http://www.safercar.gov/parents/TRS/pencil.pdf'&gt;&lt;img style='width:100px; padding:10px' alt='NHTSA car seat pencil poster' src='/images/nhtsa_pencil.png' /&gt;&lt;/a&gt;&lt;a href='http://www.safercar.gov/parents/TRS/Bottle.pdf'&gt;&lt;img style='width:100px; padding:10px' alt='NHTSA car seat bottle poster' src='/images/nhtsa_bottle.png' /&gt;&lt;/a&gt;&lt;a style='display:inline-block' href='http://www.safercar.gov/parents/TRS/sneaker.pdf'&gt;&lt;img style='width:100px; padding:10px' alt='NHTSA car seat sneaker poster' src='/images/nhtsa_sneaker.png' /&gt;&lt;/a&gt;&lt;a style='display:inline-block' href='http://www.safercar.gov/parents/TRS/stackingtoy.pdf'&gt;&lt;img style='width:100px; padding:10px' alt='NHTSA car seat stacking toy poster' src='/images/nhtsa_stackingtoy.png' /&gt;&lt;/a&gt;&lt;a style='display:inline-block' href='http://icsw.nhtsa.gov/safercar/parents/TRS/popsicle.pdf'&gt;&lt;img style='width:100px; padding:10px' alt='NHTSA car seat popsicle poster' src='/images/nhtsa_popsicle.png' /&gt;&lt;/a&gt;
-&lt;p&gt;So what is the number of incorrectly-attached kids? According to the &lt;a href='http://www.safercar.gov/parents/TRS/8651b_CPSFactSheet_04-04-12_v1-tag.pdf'&gt;Fact sheet&lt;/a&gt;, &amp;#8220;3 out of 4 kids are not as secure in the car as they should be because their car seats are not being used correctly.&amp;#8221; Unfortunately, no source is listed for that claim, so let&amp;#8217;s say that the number is 75%.&lt;sup id='fnref:3'&gt;&lt;a rel='footnote' href='#fn:3'&gt;3&lt;/a&gt;&lt;/sup&gt; How well do these posters convey that number? This table shows the proportion secure as displayed in each poster:&lt;/p&gt;
+&lt;p&gt;However, there are some obvious problems with it &lt;em&gt;as a piece of data visualisation&lt;/em&gt;. The poster I saw is part of a &lt;a href=&quot;http://www.safercar.gov/parents/TRS/toolkit.htm&quot;&gt;set of five&lt;/a&gt;, each with the same message, but with a different child-related item used to display the statistic:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.safercar.gov/parents/TRS/pencil.pdf&quot;&gt;&lt;img alt=&quot;NHTSA car seat pencil poster&quot; src=&quot;/images/nhtsa_pencil.png&quot; style=&quot;width:100px; padding:10px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.safercar.gov/parents/TRS/Bottle.pdf&quot;&gt;&lt;img alt=&quot;NHTSA car seat bottle poster&quot; src=&quot;/images/nhtsa_bottle.png&quot; style=&quot;width:100px; padding:10px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.safercar.gov/parents/TRS/sneaker.pdf&quot; style=&quot;display:inline-block&quot;&gt;&lt;img alt=&quot;NHTSA car seat sneaker poster&quot; src=&quot;/images/nhtsa_sneaker.png&quot; style=&quot;width:100px; padding:10px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.safercar.gov/parents/TRS/stackingtoy.pdf&quot; style=&quot;display:inline-block&quot;&gt;&lt;img alt=&quot;NHTSA car seat stacking toy poster&quot; src=&quot;/images/nhtsa_stackingtoy.png&quot; style=&quot;width:100px; padding:10px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://icsw.nhtsa.gov/safercar/parents/TRS/popsicle.pdf&quot; style=&quot;display:inline-block&quot;&gt;&lt;img alt=&quot;NHTSA car seat popsicle poster&quot; src=&quot;/images/nhtsa_popsicle.png&quot; style=&quot;width:100px; padding:10px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;So what is the number of incorrectly-attached kids? According to the &lt;a href=&quot;http://www.safercar.gov/parents/TRS/8651b_CPSFactSheet_04-04-12_v1-tag.pdf&quot;&gt;Fact sheet&lt;/a&gt;, “3 out of 4 kids are not as secure in the car as they should be because their car seats are not being used correctly.” Unfortunately, no source is listed for that claim, so let’s say that the number is 75%.&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; How well do these posters convey that number? This table shows the proportion secure as displayed in each poster:&lt;/p&gt;
+
 &lt;table&gt;
 	&lt;tr&gt;
-	&lt;td /&gt;&lt;td&gt;Length&lt;/td&gt;&lt;td&gt;Area&lt;/td&gt;
+	&lt;td&gt;&lt;/td&gt;&lt;td&gt;Length&lt;/td&gt;&lt;td&gt;Area&lt;/td&gt;
 	&lt;/tr&gt;
 	&lt;tr&gt;
 	&lt;td&gt;Pencil&lt;/td&gt;&lt;td&gt;0.136&lt;/td&gt;&lt;td&gt;0.183&lt;/td&gt;
@@ -48,333 +220,381 @@
 	&lt;td&gt;Bottle&lt;/td&gt;&lt;td&gt;0.260&lt;/td&gt;&lt;td&gt;0.260&lt;/td&gt;
 	&lt;/tr&gt;
 &lt;/table&gt;
-&lt;p&gt;The scales drawn on the posters suggest that the length of the various elements is supposed to represent the statistic. This is moderately dubious, especially in the case of the of the &amp;#8216;Sneaker&amp;#8217; diagram, so you might think that the proportion is measured by the area indicated instead. Depending on which poster you read, the proportion of kids who are properly attached (25%) looks to be somewhere between the problematic 30% and the scandalous 8%.&lt;/p&gt;
 
-&lt;p&gt;There are other problems too with these posters as data visualisations. For example, the bottom four rings on the &amp;#8216;stacking toy&amp;#8217; poster collectively represent the 75% of incorrect seats. But they are of different colours and sizes, suggesting that there are four pieces of information being displayed, not just one. But here, it&amp;#8217;s a distinction without difference.&lt;/p&gt;
+&lt;p&gt;The scales drawn on the posters suggest that the length of the various elements is supposed to represent the statistic. This is moderately dubious, especially in the case of the of the ‘Sneaker’ diagram, so you might think that the proportion is measured by the area indicated instead. Depending on which poster you read, the proportion of kids who are properly attached (25%) looks to be somewhere between the problematic 30% and the scandalous 8%.&lt;/p&gt;
+
+&lt;p&gt;There are other problems too with these posters as data visualisations. For example, the bottom four rings on the ‘stacking toy’ poster collectively represent the 75% of incorrect seats. But they are of different colours and sizes, suggesting that there are four pieces of information being displayed, not just one. But here, it’s a distinction without difference.&lt;/p&gt;
 
 &lt;p&gt;The data visualition versus infographic distinction is a contested issue, but somewhere in there is the following question: is it that the numbers are used to convey the message, or instead that they &lt;em&gt;are&lt;/em&gt; the message? Would a more accurate or consistent visualisation be better at conveying the message? Maybe not.&lt;/p&gt;
-&lt;div class='footnotes'&gt;&lt;hr /&gt;&lt;ol&gt;&lt;li id='fn:1'&gt;
-&lt;p&gt;&lt;em&gt;Full disclosure&lt;/em&gt;: I&amp;#8217;ve had a Speck case on my MacBook Air since the day I bought it, and it&amp;#8217;s brilliant.&lt;/p&gt;
-&lt;a rev='footnote' href='#fnref:1'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn:2'&gt;
-&lt;p&gt;I am probably not the target audience, given that I have neither kids nor, indeed, a car.&lt;/p&gt;
-&lt;a rev='footnote' href='#fnref:2'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn:3'&gt;
-&lt;p&gt;There is a prior problem which I&amp;#8217;m glossing over here. The 75% number is the proportion of all kids who are not properly secured, whereas the claim in the adverts is the proportion of properly secured kids of those people who &lt;em&gt;think&lt;/em&gt; their child is properly secured. There are almost certainly parents who do not think their kids are properly secured when they in fact are, but this is understandably a less pressing problem. However, it could be that all the children who are not properly attached have parents who &lt;em&gt;know&lt;/em&gt; this already, in which case this sort of media intervention is not likely to be effective. I concede that this problem is probably just philosophical and not relevant to this particular case.&lt;/p&gt;
-&lt;a rev='footnote' href='#fnref:3'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</content>
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;&lt;em&gt;Full disclosure&lt;/em&gt;: I’ve had a Speck case on my MacBook Air since the day I bought it, and it’s brilliant. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;I am probably not the target audience, given that I have neither kids nor, indeed, a car. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:3&quot;&gt;
+      &lt;p&gt;There is a prior problem which I’m glossing over here. The 75% number is the proportion of all kids who are not properly secured, whereas the claim in the adverts is the proportion of properly secured kids of those people who &lt;em&gt;think&lt;/em&gt; their child is properly secured. There are almost certainly parents who do not think their kids are properly secured when they in fact are, but this is understandably a less pressing problem. However, it could be that all the children who are not properly attached have parents who &lt;em&gt;know&lt;/em&gt; this already, in which case this sort of media intervention is not likely to be effective. I concede that this problem is probably just philosophical and not relevant to this particular case. &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
  </entry>
  
  <entry>
    <title>Truth and persuasion</title>
-   <link href="http://adamobengtruth-and-persuasion"/>
+   <link href="http://adamobeng/truth-and-persuasion"/>
    <updated>2011-09-29T00:00:00-04:00</updated>
-   <id>http://adamobeng.com./truth-and-persuasion</id>
-   <content type="html">&lt;p&gt;Han-teng Liao&amp;#8217;s &lt;a href='http://people.oii.ox.ac.uk/hanteng/2011/09/27/ways-of-seeing-data/'&gt;post&lt;/a&gt; got me thinking about&lt;sup id='fnref:1'&gt;&lt;a rel='footnote' href='#fn:1'&gt;1&lt;/a&gt;&lt;/sup&gt; data visualization as a tool for communication.&lt;/p&gt;
+   <id>http://adamobeng.com/truth-and-persuasion</id>
+   <content type="html">&lt;p&gt;Han-teng Liao’s &lt;a href=&quot;http://people.oii.ox.ac.uk/hanteng/2011/09/27/ways-of-seeing-data/&quot;&gt;post&lt;/a&gt; got me thinking about&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; data visualization as a tool for communication.&lt;/p&gt;
 
-&lt;p&gt;In particular, I thought I should take issue with the quote he gives from &lt;a href='http://blog.revolutionanalytics.com/2011/09/data-visualization-vs-propaganda.html?cid=6a010534b1db25970b015435abb804970c'&gt;David Smith&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;In particular, I thought I should take issue with the quote he gives from &lt;a href=&quot;http://blog.revolutionanalytics.com/2011/09/data-visualization-vs-propaganda.html?cid=6a010534b1db25970b015435abb804970c&quot;&gt;David Smith&lt;/a&gt;:&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;good charts merely present data, and leave the analysis (obvious though it may be) to the viewer&lt;/p&gt;
+  &lt;pre&gt;&lt;code&gt; good charts merely present data, and leave the analysis (obvious though it may be) to the viewer
+&lt;/code&gt;&lt;/pre&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;To me, it seems that a charts which &amp;#8220;merely present data&amp;#8221; are just not possible. The designer of the chart needs to make all sorts of descisions: the order of the data, importance of axes, labels, colours and so on. Few of these are without consequence to the interpretation of the graph, and the futher the chart is from a simple &lt;a href='http://junkcharts.typepad.com/junk_charts/table/'&gt;table&lt;/a&gt;, the greater the potential for bias (or, more charitably &amp;#8216;interpretation&amp;#8217;) there is.&lt;/p&gt;
+&lt;p&gt;To me, it seems that a charts which “merely present data” are just not possible. The designer of the chart needs to make all sorts of descisions: the order of the data, importance of axes, labels, colours and so on. Few of these are without consequence to the interpretation of the graph, and the futher the chart is from a simple &lt;a href=&quot;http://junkcharts.typepad.com/junk_charts/table/&quot;&gt;table&lt;/a&gt;, the greater the potential for bias (or, more charitably ‘interpretation’) there is.&lt;/p&gt;
 
-&lt;p&gt;I say &amp;#8216;potential&amp;#8217;, because not every opportunity for bias need be taken. Having said that, not all bias is intentional either. Some of it might be just accidental, or plain &lt;a href='http://junkcharts.typepad.com/junk_charts/2011/06/another-reminder-most-pie-charts-are-unreadable.html'&gt;confusing&lt;/a&gt;. But &lt;a href='http://www.infovis-wiki.net/index.php/Data-Ink_Ratio'&gt;each additional line&lt;/a&gt; on the graph has the potential to introduce spurious anaysis.&lt;/p&gt;
+&lt;p&gt;I say ‘potential’, because not every opportunity for bias need be taken. Having said that, not all bias is intentional either. Some of it might be just accidental, or plain &lt;a href=&quot;http://junkcharts.typepad.com/junk_charts/2011/06/another-reminder-most-pie-charts-are-unreadable.html&quot;&gt;confusing&lt;/a&gt;. But &lt;a href=&quot;http://www.infovis-wiki.net/index.php/Data-Ink_Ratio&quot;&gt;each additional line&lt;/a&gt; on the graph has the potential to introduce spurious anaysis.&lt;/p&gt;
 
-&lt;p&gt;In fact, I would venture so far as to say that this is a problem even for the simpler charts that Nathan Yau &lt;a href='http://flowingdata.com/2011/09/23/5-misconceptions-about-visualization/'&gt;advocates&lt;/a&gt; via (&lt;a href='http://smartdatacollective.com/davidmsmith/40688/data-visualization-doesnt-need-be-biased'&gt;here&lt;/a&gt; and &lt;a href='http://blog.revolutionanalytics.com/2011/09/data-visualization-vs-propaganda.html'&gt;here&lt;/a&gt;) which are used to convey rational argument without appeals to emotion. There is still ample opportuinity to mislead others (and onesself) by unintentionally misusing a graphic. Indeed, the impression that a graphic is unbiased because it is simple might make us let our guard down.&lt;/p&gt;
+&lt;p&gt;In fact, I would venture so far as to say that this is a problem even for the simpler charts that Nathan Yau &lt;a href=&quot;http://flowingdata.com/2011/09/23/5-misconceptions-about-visualization/&quot;&gt;advocates&lt;/a&gt; via (&lt;a href=&quot;http://smartdatacollective.com/davidmsmith/40688/data-visualization-doesnt-need-be-biased&quot;&gt;here&lt;/a&gt; and &lt;a href=&quot;http://blog.revolutionanalytics.com/2011/09/data-visualization-vs-propaganda.html&quot;&gt;here&lt;/a&gt;) which are used to convey rational argument without appeals to emotion. There is still ample opportuinity to mislead others (and onesself) by unintentionally misusing a graphic. Indeed, the impression that a graphic is unbiased because it is simple might make us let our guard down.&lt;/p&gt;
 
-&lt;p&gt;It&amp;#8217;s perhaps unfair to assimilate the use of perceptual tricks to appeals to &lt;em&gt;pathos&lt;/em&gt;: such techniques could be used in rational arguments too. But they are subtle and easy to get wrong.&lt;/p&gt;
+&lt;p&gt;It’s perhaps unfair to assimilate the use of perceptual tricks to appeals to &lt;em&gt;pathos&lt;/em&gt;: such techniques could be used in rational arguments too. But they are subtle and easy to get wrong.&lt;/p&gt;
 
-&lt;p&gt;I suspect that the fundamental reason for this potential to mislead is also what makes data visualizations useful in the first place: we are phenomenal pattern-matching machines, and we&amp;#8217;re particularly good at visual patterns. We would struggle to interpret 5 million rows of a database, but can easily identify trends when the same data are presented in a different format.&lt;/p&gt;
+&lt;p&gt;I suspect that the fundamental reason for this potential to mislead is also what makes data visualizations useful in the first place: we are phenomenal pattern-matching machines, and we’re particularly good at visual patterns. We would struggle to interpret 5 million rows of a database, but can easily identify trends when the same data are presented in a different format.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;(This post was edited on 07/10/2011 to properly attribute a quote to David Smith.)&lt;/em&gt;&lt;/p&gt;
-&lt;div class='footnotes'&gt;&lt;hr /&gt;&lt;ol&gt;&lt;li id='fn:1'&gt;
-&lt;p&gt;Is this how I start all my blog posts?&lt;/p&gt;
-&lt;a rev='footnote' href='#fnref:1'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</content>
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;Is this how I start all my blog posts? &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
  </entry>
  
  <entry>
    <title>Offline, but not off the hook</title>
-   <link href="http://adamobengoffline-but-not-off-the-hook"/>
+   <link href="http://adamobeng/offline-but-not-off-the-hook"/>
    <updated>2011-08-26T00:00:00-04:00</updated>
-   <id>http://adamobeng.com./offline-but-not-off-the-hook</id>
-   <content type="html">&lt;p&gt;&lt;em&gt;Previously, I &lt;a href='http://adamobeng.com/real-names/'&gt;discussed&lt;/a&gt; whether Google really cares about real names on Google Plus. In summary, they have little reason to.&lt;/em&gt;&lt;/p&gt;
+   <id>http://adamobeng.com/offline-but-not-off-the-hook</id>
+   <content type="html">&lt;p&gt;&lt;em&gt;Previously, I &lt;a href=&quot;http://adamobeng.com/real-names/&quot;&gt;discussed&lt;/a&gt; whether Google really cares about real names on Google Plus. In summary, they have little reason to.&lt;/em&gt;&lt;/p&gt;
 
-&lt;h2 id='youre_online_offline'&gt;You&amp;#8217;re &amp;#8216;online&amp;#8217; offline&lt;/h2&gt;
+&lt;h2 id=&quot;youre-online-offline&quot;&gt;You’re ‘online’ offline&lt;/h2&gt;
 
-&lt;p&gt;In his &lt;a href='http://socialmediacollective.org/2011/08/08/real-name-sites-are-necessarily-inadequate-for-free-speech/'&gt;recent post about the &amp;#8216;nymwars&amp;#8217;&lt;/a&gt; Bernie Hogan also provides some interesting comments on what it means to be &amp;#8216;offline&amp;#8217;.&lt;/p&gt;
+&lt;p&gt;In his &lt;a href=&quot;http://socialmediacollective.org/2011/08/08/real-name-sites-are-necessarily-inadequate-for-free-speech/&quot;&gt;recent post about the ‘nymwars’&lt;/a&gt; Bernie Hogan also provides some interesting comments on what it means to be ‘offline’.&lt;/p&gt;
 
-&lt;p&gt;Being &amp;#8216;offline&amp;#8217; is defined negatively, by opposition to being online:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;In fact, I’ll say that even more strongly – &lt;em&gt;if your speech is not confined to the context you are in – but available to a potentially unknowable audience – you are online.&lt;/em&gt; &lt;span&gt;emphasis in original&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;You&amp;#8217;re online if what you do and say is &amp;#8220;available to a potentially unknowable audience&amp;#8221;, specifically an audience which you don&amp;#8217;t select, and to which you can&amp;#8217;t adapt your actions&lt;sup id='fnref:1'&gt;&lt;a rel='footnote' href='#fn:1'&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-
-&lt;p&gt;Most of the time when you&amp;#8217;re online it&amp;#8217;s because your actions are being recorded electronically:&lt;/p&gt;
+&lt;p&gt;Being ‘offline’ is defined negatively, by opposition to being online:&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;you are online when your actions are being digitized and networked.&lt;/p&gt;
+  &lt;pre&gt;&lt;code&gt;In fact, I’ll say that even more strongly – *if your speech is not confined to the context you are in – but available to a potentially unknowable audience – you are online.* [emphasis in original]
+&lt;/code&gt;&lt;/pre&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;You don&amp;#8217;t have to be carrying out any sort of online activity yourself; if you&amp;#8217;re at a party and someone uploads a photo of you to Facebook, you&amp;#8217;re &amp;#8216;online&amp;#8217;.&lt;/p&gt;
+&lt;p&gt;You’re online if what you do and say is “available to a potentially unknowable audience”, specifically an audience which you don’t select, and to which you can’t adapt your actions&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 
-&lt;h2 id='youre_online_all_the_time'&gt;You&amp;#8217;re online all the time&lt;/h2&gt;
-
-&lt;p&gt;I think that this definition of being &amp;#8216;offline&amp;#8217; is a bit strong. If Bernie&amp;#8217;s right then you&amp;#8217;re always online, unless you&amp;#8217;re not talking to anyone at all.&lt;/p&gt;
-
-&lt;p&gt;The fact is, your actions &lt;em&gt;are&lt;/em&gt; being recorded when you&amp;#8217;re interacting in the real world: they&amp;#8217;re being recorded by the person you&amp;#8217;re talking to. And while they&amp;#8217;re not being &amp;#8220;digitized&amp;#8221;, they are being &amp;#8220;networked&amp;#8221;, passed on through word of mouth, or even encoded at a later time by your interlocutor. And this &lt;em&gt;is&lt;/em&gt; &amp;#8220;by default&amp;#8221;: unless you make it clear that a conversation is not to be shared&lt;sup id='fnref:2'&gt;&lt;a rel='footnote' href='#fn:2'&gt;2&lt;/a&gt;&lt;/sup&gt;, then you can expect it to be shared.&lt;/p&gt;
+&lt;p&gt;Most of the time when you’re online it’s because your actions are being recorded electronically:&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;I am engaging in a trust relationship with the curator, but I am not free to say what I want.&lt;/p&gt;
+  &lt;pre&gt;&lt;code&gt; you are online when your actions are being digitized and networked.
+&lt;/code&gt;&lt;/pre&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;In the real world, everyone that you converse with (bar perhaps medical and legal professionals), is a potential &amp;#8220;curator&amp;#8221;. They can, if they choose, relay your words to others. Of course, you trust them not to do so. And if they were to tell others, there would be no way of proving what you said in private and in confidence &lt;a href='http://www.guardian.co.uk/politics/2010/apr/28/gordon-brown-bigoted-woman'&gt;most of the time&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You don’t have to be carrying out any sort of online activity yourself; if you’re at a party and someone uploads a photo of you to Facebook, you’re ‘online’.&lt;/p&gt;
 
-&lt;p&gt;Still, unless you&amp;#8217;re in the middle of the desert, beyond the range of spy satellites and laser microphones, what you say is &amp;#8220;available to a potentially unknowable audience&amp;#8221;. That&amp;#8217;s not a particularly useful definition.&lt;/p&gt;
+&lt;h2 id=&quot;youre-online-all-the-time&quot;&gt;You’re online all the time&lt;/h2&gt;
 
-&lt;p&gt;A more workable definition of &amp;#8216;offline&amp;#8217; might look like what Bernie says just afterwards:&lt;/p&gt;
+&lt;p&gt;I think that this definition of being ‘offline’ is a bit strong. If Bernie’s right then you’re always online, unless you’re not talking to anyone at all.&lt;/p&gt;
+
+&lt;p&gt;The fact is, your actions &lt;em&gt;are&lt;/em&gt; being recorded when you’re interacting in the real world: they’re being recorded by the person you’re talking to. And while they’re not being “digitized”, they are being “networked”, passed on through word of mouth, or even encoded at a later time by your interlocutor. And this &lt;em&gt;is&lt;/em&gt; “by default”: unless you make it clear that a conversation is not to be shared&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;, then you can expect it to be shared.&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;Online is on-the-record. Offline is off-the-record.&lt;/p&gt;
+  &lt;pre&gt;&lt;code&gt; I am engaging in a trust relationship with the curator, but I am not free to say what I want. 
+&lt;/code&gt;&lt;/pre&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Under this definition, it&amp;#8217;s clear that a real-world conversation can be either online or offline, because it can be either on- or off- the record.&lt;/p&gt;
+&lt;p&gt;In the real world, everyone that you converse with (bar perhaps medical and legal professionals), is a potential “curator”. They can, if they choose, relay your words to others. Of course, you trust them not to do so. And if they were to tell others, there would be no way of proving what you said in private and in confidence &lt;a href=&quot;http://www.guardian.co.uk/politics/2010/apr/28/gordon-brown-bigoted-woman&quot;&gt;most of the time&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;But this binary&lt;sup id='fnref:3'&gt;&lt;a rel='footnote' href='#fn:3'&gt;3&lt;/a&gt;&lt;/sup&gt; definition still isn&amp;#8217;t sufficient. There is still a difference between the online-ness of the real world and that of social networks. I would say that the real world is inherently more offline, because accessing information about your past actions is difficult. It&amp;#8217;s not surprising that a technology designed for information retrieval should make it easy to find things out.&lt;/p&gt;
+&lt;p&gt;Still, unless you’re in the middle of the desert, beyond the range of spy satellites and laser microphones, what you say is “available to a potentially unknowable audience”. That’s not a particularly useful definition.&lt;/p&gt;
 
-&lt;p&gt;In other words, being online is a question of degree. You are totally offline if there&amp;#8217;s no &amp;#8216;record&amp;#8217;, or if the &amp;#8216;record&amp;#8217; is impossible to access. &lt;em&gt;The more concrete and available the &amp;#8216;record&amp;#8217; of your actions, the more online you are.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A more workable definition of ‘offline’ might look like what Bernie says just afterwards:&lt;/p&gt;
 
-&lt;p&gt;And whether the record is accessible is key: even if you&amp;#8217;re recorded, but the record can&amp;#8217;t be transmitted to others, then you can&amp;#8217;t be &amp;#8216;networked&amp;#8217;, so you&amp;#8217;re not meaningfully online.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;pre&gt;&lt;code&gt; Online is on-the-record. Offline is off-the-record.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/blockquote&gt;
 
-&lt;h2 id='deniable_networking'&gt;Deniable networking&lt;/h2&gt;
+&lt;p&gt;Under this definition, it’s clear that a real-world conversation can be either online or offline, because it can be either on- or off- the record.&lt;/p&gt;
 
-&lt;p&gt;So whether you&amp;#8217;re online is independent of what medium you&amp;#8217;re in: real world or Internet. In fact, there are some forms of electronic communication that are &amp;#8216;offline&amp;#8217; by default: email, instant messages, and the like. Unlike social networking services, the content of your actions are not published.&lt;/p&gt;
+&lt;p&gt;But this binary&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; definition still isn’t sufficient. There is still a difference between the online-ness of the real world and that of social networks. I would say that the real world is inherently more offline, because accessing information about your past actions is difficult. It’s not surprising that a technology designed for information retrieval should make it easy to find things out.&lt;/p&gt;
 
-&lt;p&gt;Therefore, it should be possible to &lt;em&gt;intentionally&lt;/em&gt; design a social network which had the &amp;#8216;offline&amp;#8217; quality of the real world. We could even give it a cute acronym, like &lt;em&gt;R&lt;/em&gt;eputationally &lt;em&gt;U&lt;/em&gt;ntraceable &lt;em&gt;M&lt;/em&gt;edium &lt;em&gt;O&lt;/em&gt;ffline &lt;em&gt;R&lt;/em&gt;elay, or &lt;em&gt;G&lt;/em&gt;lobally &lt;em&gt;O&lt;/em&gt;ffline &lt;em&gt;S&lt;/em&gt;ocial &lt;em&gt;S&lt;/em&gt;pace over &lt;em&gt;I&lt;/em&gt;nternet &lt;em&gt;P&lt;/em&gt;rotocol.&lt;/p&gt;
+&lt;p&gt;In other words, being online is a question of degree. You are totally offline if there’s no ‘record’, or if the ‘record’ is impossible to access. &lt;em&gt;The more concrete and available the ‘record’ of your actions, the more online you are.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;And whether the record is accessible is key: even if you’re recorded, but the record can’t be transmitted to others, then you can’t be ‘networked’, so you’re not meaningfully online.&lt;/p&gt;
+
+&lt;h2 id=&quot;deniable-networking&quot;&gt;Deniable networking&lt;/h2&gt;
+
+&lt;p&gt;So whether you’re online is independent of what medium you’re in: real world or Internet. In fact, there are some forms of electronic communication that are ‘offline’ by default: email, instant messages, and the like. Unlike social networking services, the content of your actions are not published.&lt;/p&gt;
+
+&lt;p&gt;Therefore, it should be possible to &lt;em&gt;intentionally&lt;/em&gt; design a social network which had the ‘offline’ quality of the real world. We could even give it a cute acronym, like &lt;em&gt;R&lt;/em&gt;eputationally &lt;em&gt;U&lt;/em&gt;ntraceable &lt;em&gt;M&lt;/em&gt;edium &lt;em&gt;O&lt;/em&gt;ffline &lt;em&gt;R&lt;/em&gt;elay, or &lt;em&gt;G&lt;/em&gt;lobally &lt;em&gt;O&lt;/em&gt;ffline &lt;em&gt;S&lt;/em&gt;ocial &lt;em&gt;S&lt;/em&gt;pace over &lt;em&gt;I&lt;/em&gt;nternet &lt;em&gt;P&lt;/em&gt;rotocol.&lt;/p&gt;
 
 &lt;p&gt;So what would GOSSIP look like?&lt;/p&gt;
 
-&lt;p&gt;It would be sensible to base it around something like &lt;a href='http://en.wikipedia.org/wiki/Off_the_record_messaging'&gt;Off-the-Record messaging&lt;/a&gt;. Communications sent via OTR are encrypted and authenticated, so you know who you&amp;#8217;re talking to while the conversation takes place, and no-one can eavesdrop. But the protocol also offers &lt;a href='http://en.wikipedia.org/wiki/Deniable_authentication'&gt;deniable authentication&lt;/a&gt;: after the conversation, it cannot be proved who said what. Your &amp;#8216;friends&amp;#8217; are still able to tell others that you said something.&lt;/p&gt;
+&lt;p&gt;It would be sensible to base it around something like &lt;a href=&quot;http://en.wikipedia.org/wiki/Off_the_record_messaging&quot;&gt;Off-the-Record messaging&lt;/a&gt;. Communications sent via OTR are encrypted and authenticated, so you know who you’re talking to while the conversation takes place, and no-one can eavesdrop. But the protocol also offers &lt;a href=&quot;http://en.wikipedia.org/wiki/Deniable_authentication&quot;&gt;deniable authentication&lt;/a&gt;: after the conversation, it cannot be proved who said what. Your ‘friends’ are still able to tell others that you said something.&lt;/p&gt;
 
-&lt;p&gt;Just like in the real world, however, they can&amp;#8217;t prove it.&lt;/p&gt;
-&lt;div class='footnotes'&gt;&lt;hr /&gt;&lt;ol&gt;&lt;li id='fn:1'&gt;
-&lt;p&gt;Being able to adapt your actions is important so that your actions are context-sensitive.&lt;/p&gt;
-&lt;a rev='footnote' href='#fnref:1'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn:2'&gt;
-&lt;p&gt;Yes, it could be implicit in the conversational context.&lt;/p&gt;
-&lt;a rev='footnote' href='#fnref:2'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn:3'&gt;
-&lt;p&gt;No pun intended, etc, etc.&lt;/p&gt;
-&lt;a rev='footnote' href='#fnref:3'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</content>
+&lt;p&gt;Just like in the real world, however, they can’t prove it.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;Being able to adapt your actions is important so that your actions are context-sensitive. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;Yes, it could be implicit in the conversational context. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:3&quot;&gt;
+      &lt;p&gt;No pun intended, etc, etc. &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
  </entry>
  
  <entry>
    <title>It's not about real names</title>
-   <link href="http://adamobengreal-names"/>
+   <link href="http://adamobeng/real-names"/>
    <updated>2011-08-09T00:00:00-04:00</updated>
-   <id>http://adamobeng.com./real-names</id>
-   <content type="html">&lt;p&gt;Google doesn&amp;#8217;t care about real names.&lt;/p&gt;
+   <id>http://adamobeng.com/real-names</id>
+   <content type="html">&lt;p&gt;Google doesn’t care about real names.&lt;/p&gt;
 
-&lt;p&gt;If you&amp;#8217;ve been even vaguely following the controversy about &lt;a href='http://www.google.com/+/demo/'&gt;Google+&lt;/a&gt;, I&amp;#8217;ll give you a moment to wipe the coffee off your monitor.&lt;/p&gt;
+&lt;p&gt;If you’ve been even vaguely following the controversy about &lt;a href=&quot;http://www.google.com/+/demo/&quot;&gt;Google+&lt;/a&gt;, I’ll give you a moment to wipe the coffee off your monitor.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href='http://socialmediacollective.org/2011/08/08/real-name-sites-are-necessarily-inadequate-for-free-speech/'&gt;Bernie Hogan&amp;#8217;s post&lt;/a&gt; is the latest &lt;span style='text-decoration: line-through;'&gt;free publicity for Google+&lt;/span&gt; salvo in the &amp;#8220;nymwars&amp;#8221;: the blogosphere&amp;#8217;s consternation over Google+&amp;#8217;s policy of requiring users to use their real names. Now, although I don&amp;#8217;t have a horse in this race&lt;sup id='fnref:1'&gt;&lt;a rel='footnote' href='#fn:1'&gt;1&lt;/a&gt;&lt;/sup&gt;, I&amp;#8217;d like to contribute what I think is really going on.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://socialmediacollective.org/2011/08/08/real-name-sites-are-necessarily-inadequate-for-free-speech/&quot;&gt;Bernie Hogan’s post&lt;/a&gt; is the latest &lt;span style=&quot;text-decoration: line-through;&quot;&gt;free publicity for Google+&lt;/span&gt; salvo in the “nymwars”: the blogosphere’s consternation over Google+’s policy of requiring users to use their real names. Now, although I don’t have a horse in this race&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, I’d like to contribute what I think is really going on.&lt;/p&gt;
 
-&lt;p&gt;According to Bernie, real names in online interaction are sometimes better than pseudonymity. I think this is actually vanishingly rare. Google must realise this, and from the statements they&amp;#8217;ve made, it looks like they do.&lt;sup id='fnref:2'&gt;&lt;a rel='footnote' href='#fn:2'&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;According to Bernie, real names in online interaction are sometimes better than pseudonymity. I think this is actually vanishingly rare. Google must realise this, and from the statements they’ve made, it looks like they do.&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
-&lt;p&gt;We can only guess at what Google really wants, but if we take them at their word, their goal doesn&amp;#8217;t require real names. The real-names policy on Google+ is just a beta feature, an experiment.&lt;/p&gt;
+&lt;p&gt;We can only guess at what Google really wants, but if we take them at their word, their goal doesn’t require real names. The real-names policy on Google+ is just a beta feature, an experiment.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href='http://adamobeng.com/what-it-means-to-be-offline'&gt;Next time&lt;/a&gt;, I&amp;#8217;ll also have something to say about what it means to be &amp;#8220;offline&amp;#8221;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://adamobeng.com/what-it-means-to-be-offline&quot;&gt;Next time&lt;/a&gt;, I’ll also have something to say about what it means to be “offline”.&lt;/p&gt;
 
-&lt;h2 id='real_names_good'&gt;Real names good&amp;#8230;&lt;/h2&gt;
+&lt;h2 id=&quot;real-names-good&quot;&gt;Real names good…&lt;/h2&gt;
 
 &lt;p&gt;Bernie says that:&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;Real names and third-party curation &lt;span&gt;&amp;#8230;&lt;/span&gt; offer many advantages, but freedom is not one of them.&lt;/p&gt;
+  &lt;pre&gt;&lt;code&gt; Real names and third-party curation [...] offer many advantages, but freedom is not one of them.
+&lt;/code&gt;&lt;/pre&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Understandably, he doesn&amp;#8217;t go into much detail as to what these advantages might be. But it&amp;#8217;s an interesting question: if we&amp;#8217;re trading freedom for something else, we&amp;#8217;d better make sure it&amp;#8217;s worth it.&lt;/p&gt;
+&lt;p&gt;Understandably, he doesn’t go into much detail as to what these advantages might be. But it’s an interesting question: if we’re trading freedom for something else, we’d better make sure it’s worth it.&lt;/p&gt;
 
-&lt;p&gt;So what do we gain from real names? There&amp;#8217;s no single answer, because many different activities are carried out online. Still, I suspect that what Bernie has in mind are activities based on reputation.&lt;/p&gt;
+&lt;p&gt;So what do we gain from real names? There’s no single answer, because many different activities are carried out online. Still, I suspect that what Bernie has in mind are activities based on reputation.&lt;/p&gt;
 
-&lt;p&gt;The discussion so far has focused on social networks, and as both Bernie and Danah Boyd note (, a person&amp;#8217;s online activities in a social network can belong to different contexts. But as well as targeting different groups of people, what we do online can serve diverse purposes.&lt;/p&gt;
+&lt;p&gt;The discussion so far has focused on social networks, and as both Bernie and Danah Boyd note ([^Boyd)], a person’s online activities in a social network can belong to different contexts. But as well as targeting different groups of people, what we do online can serve diverse purposes.&lt;/p&gt;
 
 &lt;p&gt;Take, for instance, the activity in which I am now engaged: debate. Written debate is an activity that also occurs in the real world, perhaps most visibly in the printed media.&lt;/p&gt;
 
-&lt;p&gt;A newspaper letters page might also have a policy of only allowing real names. There, the policy makes the contributors show that they intend to back up their claims with their real-world reputation. In some cases, it could also reassure the readers with an &lt;a href='http://en.wikipedia.org/wiki/Argument_from_authority'&gt;argument from authority&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A newspaper letters page might also have a policy of only allowing real names. There, the policy makes the contributors show that they intend to back up their claims with their real-world reputation. In some cases, it could also reassure the readers with an &lt;a href=&quot;http://en.wikipedia.org/wiki/Argument_from_authority&quot;&gt;argument from authority&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;In the ideal debate, what people say would stand independently of their reputation, and each statement be judged &lt;a href='http://plato.stanford.edu/entries/logic-informal/#One'&gt;on its own merits&lt;/a&gt;. But, as Kanye West might say, &amp;#8220;How he stay rational in a room full of trolls?&amp;#8221; People who are acting in bad faith might not be worth debating with.&lt;/p&gt;
+&lt;p&gt;In the ideal debate, what people say would stand independently of their reputation, and each statement be judged &lt;a href=&quot;http://plato.stanford.edu/entries/logic-informal/#One&quot;&gt;on its own merits&lt;/a&gt;. But, as Kanye West might say, “How he stay rational in a room full of trolls?” People who are acting in bad faith might not be worth debating with.&lt;/p&gt;
 
-&lt;p&gt;Outside of debate, there are some obvious cases in which you want to know who you&amp;#8217;re talking to: financial transactions, getting real-world advice you need to trust. You might want to use the Web to gather reliable information. In this case, you want to check that your correspondent is who they say they are: journalist, corporate spokesperson, or government minister.&lt;/p&gt;
+&lt;p&gt;Outside of debate, there are some obvious cases in which you want to know who you’re talking to: financial transactions, getting real-world advice you need to trust. You might want to use the Web to gather reliable information. In this case, you want to check that your correspondent is who they say they are: journalist, corporate spokesperson, or government minister.&lt;/p&gt;
 
-&lt;p&gt;All these reputation-based activities could be carried out on social networking sites with a real-names policy. In fact, real-name sites are not &amp;#8220;necessarily inadequate&amp;#8221; for this sort of interaction, they&amp;#8217;re kinda handy.&lt;/p&gt;
+&lt;p&gt;All these reputation-based activities could be carried out on social networking sites with a real-names policy. In fact, real-name sites are not “necessarily inadequate” for this sort of interaction, they’re kinda handy.&lt;/p&gt;
 
-&lt;h2 id='pseudonyms_better'&gt;&amp;#8230;pseudonyms better?&lt;/h2&gt;
+&lt;h2 id=&quot;pseudonyms-better&quot;&gt;…pseudonyms better?&lt;/h2&gt;
 
-&lt;p&gt;But even offline, there are situations where speaking anonymously is the norm. You might get reliable information from &amp;#8220;a senior politician&amp;#8221;, without knowing who they are (yes, you do generally know who the journalist reporting it is). Monetary transactions are carried out anonymously or pseudonymously (when was the last time Starbucks asked you for ID?).&lt;/p&gt;
+&lt;p&gt;But even offline, there are situations where speaking anonymously is the norm. You might get reliable information from “a senior politician”, without knowing who they are (yes, you do generally know who the journalist reporting it is). Monetary transactions are carried out anonymously or pseudonymously (when was the last time Starbucks asked you for ID?).&lt;/p&gt;
 
-&lt;p&gt;Debates held under the Chatham House Rule are another example: participants are forbidden from reporting who spoke or took part. The reasons here are to preserve the freedom of the participants: to allow them to say what they really think without consequence. Such debates aren&amp;#8217;t anonymous by default, like buying a cup of coffee. They&amp;#8217;re anonymous by design.&lt;/p&gt;
+&lt;p&gt;Debates held under the Chatham House Rule are another example: participants are forbidden from reporting who spoke or took part. The reasons here are to preserve the freedom of the participants: to allow them to say what they really think without consequence. Such debates aren’t anonymous by default, like buying a cup of coffee. They’re anonymous by design.&lt;/p&gt;
 
 &lt;p&gt;So there are both online activities which benefit from real names, and offline equivalents of those activities that have various levels of anonymity.&lt;/p&gt;
 
-&lt;p&gt;But there&amp;#8217;s no reason why reputation needs to be linked to the real world. In most cases &amp;#8211; especially where anonymity would be OK if you were offline &amp;#8211; it&amp;#8217;s just as good to have a purely online reputation, the reputation attached to a pseudonym (cf. &lt;a href='http://en.wikipedia.org/wiki/Ender%27s_Game#Plot_summary'&gt;Locke and Demosthenes&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;But there’s no reason why reputation needs to be linked to the real world. In most cases – especially where anonymity would be OK if you were offline – it’s just as good to have a purely online reputation, the reputation attached to a pseudonym (cf. &lt;a href=&quot;http://en.wikipedia.org/wiki/Ender%27s_Game#Plot_summary&quot;&gt;Locke and Demosthenes&lt;/a&gt;).&lt;/p&gt;
 
 &lt;p&gt;In fact, many people in the offline world interact entirely pseudonymously, but maintain a reputation: does it really matter who Banksy &lt;em&gt;really&lt;/em&gt; is? Does it even make sense to ask?&lt;/p&gt;
 
-&lt;p&gt;So, to answer the question posed above: it looks like real names only &amp;#8220;offer many advantages&amp;#8221; in the online world when the activity itself benefits from being linked to some offline existence. &lt;em&gt;Real names are a hack: they splice offline mechanisms of trust into the online world&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;So, to answer the question posed above: it looks like real names only “offer many advantages” in the online world when the activity itself benefits from being linked to some offline existence. &lt;em&gt;Real names are a hack: they splice offline mechanisms of trust into the online world&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;When exactly does offline reputation matter? It&amp;#8217;s not just that only &amp;#8220;some lucky people give talks to large audiences, they get on the radio or tv&amp;#8221;&lt;sup id='fnref:3'&gt;&lt;a rel='footnote' href='#fn:3'&gt;3&lt;/a&gt;&lt;/sup&gt;. Only some lucky people are &lt;a href='http://en.wikipedia.org/wiki/Wikipedia:Notability'&gt;notable&lt;/a&gt; enough for their real names to matter.&lt;/p&gt;
+&lt;p&gt;When exactly does offline reputation matter? It’s not just that only “some lucky people give talks to large audiences, they get on the radio or tv”&lt;sup id=&quot;fnref:Hogan&quot;&gt;&lt;a href=&quot;#fn:Hogan&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;. Only some lucky people are &lt;a href=&quot;http://en.wikipedia.org/wiki/Wikipedia:Notability&quot;&gt;notable&lt;/a&gt; enough for their real names to matter.&lt;/p&gt;
 
-&lt;h2 id='real_names_dont_matter'&gt;Real names don&amp;#8217;t matter&lt;/h2&gt;
+&lt;h2 id=&quot;real-names-dont-matter&quot;&gt;Real names don’t matter&lt;/h2&gt;
 
-&lt;p&gt;And it looks like Google has realised this. Robert Scoble reports that &lt;a href='https://plus.google.com/107117483540235115863/about'&gt;Vic Gundotra&lt;/a&gt; said that the real-names policy was supposed to:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;make sure a positive tone gets set here &lt;span&gt;&amp;#8230;&lt;/span&gt; mostly to have a nicer, more personal, community,&lt;sup id='fnref:4'&gt;&lt;a rel='footnote' href='#fn:4'&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;It makes sense to require real names if you&amp;#8217;re trying to deter trolls. But it&amp;#8217;s not necessary to use real names to build a community. In fact,&lt;/p&gt;
+&lt;p&gt;And it looks like Google has realised this. Robert Scoble reports that &lt;a href=&quot;https://plus.google.com/107117483540235115863/about&quot;&gt;Vic Gundotra&lt;/a&gt; said that the real-names policy was supposed to:&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;it isn&amp;#8217;t about real names &lt;span&gt;&amp;#8230;&lt;/span&gt; it is about having common names and removing people who spell their names in weird ways, like using upside-down characters, or who are using obviously fake names&lt;/p&gt;
+  &lt;pre&gt;&lt;code&gt;make sure a positive tone gets set here [...] mostly to have a nicer, more personal, community,[^Scoble]
+&lt;/code&gt;&lt;/pre&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;But if people have &amp;#8220;common names&amp;#8221;&lt;sup id='fnref:5'&gt;&lt;a rel='footnote' href='#fn:5'&gt;5&lt;/a&gt;&lt;/sup&gt;, that they can&amp;#8217;t just shed like a skin, then they carry their reputation with them. People will be &amp;#8220;nice&amp;#8221;, because they don&amp;#8217;t want to get a reputation for being nasty. You can argue that point, but if it&amp;#8217;s true, it&amp;#8217;s a good reason for requiring &amp;#8220;common&amp;#8221;, or consistent names.&lt;/p&gt;
+&lt;p&gt;It makes sense to require real names if you’re trying to deter trolls. But it’s not necessary to use real names to build a community. In fact,&lt;/p&gt;
 
-&lt;p&gt;Of course, this is still speculative, but Google&amp;#8217;s aim doesn&amp;#8217;t seem to be banning pseudonyms, but rather to enforce their consistency. And that&amp;#8217;s not in order to link what people say online to who they really are, but to make sure they&amp;#8217;re civil. The statement about weird characters&lt;sup id='fnref:6'&gt;&lt;a rel='footnote' href='#fn:6'&gt;6&lt;/a&gt;&lt;/sup&gt; seems to reinforce this: it&amp;#8217;s about image, the way the network appears to the outside world.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;pre&gt;&lt;code&gt;it isn&#39;t about real names [...] it is about having common names and removing people who spell their names in weird ways, like using upside-down characters, or who are using obviously fake names[^Scoble]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;If that&amp;#8217;s true, real names, like non-&amp;#8220;weird&amp;#8221; names, are being used as a proxy.&lt;/p&gt;
+&lt;p&gt;But if people have “common names”&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;, that they can’t just shed like a skin, then they carry their reputation with them. People will be “nice”, because they don’t want to get a reputation for being nasty. You can argue that point, but if it’s true, it’s a good reason for requiring “common”, or consistent names.&lt;/p&gt;
+
+&lt;p&gt;Of course, this is still speculative, but Google’s aim doesn’t seem to be banning pseudonyms, but rather to enforce their consistency. And that’s not in order to link what people say online to who they really are, but to make sure they’re civil. The statement about weird characters&lt;sup id=&quot;fnref:4&quot;&gt;&lt;a href=&quot;#fn:4&quot; class=&quot;footnote&quot;&gt;5&lt;/a&gt;&lt;/sup&gt; seems to reinforce this: it’s about image, the way the network appears to the outside world.&lt;/p&gt;
+
+&lt;p&gt;If that’s true, real names, like non-“weird” names, are being used as a proxy.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;What you are known as&lt;/strong&gt; is not important. &lt;strong&gt;That you are known&lt;/strong&gt; is.&lt;/p&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;p&gt;&lt;a href='http://adamobeng.com/what-it-means-to-be-offline'&gt;Next time&lt;/a&gt; I&amp;#8217;ll talk about what it really means to be &amp;#8220;offline&amp;#8221;, and whether we can design a online social network that lets you be offline.&lt;/p&gt;
-&lt;div class='footnotes'&gt;&lt;hr /&gt;&lt;ol&gt;&lt;li id='fn:1'&gt;
-&lt;p&gt;I&amp;#8217;m not on Google+ &lt;a href='http://wellsb.com/post/7022247022/google-plus-for-google-apps-in-the-coming-months'&gt;because I&amp;#8217;ve got a Google Apps account&amp;#8230;&lt;/a&gt;.&lt;/p&gt;
-&lt;a rev='footnote' href='#fnref:1'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn:2'&gt;
-&lt;p&gt;For the purposes of this article I will be assuming that Google is, in fact, not evil.&lt;/p&gt;
-&lt;a rev='footnote' href='#fnref:2'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn:3'&gt;
-&lt;p&gt;&lt;a href='http://socialmediacollective.org/2011/08/08/real-name-sites-are-necessarily-inadequate-for-free-speech/'&gt;Real name sites are necessarily inadequate for free speech, by Bernie Hogan&lt;/a&gt;&lt;/p&gt;
-&lt;a rev='footnote' href='#fnref:3'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn:4'&gt;
-&lt;p&gt;&lt;a href='https://plus.google.com/111091089527727420853/posts/Fddn6rV8mBX'&gt;source: Robert Scoble&lt;/a&gt;&lt;/p&gt;
-&lt;a rev='footnote' href='#fnref:4'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn:5'&gt;
-&lt;p&gt;I assume that &amp;#8220;common&amp;#8221; is meant in the sense of &amp;#8216;consistent&amp;#8217;, rather than &amp;#8216;usual&amp;#8217;. Please correct me if I&amp;#8217;m wrong.&lt;/p&gt;
-&lt;a rev='footnote' href='#fnref:5'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn:6'&gt;
-&lt;p&gt;In some places, people can legally spell their names &amp;#8220;in weird ways&amp;#8221;, or have names that are &amp;#8220;obviously fake&amp;#8221;.&lt;/p&gt;
-&lt;a rev='footnote' href='#fnref:6'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</content>
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://adamobeng.com/what-it-means-to-be-offline&quot;&gt;Next time&lt;/a&gt; I’ll talk about what it really means to be “offline”, and whether we can design a online social network that lets you be offline.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;I’m not on Google+ &lt;a href=&quot;http://wellsb.com/post/7022247022/google-plus-for-google-apps-in-the-coming-months&quot;&gt;because I’ve got a Google Apps account…&lt;/a&gt;. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;For the purposes of this article I will be assuming that Google is, in fact, not evil. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:Hogan&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;http://socialmediacollective.org/2011/08/08/real-name-sites-are-necessarily-inadequate-for-free-speech/&quot;&gt;Real name sites are necessarily inadequate for free speech, by Bernie Hogan&lt;/a&gt; &lt;a href=&quot;#fnref:Hogan&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:3&quot;&gt;
+      &lt;p&gt;I assume that “common” is meant in the sense of ‘consistent’, rather than ‘usual’. Please correct me if I’m wrong. &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:4&quot;&gt;
+      &lt;p&gt;In some places, people can legally spell their names “in weird ways”, or have names that are “obviously fake”. &lt;a href=&quot;#fnref:4&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
  </entry>
  
  <entry>
    <title>EPUB3 Multimedia Features, A Lighting Overview</title>
-   <link href="http://adamobengdhox"/>
+   <link href="http://adamobeng/dhox"/>
    <updated>2011-08-01T00:00:00-04:00</updated>
-   <id>http://adamobeng.com./dhox</id>
-   <content type="html">&lt;p&gt;At the &lt;a href='http://digital.humanities.ox.ac.uk/DHSS2011/'&gt;Digital Humanities@Oxford Summer School 2011&lt;/a&gt; last week, I was invited to talk briefly about the multimedia features available in EPUB3. Not one to pass up an opportunity for public speaking, I quickly assented. The fact that the Summer School is organized in part by &lt;a href='http://www.oucs.ox.ac.uk/'&gt;Oxford University Computing Services&lt;/a&gt; might have had something to do with it.&lt;/p&gt;
+   <id>http://adamobeng.com/dhox</id>
+   <content type="html">&lt;p&gt;At the &lt;a href=&quot;http://digital.humanities.ox.ac.uk/DHSS2011/&quot;&gt;Digital Humanities@Oxford Summer School 2011&lt;/a&gt; last week, I was invited to talk briefly about the multimedia features available in EPUB3. Not one to pass up an opportunity for public speaking, I quickly assented. The fact that the Summer School is organized in part by &lt;a href=&quot;http://www.oucs.ox.ac.uk/&quot;&gt;Oxford University Computing Services&lt;/a&gt; might have had something to do with it.&lt;/p&gt;
 
-&lt;p&gt;The fact that &lt;a href='http://twitter.com/#!/rahtz'&gt;Sebastian &amp;#8216;The Master&amp;#8217; Rahtz&lt;/a&gt; and &lt;a href='https://twitter.com/#!/jamescummings'&gt;James &amp;#8216;Hwæt!&amp;#8217; Cummings&lt;/a&gt; were presenters of this session certainly did.&lt;/p&gt;
+&lt;p&gt;The fact that &lt;a href=&quot;http://twitter.com/#!/rahtz&quot;&gt;Sebastian ‘The Master’ Rahtz&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/#!/jamescummings&quot;&gt;James ‘Hwæt!’ Cummings&lt;/a&gt; were presenters of this session certainly did.&lt;/p&gt;
 
-&lt;p&gt;As part of the &lt;a href='http://digital.humanities.ox.ac.uk/DHSS2011/sessions.html#TEIfacs'&gt;session&lt;/a&gt; on using &lt;a href='http://www.tei-c.org/Guidelines/P5/index.xml'&gt;TEI&lt;/a&gt; to link text and facsimilies, I talked about a possible end product of the process: a multimedia, interactive EPUB3 eBook. Of course, such an eBook can be used for much more than linking text and facscimiles. In fact, the demo book contained side-by-side manuscript and transcript, embedded video, audio narration synchronised to the text and Javascript-controlled switching between multiple versions of the text.&lt;/p&gt;
+&lt;p&gt;As part of the &lt;a href=&quot;http://digital.humanities.ox.ac.uk/DHSS2011/sessions.html#TEIfacs&quot;&gt;session&lt;/a&gt; on using &lt;a href=&quot;http://www.tei-c.org/Guidelines/P5/index.xml&quot;&gt;TEI&lt;/a&gt; to link text and facsimilies, I talked about a possible end product of the process: a multimedia, interactive EPUB3 eBook. Of course, such an eBook can be used for much more than linking text and facscimiles. In fact, the demo book contained side-by-side manuscript and transcript, embedded video, audio narration synchronised to the text and Javascript-controlled switching between multiple versions of the text.&lt;/p&gt;
 
-&lt;p&gt;The book, which uses the first page of Beowulf as an used in the demonstration is available &lt;a href='http://adamobeng.com/download/dhox/beowulf.epub'&gt;here&lt;/a&gt;. This is a slightly different version than that used for the demonstration, using jQuery rather than just Javascript for some interactive functions.&lt;/p&gt;
+&lt;p&gt;The book, which uses the first page of Beowulf as an  used in the demonstration is available &lt;a href=&quot;http://adamobeng.com/download/dhox/beowulf.epub&quot;&gt;here&lt;/a&gt;. This is a slightly different version than that used for the demonstration, using jQuery rather than just Javascript for some interactive functions.&lt;/p&gt;
 
-&lt;p&gt;The slides from my presentation are available &lt;a href='http://adamobeng.com/download/dhox/slides'&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The slides from my presentation are available &lt;a href=&quot;http://adamobeng.com/download/dhox/slides&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;I haven&amp;#8217;t been involved in the digital humanities before, but judging from the reaction to the demonstration, a little technology can go a long way.&lt;/p&gt;</content>
+&lt;p&gt;I haven’t been involved in the digital humanities before, but judging from the reaction to the demonstration, a little technology can go a long way.&lt;/p&gt;
+</content>
  </entry>
  
  <entry>
    <title>The DBO model in HTML5 Canvas and Javascript</title>
-   <link href="http://adamobengdbo-model-in-canvas"/>
+   <link href="http://adamobeng/dbo-model-in-canvas"/>
    <updated>2011-05-22T00:00:00-04:00</updated>
-   <id>http://adamobeng.com./dbo-model-in-canvas</id>
-   <content type="html">&lt;p&gt;I&amp;#8217;ve had a little bit of &lt;a href='../analytical-sociology-thesis/'&gt;experience&lt;/a&gt; with &lt;a href='http://en.wikipedia.org/wiki/Agent-based_model'&gt;agent-based modelling&lt;/a&gt;, and so far, I&amp;#8217;ve stumbled across some interesting results. But statistical summaries of models are one thing, while actually having a feel for how a model works is another. These models are inherently dynamic, so there will necessarily be something lost from static pictures of the model, even from graphs of statistics over time. Moreover, ABMs are part of a very quantitative branch of sociology, so it might even be refreshing to reintroduce a little bit of qualitative information (and who doesn&amp;#8217;t like &lt;a href='http://en.wikipedia.org/wiki/Blinkenlights'&gt;blinkenlights&lt;/a&gt;?).&lt;/p&gt;
+   <id>http://adamobeng.com/dbo-model-in-canvas</id>
+   <content type="html">&lt;p&gt;I’ve had a little bit of &lt;a href=&quot;../analytical-sociology-thesis/&quot;&gt;experience&lt;/a&gt; with &lt;a href=&quot;http://en.wikipedia.org/wiki/Agent-based_model&quot;&gt;agent-based modelling&lt;/a&gt;, and so far, I’ve stumbled across some interesting results. But statistical summaries of models are one thing, while actually having a feel for how a model works is another. These models are inherently dynamic, so there will necessarily be something lost from static pictures of the model, even from graphs of statistics over time. Moreover, ABMs are part of a very quantitative branch of sociology, so it might even be refreshing to reintroduce a little bit of qualitative information (and who doesn’t like &lt;a href=&quot;http://en.wikipedia.org/wiki/Blinkenlights&quot;&gt;blinkenlights&lt;/a&gt;?).&lt;/p&gt;
 
-&lt;p&gt;For example, here&amp;#8217;s one of the graphs I used in my thesis:&lt;/p&gt;
+&lt;p&gt;For example, here’s one of the graphs I used in my thesis:&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt='A graph showing the relation between the initial proportion of desires and beliefs and the eventual proportion of desires and beliefs in a basic version of the DBO model' src='/DBO_example_graph.png' /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/DBO_example_graph.png&quot; alt=&quot;A graph showing the relation between the initial proportion of desires and beliefs and the eventual proportion of desires and beliefs in a basic version of the DBO model&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Now that&amp;#8217;s a good summary of what&amp;#8217;s going on in the model, don&amp;#8217;t get me wrong. You can see a nice relationship between the parameters. Obviously, graphs like these are essential for summarising information, and you couldn&amp;#8217;t infer this from interacting with the simulation directly. Indeed, in some cases, interacting with the simulation will not even be possible (like when there are too many agents to display comfortably).&lt;/p&gt;
+&lt;p&gt;Now that’s a good summary of what’s going on in the model, don’t get me wrong. You can see a nice relationship between the parameters. Obviously, graphs like these are essential for summarising information, and you couldn’t infer this from interacting with the simulation directly. Indeed, in some cases, interacting with the simulation will not even be possible (like when there are too many agents to display comfortably).&lt;/p&gt;
 
-&lt;p&gt;In addition, you couldn&amp;#8217;t really have a dynamic, interactive presentation of the model on paper (or even in a PDF). But on the web at least, with a little bit of HTML5 (in particular the &lt;a href='https://developer.mozilla.org/en/Canvas_tutorial'&gt;Canvas&lt;/a&gt; element) you can produce this:&lt;/p&gt;
-&lt;script type='text/javascript' src='../dbo-minified.js' /&gt;&lt;canvas style='margin: 2em;' width='400' id='canvas' height='400' /&gt;
-&lt;p&gt;Click the nodes to change their DBO state; &lt;font color='#0000FF'&gt;blue&lt;/font&gt; nodes have desire, &lt;font color='#FF0000'&gt;red&lt;/font&gt; nodes have belief and &lt;font color='#FF00FF'&gt;purple&lt;/font&gt; nodes have both. The &amp;#8216;step&amp;#8217; button advances the simulation by one step, and the &amp;#8216;reset&amp;#8217; button randomly assigns DBO states to all of the nodes.&lt;/p&gt;
+&lt;p&gt;In addition, you couldn’t really have a dynamic, interactive presentation of the model on paper (or even in a PDF). But on the web at least, with a little bit of HTML5 (in particular the &lt;a href=&quot;https://developer.mozilla.org/en/Canvas_tutorial&quot;&gt;Canvas&lt;/a&gt; element) you can produce this:&lt;/p&gt;
 
-&lt;p&gt;As you may notice this is a simulation of the DBO model with a fixed set of parameters (in particular, opportunity is being ignored). As such, the behaviour exhibited is pretty limited. This is also for the time being &lt;em&gt;very&lt;/em&gt; alpha-quality code. Still, it shouldn&amp;#8217;t take too long to get a worthwhile implementation of the DBO model and its variants up and running.&lt;/p&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;../dbo-minified.js&quot;&gt;&lt;/script&gt;
 
-&lt;p&gt;Who knows, I might even expand it to cover some other sociologically-interesting ABMs. &lt;a href='https://secure.wikimedia.org/wikipedia/en/wiki/Sugarscape'&gt;Sugarscape&lt;/a&gt; in Javascript, anyone?&lt;/p&gt;</content>
+&lt;canvas id=&quot;canvas&quot; width=&quot;400&quot; height=&quot;400&quot; style=&quot;margin: 2em;&quot;&gt;&lt;/canvas&gt;
+
+&lt;p&gt;Click the nodes to change their DBO state; &lt;font color=&quot;#0000FF&quot;&gt;blue&lt;/font&gt; nodes have desire, &lt;font color=&quot;#FF0000&quot;&gt;red&lt;/font&gt; nodes have belief and &lt;font color=&quot;#FF00FF&quot;&gt;purple&lt;/font&gt; nodes have both. The ‘step’ button advances the simulation by one step, and the ‘reset’ button randomly assigns DBO states to all of the nodes.&lt;/p&gt;
+
+&lt;p&gt;As you may notice this is a simulation of the DBO model with a fixed set of parameters (in particular, opportunity is being ignored). As such, the behaviour exhibited is pretty limited. This is also for the time being &lt;em&gt;very&lt;/em&gt; alpha-quality code. Still, it shouldn’t take too long to get a worthwhile implementation of the DBO model and its variants up and running.&lt;/p&gt;
+
+&lt;p&gt;Who knows, I might even expand it to cover some other sociologically-interesting ABMs. &lt;a href=&quot;https://secure.wikimedia.org/wikipedia/en/wiki/Sugarscape&quot;&gt;Sugarscape&lt;/a&gt; in Javascript, anyone?&lt;/p&gt;
+</content>
  </entry>
  
  <entry>
    <title>Talk at 27C3 &mdash; The Political Philosophy of the Internet</title>
-   <link href="http://adamobengtalk-at-CCC"/>
+   <link href="http://adamobeng/talk-at-CCC"/>
    <updated>2010-12-30T00:00:00-05:00</updated>
-   <id>http://adamobeng.com./talk-at-CCC</id>
-   <content type="html">&lt;h1 id='tor_is_peace_software_freedom_is_slavery_wikipedia_is_truth_the_political_philosophy_of_the_internet'&gt;Tor is Peace, Software Freedom is Slavery, Wikipedia is Truth: The Political Philosophy of the Internet&lt;/h1&gt;
+   <id>http://adamobeng.com/talk-at-CCC</id>
+   <content type="html">&lt;h1 id=&quot;tor-is-peace-software-freedom-is-slavery-wikipedia-is-truth-the-political-philosophy-of-the-internet&quot;&gt;Tor is Peace, Software Freedom is Slavery, Wikipedia is Truth: The Political Philosophy of the Internet&lt;/h1&gt;
 
-&lt;p&gt;On something of a whim, I proposed a lecture topic to the &lt;a href='http://events.ccc.de/congress/2010/wiki/Welcome'&gt;27th Chaos Communication Congress&lt;/a&gt;. Somewhat to my surprise, it was accepted. This is the result; an attempt to apply the some of the concepts of political philosophy &amp;#8211; learnt as an undergraduate &amp;#8211; to some questions in the real world.&lt;/p&gt;
+&lt;p&gt;On something of a whim, I proposed a lecture topic to the &lt;a href=&quot;http://events.ccc.de/congress/2010/wiki/Welcome&quot;&gt;27th Chaos Communication Congress&lt;/a&gt;. Somewhat to my surprise, it was accepted. This is the result; an attempt to apply the some of the concepts of political philosophy – learnt as an undergraduate – to some questions in the real world.&lt;/p&gt;
 
-&lt;p&gt;It&amp;#8217;s also a presentation by non-experts to non-experts, so political philosophers should take it with a grain of salt.&lt;/p&gt;
+&lt;p&gt;It’s also a presentation by non-experts to non-experts, so political philosophers should take it with a grain of salt.&lt;/p&gt;
 
-&lt;h2 id='abstract'&gt;Abstract&lt;/h2&gt;
+&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
 
-&lt;p&gt;The Internet began as state-sponsored anarchy, but it is now the tool of first resort for dissidents and propagandists alike. The poster-child project of the Free Software Movement runs on the authority of a single person; the rest clash over the very definition of the word &amp;#8216;free&amp;#8217;. A company which pictured itself as smashing Big Brother is now perceived as one of the most secretive and authoritarian in the industry; and for another, &amp;#8216;Don&amp;#8217;t Be Evil&amp;#8217; is proving to be a challenging motto to live by.&lt;/p&gt;
+&lt;p&gt;The Internet began as state-sponsored anarchy, but it is now the tool of first resort for dissidents and propagandists alike. The poster-child project of the Free Software Movement runs on the authority of a single person; the rest clash over the very definition of the word ‘free’. A company which pictured itself as smashing Big Brother is now perceived as one of the most secretive and authoritarian in the industry; and for another, ‘Don’t Be Evil’ is proving to be a challenging motto to live by.&lt;/p&gt;
 
-&lt;p&gt;This talk aims to present a view of the societies of Internet from the perspective of political philosophy. &lt;em&gt;Political philosophy is not politics&lt;/em&gt;, in the same way that computer science is not programming. It&amp;#8217;s not the politics about the Internet, but the politics &lt;em&gt;of&lt;/em&gt; the Internet. Even so, events at any particular place or time just provide examples to be studied. Political philosophy is meta-politics, it&amp;#8217;s about the trends in politics and the theories we use to understand them.&lt;/p&gt;
+&lt;p&gt;This talk aims to present a view of the societies of Internet from the perspective of political philosophy. &lt;em&gt;Political philosophy is not politics&lt;/em&gt;, in the same way that computer science is not programming. It’s not the politics about the Internet, but the politics &lt;em&gt;of&lt;/em&gt; the Internet. Even so, events at any particular place or time just provide examples to be studied. Political philosophy is meta-politics, it’s about the trends in politics and the theories we use to understand them.&lt;/p&gt;
 
 &lt;p&gt;Real-world political systems have striking parallels in the evolution of the Internet: there was primitive anarchy before Eternal September, the era of walled gardens resembled that of Ancient Greek city-states, which were succeeded by more-or-less liberal regimes following the geographical territories of real-world governments. Because of its rapid evolution, mass participation, and highly complex human interaction, the Internet should be subjected to the sorts of questions that political philosophers ask. On the Internet, what is freedom? Do we have obligations to those in control? To each other? What rights do we have? What can we own?&lt;/p&gt;
 
-&lt;p&gt;Once we know the way it is, we can ask how it should be&amp;#8230;&lt;/p&gt;
+&lt;p&gt;Once we know the way it is, we can ask how it should be…&lt;/p&gt;
 
-&lt;h2 id='downloads_now_available'&gt;Downloads (now available)&lt;/h2&gt;
-
+&lt;h2 id=&quot;downloads-now-available&quot;&gt;Downloads (now available)&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href='../download/slides.pdf'&gt;Slides&lt;/a&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;a href='../download/printslides.pdf'&gt;Printable Slides&lt;/a&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;a href='../download/lecture.pdf'&gt;Lecture text&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;../download/slides.pdf&quot;&gt;Slides&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;../download/printslides.pdf&quot;&gt;Printable Slides&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;../download/lecture.pdf&quot;&gt;Lecture text&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id='video'&gt;Video&lt;/h2&gt;
-
-&lt;p&gt;Video of the talk is available on &lt;a href='http://www.youtube.com/watch?v=tXCV_z_M0RA'&gt;Youtube&lt;/a&gt;, on &lt;a href='http://mirror.fem-net.de/CCC/27C3/'&gt;the CCC website&lt;/a&gt;, and on &lt;a href='mailto:contact@adamobeng.com'&gt;request&lt;/a&gt;.&lt;/p&gt;</content>
+&lt;h2 id=&quot;video&quot;&gt;Video&lt;/h2&gt;
+&lt;p&gt;Video of the talk is available on &lt;a href=&quot;http://www.youtube.com/watch?v=tXCV_z_M0RA&quot;&gt;Youtube&lt;/a&gt;, on &lt;a href=&quot;http://mirror.fem-net.de/CCC/27C3/&quot;&gt;the CCC website&lt;/a&gt;, and on &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#099;&amp;#111;&amp;#110;&amp;#116;&amp;#097;&amp;#099;&amp;#116;&amp;#064;&amp;#097;&amp;#100;&amp;#097;&amp;#109;&amp;#111;&amp;#098;&amp;#101;&amp;#110;&amp;#103;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;request&lt;/a&gt;.&lt;/p&gt;
+</content>
  </entry>
  
  <entry>
    <title>Arduino syntax file for vim</title>
-   <link href="http://adamobengarduino-vim-syntax-file"/>
+   <link href="http://adamobeng/arduino-vim-syntax-file"/>
    <updated>2010-11-26T00:00:00-05:00</updated>
-   <id>http://adamobeng.com./arduino-vim-syntax-file</id>
-   <content type="html">&lt;p&gt;Recently, I&amp;#8217;ve been tinkering with electronics hardware. Let me tell you, for someone who&amp;#8217;s more comfortable with software, the experience can be quite scary: if you mess up your code, the worst that happens is that it fails to compile, or maybe the interpreter spits out an error. But this electronics stuff is &lt;em&gt;real&lt;/em&gt;! If you do something wrong it could literally blow up in your face.&lt;/p&gt;
+   <id>http://adamobeng.com/arduino-vim-syntax-file</id>
+   <content type="html">&lt;p&gt;Recently, I’ve been tinkering with electronics hardware. Let me tell you, for someone who’s more comfortable with software, the experience can be quite scary: if you mess up your code, the worst that happens is that it fails to compile, or maybe the interpreter spits out an error. But this electronics stuff is &lt;em&gt;real&lt;/em&gt;! If you do something wrong it could literally blow up in your face.&lt;/p&gt;
 
-&lt;p&gt;Fortunately, for people like me, there&amp;#8217;s the &lt;a href='http://www.arduino.cc/'&gt;Arduino&lt;/a&gt; project to hold your (badly scorched) hand. Doubly-fortunately, you can still use &lt;a href='http://www.vim.org/'&gt;your favourite powerful text editor&lt;/a&gt; to do so. To get syntax-highlighting working in vim for Arduino&amp;#8217;s .pde, you have to install &lt;a href='http://www.vim.org/scripts/script.php?script_id=2654'&gt;a script&lt;/a&gt; written by Johannes Hoff. The Arduino project is constantly changing, so I updated the syntax file to add some new features (notably some stuff relating to the Arduino Mega).&lt;/p&gt;
+&lt;p&gt;Fortunately, for people like me, there’s the &lt;a href=&quot;http://www.arduino.cc/&quot;&gt;Arduino&lt;/a&gt; project to hold your (badly scorched) hand. Doubly-fortunately, you can still use &lt;a href=&quot;http://www.vim.org/&quot;&gt;your favourite powerful text editor&lt;/a&gt; to do so. To get syntax-highlighting working in vim for Arduino’s .pde, you have to install &lt;a href=&quot;http://www.vim.org/scripts/script.php?script_id=2654&quot;&gt;a script&lt;/a&gt; written by Johannes Hoff. The Arduino project is constantly changing, so I updated the syntax file to add some new features (notably some stuff relating to the Arduino Mega).&lt;/p&gt;
 
-&lt;p&gt;The updated version is now available on &lt;a href='http://www.vim.org/scripts/script.php?script_id=2654'&gt;vim.org&lt;/a&gt;. Hopefully it will prevent some explosions (or, more likely, bricked microcontrollers).&lt;/p&gt;</content>
+&lt;p&gt;The updated version is now available on &lt;a href=&quot;http://www.vim.org/scripts/script.php?script_id=2654&quot;&gt;vim.org&lt;/a&gt;. Hopefully it will prevent some explosions (or, more likely, bricked microcontrollers).&lt;/p&gt;
+</content>
  </entry>
  
  <entry>
    <title>Undergraduate Thesis in Analytical Sociology</title>
-   <link href="http://adamobenganalytical-sociology-thesis"/>
+   <link href="http://adamobeng/analytical-sociology-thesis"/>
    <updated>2010-04-01T00:00:00-04:00</updated>
-   <id>http://adamobeng.com./analytical-sociology-thesis</id>
-   <content type="html">&lt;p&gt;&lt;em&gt;Update:&lt;/em&gt; An interactive version of the central model of my thesis is now &lt;a href='/dbo-model-in-canvas/'&gt;here&lt;/a&gt;&lt;/p&gt;
+   <id>http://adamobeng.com/analytical-sociology-thesis</id>
+   <content type="html">&lt;p&gt;&lt;em&gt;Update:&lt;/em&gt; An interactive version of the central model of my thesis is now &lt;a href=&quot;/dbo-model-in-canvas/&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
 
-&lt;h1 id='small_worlds_sour_grapes_and_social_deprivation_the_computational_application_of_peter_hedstrms_dbo_theory'&gt;Small Worlds, Sour Grapes and Social Deprivation: the Computational Application of Peter Hedström&amp;#8217;s DBO Theory&lt;/h1&gt;
+&lt;h1 id=&quot;small-worlds-sour-grapes-and-social-deprivation-the-computational-application-of-peter-hedstrms-dbo-theory&quot;&gt;Small Worlds, Sour Grapes and Social Deprivation: the Computational Application of Peter Hedström’s DBO Theory&lt;/h1&gt;
 
-&lt;h2 id='research_proposal'&gt;Research proposal&lt;/h2&gt;
+&lt;h2 id=&quot;research-proposal&quot;&gt;Research proposal&lt;/h2&gt;
 
-&lt;p&gt;In &lt;a href='http://www.cambridge.org/asia/catalogue/catalogue.asp?isbn=9780511133312&amp;amp;ss=exc'&gt;Dissecting the Social&lt;/a&gt;, &lt;a href='http://www.nuffield.ox.ac.uk/General/Members/hedstrom.aspx'&gt;Peter Hedström&lt;/a&gt; proposes an agent-based sociological theory in which each individual&amp;#8217;s action is determined by their desires, beliefs and opportunities. He then uses this model to simulate social interaction, and reaches certain conclusions about the macro-social consequences of different forms of agency. While the DBO theory itself is psychologically compelling, the parameters of the model that are used to apply it are very restricted. By varying the assumptions made in the practical application of the theory, I hope to gain more insight into the predictive possibilities and theoretical implications of this agent-based model.&lt;/p&gt;
+&lt;p&gt;In &lt;a href=&quot;http://www.cambridge.org/asia/catalogue/catalogue.asp?isbn=9780511133312&amp;amp;ss=exc&quot;&gt;Dissecting the Social&lt;/a&gt;, &lt;a href=&quot;http://www.nuffield.ox.ac.uk/General/Members/hedstrom.aspx&quot;&gt;Peter Hedström&lt;/a&gt; proposes an agent-based sociological theory in which each individual’s action is determined by their desires, beliefs and opportunities. He then uses this model to simulate social interaction, and reaches certain conclusions about the macro-social consequences of different forms of agency. While the DBO theory itself is psychologically compelling, the parameters of the model that are used to apply it are very restricted. By varying the assumptions made in the practical application of the theory, I hope to gain more insight into the predictive possibilities and theoretical implications of this agent-based model.&lt;/p&gt;
 
-&lt;h2 id='description'&gt;Description&lt;/h2&gt;
+&lt;h2 id=&quot;description&quot;&gt;Description&lt;/h2&gt;
 
-&lt;p&gt;I wrote this undergraduate thesis as part of my BA in Philosophy, Politics and Economics at the University of Oxford, under the supervision of &lt;a href='http://www.nuffield.ox.ac.uk/General/Members/hedstrom.aspx'&gt;Peter Hedström&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I wrote this undergraduate thesis as part of my BA in Philosophy, Politics and Economics at the University of Oxford, under the supervision of &lt;a href=&quot;http://www.nuffield.ox.ac.uk/General/Members/hedstrom.aspx&quot;&gt;Peter Hedström&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;The main parameters that I varied were the nature of individual decision-making mechanisms and the types of networks on which agents interact.&lt;/p&gt;
 
-&lt;p&gt;The simulations were run using a number of Python scripts using the &lt;a href='https://code.google.com/p/python-graph/'&gt;python-graph&lt;/a&gt; and &lt;a href='https://code.google.com/p/pydot/'&gt;pydot&lt;/a&gt; libraries, outputting to &lt;a href='http://graphviz.org/'&gt;GraphViz&lt;/a&gt; and &lt;a href='http://www.gnuplot.info/'&gt;GnuPlot&lt;/a&gt;. For what it&amp;#8217;s worth, the scripts written for these simulations come to 4,284 Source Lines Of Code (a statistic generated using David A. Wheeler&amp;#8217;s &amp;#8217;&lt;a href='http://www.dwheeler.com/sloccount/'&gt;SLOCCount&lt;/a&gt;&amp;#8217;.)&lt;/p&gt;
+&lt;p&gt;The simulations were run using a number of Python scripts using the &lt;a href=&quot;https://code.google.com/p/python-graph/&quot;&gt;python-graph&lt;/a&gt; and &lt;a href=&quot;https://code.google.com/p/pydot/&quot;&gt;pydot&lt;/a&gt; libraries, outputting to &lt;a href=&quot;http://graphviz.org/&quot;&gt;GraphViz&lt;/a&gt; and &lt;a href=&quot;http://www.gnuplot.info/&quot;&gt;GnuPlot&lt;/a&gt;. For what it’s worth, the scripts written for these simulations come to 4,284 Source Lines Of Code (a statistic generated using David A. Wheeler’s ‘&lt;a href=&quot;http://www.dwheeler.com/sloccount/&quot;&gt;SLOCCount&lt;/a&gt;’.)&lt;/p&gt;
 
-&lt;p&gt;The thesis won the &lt;a href='http://www.ox.ac.uk/feesandfunding/ugcurrent/other/prizes/gibbs/'&gt;Gibbs Thesis prize in Politics&lt;/a&gt; from the University of Oxford.&lt;/p&gt;
+&lt;p&gt;The thesis won the &lt;a href=&quot;http://www.ox.ac.uk/feesandfunding/ugcurrent/other/prizes/gibbs/&quot;&gt;Gibbs Thesis prize in Politics&lt;/a&gt; from the University of Oxford.&lt;/p&gt;
 
-&lt;h2 id='downloads'&gt;Downloads&lt;/h2&gt;
+&lt;h2 id=&quot;downloads&quot;&gt;Downloads&lt;/h2&gt;
 
-&lt;p&gt;The thesis is not yet available for download, but may be soon.&lt;/p&gt;</content>
+&lt;p&gt;The thesis is not yet available for download, but may be soon.&lt;/p&gt;
+
+</content>
  </entry>
  
  
