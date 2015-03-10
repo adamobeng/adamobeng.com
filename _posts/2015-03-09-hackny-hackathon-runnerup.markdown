@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HackNY Spring 2015 Hackathon One-Two
-categories: hackathon 
+categories: hackathon, projects
 ---
 
 #TL;DR

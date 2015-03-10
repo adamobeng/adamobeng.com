@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HackNY Spring 2015 Hackathon &mdash; And the winner is...
-categories: hackathon 
+categories: hackathon, projects 
 ---
 
 #TL;DR
