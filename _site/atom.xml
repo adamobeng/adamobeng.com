@@ -4,7 +4,7 @@
  <title>Adam Obeng</title>
  <link href="http://adamobeng.com/atom.xml" rel="self"/>
  <link href="http://adamobeng.com/"/>
- <updated>2015-03-09T22:10:45-04:00</updated>
+ <updated>2015-03-09T23:42:49-04:00</updated>
  <id>http://adamobeng.com/</id>
  <author>
    <name>Adam Obeng</name>
@@ -30,7 +30,7 @@
 &lt;iframe src=&quot;https://player.vimeo.com/video/121724646&quot; width=&quot;500&quot; height=&quot;313&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;p&gt;&lt;a href=&quot;https://vimeo.com/121724646&quot;&gt;Demo of GLaPEP8 v0.1&lt;/a&gt; from &lt;a href=&quot;https://vimeo.com/adamobeng&quot;&gt;Adam Obeng&lt;/a&gt; on &lt;a href=&quot;https://vimeo.com&quot;&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;These are the &lt;a href=&quot;http://challengepost.com/software/glapep8&quot;&gt;ChallengePost link&lt;/a&gt; and &lt;a href=&quot;https://github.com/adamobeng/glapep8&quot;&gt;GitHub repo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;These are the &lt;a href=&quot;http://challengepost.com/software/glapep8&quot;&gt;ChallengePost link&lt;/a&gt; and &lt;a href=&quot;https://github.com/adamobeng/glapep&quot;&gt;GitHub repo&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;GLaPEP8 checks a file’s Python syntax and sings the error to you in the style of &lt;a href=&quot;https://www.youtube.com/watch?v=Y6ljFaKRTrI&quot;&gt;GLaDOS singing &lt;em&gt;Still Alive&lt;/em&gt; in the closing credits of Portal&lt;/a&gt;.&lt;sup id=&quot;fnref:spoiler&quot;&gt;&lt;a href=&quot;#fn:spoiler&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; I started building this because I wanted to play around with OS X&lt;sup id=&quot;fnref:os&quot;&gt;&lt;a href=&quot;#fn:os&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;’s speech synthesis. I’d guess a fair proportion of Mac users know that you can use the command ‘say’ thus:&lt;/p&gt;
 

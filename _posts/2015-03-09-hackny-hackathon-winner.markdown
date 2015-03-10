@@ -17,7 +17,7 @@ GLaPEP8 is best explained with a demo video:
 <iframe src="https://player.vimeo.com/video/121724646" width="500" height="313" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/121724646">Demo of GLaPEP8 v0.1</a> from <a href="https://vimeo.com/adamobeng">Adam Obeng</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 
-These are the [ChallengePost link](http://challengepost.com/software/glapep8) and [GitHub repo](https://github.com/adamobeng/glapep8).
+These are the [ChallengePost link](http://challengepost.com/software/glapep8) and [GitHub repo](https://github.com/adamobeng/glapep).
 
 GLaPEP8 checks a file's Python syntax and sings the error to you in the style of [GLaDOS singing *Still Alive* in the closing credits of Portal](https://www.youtube.com/watch?v=Y6ljFaKRTrI).[^spoiler] I started building this because I wanted to play around with OS X[^os]'s speech synthesis. I'd guess a fair proportion of Mac users know that you can use the command 'say' thus:
 
