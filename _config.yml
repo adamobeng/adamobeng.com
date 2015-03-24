@@ -3,14 +3,13 @@
 source: .
 destination: ./_site
 
-pygments: true
+markdown: redcarpet
+
+highlighter: pygments
 
 base_url: http://adamobeng.com
-description: "A blog"
-root_desc: "AdamObeng.com"
+description: "Adam Obeng's Website"
+root_desc: "adamobeng.com"
 
 exclude: ['config.rb', 'references', 'convert', 'sass', '_drafts']
 permalink: ":title"
-
-auto: true
-server: true
