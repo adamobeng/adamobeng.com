@@ -80,7 +80,7 @@
 				<article>
 	<header>
 	<h1>The DBO model in HTML5 Canvas and Javascript</h1>
-	<time datetime="2011-05-22 00:00:00 -0400" pubdate> 22 May 2011 </time>
+	<time datetime="2011-05-22 00:00:00 -0700" pubdate> 22 May 2011 </time>
 
 		| 
 
@@ -97,23 +97,23 @@
 	</header>
 
 
-	<p>I’ve had a little bit of <a href="../analytical-sociology-thesis/">experience</a> with <a href="http://en.wikipedia.org/wiki/Agent-based_model">agent-based modelling</a>, and so far, I’ve stumbled across some interesting results. But statistical summaries of models are one thing, while actually having a feel for how a model works is another. These models are inherently dynamic, so there will necessarily be something lost from static pictures of the model, even from graphs of statistics over time. Moreover, ABMs are part of a very quantitative branch of sociology, so it might even be refreshing to reintroduce a little bit of qualitative information (and who doesn’t like <a href="http://en.wikipedia.org/wiki/Blinkenlights">blinkenlights</a>?).</p>
+	<p>I&#39;ve had a little bit of <a href="../analytical-sociology-thesis/">experience</a> with <a href="http://en.wikipedia.org/wiki/Agent-based_model">agent-based modelling</a>, and so far, I&#39;ve stumbled across some interesting results. But statistical summaries of models are one thing, while actually having a feel for how a model works is another. These models are inherently dynamic, so there will necessarily be something lost from static pictures of the model, even from graphs of statistics over time. Moreover, ABMs are part of a very quantitative branch of sociology, so it might even be refreshing to reintroduce a little bit of qualitative information (and who doesn&#39;t like <a href="http://en.wikipedia.org/wiki/Blinkenlights">blinkenlights</a>?).</p>
 
-<p>For example, here’s one of the graphs I used in my thesis:</p>
+<p>For example, here&#39;s one of the graphs I used in my thesis:</p>
 
-<p><img src="/DBO_example_graph.png" alt="A graph showing the relation between the initial proportion of desires and beliefs and the eventual proportion of desires and beliefs in a basic version of the DBO model" /></p>
+<p><img src="/DBO_example_graph.png" alt="A graph showing the relation between the initial proportion of desires and beliefs and the eventual proportion of desires and beliefs in a basic version of the DBO model"></p>
 
-<p>Now that’s a good summary of what’s going on in the model, don’t get me wrong. You can see a nice relationship between the parameters. Obviously, graphs like these are essential for summarising information, and you couldn’t infer this from interacting with the simulation directly. Indeed, in some cases, interacting with the simulation will not even be possible (like when there are too many agents to display comfortably).</p>
+<p>Now that&#39;s a good summary of what&#39;s going on in the model, don&#39;t get me wrong. You can see a nice relationship between the parameters. Obviously, graphs like these are essential for summarising information, and you couldn&#39;t infer this from interacting with the simulation directly. Indeed, in some cases, interacting with the simulation will not even be possible (like when there are too many agents to display comfortably).</p>
 
-<p>In addition, you couldn’t really have a dynamic, interactive presentation of the model on paper (or even in a PDF). But on the web at least, with a little bit of HTML5 (in particular the <a href="https://developer.mozilla.org/en/Canvas_tutorial">Canvas</a> element) you can produce this:</p>
+<p>In addition, you couldn&#39;t really have a dynamic, interactive presentation of the model on paper (or even in a PDF). But on the web at least, with a little bit of HTML5 (in particular the <a href="https://developer.mozilla.org/en/Canvas_tutorial">Canvas</a> element) you can produce this:</p>
 
 <script type="text/javascript" src="../dbo-minified.js"></script>
 
 <canvas id="canvas" width="400" height="400" style="margin: 2em;"></canvas>
 
-<p>Click the nodes to change their DBO state; <font color="#0000FF">blue</font> nodes have desire, <font color="#FF0000">red</font> nodes have belief and <font color="#FF00FF">purple</font> nodes have both. The ‘step’ button advances the simulation by one step, and the ‘reset’ button randomly assigns DBO states to all of the nodes.</p>
+<p>Click the nodes to change their DBO state; <font color="#0000FF">blue</font> nodes have desire, <font color="#FF0000">red</font> nodes have belief and <font color="#FF00FF">purple</font> nodes have both. The &#39;step&#39; button advances the simulation by one step, and the &#39;reset&#39; button randomly assigns DBO states to all of the nodes.</p>
 
-<p>As you may notice this is a simulation of the DBO model with a fixed set of parameters (in particular, opportunity is being ignored). As such, the behaviour exhibited is pretty limited. This is also for the time being <em>very</em> alpha-quality code. Still, it shouldn’t take too long to get a worthwhile implementation of the DBO model and its variants up and running.</p>
+<p>As you may notice this is a simulation of the DBO model with a fixed set of parameters (in particular, opportunity is being ignored). As such, the behaviour exhibited is pretty limited. This is also for the time being <em>very</em> alpha-quality code. Still, it shouldn&#39;t take too long to get a worthwhile implementation of the DBO model and its variants up and running. </p>
 
 <p>Who knows, I might even expand it to cover some other sociologically-interesting ABMs. <a href="https://secure.wikimedia.org/wikipedia/en/wiki/Sugarscape">Sugarscape</a> in Javascript, anyone?</p>
 
