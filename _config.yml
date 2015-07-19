@@ -4,6 +4,8 @@ source: .
 destination: ./_site
 
 markdown: redcarpet
+redcarpet:
+    extensions: ["footnotes"]
 
 highlighter: pygments
 

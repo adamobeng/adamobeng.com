@@ -4,7 +4,7 @@
  <title>Adam Obeng</title>
  <link href="http://adamobeng.com/atom.xml" rel="self"/>
  <link href="http://adamobeng.com/"/>
- <updated>2015-07-18T23:12:53-07:00</updated>
+ <updated>2015-07-18T23:17:00-07:00</updated>
  <id>http://adamobeng.com/</id>
  <author>
    <name>Adam Obeng</name>
@@ -23,7 +23,7 @@
 
 &lt;p&gt;The machine I&amp;#39;m currently sitting at is a mid-2014 Retina MacBook Pro, running OS&amp;nbsp;X Mavericks. Until &lt;a href=&quot;http://www.macrumors.com/2015/03/09/apple-new-macbook-2015/&quot;&gt;a few days ago&lt;/a&gt;, it was the cutting-edge of Apple&amp;#39;s laptop lineup. &lt;/p&gt;
 
-&lt;p&gt;And yet, I&amp;#39;m writing this blog post using Vim --- a 23-year-old UNIX text editor. I&amp;#39;ve got 30 Chrome tabs open, but also 10 terminal windows: 5 with various other Vim sessions relating to my dissertation, a couple compiling those files from TeX (37 years old) into PDF, one running the command-line RSS reader newsbeuter, and one with my mail client, mutt&lt;a href=&quot;20%20years%20old&quot;&gt;^signature&lt;/a&gt;. I also happen to be in the process of editing my &lt;a href=&quot;https://en.wikipedia.org/wiki/Hosts_(file)&quot;&gt;hosts file&lt;/a&gt; to block my machine from accessing undesirable websites.&lt;/p&gt;
+&lt;p&gt;And yet, I&amp;#39;m writing this blog post using Vim --- a 23-year-old UNIX text editor. I&amp;#39;ve got 30 Chrome tabs open, but also 10 terminal windows: 5 with various other Vim sessions relating to my dissertation, a couple compiling those files from TeX (37 years old) into PDF, one running the command-line RSS reader newsbeuter, and one with my mail client, mutt&lt;sup id=&quot;fnref1&quot;&gt;&lt;a href=&quot;#fn1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; (20 years old). I also happen to be in the process of editing my &lt;a href=&quot;https://en.wikipedia.org/wiki/Hosts_(file)&quot;&gt;hosts file&lt;/a&gt; to block my machine from accessing undesirable websites.&lt;/p&gt;
 
 &lt;p&gt;So the situation isn&amp;#39;t as dire as Arbesman claims. OS&amp;nbsp;X, Apple&amp;#39;s operating system for the past 13 years, is pretty much unrelated to the previous versions of the &amp;quot;Classic&amp;quot; Mac OS (including the System 7 that Neal Stephenson was complaining about). In fact, OS&amp;nbsp;X &lt;a href=&quot;http://www.opengroup.org/openbrand/register/brand3602.htm&quot;&gt;is a certified UNIX&lt;/a&gt;. It&amp;#39;s not open enough to satisfy some philosophies, but it absolutely permits exploration. I install software on this machine via Homebrew and GitHub; I don&amp;#39;t type in all of the source code by hand, but it&amp;#39;s there if I want to read it (or modify it). I&amp;#39;ve made countless little changes to this machine: to make the VPN connection icon more clear, to control the system volume remotely, to display the value of a mutual fund in my shell prompt. I regularly use five different computers (three OS&amp;nbsp;X, two GNU/Linux) and they play nicely together --- by means of SSH, rsync and Duplicity. &lt;/p&gt;
 
@@ -33,7 +33,7 @@
 
 &lt;p&gt;I think I can trace back my interest in computers to a single event, a few years later than when Arbesman was typing code into his VIC-20. On my 10th birthday, I was given a copy of the Lucas Arts game &lt;em&gt;Jedi Knight: Dark Forces II&lt;/em&gt;. My parents generally let me have the run of our massive black &lt;a href=&quot;https://en.wikipedia.org/wiki/Granville_Technology_Group&quot;&gt;Time Computers&lt;/a&gt; laptop, but they wouldn&amp;#39;t buy me games. However, they didn&amp;#39;t have the heart to forbid me this one.&lt;/p&gt;
 
-&lt;p&gt;A couple of the game&amp;#39;s design choices turned out to be critical for me. The developers decided to implement a large part of the game&amp;#39;s logic in &lt;a href=&quot;http://www.gamasutra.com/view/feature/3233/adding_languages_to_game_engines.php&quot;&gt;a simple language called COG&lt;/a&gt;. This, combined with user-accessible files and &lt;a href=&quot;http://starwars.wikia.com/wiki/Star_Wars:_Jedi_Knight:_Dark_Forces_II#Multiplayer&quot;&gt;permissive checksums&lt;/a&gt; lead to the proliferation of modifications to the game known as &lt;a href=&quot;http://www.inside3d.com/jk/cog12.shtml&quot;&gt;&amp;quot;cogs&amp;quot;&lt;/a&gt;. Modders added many features to the game, including jet-packs and grappling hooks. But more importantly, by typing a few specific words into a particular file, I could modify the game &lt;em&gt;myself&lt;/em&gt;. I could make it so that all of the weapons produced Force Lightning rather than their usual projectiles, and use this in network matches against my little brother.[^network]&lt;/p&gt;
+&lt;p&gt;A couple of the game&amp;#39;s design choices turned out to be critical for me. The developers decided to implement a large part of the game&amp;#39;s logic in &lt;a href=&quot;http://www.gamasutra.com/view/feature/3233/adding_languages_to_game_engines.php&quot;&gt;a simple language called COG&lt;/a&gt;. This, combined with user-accessible files and &lt;a href=&quot;http://starwars.wikia.com/wiki/Star_Wars:_Jedi_Knight:_Dark_Forces_II#Multiplayer&quot;&gt;permissive checksums&lt;/a&gt; lead to the proliferation of modifications to the game known as &lt;a href=&quot;http://www.inside3d.com/jk/cog12.shtml&quot;&gt;&amp;quot;cogs&amp;quot;&lt;/a&gt;. Modders added many features to the game, including jet-packs and grappling hooks. But more importantly, by typing a few specific words into a particular file, I could modify the game &lt;em&gt;myself&lt;/em&gt;. I could make it so that all of the weapons produced Force Lightning rather than their usual projectiles, and use this in network matches against my little brother.&lt;sup id=&quot;fnref2&quot;&gt;&lt;a href=&quot;#fn2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;p&gt;It&amp;#39;s true that walled-garden operating systems are a threat to this kind of computing, just as undocumented extensions to the OBD-II protocol make it more difficult to get under your car&amp;#39;s hood. If a device doesn&amp;#39;t have an SSH client, I&amp;#39;ll struggle to find a use for it. But despite the proliferation of shiny user interfaces, it&amp;#39;s not quite yet the time to lament the death of hackability.&lt;/p&gt;
 
@@ -51,19 +51,40 @@
 
 &lt;p&gt;Not only are there still hackable devices, but it&amp;#39;s not really the case that hackability and ease-of-use are opposed to each other.  Achieving &amp;#39;easy&amp;#39; computing is hard, and it has more to do with the comprehensibility of the abstractions than their comprehensiveness. I&amp;#39;d &lt;a href=&quot;https://xkcd.com/378/&quot;&gt;much rather use vim than ed&lt;/a&gt;, or Python than C. They&amp;#39;re more powerful &lt;a href=&quot;http://www.paulgraham.com/avg.html&quot;&gt;&lt;em&gt;because&lt;/em&gt; they&amp;#39;re more abstract&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;It&amp;#39;s not just polished and shiny high-level interfaces that can seem like magic. Talking to Siri[^speech] might make you feel like a wizard, but then again, so might typing the incantation:&lt;/p&gt;
+&lt;p&gt;It&amp;#39;s not just polished and shiny high-level interfaces that can seem like magic. Talking to Siri&lt;sup id=&quot;fnref3&quot;&gt;&lt;a href=&quot;#fn3&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; might make you feel like a wizard, but then again, so might typing the incantation:&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;tar -czv * -f pics.tar.gz&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;The difference is, indeed, the degree to which the interface relies on the conventions of computational thinking, rather than the more commonsense interactional conventions of everyday life. Because intuitive interfaces are so difficult to implement (in part because everyday interactional conventions are difficult to think about[^Suchman]), being able to think like a software engineer still allows users greater access to the underlying machine.&lt;/p&gt;
+&lt;p&gt;The difference is, indeed, the degree to which the interface relies on the conventions of computational thinking, rather than the more commonsense interactional conventions of everyday life. Because intuitive interfaces are so difficult to implement (in part because everyday interactional conventions are difficult to think about&lt;sup id=&quot;fnref4&quot;&gt;&lt;a href=&quot;#fn4&quot; rel=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;), being able to think like a software engineer still allows users greater access to the underlying machine.&lt;/p&gt;
 
-&lt;p&gt;Finally, I feel compelled as a sociologist to conclude on Arbesman&amp;#39;s point that looking inside machines allows us to see what role they play in society. I agree that this is an important project, but it&amp;#39;s not restricted to machines whose functioning is transparent. Indeed, it&amp;#39;s at least as important to understand how machines can close off options, restrict behaviour, and instantiate power dynamics.[^ANT] As Akrich points out, a photo-voltaic panel designed to work robustly in harsh environments can also prevent users from fixing the battery, connecting their own devices, and reinforce the control of the power company over the people actually using the electricity. We should not just consider the components that make up a machine (although see the tensions between FLOSS and proprietary/commercial software illustrated above) but the affordances that a technology permits: who is it built by and for, what assumptions is makes about the capabilities and goals of the user, and ultimately how fits into broader social life.&lt;/p&gt;
+&lt;p&gt;Finally, I feel compelled as a sociologist to conclude on Arbesman&amp;#39;s point that looking inside machines allows us to see what role they play in society. I agree that this is an important project, but it&amp;#39;s not restricted to machines whose functioning is transparent. Indeed, it&amp;#39;s at least as important to understand how machines can close off options, restrict behaviour, and instantiate power dynamics.&lt;sup id=&quot;fnref5&quot;&gt;&lt;a href=&quot;#fn5&quot; rel=&quot;footnote&quot;&gt;5&lt;/a&gt;&lt;/sup&gt; As Akrich points out, a photo-voltaic panel designed to work robustly in harsh environments can also prevent users from fixing the battery, connecting their own devices, and reinforce the control of the power company over the people actually using the electricity. We should not just consider the components that make up a machine (although see the tensions between FLOSS and proprietary/commercial software illustrated above) but the affordances that a technology permits: who is it built by and for, what assumptions is makes about the capabilities and goals of the user, and ultimately how fits into broader social life.&lt;/p&gt;
 
-&lt;p&gt;[^signature]: Yes, my email signature does say &amp;#39;Sent from my command-line&amp;#39;.
-[^network]: Over RS-232, natch.
-[^ANT]: See &lt;a href=&quot;http://www.bruno-latour.fr/sites/default/files/50-MISSING-MASSES-GB.pdf&quot;&gt;Latour, Bruno. &amp;quot;Where are the missing masses? The sociology of a few mundane artifacts.&amp;quot;&lt;/a&gt; and &lt;a href=&quot;https://halshs.archives-ouvertes.fr/halshs-00005830/&quot;&gt;Akrich, Madeleine. &amp;quot;Comment décrire les objets techniques?.&amp;quot;&lt;/a&gt;
-[^speech]: OS&amp;nbsp;X&amp;#39;s speech synthesis engine does turn out to be &lt;a href=&quot;/hackny-hackathon-winner&quot;&gt;quite configurable&lt;/a&gt;.
-[^Suchman]: See &lt;a href=&quot;https://books.google.com/books?id=AJ_eBJtHxmsC&amp;amp;lpg=PR7&amp;amp;ots=KqIqnJHJGO&amp;amp;dq=plans%20and%20situated%20action&amp;amp;lr&amp;amp;pg=PR7#v=onepage&amp;amp;q=plans%20and%20situated%20action&amp;amp;f=false&quot;&gt;Suchman, Lucy A. Plans and situated actions: the problem of human-machine communication&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+
+&lt;li id=&quot;fn1&quot;&gt;
+&lt;p&gt;Yes, my email signature does say &amp;#39;Sent from my command-line&amp;#39;.&amp;nbsp;&lt;a href=&quot;#fnref1&quot; rev=&quot;footnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li id=&quot;fn2&quot;&gt;
+&lt;p&gt;Over RS-232, natch.&amp;nbsp;&lt;a href=&quot;#fnref2&quot; rev=&quot;footnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li id=&quot;fn3&quot;&gt;
+&lt;p&gt;OS&amp;nbsp;X&amp;#39;s speech synthesis engine does turn out to be &lt;a href=&quot;/hackny-hackathon-winner&quot;&gt;quite configurable&lt;/a&gt;.&amp;nbsp;&lt;a href=&quot;#fnref3&quot; rev=&quot;footnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li id=&quot;fn4&quot;&gt;
+&lt;p&gt;See &lt;a href=&quot;https://books.google.com/books?id=AJ_eBJtHxmsC&amp;amp;lpg=PR7&amp;amp;ots=KqIqnJHJGO&amp;amp;dq=plans%20and%20situated%20action&amp;amp;lr&amp;amp;pg=PR7#v=onepage&amp;amp;q=plans%20and%20situated%20action&amp;amp;f=false&quot;&gt;Suchman, Lucy A. Plans and situated actions: the problem of human-machine communication&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref4&quot; rev=&quot;footnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li id=&quot;fn5&quot;&gt;
+&lt;p&gt;See &lt;a href=&quot;http://www.bruno-latour.fr/sites/default/files/50-MISSING-MASSES-GB.pdf&quot;&gt;Latour, Bruno. &amp;quot;Where are the missing masses? The sociology of a few mundane artifacts.&amp;quot;&lt;/a&gt; and &lt;a href=&quot;https://halshs.archives-ouvertes.fr/halshs-00005830/&quot;&gt;Akrich, Madeleine. &amp;quot;Comment décrire les objets techniques?.&amp;quot;&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref5&quot; rev=&quot;footnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;/ol&gt;
+&lt;/div&gt;
 </content>
  </entry>
  
@@ -86,7 +107,7 @@
 
 &lt;p&gt;These are the &lt;a href=&quot;http://challengepost.com/software/glapep8&quot;&gt;ChallengePost link&lt;/a&gt; and &lt;a href=&quot;https://github.com/adamobeng/glapep&quot;&gt;GitHub repo&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;GLaPEP8 checks a file&amp;#39;s Python syntax and sings the error to you in the style of &lt;a href=&quot;https://www.youtube.com/watch?v=Y6ljFaKRTrI&quot;&gt;GLaDOS singing &lt;em&gt;Still Alive&lt;/em&gt; in the closing credits of Portal&lt;/a&gt;.[^spoiler] I started building this because I wanted to play around with OS X[^os]&amp;#39;s speech synthesis. I&amp;#39;d guess a fair proportion of Mac users know that you can use the command &amp;#39;say&amp;#39; thus:&lt;/p&gt;
+&lt;p&gt;GLaPEP8 checks a file&amp;#39;s Python syntax and sings the error to you in the style of &lt;a href=&quot;https://www.youtube.com/watch?v=Y6ljFaKRTrI&quot;&gt;GLaDOS singing &lt;em&gt;Still Alive&lt;/em&gt; in the closing credits of Portal&lt;/a&gt;.&lt;sup id=&quot;fnref1&quot;&gt;&lt;a href=&quot;#fn1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; I started building this because I wanted to play around with OS X&lt;sup id=&quot;fnref2&quot;&gt;&lt;a href=&quot;#fn2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&amp;#39;s speech synthesis. I&amp;#39;d guess a fair proportion of Mac users know that you can use the command &amp;#39;say&amp;#39; thus:&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;say &lt;span class=&quot;s2&quot;&gt;&amp;quot;Arbitrary text&amp;quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
@@ -140,8 +161,20 @@ m &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;D 60&lt;span class=&quot;p&quot;
 
 &lt;p&gt;I think I&amp;#39;m going to spin off the text-to-song part of GLaPEP8 into its own project, because I can see myself re-using that (notably for livecoding). I also remain interested in error messages -- to the extent that my PhD dissertation is going to spend quite some time on them, albeit in a slightly more academic context.&lt;/p&gt;
 
-&lt;p&gt;[^os]: Sorry other-OS folks, this one only runs on OS X.
-[^spoiler]: Spoiler warning, I guess, for anyone who hasn&amp;#39;t played Portal in the 8 years since it was released.&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+
+&lt;li id=&quot;fn1&quot;&gt;
+&lt;p&gt;Spoiler warning, I guess, for anyone who hasn&amp;#39;t played Portal in the 8 years since it was released.&amp;nbsp;&lt;a href=&quot;#fnref1&quot; rev=&quot;footnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li id=&quot;fn2&quot;&gt;
+&lt;p&gt;Sorry other-OS folks, this one only runs on OS X.&amp;nbsp;&lt;a href=&quot;#fnref2&quot; rev=&quot;footnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;/ol&gt;
+&lt;/div&gt;
 </content>
  </entry>
  
@@ -168,7 +201,7 @@ m &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;D 60&lt;span class=&quot;p&quot;
 
 &lt;p&gt;&lt;img src=&quot;/download/chirp-screenshot.png&quot; alt=&quot;Screenshot of (chirp)&quot;&gt;&lt;/p&gt;
 
-&lt;p&gt;&amp;#x1f424;&amp;#x1f3b6; is a tool to reduce the length of potential tweets. It uses &lt;a href=&quot;http://wordnet.princeton.edu/&quot;&gt;WordNet&lt;/a&gt; inside Python&amp;#39;s &lt;a href=&quot;http://www.nltk.org/&quot;&gt;NLTK&lt;/a&gt; to find synonyms for each word in the provided text. For extra concision, it also suggests emoji which might replace some words, and offers to replace stopwords with the NUL character. You might think of this as similar to the lossy pscyhoacoustic compression used in MP3s, in that it retains the human-interpreted meaning while reducing the amount of data the machine needs to store. In reality, &lt;a href=&quot;https://en.wikipedia.org/wiki/Semantic_compression&quot;&gt;semantic compression&lt;/a&gt; is a thing in NLP, but the approach used here is as-simple-as-possible, and aims not to reduce the total number of words needed to represent a corpus, but the total number of characters to represent a single text.[^codepoint] I&amp;#39;ve got a few ideas up my sleeve about how to improve it, though.&lt;/p&gt;
+&lt;p&gt;&amp;#x1f424;&amp;#x1f3b6; is a tool to reduce the length of potential tweets. It uses &lt;a href=&quot;http://wordnet.princeton.edu/&quot;&gt;WordNet&lt;/a&gt; inside Python&amp;#39;s &lt;a href=&quot;http://www.nltk.org/&quot;&gt;NLTK&lt;/a&gt; to find synonyms for each word in the provided text. For extra concision, it also suggests emoji which might replace some words, and offers to replace stopwords with the NUL character. You might think of this as similar to the lossy pscyhoacoustic compression used in MP3s, in that it retains the human-interpreted meaning while reducing the amount of data the machine needs to store. In reality, &lt;a href=&quot;https://en.wikipedia.org/wiki/Semantic_compression&quot;&gt;semantic compression&lt;/a&gt; is a thing in NLP, but the approach used here is as-simple-as-possible, and aims not to reduce the total number of words needed to represent a corpus, but the total number of characters to represent a single text.&lt;sup id=&quot;fnref1&quot;&gt;&lt;a href=&quot;#fn1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; I&amp;#39;ve got a few ideas up my sleeve about how to improve it, though.&lt;/p&gt;
 
 &lt;p&gt;The process of developing this was surprisingly smooth. I&amp;#39;ve used NLTK quite a bit in the past, the most difficult part was understanding WordNet&amp;#39;s jargon (e.g. what exactly lemmas are). I wanted to add a bunch of configuration options, for example to only replace with more-specific or less-specific terms (hyponyms or hypernyms). That didn&amp;#39;t make it into v0.1, but there are two options on the page: one to only suggest emojis, and &lt;em&gt;depth&lt;/em&gt; which controls how many levels of synonym-of-synonym to suggest. The backend uses flask, a library I&amp;#39;ve built so many projects with I can pretty much use it blindfolded.&lt;/p&gt;
 
@@ -176,7 +209,7 @@ m &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;D 60&lt;span class=&quot;p&quot;
 
 &lt;p&gt;It took me quite a while to settle on how to display the suggested changes. I thought about just having a basic form which returns the edited text, maybe displayed side-by-side with the original. In the end, I decided that inline suggestions would be cooler, so I searched for a Javascript spelling correction library that would display the suggestions and UI while letting me handle the backend. This wasn&amp;#39;t so easy. Many plugins require you to have a static dictionary, which was no good for me, both for quick-iteration reasons and because there would need to be one dictionary for each combination of configuration options. All the other plugins I found used pre-existing spellcheck backends &amp;mdash; this isn&amp;#39;t so surprising, because who wants to build their own spellchecking engine (except perhaps &lt;a href=&quot;http://norvig.com/spell-correct.html&quot;&gt;Peter Norvig&lt;/a&gt;). Worse than that, almost all of them supported the not-quite-public now-deprecated Google Spellchecker API. &lt;/p&gt;
 
-&lt;p&gt;That said, I did end up using &lt;a href=&quot;https://github.com/brandonaaron/jquery-spellcheck&quot;&gt;jquery-spellcheck by brandonaaron&lt;/a&gt;, which does call the Google API. It was straightforward to make it use my backend, because the library uses a proxy script, which I just replaced with my own. Working out what to &lt;em&gt;serve&lt;/em&gt; from the backend was less easy, however. As it turns out, defunct-and-never-quite-official APIs don&amp;#39;t have great documentation. I used the example return value in the documentation from &lt;a href=&quot;https://code.google.com/p/google-api-spelling-java/&quot;&gt;this Java library&lt;/a&gt; to reverse-engineer the XML return format. For future reference, it looks[^api] like this:&lt;/p&gt;
+&lt;p&gt;That said, I did end up using &lt;a href=&quot;https://github.com/brandonaaron/jquery-spellcheck&quot;&gt;jquery-spellcheck by brandonaaron&lt;/a&gt;, which does call the Google API. It was straightforward to make it use my backend, because the library uses a proxy script, which I just replaced with my own. Working out what to &lt;em&gt;serve&lt;/em&gt; from the backend was less easy, however. As it turns out, defunct-and-never-quite-official APIs don&amp;#39;t have great documentation. I used the example return value in the documentation from &lt;a href=&quot;https://code.google.com/p/google-api-spelling-java/&quot;&gt;this Java library&lt;/a&gt; to reverse-engineer the XML return format. For future reference, it looks&lt;sup id=&quot;fnref2&quot;&gt;&lt;a href=&quot;#fn2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; like this:&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;&lt;/span&gt;
  &lt;span class=&quot;nt&quot;&gt;&amp;lt;spellresult&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;error=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;0&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;clipped=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;0&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;charschecked=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;0&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
@@ -198,15 +231,30 @@ m &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;D 60&lt;span class=&quot;p&quot;
 &lt;p&gt;I made minor modifications to jquery-spellcheck so that it sends additional URL-parameters on its AJAX call for the depth of synonyms and emoji-only mode.&lt;/p&gt;
 
 &lt;p&gt;On another note, I demoed this in Chrome Canary, because the stable version doesn&amp;#39;t have emoji support yet... As a side effect of this project, I found to my surprise both in how many places you can use emoji (like some TLDs, although finding a registrar is another question), but also in how many places they &lt;em&gt;don&amp;#39;t&lt;/em&gt; work.
-I&amp;#39;m going to continue working on the synonym engine part of this because the frontend is pretty much done (and because for my own use I&amp;#39;d prefer a CLI). One interesting option is that &amp;mdash; given that WordNet doesn&amp;#39;t just give you synonyms but tells you &lt;em&gt;how&lt;/em&gt; words are related &amp;mdash; I could replace words with more general (or perhaps more common) ones. This would be more similar to what semantic compression does. It would be cool to see whether replacing words with hypernyms results in something similar to the &lt;a href=&quot;https://en.wikipedia.org/wiki/Wikipedia:Getting_to_Philosophy&quot;&gt;Getting to Philosophy&lt;/a&gt; effect on Wikipedia, where successively clicking the first link on an article will eventually lead you up the hierarchy of more-and-more general topics towards philosophy.[^philosophy] Stay tuned &lt;a href=&quot;https://github.com/adamobeng/chirp&quot;&gt;via GitHub&lt;/a&gt;.&lt;/p&gt;
+I&amp;#39;m going to continue working on the synonym engine part of this because the frontend is pretty much done (and because for my own use I&amp;#39;d prefer a CLI). One interesting option is that &amp;mdash; given that WordNet doesn&amp;#39;t just give you synonyms but tells you &lt;em&gt;how&lt;/em&gt; words are related &amp;mdash; I could replace words with more general (or perhaps more common) ones. This would be more similar to what semantic compression does. It would be cool to see whether replacing words with hypernyms results in something similar to the &lt;a href=&quot;https://en.wikipedia.org/wiki/Wikipedia:Getting_to_Philosophy&quot;&gt;Getting to Philosophy&lt;/a&gt; effect on Wikipedia, where successively clicking the first link on an article will eventually lead you up the hierarchy of more-and-more general topics towards philosophy.&lt;sup id=&quot;fnref3&quot;&gt;&lt;a href=&quot;#fn3&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; Stay tuned &lt;a href=&quot;https://github.com/adamobeng/chirp&quot;&gt;via GitHub&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Also, thanks to &lt;a href=&quot;https://github.com/jzf2101&quot;&gt;JZ Forde&lt;/a&gt; for providing initial feedback and encouragement. &lt;/p&gt;
 
 &lt;p&gt;Next up: the winner, &lt;a href=&quot;/hackny-hackathon-winner/#glapep8&quot;&gt;GLaPEP8&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;[^api]: Of course, this specification might only apply to the API as implemented in jquery-spellchecker...
-[^codepoint]: Actually, because we&amp;#39;re targeting Twitter, the aim is to minimise the &lt;a href=&quot;https://dev.twitter.com/overview/api/counting-characters&quot;&gt;number of codepoints in NFC-normalised format&lt;/a&gt; (hence why emoji are useful to this goal).
-[^philosophy]: By the way, &lt;a href=&quot;https://www.youtube.com/watch?v=tXCV_z_M0RA&amp;amp;t=518&quot;&gt;I called it&lt;/a&gt; back in 2010.&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+
+&lt;li id=&quot;fn1&quot;&gt;
+&lt;p&gt;Actually, because we&amp;#39;re targeting Twitter, the aim is to minimise the &lt;a href=&quot;https://dev.twitter.com/overview/api/counting-characters&quot;&gt;number of codepoints in NFC-normalised format&lt;/a&gt; (hence why emoji are useful to this goal).&amp;nbsp;&lt;a href=&quot;#fnref1&quot; rev=&quot;footnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li id=&quot;fn2&quot;&gt;
+&lt;p&gt;Of course, this specification might only apply to the API as implemented in jquery-spellchecker...&amp;nbsp;&lt;a href=&quot;#fnref2&quot; rev=&quot;footnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li id=&quot;fn3&quot;&gt;
+&lt;p&gt;By the way, &lt;a href=&quot;https://www.youtube.com/watch?v=tXCV_z_M0RA&amp;amp;t=518&quot;&gt;I called it&lt;/a&gt; back in 2010.&amp;nbsp;&lt;a href=&quot;#fnref3&quot; rev=&quot;footnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;/ol&gt;
+&lt;/div&gt;
 </content>
  </entry>
  
@@ -217,11 +265,11 @@ I&amp;#39;m going to continue working on the synonym engine part of this because
    <id>http://adamobeng.com/childs-play</id>
    <content type="html">&lt;p&gt;Isn&amp;#39;t it the most cliched thing to not update a blog for a while, and then apologise for doing so? Well I&amp;#39;m an iconoclast, so that&amp;#39;s not happening.&lt;/p&gt;
 
-&lt;p&gt;A little while ago, Rachel Schutt and Andrew Gelman both noticed an advertising poster for Speck,[^1] which used a pseudo-Venn diagram to convey a very confusing message. It looks like National Highway Traffic Safety Administration had a similar idea:&lt;/p&gt;
+&lt;p&gt;A little while ago, Rachel Schutt and Andrew Gelman both noticed an advertising poster for Speck,&lt;sup id=&quot;fnref1&quot;&gt;&lt;a href=&quot;#fn1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; which used a pseudo-Venn diagram to convey a very confusing message. It looks like National Highway Traffic Safety Administration had a similar idea:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/car_seat_poster.jpg&quot; alt=&quot;An NHSTA Child Car Safety advertising poster, showing a Towers of Hanoi-like child&amp;#39;s toy, annotated with statistical description&quot;&gt;&lt;/p&gt;
 
-&lt;p&gt;The message of the campaign is important, it goes without saying. And given that I&amp;#39;m talking about it,[^2] the campaign is probably being effective in communicating what it intends to: way too few kids are in the correct car seat.&lt;/p&gt;
+&lt;p&gt;The message of the campaign is important, it goes without saying. And given that I&amp;#39;m talking about it,&lt;sup id=&quot;fnref2&quot;&gt;&lt;a href=&quot;#fn2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; the campaign is probably being effective in communicating what it intends to: way too few kids are in the correct car seat.&lt;/p&gt;
 
 &lt;p&gt;However, there are some obvious problems with it &lt;em&gt;as a piece of data visualisation&lt;/em&gt;. The poster I saw is part of a &lt;a href=&quot;http://www.safercar.gov/parents/TRS/toolkit.htm&quot;&gt;set of five&lt;/a&gt;, each with the same message, but with a different child-related item used to display the statistic:&lt;/p&gt;
 
@@ -235,7 +283,7 @@ I&amp;#39;m going to continue working on the synonym engine part of this because
 
 &lt;p&gt;&lt;a href=&quot;http://icsw.nhtsa.gov/safercar/parents/TRS/popsicle.pdf&quot; style=&quot;display:inline-block&quot;&gt;&lt;img alt=&quot;NHTSA car seat popsicle poster&quot; src=&quot;/images/nhtsa_popsicle.png&quot; style=&quot;width:100px; padding:10px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;So what is the number of incorrectly-attached kids? According to the &lt;a href=&quot;http://www.safercar.gov/parents/TRS/8651b_CPSFactSheet_04-04-12_v1-tag.pdf&quot;&gt;Fact sheet&lt;/a&gt;, &amp;quot;3 out of 4 kids are not as secure in the car as they should be because their car seats are not being used correctly.&amp;quot; Unfortunately, no source is listed for that claim, so let&amp;#39;s say that the number is 75%.[^3] How well do these posters convey that number? This table shows the proportion secure as displayed in each poster:&lt;/p&gt;
+&lt;p&gt;So what is the number of incorrectly-attached kids? According to the &lt;a href=&quot;http://www.safercar.gov/parents/TRS/8651b_CPSFactSheet_04-04-12_v1-tag.pdf&quot;&gt;Fact sheet&lt;/a&gt;, &amp;quot;3 out of 4 kids are not as secure in the car as they should be because their car seats are not being used correctly.&amp;quot; Unfortunately, no source is listed for that claim, so let&amp;#39;s say that the number is 75%.&lt;sup id=&quot;fnref3&quot;&gt;&lt;a href=&quot;#fn3&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; How well do these posters convey that number? This table shows the proportion secure as displayed in each poster:&lt;/p&gt;
 
 &lt;table&gt;
     &lt;tr&gt;
@@ -264,9 +312,24 @@ I&amp;#39;m going to continue working on the synonym engine part of this because
 
 &lt;p&gt;The data visualition versus infographic distinction is a contested issue, but somewhere in there is the following question: is it that the numbers are used to convey the message, or instead that they &lt;em&gt;are&lt;/em&gt; the message? Would a more accurate or consistent visualisation be better at conveying the message? Maybe not.&lt;/p&gt;
 
-&lt;p&gt;[^1]: &lt;em&gt;Full disclosure&lt;/em&gt;: I&amp;#39;ve had a Speck case on my MacBook Air since the day I bought it, and it&amp;#39;s brilliant.
-[^2]: I am probably not the target audience, given that I have neither kids nor, indeed, a car.
-[^3]: There is a prior problem which I&amp;#39;m glossing over here. The 75% number is the proportion of all kids who are not properly secured, whereas the claim in the adverts is the proportion of properly secured kids of those people who &lt;em&gt;think&lt;/em&gt; their child is properly secured. There are almost certainly parents who do not think their kids are properly secured when they in fact are, but this is understandably a less pressing problem. However, it could be that all the children who are not properly attached have parents who &lt;em&gt;know&lt;/em&gt; this already, in which case this sort of media intervention is not likely to be effective. I concede that this problem is probably just philosophical and not relevant to this particular case.&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+
+&lt;li id=&quot;fn1&quot;&gt;
+&lt;p&gt;&lt;em&gt;Full disclosure&lt;/em&gt;: I&amp;#39;ve had a Speck case on my MacBook Air since the day I bought it, and it&amp;#39;s brilliant.&amp;nbsp;&lt;a href=&quot;#fnref1&quot; rev=&quot;footnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li id=&quot;fn2&quot;&gt;
+&lt;p&gt;I am probably not the target audience, given that I have neither kids nor, indeed, a car.&amp;nbsp;&lt;a href=&quot;#fnref2&quot; rev=&quot;footnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li id=&quot;fn3&quot;&gt;
+&lt;p&gt;There is a prior problem which I&amp;#39;m glossing over here. The 75% number is the proportion of all kids who are not properly secured, whereas the claim in the adverts is the proportion of properly secured kids of those people who &lt;em&gt;think&lt;/em&gt; their child is properly secured. There are almost certainly parents who do not think their kids are properly secured when they in fact are, but this is understandably a less pressing problem. However, it could be that all the children who are not properly attached have parents who &lt;em&gt;know&lt;/em&gt; this already, in which case this sort of media intervention is not likely to be effective. I concede that this problem is probably just philosophical and not relevant to this particular case.&amp;nbsp;&lt;a href=&quot;#fnref3&quot; rev=&quot;footnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;/ol&gt;
+&lt;/div&gt;
 </content>
  </entry>
  
@@ -275,7 +338,7 @@ I&amp;#39;m going to continue working on the synonym engine part of this because
    <link href="http://adamobeng/truth-and-persuasion"/>
    <updated>2011-09-29T00:00:00-07:00</updated>
    <id>http://adamobeng.com/truth-and-persuasion</id>
-   <content type="html">&lt;p&gt;Han-teng Liao&amp;#39;s &lt;a href=&quot;http://people.oii.ox.ac.uk/hanteng/2011/09/27/ways-of-seeing-data/&quot;&gt;post&lt;/a&gt; got me thinking about[^1] data visualization as a tool for communication.&lt;/p&gt;
+   <content type="html">&lt;p&gt;Han-teng Liao&amp;#39;s &lt;a href=&quot;http://people.oii.ox.ac.uk/hanteng/2011/09/27/ways-of-seeing-data/&quot;&gt;post&lt;/a&gt; got me thinking about&lt;sup id=&quot;fnref1&quot;&gt;&lt;a href=&quot;#fn1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; data visualization as a tool for communication.&lt;/p&gt;
 
 &lt;p&gt;In particular, I thought I should take issue with the quote he gives from &lt;a href=&quot;http://blog.revolutionanalytics.com/2011/09/data-visualization-vs-propaganda.html?cid=6a010534b1db25970b015435abb804970c&quot;&gt;David Smith&lt;/a&gt;:&lt;/p&gt;
 
@@ -295,7 +358,16 @@ I&amp;#39;m going to continue working on the synonym engine part of this because
 
 &lt;p&gt;&lt;em&gt;(This post was edited on 07/10/2011 to properly attribute a quote to David Smith.)&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;[^1]: Is this how I start all my blog posts?&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+
+&lt;li id=&quot;fn1&quot;&gt;
+&lt;p&gt;Is this how I start all my blog posts?&amp;nbsp;&lt;a href=&quot;#fnref1&quot; rev=&quot;footnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;/ol&gt;
+&lt;/div&gt;
 </content>
  </entry>
  
@@ -316,7 +388,7 @@ I&amp;#39;m going to continue working on the synonym engine part of this because
 &lt;p&gt;In fact, I’ll say that even more strongly – &lt;em&gt;if your speech is not confined to the context you are in – but available to a potentially unknowable audience – you are online.&lt;/em&gt; [emphasis in original]&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;You&amp;#39;re online if what you do and say is &amp;quot;available to a potentially unknowable audience&amp;quot;, specifically an audience which you don&amp;#39;t select, and to which you can&amp;#39;t adapt your actions[^1]. &lt;/p&gt;
+&lt;p&gt;You&amp;#39;re online if what you do and say is &amp;quot;available to a potentially unknowable audience&amp;quot;, specifically an audience which you don&amp;#39;t select, and to which you can&amp;#39;t adapt your actions&lt;sup id=&quot;fnref1&quot;&gt;&lt;a href=&quot;#fn1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. &lt;/p&gt;
 
 &lt;p&gt;Most of the time when you&amp;#39;re online it&amp;#39;s because your actions are being recorded electronically:&lt;/p&gt;
 
@@ -330,7 +402,7 @@ I&amp;#39;m going to continue working on the synonym engine part of this because
 
 &lt;p&gt;I think that this definition of being &amp;#39;offline&amp;#39; is a bit strong. If Bernie&amp;#39;s right then you&amp;#39;re always online, unless you&amp;#39;re not talking to anyone at all. &lt;/p&gt;
 
-&lt;p&gt;The fact is, your actions &lt;em&gt;are&lt;/em&gt; being recorded when you&amp;#39;re interacting in the real world: they&amp;#39;re being recorded by the person you&amp;#39;re talking to. And while they&amp;#39;re not being &amp;quot;digitized&amp;quot;, they are being &amp;quot;networked&amp;quot;, passed on through word of mouth, or even encoded at a later time by your interlocutor. And this &lt;em&gt;is&lt;/em&gt; &amp;quot;by default&amp;quot;: unless you make it clear that a conversation is not to be shared[^2], then you can expect it to be shared.&lt;/p&gt;
+&lt;p&gt;The fact is, your actions &lt;em&gt;are&lt;/em&gt; being recorded when you&amp;#39;re interacting in the real world: they&amp;#39;re being recorded by the person you&amp;#39;re talking to. And while they&amp;#39;re not being &amp;quot;digitized&amp;quot;, they are being &amp;quot;networked&amp;quot;, passed on through word of mouth, or even encoded at a later time by your interlocutor. And this &lt;em&gt;is&lt;/em&gt; &amp;quot;by default&amp;quot;: unless you make it clear that a conversation is not to be shared&lt;sup id=&quot;fnref2&quot;&gt;&lt;a href=&quot;#fn2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;, then you can expect it to be shared.&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;I am engaging in a trust relationship with the curator, but I am not free to say what I want. &lt;/p&gt;
@@ -348,7 +420,7 @@ I&amp;#39;m going to continue working on the synonym engine part of this because
 
 &lt;p&gt;Under this definition, it&amp;#39;s clear that a real-world conversation can be either online or offline, because it can be either on- or off- the record.&lt;/p&gt;
 
-&lt;p&gt;But this binary[^3] definition still isn&amp;#39;t sufficient. There is still a difference between the online-ness of the real world and that of social networks. I would say that the real world is inherently more offline, because accessing information about your past actions is difficult. It&amp;#39;s not surprising that a technology designed for information retrieval should make it easy to find things out.&lt;/p&gt;
+&lt;p&gt;But this binary&lt;sup id=&quot;fnref3&quot;&gt;&lt;a href=&quot;#fn3&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; definition still isn&amp;#39;t sufficient. There is still a difference between the online-ness of the real world and that of social networks. I would say that the real world is inherently more offline, because accessing information about your past actions is difficult. It&amp;#39;s not surprising that a technology designed for information retrieval should make it easy to find things out.&lt;/p&gt;
 
 &lt;p&gt;In other words, being online is a question of degree. You are totally offline if there&amp;#39;s no &amp;#39;record&amp;#39;, or if the &amp;#39;record&amp;#39; is impossible to access. &lt;em&gt;The more concrete and available the &amp;#39;record&amp;#39; of your actions, the more online you are.&lt;/em&gt;&lt;/p&gt;
 
@@ -366,9 +438,24 @@ I&amp;#39;m going to continue working on the synonym engine part of this because
 
 &lt;p&gt;Just like in the real world, however, they can&amp;#39;t prove it.&lt;/p&gt;
 
-&lt;p&gt;[^1]: Being able to adapt your actions is important so that your actions are context-sensitive.
-[^2]: Yes, it could be implicit in the conversational context.
-[^3]: No pun intended, etc, etc.&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+
+&lt;li id=&quot;fn1&quot;&gt;
+&lt;p&gt;Being able to adapt your actions is important so that your actions are context-sensitive.&amp;nbsp;&lt;a href=&quot;#fnref1&quot; rev=&quot;footnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li id=&quot;fn2&quot;&gt;
+&lt;p&gt;Yes, it could be implicit in the conversational context.&amp;nbsp;&lt;a href=&quot;#fnref2&quot; rev=&quot;footnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li id=&quot;fn3&quot;&gt;
+&lt;p&gt;No pun intended, etc, etc.&amp;nbsp;&lt;a href=&quot;#fnref3&quot; rev=&quot;footnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;/ol&gt;
+&lt;/div&gt;
 </content>
  </entry>
  
@@ -381,9 +468,9 @@ I&amp;#39;m going to continue working on the synonym engine part of this because
 
 &lt;p&gt;If you&amp;#39;ve been even vaguely following the controversy about &lt;a href=&quot;http://www.google.com/+/demo/&quot;&gt;Google+&lt;/a&gt;, I&amp;#39;ll give you a moment to wipe the coffee off your monitor.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://socialmediacollective.org/2011/08/08/real-name-sites-are-necessarily-inadequate-for-free-speech/&quot;&gt;Bernie Hogan&amp;#39;s post&lt;/a&gt; is the latest &lt;span style=&quot;text-decoration: line-through;&quot;&gt;free publicity for Google+&lt;/span&gt; salvo in the &amp;quot;nymwars&amp;quot;: the blogosphere&amp;#39;s consternation over Google+&amp;#39;s policy of requiring users to use their real names. Now, although I don&amp;#39;t have a horse in this race[^1], I&amp;#39;d like to contribute what I think is really going on. &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://socialmediacollective.org/2011/08/08/real-name-sites-are-necessarily-inadequate-for-free-speech/&quot;&gt;Bernie Hogan&amp;#39;s post&lt;/a&gt; is the latest &lt;span style=&quot;text-decoration: line-through;&quot;&gt;free publicity for Google+&lt;/span&gt; salvo in the &amp;quot;nymwars&amp;quot;: the blogosphere&amp;#39;s consternation over Google+&amp;#39;s policy of requiring users to use their real names. Now, although I don&amp;#39;t have a horse in this race&lt;sup id=&quot;fnref1&quot;&gt;&lt;a href=&quot;#fn1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, I&amp;#39;d like to contribute what I think is really going on. &lt;/p&gt;
 
-&lt;p&gt;According to Bernie, real names in online interaction are sometimes better than pseudonymity. I think this is actually vanishingly rare. Google must realise this, and from the statements they&amp;#39;ve made, it looks like they do.[^2]&lt;/p&gt;
+&lt;p&gt;According to Bernie, real names in online interaction are sometimes better than pseudonymity. I think this is actually vanishingly rare. Google must realise this, and from the statements they&amp;#39;ve made, it looks like they do.&lt;sup id=&quot;fnref2&quot;&gt;&lt;a href=&quot;#fn2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;p&gt;We can only guess at what Google really wants, but if we take them at their word, their goal doesn&amp;#39;t require real names. The real-names policy on Google+ is just a beta feature, an experiment.&lt;/p&gt;
 
@@ -427,25 +514,25 @@ I&amp;#39;m going to continue working on the synonym engine part of this because
 
 &lt;p&gt;So, to answer the question posed above: it looks like real names only &amp;quot;offer many advantages&amp;quot; in the online world when the activity itself benefits from being linked to some offline existence. &lt;em&gt;Real names are a hack: they splice offline mechanisms of trust into the online world&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;When exactly does offline reputation matter? It&amp;#39;s not just that only &amp;quot;some lucky people give talks to large audiences, they get on the radio or tv&amp;quot;[^Hogan]. Only some lucky people are &lt;a href=&quot;http://en.wikipedia.org/wiki/Wikipedia:Notability&quot;&gt;notable&lt;/a&gt; enough for their real names to matter. &lt;/p&gt;
+&lt;p&gt;When exactly does offline reputation matter? It&amp;#39;s not just that only &amp;quot;some lucky people give talks to large audiences, they get on the radio or tv&amp;quot;&lt;sup id=&quot;fnref3&quot;&gt;&lt;a href=&quot;#fn3&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;. Only some lucky people are &lt;a href=&quot;http://en.wikipedia.org/wiki/Wikipedia:Notability&quot;&gt;notable&lt;/a&gt; enough for their real names to matter. &lt;/p&gt;
 
 &lt;h2&gt;Real names don&amp;#39;t matter&lt;/h2&gt;
 
 &lt;p&gt;And it looks like Google has realised this. Robert Scoble reports that &lt;a href=&quot;https://plus.google.com/107117483540235115863/about&quot;&gt;Vic Gundotra&lt;/a&gt; said that the real-names policy was supposed to:&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;make sure a positive tone gets set here [...] mostly to have a nicer, more personal, community,[^Scoble]&lt;/p&gt;
+&lt;p&gt;make sure a positive tone gets set here [...] mostly to have a nicer, more personal, community,&lt;sup id=&quot;fnref4&quot;&gt;&lt;a href=&quot;#fn4&quot; rel=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;It makes sense to require real names if you&amp;#39;re trying to deter trolls. But it&amp;#39;s not necessary to use real names to build a community. In fact,&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;it isn&amp;#39;t about real names [...] it is about having common names and removing people who spell their names in weird ways, like using upside-down characters, or who are using obviously fake names[^Scoble]&lt;/p&gt;
+&lt;p&gt;it isn&amp;#39;t about real names [...] it is about having common names and removing people who spell their names in weird ways, like using upside-down characters, or who are using obviously fake names&lt;sup id=&quot;fnref4&quot;&gt;&lt;a href=&quot;#fn4&quot; rel=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;But if people have &amp;quot;common names&amp;quot;[^3], that they can&amp;#39;t just shed like a skin, then they carry their reputation with them. People will be &amp;quot;nice&amp;quot;, because they don&amp;#39;t want to get a reputation for being nasty. You can argue that point, but if it&amp;#39;s true, it&amp;#39;s a good reason for requiring &amp;quot;common&amp;quot;, or consistent names.&lt;/p&gt;
+&lt;p&gt;But if people have &amp;quot;common names&amp;quot;&lt;sup id=&quot;fnref5&quot;&gt;&lt;a href=&quot;#fn5&quot; rel=&quot;footnote&quot;&gt;5&lt;/a&gt;&lt;/sup&gt;, that they can&amp;#39;t just shed like a skin, then they carry their reputation with them. People will be &amp;quot;nice&amp;quot;, because they don&amp;#39;t want to get a reputation for being nasty. You can argue that point, but if it&amp;#39;s true, it&amp;#39;s a good reason for requiring &amp;quot;common&amp;quot;, or consistent names.&lt;/p&gt;
 
-&lt;p&gt;Of course, this is still speculative, but Google&amp;#39;s aim doesn&amp;#39;t seem to be banning pseudonyms, but rather to enforce their consistency. And that&amp;#39;s not in order to link what people say online to who they really are, but to make sure they&amp;#39;re civil. The statement about weird characters[^4] seems to reinforce this: it&amp;#39;s about image, the way the network appears to the outside world.&lt;/p&gt;
+&lt;p&gt;Of course, this is still speculative, but Google&amp;#39;s aim doesn&amp;#39;t seem to be banning pseudonyms, but rather to enforce their consistency. And that&amp;#39;s not in order to link what people say online to who they really are, but to make sure they&amp;#39;re civil. The statement about weird characters&lt;sup id=&quot;fnref6&quot;&gt;&lt;a href=&quot;#fn6&quot; rel=&quot;footnote&quot;&gt;6&lt;/a&gt;&lt;/sup&gt; seems to reinforce this: it&amp;#39;s about image, the way the network appears to the outside world.&lt;/p&gt;
 
 &lt;p&gt;If that&amp;#39;s true, real names, like non-&amp;quot;weird&amp;quot; names, are being used as a proxy. &lt;/p&gt;
 
@@ -456,14 +543,36 @@ I&amp;#39;m going to continue working on the synonym engine part of this because
 
 &lt;p&gt;&lt;a href=&quot;http://adamobeng.com/what-it-means-to-be-offline&quot;&gt;Next time&lt;/a&gt; I&amp;#39;ll talk about what it really means to be &amp;quot;offline&amp;quot;, and whether we can design a online social network that lets you be offline.&lt;/p&gt;
 
-&lt;p&gt;[^1]: I&amp;#39;m not on Google+ &lt;a href=&quot;http://wellsb.com/post/7022247022/google-plus-for-google-apps-in-the-coming-months&quot;&gt;because I&amp;#39;ve got a Google Apps account...&lt;/a&gt;.
-[^2]: For the purposes of this article I will be assuming that Google is, in fact, not evil.
-[^3]: I assume that &amp;quot;common&amp;quot; is meant in the sense of &amp;#39;consistent&amp;#39;, rather than &amp;#39;usual&amp;#39;. Please correct me if I&amp;#39;m wrong.
-[^4]: In some places, people can legally spell their names &amp;quot;in weird ways&amp;quot;, or have names that are &amp;quot;obviously fake&amp;quot;. 
-[^Scoble]: &lt;a href=&quot;https://plus.google.com/111091089527727420853/posts/Fddn6rV8mBX&quot;&gt;source: Robert Scoble &lt;/a&gt;
-[^Boyd]: &lt;a href=&quot;http://socialmediacollective.org/2011/08/04/real-names-policies-are-an-abuse-of-power/&quot;&gt;“Real Names” Policies Are an Abuse of Power, by danah boyd&lt;/a&gt;
-[^Hogan]: &lt;a href=&quot;http://socialmediacollective.org/2011/08/08/real-name-sites-are-necessarily-inadequate-for-free-speech/&quot;&gt;Real name sites are necessarily inadequate for free speech, by Bernie Hogan&lt;/a&gt;
-[^Horowitz]: &lt;a href=&quot;https://plus.google.com/113116318008017777871/posts/VJoZMS8zVqU&quot;&gt;Bradley Horowitz&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+
+&lt;li id=&quot;fn1&quot;&gt;
+&lt;p&gt;I&amp;#39;m not on Google+ &lt;a href=&quot;http://wellsb.com/post/7022247022/google-plus-for-google-apps-in-the-coming-months&quot;&gt;because I&amp;#39;ve got a Google Apps account...&lt;/a&gt;.&amp;nbsp;&lt;a href=&quot;#fnref1&quot; rev=&quot;footnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li id=&quot;fn2&quot;&gt;
+&lt;p&gt;For the purposes of this article I will be assuming that Google is, in fact, not evil.&amp;nbsp;&lt;a href=&quot;#fnref2&quot; rev=&quot;footnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li id=&quot;fn3&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;http://socialmediacollective.org/2011/08/08/real-name-sites-are-necessarily-inadequate-for-free-speech/&quot;&gt;Real name sites are necessarily inadequate for free speech, by Bernie Hogan&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref3&quot; rev=&quot;footnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li id=&quot;fn4&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;https://plus.google.com/111091089527727420853/posts/Fddn6rV8mBX&quot;&gt;source: Robert Scoble &lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref4&quot; rev=&quot;footnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li id=&quot;fn5&quot;&gt;
+&lt;p&gt;I assume that &amp;quot;common&amp;quot; is meant in the sense of &amp;#39;consistent&amp;#39;, rather than &amp;#39;usual&amp;#39;. Please correct me if I&amp;#39;m wrong.&amp;nbsp;&lt;a href=&quot;#fnref5&quot; rev=&quot;footnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li id=&quot;fn6&quot;&gt;
+&lt;p&gt;In some places, people can legally spell their names &amp;quot;in weird ways&amp;quot;, or have names that are &amp;quot;obviously fake&amp;quot;. &amp;nbsp;&lt;a href=&quot;#fnref6&quot; rev=&quot;footnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;/ol&gt;
+&lt;/div&gt;
 </content>
  </entry>
  

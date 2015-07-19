@@ -113,7 +113,7 @@
 
 <p><img src="/download/chirp-screenshot.png" alt="Screenshot of (chirp)"></p>
 
-<p>&#x1f424;&#x1f3b6; is a tool to reduce the length of potential tweets. It uses <a href="http://wordnet.princeton.edu/">WordNet</a> inside Python&#39;s <a href="http://www.nltk.org/">NLTK</a> to find synonyms for each word in the provided text. For extra concision, it also suggests emoji which might replace some words, and offers to replace stopwords with the NUL character. You might think of this as similar to the lossy pscyhoacoustic compression used in MP3s, in that it retains the human-interpreted meaning while reducing the amount of data the machine needs to store. In reality, <a href="https://en.wikipedia.org/wiki/Semantic_compression">semantic compression</a> is a thing in NLP, but the approach used here is as-simple-as-possible, and aims not to reduce the total number of words needed to represent a corpus, but the total number of characters to represent a single text.[^codepoint] I&#39;ve got a few ideas up my sleeve about how to improve it, though.</p>
+<p>&#x1f424;&#x1f3b6; is a tool to reduce the length of potential tweets. It uses <a href="http://wordnet.princeton.edu/">WordNet</a> inside Python&#39;s <a href="http://www.nltk.org/">NLTK</a> to find synonyms for each word in the provided text. For extra concision, it also suggests emoji which might replace some words, and offers to replace stopwords with the NUL character. You might think of this as similar to the lossy pscyhoacoustic compression used in MP3s, in that it retains the human-interpreted meaning while reducing the amount of data the machine needs to store. In reality, <a href="https://en.wikipedia.org/wiki/Semantic_compression">semantic compression</a> is a thing in NLP, but the approach used here is as-simple-as-possible, and aims not to reduce the total number of words needed to represent a corpus, but the total number of characters to represent a single text.<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup> I&#39;ve got a few ideas up my sleeve about how to improve it, though.</p>
 
 <p>The process of developing this was surprisingly smooth. I&#39;ve used NLTK quite a bit in the past, the most difficult part was understanding WordNet&#39;s jargon (e.g. what exactly lemmas are). I wanted to add a bunch of configuration options, for example to only replace with more-specific or less-specific terms (hyponyms or hypernyms). That didn&#39;t make it into v0.1, but there are two options on the page: one to only suggest emojis, and <em>depth</em> which controls how many levels of synonym-of-synonym to suggest. The backend uses flask, a library I&#39;ve built so many projects with I can pretty much use it blindfolded.</p>
 
@@ -121,7 +121,7 @@
 
 <p>It took me quite a while to settle on how to display the suggested changes. I thought about just having a basic form which returns the edited text, maybe displayed side-by-side with the original. In the end, I decided that inline suggestions would be cooler, so I searched for a Javascript spelling correction library that would display the suggestions and UI while letting me handle the backend. This wasn&#39;t so easy. Many plugins require you to have a static dictionary, which was no good for me, both for quick-iteration reasons and because there would need to be one dictionary for each combination of configuration options. All the other plugins I found used pre-existing spellcheck backends &mdash; this isn&#39;t so surprising, because who wants to build their own spellchecking engine (except perhaps <a href="http://norvig.com/spell-correct.html">Peter Norvig</a>). Worse than that, almost all of them supported the not-quite-public now-deprecated Google Spellchecker API. </p>
 
-<p>That said, I did end up using <a href="https://github.com/brandonaaron/jquery-spellcheck">jquery-spellcheck by brandonaaron</a>, which does call the Google API. It was straightforward to make it use my backend, because the library uses a proxy script, which I just replaced with my own. Working out what to <em>serve</em> from the backend was less easy, however. As it turns out, defunct-and-never-quite-official APIs don&#39;t have great documentation. I used the example return value in the documentation from <a href="https://code.google.com/p/google-api-spelling-java/">this Java library</a> to reverse-engineer the XML return format. For future reference, it looks[^api] like this:</p>
+<p>That said, I did end up using <a href="https://github.com/brandonaaron/jquery-spellcheck">jquery-spellcheck by brandonaaron</a>, which does call the Google API. It was straightforward to make it use my backend, because the library uses a proxy script, which I just replaced with my own. Working out what to <em>serve</em> from the backend was less easy, however. As it turns out, defunct-and-never-quite-official APIs don&#39;t have great documentation. I used the example return value in the documentation from <a href="https://code.google.com/p/google-api-spelling-java/">this Java library</a> to reverse-engineer the XML return format. For future reference, it looks<sup id="fnref2"><a href="#fn2" rel="footnote">2</a></sup> like this:</p>
 
 <div class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
  <span class="nt">&lt;spellresult</span> <span class="na">error=</span><span class="s">&quot;0&quot;</span> <span class="na">clipped=</span><span class="s">&quot;0&quot;</span> <span class="na">charschecked=</span><span class="s">&quot;0&quot;</span><span class="nt">&gt;</span>
@@ -143,15 +143,30 @@
 <p>I made minor modifications to jquery-spellcheck so that it sends additional URL-parameters on its AJAX call for the depth of synonyms and emoji-only mode.</p>
 
 <p>On another note, I demoed this in Chrome Canary, because the stable version doesn&#39;t have emoji support yet... As a side effect of this project, I found to my surprise both in how many places you can use emoji (like some TLDs, although finding a registrar is another question), but also in how many places they <em>don&#39;t</em> work.
-I&#39;m going to continue working on the synonym engine part of this because the frontend is pretty much done (and because for my own use I&#39;d prefer a CLI). One interesting option is that &mdash; given that WordNet doesn&#39;t just give you synonyms but tells you <em>how</em> words are related &mdash; I could replace words with more general (or perhaps more common) ones. This would be more similar to what semantic compression does. It would be cool to see whether replacing words with hypernyms results in something similar to the <a href="https://en.wikipedia.org/wiki/Wikipedia:Getting_to_Philosophy">Getting to Philosophy</a> effect on Wikipedia, where successively clicking the first link on an article will eventually lead you up the hierarchy of more-and-more general topics towards philosophy.[^philosophy] Stay tuned <a href="https://github.com/adamobeng/chirp">via GitHub</a>.</p>
+I&#39;m going to continue working on the synonym engine part of this because the frontend is pretty much done (and because for my own use I&#39;d prefer a CLI). One interesting option is that &mdash; given that WordNet doesn&#39;t just give you synonyms but tells you <em>how</em> words are related &mdash; I could replace words with more general (or perhaps more common) ones. This would be more similar to what semantic compression does. It would be cool to see whether replacing words with hypernyms results in something similar to the <a href="https://en.wikipedia.org/wiki/Wikipedia:Getting_to_Philosophy">Getting to Philosophy</a> effect on Wikipedia, where successively clicking the first link on an article will eventually lead you up the hierarchy of more-and-more general topics towards philosophy.<sup id="fnref3"><a href="#fn3" rel="footnote">3</a></sup> Stay tuned <a href="https://github.com/adamobeng/chirp">via GitHub</a>.</p>
 
 <p>Also, thanks to <a href="https://github.com/jzf2101">JZ Forde</a> for providing initial feedback and encouragement. </p>
 
 <p>Next up: the winner, <a href="/hackny-hackathon-winner/#glapep8">GLaPEP8</a>.</p>
 
-<p>[^api]: Of course, this specification might only apply to the API as implemented in jquery-spellchecker...
-[^codepoint]: Actually, because we&#39;re targeting Twitter, the aim is to minimise the <a href="https://dev.twitter.com/overview/api/counting-characters">number of codepoints in NFC-normalised format</a> (hence why emoji are useful to this goal).
-[^philosophy]: By the way, <a href="https://www.youtube.com/watch?v=tXCV_z_M0RA&amp;t=518">I called it</a> back in 2010.</p>
+<div class="footnotes">
+<hr>
+<ol>
+
+<li id="fn1">
+<p>Actually, because we&#39;re targeting Twitter, the aim is to minimise the <a href="https://dev.twitter.com/overview/api/counting-characters">number of codepoints in NFC-normalised format</a> (hence why emoji are useful to this goal).&nbsp;<a href="#fnref1" rev="footnote">&#8617;</a></p>
+</li>
+
+<li id="fn2">
+<p>Of course, this specification might only apply to the API as implemented in jquery-spellchecker...&nbsp;<a href="#fnref2" rev="footnote">&#8617;</a></p>
+</li>
+
+<li id="fn3">
+<p>By the way, <a href="https://www.youtube.com/watch?v=tXCV_z_M0RA&amp;t=518">I called it</a> back in 2010.&nbsp;<a href="#fnref3" rev="footnote">&#8617;</a></p>
+</li>
+
+</ol>
+</div>
 
 </article>
 
