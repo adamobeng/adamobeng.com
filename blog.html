@@ -4,20 +4,19 @@ title: Adam Obeng -- Blog
 ---
 
 <div id="home">
-  <h1>Recent Posts</h1>
-  <ul class="posts">
-	  {% for post in site.posts limit:10 %}
-	  <br>
-	  <li>
-	  <h2><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></h2>
-    {{ post.content | truncatewords: 80}}
-    </br>
-    </br>
-    <a href="{{ post.url }}" class="more">Read More</a>
-    <hr>
-    {% endfor %}
-	</li>
-  </ul>
-  
+	<h1>Recent Posts</h1>
+	<ul class="posts">
+		{% for post in site.posts limit:10 %}
+		<br>
+		<li>
+			<h2><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></h2>
+			{{ post.content | truncatewords: 80}}
+		</br>
+		</br>
+		<a href="{{ post.url }}" class="more">Read More</a>
+		<hr>
+		</li>
+		{% endfor %}
+	</ul>
+
 </div>
-  
