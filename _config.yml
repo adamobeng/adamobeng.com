@@ -5,7 +5,7 @@ destination: ./_site
 
 markdown: redcarpet
 redcarpet:
-    extensions: ["footnotes"]
+    extensions: ["footnotes", "tables", "images"]
 
 highlighter: pygments
 
@@ -14,4 +14,4 @@ description: "Adam Obeng's Website"
 root_desc: "adamobeng.com"
 
 exclude: ['config.rb', 'references', 'convert', 'sass', '_drafts']
-permalink: ":title"
+permalink: '/:title/'
