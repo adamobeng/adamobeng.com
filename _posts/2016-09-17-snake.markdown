@@ -1,0 +1,9 @@
+---
+layout: post
+title: 🐍
+categories: projects
+---
+
+[https://www.youtube.com/watch?t=904&v=gg1bv9XJAek](https://www.youtube.com/watch?t=904&v=gg1bv9XJAek)
+
+[https://github.com/adamobeng/snake](https://github.com/adamobeng/snake)
