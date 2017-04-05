@@ -133,10 +133,10 @@ nav {
     background: #fffebb; }
 
 #profile {
-  width: 300px;
-  float: left;
-  margin-right: 2em;
-  margin-top: 0.5em; }
+  width: 200px;
+  float: right;
+  margin-left: 1em;
+}
 
 .highlight {
   font-family: 'Consolas', monospace;
